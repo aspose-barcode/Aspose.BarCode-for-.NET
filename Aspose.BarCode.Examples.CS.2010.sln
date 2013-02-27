@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{CAC6624D-89D6-4FA1-B476-AE174A140C58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithBarcodeImage", "WorkingWithBarcodeImage", "{87614FD7-6513-4D17-A5FF-8C64CA7B0B66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BarcodeImageUtilityFeatures", "BarcodeImageUtilityFeatures", "{123A6058-97B9-4C93-B575-75B2BBAE3CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveBarcodeImagesToDifferentFormats", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageUtilityFeatures\SaveBarcodeImagesToDifferentFormats\CSharp\SaveBarcodeImagesToDifferentFormats.csproj", "{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KnowledgeBase", "KnowledgeBase", "{B316EEDA-9DBE-418C-90B3-C7EE0A0A9370}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TechnicalArticles", "TechnicalArticles", "{2DA379C7-7F5B-41DC-8607-92CFAE7EF318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationWithAsposeComponents", "IntegrationWithAsposeComponents", "{5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrateWithAsposeWords", "KnowledgeBase\TechnicalArticles\IntegrationWithAsposeComponents\IntegrateWithAsposeWords\CSharp\IntegrateWithAsposeWords.csproj", "{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognizeBarcodeFromPdf", "KnowledgeBase\TechnicalArticles\IntegrationWithAsposeComponents\RecognizeBarcodeFromPdf\CSharp\RecognizeBarcodeFromPdf.csproj", "{8F2E6D0D-822E-45F7-8B81-6A46D847D187}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2E6D0D-822E-45F7-8B81-6A46D847D187}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2E6D0D-822E-45F7-8B81-6A46D847D187}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2E6D0D-822E-45F7-8B81-6A46D847D187}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87614FD7-6513-4D17-A5FF-8C64CA7B0B66} = {CAC6624D-89D6-4FA1-B476-AE174A140C58}
+		{123A6058-97B9-4C93-B575-75B2BBAE3CEF} = {87614FD7-6513-4D17-A5FF-8C64CA7B0B66}
+		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7} = {123A6058-97B9-4C93-B575-75B2BBAE3CEF}
+		{2DA379C7-7F5B-41DC-8607-92CFAE7EF318} = {B316EEDA-9DBE-418C-90B3-C7EE0A0A9370}
+		{5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C} = {2DA379C7-7F5B-41DC-8607-92CFAE7EF318}
+		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371} = {5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}
+		{8F2E6D0D-822E-45F7-8B81-6A46D847D187} = {5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}
+	EndGlobalSection
+EndGlobal
