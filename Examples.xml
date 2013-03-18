@@ -55,12 +55,156 @@ This example explains this concept in a very easy way.</Description>
                   <FolderName>SaveBarcodeImagesToDifferentFormats</FolderName>
                   <Order>1</Order>
                   <DocLink>
-                    <DisplayName>save barcode images to different formats</DisplayName>
+                    <DisplayName>Save barcode images to different formats</DisplayName>
                     <Url>save+barcode+images+to+different+formats</Url>
                   </DocLink>
                   <OutputFiles>
                     <DataFile>
                       <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working with Barcode</Title>
+          <Description>This section includes example for following topics: 
+
+- Barcode Basic Features 
+- Barcode Utility Features 
+- Barcode Advance Features</Description>
+          <FolderName>WorkingWithBarcode</FolderName>
+          <Order>2</Order>
+          <Folders>
+            <Folder>
+              <Title>Barcode Utility Features</Title>
+              <Description>This section includes examples related to the following topics: 
+
+- Specify Symbologies for Barcodes 
+- Set Code text for Barcode 
+- Control the appearance of Code text 
+- Manage Caption of the Barcode</Description>
+              <FolderName>BarcodeUtilityFeatures</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Control the appearance of Code text</Title>
+                  <Description>Aspose.BarCode provides complete control over the appearance of the Code text in the barcode image. There are many settings that can be applied on the Code text to customize its appearance. This example provides overview of how we can change the appearance(color, alignment and space) of barcode text.</Description>
+                  <FolderName>ControlAppearanceOfCodeText</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Control the appearance of Code text</DisplayName>
+                    <Url>Control+the+appearance+of+Code+text</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Manage Caption of the Barcode</Title>
+                  <Description>Aspose.BarCode provides capability to customize the text, alignment, font, color and space of the caption using a Caption class to serve this purpose. All barcode generating classes have two properties, CaptionAbove and CaptionBelow that take an instance of Caption class. So, developers can create an object of Caption class and then assign that object to CaptionAbove, CaptionBelow or both properties to set the captions of the barcode. This example describes use and customization of Caption using Aspose.BarCode</Description>
+                  <FolderName>ManageCaptionOfBarcode</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Manage Caption of the Barcode</DisplayName>
+                    <Url>Manage+Caption+of+the+Barcode</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Barcode Advanced Features</Title>
+              <Description>This section includes examples related to following topics: 
+
+- Set Height of the Bars in the Barcode Image
+- Manage X Dimension and Y Dimension
+- Use Checksum and Supplement Data for Barcodes
+- Wide Narrow Ratio
+- Generate AustraliaPost Barcode with Different Format Control Code Options
+- Set Start and Stop Symbols of Codabar Barcode
+- Customize Code128 Barcodes</Description>
+              <FolderName>BarcodeAdvancedFeatures</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Set Height of the Bars in the Barcode Image</Title>
+                  <Description>F developers want to control the height of the bars in the barcode, they can do it very easily by just setting the BarHeight property of all barcode generating classes offered by Aspose.BarCode. BarHeight property takes a float value to set the bar height and it's measuring unit is millimeter by default.
+
+To change the measuring unit of the bar height, developers can make use of ImageUnit property of any barcode class ( BarCodeBuilder , BarCodeControl or BarCodeWebControl ) provided by Aspose.BarCode. This examples depicts the changing of height of BarCode bars in detail.</Description>
+                  <FolderName>SetHeightBarcodeBars</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Set Height of the Bars in the Barcode Image</DisplayName>
+                    <Url>Set+Height+of+the+Bars+in+the+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode3.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode7.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode11.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Manage X Dimension and Y Dimension</Title>
+                  <Description>Aspose.BarCode provides an xDimension property in all barcode generating classes that allows developers to set the X-Dimension of the bars in the barcode. Normally, X-Dimension is configured in Mils but to ease the job of developers, Aspose.BarCode uses Millimeter as a measuring unit by default. But of course, developers can modify the measuring unit according to their choice using ImageUnit property of any barcode class. Just like X-Dimension in linear barcodes, Y-Dimension is for 2D barcodes. This examples discusses the management of X and Y dimensions using Aspose.BarCode in a very easy way.</Description>
+                  <FolderName>ManageXYDimension</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Manage X Dimension and Y Dimension</DisplayName>
+                    <Url>Manage+X+Dimension+and+Y+Dimension</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcodeXDimensionChanged.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcodeYDimensionChanged.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Wide Narrow Ratio</Title>
+                  <Description>Aspose.BarCode facilitates its developers to make use of WideNarrowRatio property of a barcode class to control the ratio of wide/narrow element of the barcode. To specify the ratio, you just need to pass a float value to the WideNarrowRatio property. This example depicts the usage of WideNarrowRatio property directly from the code.</Description>
+                  <FolderName>WideNarrowRatio</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Wide Narrow Ratio</DisplayName>
+                    <Url>Wide+Narrow+Ratio</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_3.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_5.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_7.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_9.jpg</Path>
                     </DataFile>
                   </OutputFiles>
                   <Type>Console</Type>
@@ -141,6 +285,29 @@ We will follow the below steps for reading barcode from the pdf document:
                   <InputFiles>
                     <DataFile>
                       <Path>..\Data\document.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Recognize Barcode from Word Document</Title>
+                  <Description>In this example, recognition of barcode from a Word document using Aspose.BarCode and Aspose.Words is performed and is explained in detail.
+
+We will follow the below steps for reading barcode from the Word document:
+
+- Extract image from Word document using Aspose.Words for .NET
+- Save the extracted image as stream
+- Pass the image in form of stream to Aspose.BarCode for .NET
+- Read barcode from the image</Description>
+                  <FolderName>RecognizeBarcodeFromWord</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Recognize Barcode from Word Document</DisplayName>
+                    <Url>Recognize+Barcode+from+Word+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.doc</Path>
                     </DataFile>
                   </InputFiles>
                   <Type>Console</Type>
