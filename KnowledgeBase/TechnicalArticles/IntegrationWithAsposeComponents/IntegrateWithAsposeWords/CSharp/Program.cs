@@ -33,7 +33,7 @@ namespace IntegrateWithAsposeWords
 
             bb.Save(ms, BarCodeImageFormat.Bmp);
 
-            //Create doc with Aspose.Word
+            //Create doc with Aspose.Word.
             Document doc = new Document();
 
             //Create builder for doc
