@@ -39,7 +39,7 @@ namespace IntegrateWithAsposeWords
             //Create builder for doc.
             DocumentBuilder builder = new DocumentBuilder(doc);
 
-            //Insert the BarCode image into doc
+            //Insert the BarCode image into doc.
             builder.InsertImage(ms.GetBuffer());
 
             // Close memory stream.
