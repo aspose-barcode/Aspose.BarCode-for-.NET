@@ -36,7 +36,7 @@ namespace IntegrateWithAsposeWords
             //Create doc with Aspose.Word.
             Document doc = new Document();
 
-            //Create builder for doc
+            //Create builder for doc.
             DocumentBuilder builder = new DocumentBuilder(doc);
 
             //Insert the BarCode image into doc
