@@ -45,7 +45,7 @@
     <Reference Include="Aspose.BarCodeRecognition">
       <HintPath>..\..\..\..\..\..\bin\net2.0\Aspose.BarCodeRecognition.dll</HintPath>
     </Reference>
-    <Reference Include="Aspose.Pdf, Version=7.7.0.0, Culture=neutral, PublicKeyToken=47b2d0fcacdd3eb6, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Pdf">
       <HintPath>..\..\..\..\..\..\bin\net2.0\Aspose.Pdf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
