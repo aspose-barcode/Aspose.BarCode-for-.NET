@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Data>
   <Folders>
     <Folder>
@@ -265,6 +265,11 @@ To change the measuring unit of the bar height, developers can make use of Image
                       <Path>..\Data\Myfile.doc</Path>
                     </DataFile>
                   </OutputFiles>
+                  <RequiredProducts>
+                    <Product>
+                      <Title>Aspose.Words</Title>
+                    </Product>
+                  </RequiredProducts>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -287,6 +292,11 @@ We will follow the below steps for reading barcode from the pdf document:
                       <Path>..\Data\document.pdf</Path>
                     </DataFile>
                   </InputFiles>
+                  <RequiredProducts>
+                    <Product>
+                      <Title>Aspose.Pdf</Title>
+                    </Product>
+                  </RequiredProducts>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -310,6 +320,11 @@ We will follow the below steps for reading barcode from the Word document:
                       <Path>..\Data\input.doc</Path>
                     </DataFile>
                   </InputFiles>
+                  <RequiredProducts>
+                    <Product>
+                      <Title>Aspose.Words</Title>
+                    </Product>
+                  </RequiredProducts>
                   <Type>Console</Type>
                 </Example>
               </Examples>
