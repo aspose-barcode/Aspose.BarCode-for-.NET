@@ -1,13 +1,20 @@
 #Aspose.BarCode for .NET Examples Repository
 
-Aspose.BarCode for .NET is a robust and reliable barcode generation and recognition component, written in managed C#, it allows developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, ASP.NET and .NET Compact Framework). 
+This package contains .NET Examples Projects for [Aspose.BarCode for .NET]http://www.aspose.com/.net/barcode-component.aspx.
 
-Aspose.BarCode for .NET supports most established barcode standards and barcode specifications. It has the ability to export to multiple image formats including: BMP, EMF, GIF, JPEG, PNG, TIFF and EMF. 
+##How to use the Examples?
 
-These example projects provide helpful demonstrations and code when using Aspose.BarCode for .NET.
+###With the Examples Dashboard
 
-## Aspose.BarCode for .NET at a Glance
-![Aspose.BarCode Overview](http://www.aspose.com/Aspose.BarCode/Images/aspose.barcode-for.net.jpg "The Main Features of Aspose.BarCode for .NET")
+Download the [Aspose Examples Dashboard for .NET](http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
+
+![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/04/Dotnet-Dashboard.png "Aspose Examples Dashboard")
+
+###With IDE
+
+Clone or Download the ZIP and extract the contents to your local hard drive. It has Solution (SLN) files for Microsoft Visual Studio 2005, 2008 and 2010.
+
+Also download the [latest version](http://www.aspose.com/community/files/51/.net-components/aspose.barcode-for-.net/default.aspx) of Aspose.BarCode for .NET and set/fix jar references.
 
 ##Open Source Feel of Aspose.BarCode
 
@@ -47,45 +54,6 @@ This package contains C# and VB.NET Example Projects for [Aspose.BarCode for .NE
   <tr><td>Read BarCode from Word Document</td><td>This example reads the images from a Word document and tries to recognize the BarCode(s).</td></tr>
   <tr><td>Read BarCode from Multi-page Tiff File</td><td>This example demonstrates the ability of Aspose.BarCode for .NET to read the multi-page TIFF images and recognizes the BarCode from it.</td></tr>
 </table>
-
-
-
-###Data
-
-Input Files - Some examples require Images, Word and Excel documents as input. User can specify any file by browsing the disk.
-
-###Output
-
-All examples will output the result to client machine through browser. Its upto the user to save the output or open it directly.
-Most examples will show the output on Web Page.
-
-
-##Download the examples
-
-Please [download the Aspose.BarCode for .NET examples](https://github.com/asposebarcode/Aspose_Barcode_NET/downloads) to try at your end.
-
-
-##How to use the examples?
-
-This package contains C# and VB.NET ASP.NET examples of Aspose.BarCode for .NET.
-
-Firstly make sure that you have downloaded and installed the latest version of [Aspose.BarCode for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.barcode-for-.net/default.aspx). We recommend using the .MSI installer for fast installation and seamless intergration with the examples.
-
-Some additional Aspose Components are also required like [Aspose.Cells for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.cells-for-.net/default.aspx), [Aspose.Pdf for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.pdf-for-.net/default.aspx), [Aspose.Pdf.Kit for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.pdf.kit-for-.net/default.aspx) and [Aspose.Words for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.words-for-.net/default.aspx)
-
-Along with above mentioned Aspose Components, you must have Crystal Reports 2008 installed on your machine. If you have installed the complete Visual Studio 2008 then Crystal Reports is part of it. Else you can donwload a seprate copy of Crystal Reports v10.2.3600.0 from [SAP Community Network](http://wiki.sdn.sap.com/wiki/pages/viewpage.action?pageId=56787567).
-
-Download the examples from the above link. The solution file for Microsoft Visual Studio 2008 is provided with the examples. 
-
-Once downloaded you can open the examples by opening the appropriate solution file (.sln) according to the version of Visual Studio installed on your system.
-
-+ Aspose.BarCode.Demos.2008.sln - Open with Microsoft Visual Studio 2008
-
-The example should be ready to compile. Click on "Debug" menu and choose one of the following menu items to start the example:
-
-- Start Debugging
-- Start Without Debugging
-
 
 ##Contact Us
 
