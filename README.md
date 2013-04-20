@@ -1,6 +1,6 @@
 #Aspose.BarCode for .NET Examples Repository
 
-This package contains .NET Examples Projects for [Aspose.BarCode for .NET]http://www.aspose.com/.net/barcode-component.aspx.
+This package contains .NET Examples Projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx).
 
 ##How to use the Examples?
 
