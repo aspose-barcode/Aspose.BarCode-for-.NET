@@ -1,6 +1,6 @@
 #Aspose.BarCode for .NET Examples Repository
 
-This package contains .NET Examples Projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx).
+This repository contains .NET Examples Projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx).
 
 ##How to use the Examples?
 
@@ -14,7 +14,7 @@ Download the [Aspose Examples Dashboard for .NET](http://www.aspose.com/communit
 
 Clone or Download the ZIP and extract the contents to your local hard drive. It has Solution (SLN) files for Microsoft Visual Studio 2005, 2008 and 2010.
 
-Also download the [latest version](http://www.aspose.com/community/files/51/.net-components/aspose.barcode-for-.net/default.aspx) of Aspose.BarCode for .NET and set/fix jar references.
+Also download the [latest version](http://www.aspose.com/community/files/51/.net-components/aspose.barcode-for-.net/default.aspx) of Aspose.BarCode for .NET and set/fix dll references.
 
 ##Open Source Feel of Aspose.BarCode
 
