@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Data>
   <Folders>
     <Folder>
@@ -122,6 +122,39 @@ This example explains this concept in a very easy way.</Description>
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Specify Symbologies for Barcodes</Title>
+                  <Description>Aspose.BarCode supports nearly all popular barcode symbologies. All barcode generating classes like LinearBarCode , BarCodeControl and BarCodeWebControl have a common property named as SymbologyType that is used to set the symbology of a barcode.
+ Developers can assign any symbology to SymbologyType property from the pre-defined symbologies supported by Aspose.BarCode in Symbology enumeration.</Description>
+                  <FolderName>SpecifySymbologiesForBarcodes</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Specify Symbologies for Barcodes</DisplayName>
+                    <Url>Specify+Symbologies+for+Barcodes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Code text for Barcode</Title>
+                  <Description>A barcode is the representation of characters in the form of bars and spaces between them. So, it is a simple fact that we would also have to assign some characters to Aspose.BarCode so that the input characters could be converted to a barcode. We know that Aspose.BarCode has three different classes (BarCodeBuilder, BarCodeControl and BarCodeWebControl) to create barcodes for different kinds of applications. All these classes have a common property, CodeText. All characters to be encoded to barcode are assigned to CodeText property of any barcode class.</Description>
+                  <FolderName>SetCodeTextForBarcode</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Set Code text for Barcode</DisplayName>
+                    <Url>Set+Code+text+for+Barcode</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>
@@ -209,6 +242,66 @@ To change the measuring unit of the bar height, developers can make use of Image
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Generate AustraliaPost Barcode</Title>
+                  <Description>AustraliaPost barcode can be generated using following 6 different format control code options: 
+
+1.Standard
+2.ReplyPaid
+3.Customer2
+4.Customer3
+5.Routing
+6.Redirection</Description>
+                  <FolderName>GenerateAustraliaPostBarcode</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Generate AustraliaPost Barcode with Different Format Control Code Options</DisplayName>
+                    <Url>Generate+AustraliaPost+Barcode+with+Different+Format+Control+Code+Options</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Customer2.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Customer3.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Redirection.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\ReplyPaid.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Routing.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Standard.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Start and Stop Symbols of Codabar Barcode</Title>
+                  <Description>The Codabar barcode has the following structure: 
+
+1.Start Symbol at the beginning (A, B, C or D)
+2.Data to be encoded
+3.End Symbol (A, B, C or D)
+
+Using Aspose.BarCode, you can customize the start and stop symbols according to your requirements, using BarCodeBuilder.CodabarStartSymbol and BarCodeBuilder.CodabarStopSymbol properties.</Description>
+                  <FolderName>SetStartAndStopSymbolsOfCodabarBarcode</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Set Start and Stop Symbols of Codabar Barcode</DisplayName>
+                    <Url>Set+Start+and+Stop+Symbols+of+Codabar+Barcode</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>
@@ -265,11 +358,6 @@ To change the measuring unit of the bar height, developers can make use of Image
                       <Path>..\Data\Myfile.doc</Path>
                     </DataFile>
                   </OutputFiles>
-                  <RequiredProducts>
-                    <Product>
-                      <Title>Aspose.Words</Title>
-                    </Product>
-                  </RequiredProducts>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -292,11 +380,6 @@ We will follow the below steps for reading barcode from the pdf document:
                       <Path>..\Data\document.pdf</Path>
                     </DataFile>
                   </InputFiles>
-                  <RequiredProducts>
-                    <Product>
-                      <Title>Aspose.Pdf</Title>
-                    </Product>
-                  </RequiredProducts>
                   <Type>Console</Type>
                 </Example>
                 <Example>
@@ -320,11 +403,6 @@ We will follow the below steps for reading barcode from the Word document:
                       <Path>..\Data\input.doc</Path>
                     </DataFile>
                   </InputFiles>
-                  <RequiredProducts>
-                    <Product>
-                      <Title>Aspose.Words</Title>
-                    </Product>
-                  </RequiredProducts>
                   <Type>Console</Type>
                 </Example>
               </Examples>
