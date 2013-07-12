@@ -40,7 +40,7 @@ namespace ManageXYDimension
             bb.xDimension = 0.5f;
 
             //Set the measuring unit of barcode to millimeter
-            bb.ImageUnit = System.Drawing.GraphicsUnit.Millimeter;
+            bb.GraphicsUnit = System.Drawing.GraphicsUnit.Millimeter;
 
             //Save the image to your system
             //and set its image format to Jpeg

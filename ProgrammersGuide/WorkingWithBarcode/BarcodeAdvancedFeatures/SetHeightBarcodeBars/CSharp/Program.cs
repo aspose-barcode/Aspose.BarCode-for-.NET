@@ -36,7 +36,7 @@ namespace SetHeightBarcodeBars
             lbc.BarHeight = 3.0f;
 
             //Set the measuring unit of barcode to millimeter
-            lbc.ImageUnit = System.Drawing.GraphicsUnit.Millimeter;
+            lbc.GraphicsUnit = System.Drawing.GraphicsUnit.Millimeter;
 
             //Save the image locally and set its image format to Jpeg
             lbc.Save(dataDir + "barcode3.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);

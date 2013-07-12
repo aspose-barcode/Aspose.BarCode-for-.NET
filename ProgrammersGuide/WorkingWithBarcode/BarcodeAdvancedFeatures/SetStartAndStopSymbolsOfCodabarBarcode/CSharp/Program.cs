@@ -18,6 +18,11 @@ namespace SetStartAndStopSymbolsOfCodabarBarcode
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
+            // Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
+
             // Create instance of BarCodeBuilder, specify codetext and symbology in the constructor
             BarCodeBuilder builder = new BarCodeBuilder("11112222333344", Symbology.Codabar);
 
