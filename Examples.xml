@@ -67,6 +67,123 @@ This example explains this concept in a very easy way.</Description>
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>Barcode Image Basic Features</Title>
+              <Description>This section includes the following topics: 
+
+1: Working with Image Borders
+2: Colorize any Part of the Barcode Image
+3: Rotate Barcode Image
+4: Control Barcode Image Quality
+5: Set Barcode Image Margins
+6: How to Detect Orientation of a Detected Bar Code</Description>
+              <FolderName>BarcodeImageBasicFeatures</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Working with Image Borders</Title>
+                  <Description>Aspose.BarCode allows its users to handle everything about barcode image borders, which include setting border style, margins and its width.</Description>
+                  <FolderName>WorkingWithImageBorders</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Working with Image Borders</DisplayName>
+                    <Url>Working+with+Image+Borders</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Colorize any Part of the Barcode Image</Title>
+                  <Description>Normally, barcodes are generated and printed in black and white colors. But, what if it is required to generate a colored barcode? Keeping this possible requirement in mind, Aspose.BarCode gives free hand to developers to change the colors of:
+ 
+-Barcode
+-Code text
+-Barcode Background
+-Barcode Border
+-Caption</Description>
+                  <FolderName>ColorizeanyPartoftheBarcodeImage</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Colorize any Part of the Barcode Image</DisplayName>
+                    <Url>Colorize+any+Part+of+the+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Rotate Barcode Image</Title>
+                  <Description>Aspose.BarCode allows developers to rotate the barcode image by setting the RotationAngleF property of the barcode class.</Description>
+                  <FolderName>RotateBarcodeImage</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Rotate Barcode Image</DisplayName>
+                    <Url>Rotate+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Control Barcode Image Quality</Title>
+                  <Description>Aspose.BarCode can render anti-aliased barcode images that provide much better quality due to anti-aliasing. The quality of anti-aliased barcode images is more distinguished when barcode is generated with high resolution.</Description>
+                  <FolderName>ControlBarcodeImageQuality</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Control Barcode Image Quality</DisplayName>
+                    <Url>Control+Barcode+Image+Quality</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Barcode Image Margins</Title>
+                  <Description>It is possible to set barcode image margins using Aspose.BarCode. Margins is the area between the edges of the barcode image and its border. By default, the border of barcode image is visible on the barcode.</Description>
+                  <FolderName>SetBarcodeImageMargins</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Set Barcode Image Margins</DisplayName>
+                    <Url>Set+Barcode+Image+Margins</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>How to Detect Orientation of a Detected Bar Code</Title>
+                  <Description>Aspose.BarCode allows developers to detect orientation of a detected bar code by calling GetAngle method of BarCodeReader class.</Description>
+                  <FolderName>DetectOrientationOfBarCode</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>How to Detect Orientation of a Detected Bar Code</DisplayName>
+                    <Url>How+to+Detect+Orientation+of+a+Detected+Bar+Code</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
           </Folders>
         </Folder>
         <Folder>
