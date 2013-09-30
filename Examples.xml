@@ -65,6 +65,65 @@ This example explains this concept in a very easy way.</Description>
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Customize Barcode Image Resolution</Title>
+                  <Description>What if developers need to set the resolution of their barcode images according to their custom settings? Well, Aspose.BarCode also addresses this issue and provides Resolution class that serves developers to customize the resolution of their barcode images in any way they want.</Description>
+                  <FolderName>CustomizeBarcodeImageResolution</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Customize Barcode Image Resolution</DisplayName>
+                    <Url>Customize+Barcode+Image+Resolution</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Size Unit for the Barcode Image</Title>
+                  <Description>To change the measuring unit of the barcode image, developers can make use of GraphicsUnit property of any barcode class (BarCodeBuilder, BarCodeControl or BarCodeWebControl) provided by Aspose.BarCode. GraphicsUnit property accepts any pre-defined value in System.Drawing.GraphicsUnit enumeration.</Description>
+                  <FolderName>SetSizeUnitForBarcodeImage</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Set Size Unit for the Barcode Image</DisplayName>
+                    <Url>Set+Size+Unit+for+the+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Print Barcode Image</Title>
+                  <Description>Printing barcode image can be easily done with Aspose.BarCode for .NET.</Description>
+                  <FolderName>PrintBarcodeImage</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Print Barcode Image</DisplayName>
+                    <Url>Print+Barcode+Image</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Generate Barcode by Specifying Custom Image Size</Title>
+                  <Description>Aspose.BarCode for automatically adjusts the image size (width and height) according to the generated barcodes size. But, you can also control the image size by specifying height and width of image using BarCodeBuilder.ImageHeight and ImageWidth properties. BarCodeBuilder.AutoSize should be set to false in order to customize the image size.</Description>
+                  <FolderName>GenerateBarcodeCustomSize</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Generate Barcode by Specifying Custom Image Size</DisplayName>
+                    <Url>Generate+Barcode+by+Specifying+Custom+Image+Size</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
             <Folder>

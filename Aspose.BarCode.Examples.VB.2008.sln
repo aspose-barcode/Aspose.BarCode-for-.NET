@@ -8,6 +8,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BarcodeImageUtilityFeatures
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveBarcodeImagesToDifferentFormats", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageUtilityFeatures\SaveBarcodeImagesToDifferentFormats\VisualBasic\SaveBarcodeImagesToDifferentFormats.vbproj", "{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeBarcodeImageResolution", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageUtilityFeatures\CustomizeBarcodeImageResolution\VisualBasic\CustomizeBarcodeImageResolution.vbproj", "{2F38D094-0E10-43E4-B2FD-440AC8C1EB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetSizeUnitForBarcodeImage", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageUtilityFeatures\SetSizeUnitForBarcodeImage\VisualBasic\SetSizeUnitForBarcodeImage.vbproj", "{D9CA0557-DE66-447C-881F-666A119E1079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintBarcodeImage", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageUtilityFeatures\PrintBarcodeImage\VisualBasic\PrintBarcodeImage.vbproj", "{FF6C08DC-94C8-43B8-A60A-F1A0ECBD4823}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BarcodeImageBasicFeatures", "BarcodeImageBasicFeatures", "{F4CAEB63-281A-4A6A-A708-B5D5C2CBB84B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithImageBorders", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageBasicFeatures\WorkingWithImageBorders\VisualBasic\WorkingWithImageBorders.vbproj", "{4BB2793F-4F9A-491B-B5AA-837CD18DD02E}"
@@ -19,6 +25,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlBarcodeImageQuality", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageBasicFeatures\ControlBarcodeImageQuality\VisualBasic\ControlBarcodeImageQuality.vbproj", "{ED2835E0-E5D5-4F28-9641-7269FB31F3D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetBarcodeImageMargins", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageBasicFeatures\SetBarcodeImageMargins\VisualBasic\SetBarcodeImageMargins.vbproj", "{81D8B006-9F38-43C4-9190-7A960112B69C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectOrientationOfBarCode", "ProgrammersGuide\WorkingWithBarcodeImage\BarcodeImageBasicFeatures\DetectOrientationOfBarCode\VisualBasic\DetectOrientationOfBarCode.vbproj", "{33294057-96A3-4B0F-B3C2-3C2CE2F2F20F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithBarcode", "WorkingWithBarcode", "{066E609F-ECF8-462A-9B13-E5987DD1DE16}"
 EndProject
@@ -63,6 +71,18 @@ Global
 		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F38D094-0E10-43E4-B2FD-440AC8C1EB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F38D094-0E10-43E4-B2FD-440AC8C1EB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F38D094-0E10-43E4-B2FD-440AC8C1EB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9CA0557-DE66-447C-881F-666A119E1079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9CA0557-DE66-447C-881F-666A119E1079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9CA0557-DE66-447C-881F-666A119E1079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6C08DC-94C8-43B8-A60A-F1A0ECBD4823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6C08DC-94C8-43B8-A60A-F1A0ECBD4823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6C08DC-94C8-43B8-A60A-F1A0ECBD4823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232AFB03-A9EE-4BAF-99E6-81D9A2F2CA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232AFB03-A9EE-4BAF-99E6-81D9A2F2CA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232AFB03-A9EE-4BAF-99E6-81D9A2F2CA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BB2793F-4F9A-491B-B5AA-837CD18DD02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BB2793F-4F9A-491B-B5AA-837CD18DD02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BB2793F-4F9A-491B-B5AA-837CD18DD02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -125,6 +145,10 @@ Global
 		{87614FD7-6513-4D17-A5FF-8C64CA7B0B66} = {CAC6624D-89D6-4FA1-B476-AE174A140C58}
 		{123A6058-97B9-4C93-B575-75B2BBAE3CEF} = {87614FD7-6513-4D17-A5FF-8C64CA7B0B66}
 		{FAF58CC6-5B2A-4450-AF25-EB90CBFD68D7} = {123A6058-97B9-4C93-B575-75B2BBAE3CEF}
+		{2F38D094-0E10-43E4-B2FD-440AC8C1EB83} = {123A6058-97B9-4C93-B575-75B2BBAE3CEF}
+		{D9CA0557-DE66-447C-881F-666A119E1079} = {123A6058-97B9-4C93-B575-75B2BBAE3CEF}
+		{FF6C08DC-94C8-43B8-A60A-F1A0ECBD4823} = {123A6058-97B9-4C93-B575-75B2BBAE3CEF}
+		{232AFB03-A9EE-4BAF-99E6-81D9A2F2CA8F} = {123A6058-97B9-4C93-B575-75B2BBAE3CEF}
 		{F4CAEB63-281A-4A6A-A708-B5D5C2CBB84B} = {87614FD7-6513-4D17-A5FF-8C64CA7B0B66}
 		{4BB2793F-4F9A-491B-B5AA-837CD18DD02E} = {F4CAEB63-281A-4A6A-A708-B5D5C2CBB84B}
 		{93E0D2B9-2901-4F6A-AEBD-A012824BFC35} = {F4CAEB63-281A-4A6A-A708-B5D5C2CBB84B}
