@@ -478,6 +478,38 @@ Using Aspose.BarCode, you can customize the start and stop symbols according to 
                   </OutputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Use Checksum and Supplement Data for Barcodes</Title>
+                  <Description>Using Aspose.BarCode,developers can enable Checksum for the barcode by setting the EnableCheckSum property of the barcode class to true. Checksum can also be made visible or hidden in the barcode image by setting the EnableChecksum property to true or false.</Description>
+                  <FolderName>UseChecksumAndSupplementData</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Use Checksum and Supplement Data for Barcodes</DisplayName>
+                    <Url>Use+Checksum+and+Supplement+Data+for+Barcodes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Customize Code128 Barcodes</Title>
+                  <Description>It is also possible to use combined code sets to generate a single barcode. For example, you may generate a Code128 barcode using both Code set A and B. For achieving this, we have a special class Code128CodeBuilder .</Description>
+                  <FolderName>CustomizeCode128Barcodes</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Customize Code128 Barcodes</DisplayName>
+                    <Url>Customize+Code128+Barcodes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>
