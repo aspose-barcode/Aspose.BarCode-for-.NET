@@ -613,6 +613,28 @@ We will follow the below steps for reading barcode from the Word document:
                   </InputFiles>
                   <Type>Console</Type>
                 </Example>
+                <Example>
+                  <Title>Export Pdf Pages to Images and Recognize BarCode</Title>
+                  <Description>In this example, we will recognize barcode from a pdf document using Aspose.BarCode for .NET and Aspose.Pdf for .NET. We will follow the below steps for reading barcode from the pdf document:
+
+1.Export Pdf page to image using Aspose.Pdf for .NET
+2.Save the extracted image as stream
+3.Pass the image in form of stream to Aspose.BarCode for .NET
+4.Read barcode from the image
+5.Repeat above steps till the end of Pdf document</Description>
+                  <FolderName>PdfToImagesToBarCode</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Export Pdf Pages to Images and Recognize BarCode</DisplayName>
+                    <Url>Export+Pdf+Pages+to+Images+and+Recognize+BarCode</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\document.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
               </Examples>
             </Folder>
           </Folders>

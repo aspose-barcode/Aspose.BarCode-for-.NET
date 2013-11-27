@@ -70,6 +70,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognizeBarcodeFromPdf", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognizeBarcodeFromWord", "KnowledgeBase\TechnicalArticles\IntegrationWithAsposeComponents\RecognizeBarcodeFromWord\CSharp\RecognizeBarcodeFromWord.csproj", "{F90430BF-47A8-4A98-8B18-B4F6844F77A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfToImagesToBarCode", "KnowledgeBase\TechnicalArticles\IntegrationWithAsposeComponents\PdfToImagesToBarCode\CSharp\PdfToImagesToBarCode.csproj", "{99ACDFA0-1CDE-445D-AF43-6EC591F78CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,6 +153,9 @@ Global
 		{F90430BF-47A8-4A98-8B18-B4F6844F77A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F90430BF-47A8-4A98-8B18-B4F6844F77A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F90430BF-47A8-4A98-8B18-B4F6844F77A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99ACDFA0-1CDE-445D-AF43-6EC591F78CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99ACDFA0-1CDE-445D-AF43-6EC591F78CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99ACDFA0-1CDE-445D-AF43-6EC591F78CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -189,5 +194,6 @@ Global
 		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371} = {5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}
 		{8F2E6D0D-822E-45F7-8B81-6A46D847D187} = {5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}
 		{F90430BF-47A8-4A98-8B18-B4F6844F77A3} = {5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}
+		{99ACDFA0-1CDE-445D-AF43-6EC591F78CA3} = {5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}
 	EndGlobalSection
 EndGlobal
