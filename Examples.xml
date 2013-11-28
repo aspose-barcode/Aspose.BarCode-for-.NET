@@ -512,6 +512,79 @@ Using Aspose.BarCode, you can customize the start and stop symbols according to 
                 </Example>
               </Examples>
             </Folder>
+            <Folder>
+              <Title>Working with 2D Barcodes</Title>
+              <Description>This section includes the following example: 
+
+- 2D Barcodes Basic Features
+- 2D Barcodes Utility Features</Description>
+              <FolderName>WorkingWith2DBarcodes</FolderName>
+              <Order>3</Order>
+              <Folders>
+                <Folder>
+                  <Title>2D Barcodes Basic Features</Title>
+                  <Description>This section includes the following topics: 
+
+- How to Create Two Dimensional (2D) Barcodes
+- How to create a PDF417 Barcode
+- How to create a Datamatrix Barcode
+- How to create a QR Barcode
+- How to create a Aztec Barcode</Description>
+                  <FolderName>2DBarcodesBasicFeatures</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>How to Create Two Dimensional (2D) Barcodes</Title>
+                      <Description>Aspose.BarCode.BarCodeBuilder supports both one dimensional and two dimensional barcodes. It encapsulate both types of barcode into one unified interface. Creating two dimensional barcodes is just the same as creating one dimensional barcodes.</Description>
+                      <FolderName>CreateTwoDBarcodes</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>How to Create Two Dimensional (2D) Barcodes</DisplayName>
+                        <Url>How+to+Create+Two+Dimensional+%282D%29+Barcodes</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\result.bmp</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>How to create a PDF417 Barcode</Title>
+                      <Description>Pdf417 uses Reed Solomon error correction instead of check digits. This error correction allows the symbol to withstand some damage without causing loss of data. AIM standards recommend a minimum error correction level of 2.</Description>
+                      <FolderName>CreatePDF417Barcode</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>How to create a PDF417 Barcode</DisplayName>
+                        <Url>How+to+create+a+PDF417+Barcode</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.bmp</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>How to create a Datamatrix Barcode</Title>
+                      <Description>DataMatrix is being used to encode product and serial number information on electrical rating plates; to mark of surgical instruments in Japan; to identify lenses, circuit boards, and other items during manufacturing. DataMatrix barcodes can store up to 2000 characters.</Description>
+                      <FolderName>CreateDatamatrixBarcode</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>How to create a Datamatrix Barcode</DisplayName>
+                        <Url>How+to+create+a+Datamatrix+Barcode</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.bmp</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
           </Folders>
         </Folder>
       </Folders>

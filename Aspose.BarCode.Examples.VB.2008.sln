@@ -56,6 +56,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseChecksumAndSupplementDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeCode128Barcodes", "ProgrammersGuide\WorkingWithBarcode\BarcodeAdvancedFeatures\CustomizeCode128Barcodes\VisualBasic\CustomizeCode128Barcodes.vbproj", "{928DC883-F7EE-41F7-A5A0-A1DA73D036E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWith2DBarcodes", "WorkingWith2DBarcodes", "{78ADBD8B-8BF9-4950-8DCD-F1DC5EAAC488}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2DBarcodesBasicFeatures", "2DBarcodesBasicFeatures", "{B5283997-0095-4B65-B952-E4E9F7B4EF88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateTwoDBarcodes", "ProgrammersGuide\WorkingWithBarcode\WorkingWith2DBarcodes\2DBarcodesBasicFeatures\CreateTwoDBarcodes\VisualBasic\CreateTwoDBarcodes.vbproj", "{DA60959C-15FC-43E2-ADA4-02FB747E864F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePDF417Barcode", "ProgrammersGuide\WorkingWithBarcode\WorkingWith2DBarcodes\2DBarcodesBasicFeatures\CreatePDF417Barcode\VisualBasic\CreatePDF417Barcode.vbproj", "{974AF966-E4EE-4B5B-BEB4-87AEB526295B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateDatamatrixBarcode", "ProgrammersGuide\WorkingWithBarcode\WorkingWith2DBarcodes\2DBarcodesBasicFeatures\CreateDatamatrixBarcode\VisualBasic\CreateDatamatrixBarcode.vbproj", "{43444755-C9A5-4E94-BB2F-E405C093EA42}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KnowledgeBase", "KnowledgeBase", "{B316EEDA-9DBE-418C-90B3-C7EE0A0A9370}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TechnicalArticles", "TechnicalArticles", "{2DA379C7-7F5B-41DC-8607-92CFAE7EF318}"
@@ -67,6 +77,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognizeBarcodeFromPdf", "KnowledgeBase\TechnicalArticles\IntegrationWithAsposeComponents\RecognizeBarcodeFromPdf\VisualBasic\RecognizeBarcodeFromPdf.vbproj", "{8F2E6D0D-822E-45F7-8B81-6A46D847D187}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecognizeBarcodeFromWord", "KnowledgeBase\TechnicalArticles\IntegrationWithAsposeComponents\RecognizeBarcodeFromWord\VisualBasic\RecognizeBarcodeFromWord.vbproj", "{F90430BF-47A8-4A98-8B18-B4F6844F77A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfToImagesToBarCode", "KnowledgeBase\TechnicalArticles\IntegrationWithAsposeComponents\PdfToImagesToBarCode\VisualBasic\PdfToImagesToBarCode.vbproj", "{99ACDFA0-1CDE-445D-AF43-6EC591F78CA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -140,6 +152,18 @@ Global
 		{928DC883-F7EE-41F7-A5A0-A1DA73D036E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{928DC883-F7EE-41F7-A5A0-A1DA73D036E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{928DC883-F7EE-41F7-A5A0-A1DA73D036E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA60959C-15FC-43E2-ADA4-02FB747E864F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA60959C-15FC-43E2-ADA4-02FB747E864F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA60959C-15FC-43E2-ADA4-02FB747E864F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974AF966-E4EE-4B5B-BEB4-87AEB526295B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974AF966-E4EE-4B5B-BEB4-87AEB526295B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974AF966-E4EE-4B5B-BEB4-87AEB526295B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43444755-C9A5-4E94-BB2F-E405C093EA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43444755-C9A5-4E94-BB2F-E405C093EA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43444755-C9A5-4E94-BB2F-E405C093EA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE9156A-2118-4EA3-8FC6-3A2059E0E6C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE9156A-2118-4EA3-8FC6-3A2059E0E6C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE9156A-2118-4EA3-8FC6-3A2059E0E6C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -185,6 +209,12 @@ Global
 		{0EEA2DE2-10F9-4A61-A0EA-F0BF262E73B1} = {D399C59F-82EC-4A24-BA8B-307D27CC7315}
 		{91368264-D3CD-4826-BC28-11AD6B0859B2} = {D399C59F-82EC-4A24-BA8B-307D27CC7315}
 		{928DC883-F7EE-41F7-A5A0-A1DA73D036E0} = {D399C59F-82EC-4A24-BA8B-307D27CC7315}
+		{78ADBD8B-8BF9-4950-8DCD-F1DC5EAAC488} = {066E609F-ECF8-462A-9B13-E5987DD1DE16}
+		{B5283997-0095-4B65-B952-E4E9F7B4EF88} = {78ADBD8B-8BF9-4950-8DCD-F1DC5EAAC488}
+		{DA60959C-15FC-43E2-ADA4-02FB747E864F} = {B5283997-0095-4B65-B952-E4E9F7B4EF88}
+		{974AF966-E4EE-4B5B-BEB4-87AEB526295B} = {B5283997-0095-4B65-B952-E4E9F7B4EF88}
+		{43444755-C9A5-4E94-BB2F-E405C093EA42} = {B5283997-0095-4B65-B952-E4E9F7B4EF88}
+		{7DE9156A-2118-4EA3-8FC6-3A2059E0E6C1} = {B5283997-0095-4B65-B952-E4E9F7B4EF88}
 		{2DA379C7-7F5B-41DC-8607-92CFAE7EF318} = {B316EEDA-9DBE-418C-90B3-C7EE0A0A9370}
 		{5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C} = {2DA379C7-7F5B-41DC-8607-92CFAE7EF318}
 		{4DEA0A10-AF02-490E-9AEC-0E90E6F0C371} = {5AE9CDA6-ABFB-4D70-968F-45FBFB52FD2C}
