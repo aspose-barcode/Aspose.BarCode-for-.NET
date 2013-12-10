@@ -1,6 +1,16 @@
-#Aspose.BarCode for .NET Examples Repository
+##Aspose.BarCode for .NET Examples Repository
 
 This repository contains .NET Examples Projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx).
+<br/><br/>
+<p align="center">
+  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
+  </a>
+  &nbsp;
+  <a title="Download Examples ZIP" href="https://github.com/asposebarcode/Aspose_BarCode_NET/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
 
 ##How to use the Examples?
 
