@@ -582,6 +582,100 @@ Using Aspose.BarCode, you can customize the start and stop symbols according to 
                       <Type>Console</Type>
                     </Example>
                   </Examples>
+                  <Folders>
+                    <Folder>
+                      <Title>How to create a QR Barcode</Title>
+                      <Description>This section includes the following examples:
+
+- Produce a QR barcode
+- Error correction
+- Rotation
+- Encode Mode</Description>
+                      <FolderName>CreateQRBarcode</FolderName>
+                      <Order>4</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Produce a QR barcode</Title>
+                          <Description>QR barcode is a two dimensional barcode symbology developed in Japan. QR barcode has the following features: 
+
+- High capacity encoding of data, upto 7000 numeric digits or 4000 alphanumeric data
+- Dirt and damage resistant, a maximum 30% of codewords can be restored
+- Readable from all directions</Description>
+                          <FolderName>ProduceQRbarcode</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\test_qr.bmp</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Error Correction</Title>
+                          <Description>QR barcode can withstand certain damage and can still be decoded normally. This is decided by QR barcode's error correction level during encode. There are four levels of error correction, from low to high: 
+
+- LevelL. Allows recovery of 7% of the code text
+- LevelM. Allows recovery of 15% of the code text
+- LevelQ. Allows recovery of 25% of the code text
+- LevelH. Allows recovery of 30% of the code text</Description>
+                          <FolderName>ErrorCorrection</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\test_qr.bmp</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Rotation</Title>
+                          <Description>QR barcode can be read from any direction and in this example we will rotate the barcode using Aspose.BarCode API.</Description>
+                          <FolderName>Rotation</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\test_qr.bmp</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Encode Mode</Title>
+                          <Description>QR barcode supports below 3 encoding modes:
+
+- Numeric: Only encode numeric data. Ignore other characters
+- Alpha-numeric: Only encode numbers and alphabets. Ignore other characters
+- Binary: Encode all kind of dataAll above modes are supported by Aspose.BarCode for .NET. 
+
+However, you may also specify Auto encode mode to choose the best encoding mode.</Description>
+                          <FolderName>EncodeMode</FolderName>
+                          <Order>4</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\barcode.png</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
                 </Folder>
               </Folders>
             </Folder>
