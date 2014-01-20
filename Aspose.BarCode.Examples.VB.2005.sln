@@ -68,6 +68,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateDatamatrixBarcode", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreateQRBarcode", "CreateQRBarcode", "{4130081A-75DE-4AE2-A810-5187A2D14EAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProduceQRbarcode", "ProgrammersGuide\WorkingWithBarcode\WorkingWith2DBarcodes\2DBarcodesBasicFeatures\CreateQRBarcode\ProduceQRbarcode\VisualBasic\ProduceQRbarcode.vbproj", "{70ADC4A7-EF6B-4FD8-A8FB-7DF46E66FBC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ErrorCorrection", "ProgrammersGuide\WorkingWithBarcode\WorkingWith2DBarcodes\2DBarcodesBasicFeatures\CreateQRBarcode\ErrorCorrection\VisualBasic\ErrorCorrection.vbproj", "{A7273280-23D3-47A1-8781-41537DCAFBEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rotation", "ProgrammersGuide\WorkingWithBarcode\WorkingWith2DBarcodes\2DBarcodesBasicFeatures\CreateQRBarcode\Rotation\VisualBasic\Rotation.vbproj", "{3CD6C750-5F55-4186-8F41-854A88AEAFB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodeMode", "ProgrammersGuide\WorkingWithBarcode\WorkingWith2DBarcodes\2DBarcodesBasicFeatures\CreateQRBarcode\EncodeMode\VisualBasic\EncodeMode.vbproj", "{59EBCF68-1CAA-4317-8C76-EA64E9713A4C}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KnowledgeBase", "KnowledgeBase", "{B316EEDA-9DBE-418C-90B3-C7EE0A0A9370}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TechnicalArticles", "TechnicalArticles", "{2DA379C7-7F5B-41DC-8607-92CFAE7EF318}"
