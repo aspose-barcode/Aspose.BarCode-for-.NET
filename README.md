@@ -3,7 +3,7 @@
 This repository contains .NET Examples Projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx).
 <br/><br/>
 <p align="center">
-  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx">
+  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
   </a>
   &nbsp;
@@ -50,9 +50,9 @@ This package contains C# and VB.NET Example Projects for [Aspose.BarCode for .NE
   <tr><th>BarCode Generation<th>Description</th></tr>
   <tr><td>Generate Liner 2D Barcodes</td><td>This is a simple example that generates a BarCode of selected Symbology Type.</td></tr>
   <tr><td>Setting Advanced Options</td><td>This example generates a BarCode by setting advanced options like CodeText location, Rotation, Borders etc.</td></tr>
-  <tr><td>Insert BarCode in an Excel file</td><td>This example generates a BarCode and insert into an Excel file using [Aspose.Cells for .NET](http://www.aspose.com/categories/.net-components/aspose.cells-for-.net/default.aspx).</td></tr>
-  <tr><td>Insert BarCode in a Word Document</td><td>This example shows how to integrate Aspose.BarCode for .NET with [Aspose.Words for .NET](http://www.aspose.com/categories/.net-components/aspose.words-for-.net/default.aspx) to insert barcodes in a Word document.</td></tr>
-  <tr><td>Insert BarCode in a PDF file</td><td>This example shows how to integrate Aspose.BarCode for .NET with [Aspose.Pdf for .NET](http://www.aspose.com/categories/.net-components/aspose.pdf-for-.net/default.aspx) to insert barcodes in a PDF document.</td></tr>
+  <tr><td>Insert BarCode in an Excel file</td><td>This example generates a BarCode and insert into an Excel file using [Aspose.Cells for .NET](http://www.aspose.com/.net/excel-component.aspx).</td></tr>
+  <tr><td>Insert BarCode in a Word Document</td><td>This example shows how to integrate Aspose.BarCode for .NET with [Aspose.Words for .NET](http://www.aspose.com/.net/word-component.aspx) to insert barcodes in a Word document.</td></tr>
+  <tr><td>Insert BarCode in a PDF file</td><td>This example shows how to integrate Aspose.BarCode for .NET with [Aspose.Pdf for .NET](http://www.aspose.com/.net/pdf-component.aspx) to insert barcodes in a PDF document.</td></tr>
   <tr><td>Insert BarCode in a Multi-page Tiff file</td><td>This example demonstrates the ability of Aspose.BarCode for .NET to generated and inserted a BarCode into a multi-page TIFF image.</td></tr>
   <tr><td>Use BarCode in Crystal Reports</td><td>This example features generating the barcodes in Crystal Reports.</td></tr>
   
@@ -68,9 +68,9 @@ This package contains C# and VB.NET Example Projects for [Aspose.BarCode for .NE
 ##Contact Us
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
-+ **Product Home:** [Aspose.BarCode for .NET](http://www.aspose.com/categories/.net-components/aspose.barcode-for-.net/default.aspx)
++ **Product Home:** [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx)
 + **Download:** [Downlolad Aspose.BarCode for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.barcode-for-.net/default.aspx)
-+ **Documentation:** [Aspose.BarCode for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.barcode-for-.net/index.html)
++ **Documentation:** [Aspose.BarCode for .NET Documentation](http://www.aspose.com/docs/display/barcodenet/Home)
 + **Forum:** [Aspose.BarCode for .NET Forum](http://www.aspose.com/community/forums/aspose.barcode-product-family/193/showforum.aspx)
 + **Blog:** [Aspose.BarCode for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-barcode-product-family.html)
  
