@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>Programmers Guide</Title>
+      <Description>This Section includes examples related to following topics:
+ 
+- Introduction
+- Working with Barcode
+- Working with Barcode Image
+- Working with 2D Barcodes
+- Working with Barcode Recognition
+- Using with Microsoft .NET Compact Framework</Description>
+      <FolderName>ProgrammersGuide</FolderName>
+      <Order>1</Order>
+      <Folders>
+        <Folder>
+          <Title>Working with Barcode Image</Title>
+          <Description>This Section includes exampels related to following topics: 
+
+- Barcode Image Basic Features 
+- Barcode Image Utility Features</Description>
+          <FolderName>WorkingWithBarcodeImage</FolderName>
+          <Order>1</Order>
+          <Folders>
+            <Folder>
+              <Title>Barcode Image Utility Features</Title>
+              <Description>This Section includes examples related to following topics: 
+
+- Customize Barcode Image Resolution 
+- Set Size Unit for the Barcode Image 
+- Save Barcode Images to different Formats 
+- Save Barcode Image to Streams 
+- Print Barcode Image</Description>
+              <FolderName>BarcodeImageUtilityFeatures</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Save Barcode Images to different Formats</Title>
+                  <Description>Aspose.BarCode facilitates its developers to save the barcode images to most of the popular image formats. All barcode generating classes (BarCodeBuilder, BarCodeControl or BarCodeWebControl) provided by Aspose.BarCode, have a public method, Save. 
+Save method takes an instance of System.Drawing.Imaging.ImageFormat class (which is the part of Microsoft .NET Framework). Following image formats can be passed to Save method of the barcode class as an argument:
+
+- ImageFormat.Bmp
+- ImageFormat.Emf
+- ImageFormat.Exif
+- ImageFormat.Gif
+- ImageFormat.Icon
+- ImageFormat.Jpeg
+- ImageFormat.MemoryBmp
+- ImageFormat.Png
+- ImageFormat.Tiff
+- ImageFormat.Wmf
+
+This example explains this concept in a very easy way.</Description>
+                  <FolderName>SaveBarcodeImagesToDifferentFormats</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Save barcode images to different formats</DisplayName>
+                    <Url>save+barcode+images+to+different+formats</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Customize Barcode Image Resolution</Title>
+                  <Description>What if developers need to set the resolution of their barcode images according to their custom settings? Well, Aspose.BarCode also addresses this issue and provides Resolution class that serves developers to customize the resolution of their barcode images in any way they want.</Description>
+                  <FolderName>CustomizeBarcodeImageResolution</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Customize Barcode Image Resolution</DisplayName>
+                    <Url>Customize+Barcode+Image+Resolution</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Size Unit for the Barcode Image</Title>
+                  <Description>To change the measuring unit of the barcode image, developers can make use of GraphicsUnit property of any barcode class (BarCodeBuilder, BarCodeControl or BarCodeWebControl) provided by Aspose.BarCode. GraphicsUnit property accepts any pre-defined value in System.Drawing.GraphicsUnit enumeration.</Description>
+                  <FolderName>SetSizeUnitForBarcodeImage</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Set Size Unit for the Barcode Image</DisplayName>
+                    <Url>Set+Size+Unit+for+the+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Print Barcode Image</Title>
+                  <Description>Printing barcode image can be easily done with Aspose.BarCode for .NET.</Description>
+                  <FolderName>PrintBarcodeImage</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Print Barcode Image</DisplayName>
+                    <Url>Print+Barcode+Image</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Generate Barcode by Specifying Custom Image Size</Title>
+                  <Description>Aspose.BarCode for automatically adjusts the image size (width and height) according to the generated barcodes size. But, you can also control the image size by specifying height and width of image using BarCodeBuilder.ImageHeight and ImageWidth properties. BarCodeBuilder.AutoSize should be set to false in order to customize the image size.</Description>
+                  <FolderName>GenerateBarcodeCustomSize</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Generate Barcode by Specifying Custom Image Size</DisplayName>
+                    <Url>Generate+Barcode+by+Specifying+Custom+Image+Size</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Barcode Image Basic Features</Title>
+              <Description>This section includes the following topics: 
+
+1: Working with Image Borders
+2: Colorize any Part of the Barcode Image
+3: Rotate Barcode Image
+4: Control Barcode Image Quality
+5: Set Barcode Image Margins
+6: How to Detect Orientation of a Detected Bar Code</Description>
+              <FolderName>BarcodeImageBasicFeatures</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Working with Image Borders</Title>
+                  <Description>Aspose.BarCode allows its users to handle everything about barcode image borders, which include setting border style, margins and its width.</Description>
+                  <FolderName>WorkingWithImageBorders</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Working with Image Borders</DisplayName>
+                    <Url>Working+with+Image+Borders</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Colorize any Part of the Barcode Image</Title>
+                  <Description>Normally, barcodes are generated and printed in black and white colors. But, what if it is required to generate a colored barcode? Keeping this possible requirement in mind, Aspose.BarCode gives free hand to developers to change the colors of:
+ 
+-Barcode
+-Code text
+-Barcode Background
+-Barcode Border
+-Caption</Description>
+                  <FolderName>ColorizeanyPartoftheBarcodeImage</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Colorize any Part of the Barcode Image</DisplayName>
+                    <Url>Colorize+any+Part+of+the+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Rotate Barcode Image</Title>
+                  <Description>Aspose.BarCode allows developers to rotate the barcode image by setting the RotationAngleF property of the barcode class.</Description>
+                  <FolderName>RotateBarcodeImage</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Rotate Barcode Image</DisplayName>
+                    <Url>Rotate+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Control Barcode Image Quality</Title>
+                  <Description>Aspose.BarCode can render anti-aliased barcode images that provide much better quality due to anti-aliasing. The quality of anti-aliased barcode images is more distinguished when barcode is generated with high resolution.</Description>
+                  <FolderName>ControlBarcodeImageQuality</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Control Barcode Image Quality</DisplayName>
+                    <Url>Control+Barcode+Image+Quality</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Barcode Image Margins</Title>
+                  <Description>It is possible to set barcode image margins using Aspose.BarCode. Margins is the area between the edges of the barcode image and its border. By default, the border of barcode image is visible on the barcode.</Description>
+                  <FolderName>SetBarcodeImageMargins</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Set Barcode Image Margins</DisplayName>
+                    <Url>Set+Barcode+Image+Margins</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>How to Detect Orientation of a Detected Bar Code</Title>
+                  <Description>Aspose.BarCode allows developers to detect orientation of a detected bar code by calling GetAngle method of BarCodeReader class.</Description>
+                  <FolderName>DetectOrientationOfBarCode</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>How to Detect Orientation of a Detected Bar Code</DisplayName>
+                    <Url>How+to+Detect+Orientation+of+a+Detected+Bar+Code</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+        <Folder>
+          <Title>Working with Barcode</Title>
+          <Description>This section includes example for following topics: 
+
+- Barcode Basic Features 
+- Barcode Utility Features 
+- Barcode Advance Features</Description>
+          <FolderName>WorkingWithBarcode</FolderName>
+          <Order>2</Order>
+          <Folders>
+            <Folder>
+              <Title>Barcode Utility Features</Title>
+              <Description>This section includes examples related to the following topics: 
+
+- Specify Symbologies for Barcodes 
+- Set Code text for Barcode 
+- Control the appearance of Code text 
+- Manage Caption of the Barcode</Description>
+              <FolderName>BarcodeUtilityFeatures</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>Control the appearance of Code text</Title>
+                  <Description>Aspose.BarCode provides complete control over the appearance of the Code text in the barcode image. There are many settings that can be applied on the Code text to customize its appearance. This example provides overview of how we can change the appearance(color, alignment and space) of barcode text.</Description>
+                  <FolderName>ControlAppearanceOfCodeText</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Control the appearance of Code text</DisplayName>
+                    <Url>Control+the+appearance+of+Code+text</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Manage Caption of the Barcode</Title>
+                  <Description>Aspose.BarCode provides capability to customize the text, alignment, font, color and space of the caption using a Caption class to serve this purpose. All barcode generating classes have two properties, CaptionAbove and CaptionBelow that take an instance of Caption class. So, developers can create an object of Caption class and then assign that object to CaptionAbove, CaptionBelow or both properties to set the captions of the barcode. This example describes use and customization of Caption using Aspose.BarCode</Description>
+                  <FolderName>ManageCaptionOfBarcode</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Manage Caption of the Barcode</DisplayName>
+                    <Url>Manage+Caption+of+the+Barcode</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Specify Symbologies for Barcodes</Title>
+                  <Description>Aspose.BarCode supports nearly all popular barcode symbologies. All barcode generating classes like LinearBarCode , BarCodeControl and BarCodeWebControl have a common property named as SymbologyType that is used to set the symbology of a barcode.
+ Developers can assign any symbology to SymbologyType property from the pre-defined symbologies supported by Aspose.BarCode in Symbology enumeration.</Description>
+                  <FolderName>SpecifySymbologiesForBarcodes</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Specify Symbologies for Barcodes</DisplayName>
+                    <Url>Specify+Symbologies+for+Barcodes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Code text for Barcode</Title>
+                  <Description>A barcode is the representation of characters in the form of bars and spaces between them. So, it is a simple fact that we would also have to assign some characters to Aspose.BarCode so that the input characters could be converted to a barcode. We know that Aspose.BarCode has three different classes (BarCodeBuilder, BarCodeControl and BarCodeWebControl) to create barcodes for different kinds of applications. All these classes have a common property, CodeText. All characters to be encoded to barcode are assigned to CodeText property of any barcode class.</Description>
+                  <FolderName>SetCodeTextForBarcode</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Set Code text for Barcode</DisplayName>
+                    <Url>Set+Code+text+for+Barcode</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Barcode Advanced Features</Title>
+              <Description>This section includes examples related to following topics: 
+
+- Set Height of the Bars in the Barcode Image
+- Manage X Dimension and Y Dimension
+- Use Checksum and Supplement Data for Barcodes
+- Wide Narrow Ratio
+- Generate AustraliaPost Barcode with Different Format Control Code Options
+- Set Start and Stop Symbols of Codabar Barcode
+- Customize Code128 Barcodes</Description>
+              <FolderName>BarcodeAdvancedFeatures</FolderName>
+              <Order>2</Order>
+              <Examples>
+                <Example>
+                  <Title>Set Height of the Bars in the Barcode Image</Title>
+                  <Description>F developers want to control the height of the bars in the barcode, they can do it very easily by just setting the BarHeight property of all barcode generating classes offered by Aspose.BarCode. BarHeight property takes a float value to set the bar height and it's measuring unit is millimeter by default.
+
+To change the measuring unit of the bar height, developers can make use of ImageUnit property of any barcode class ( BarCodeBuilder , BarCodeControl or BarCodeWebControl ) provided by Aspose.BarCode. This examples depicts the changing of height of BarCode bars in detail.</Description>
+                  <FolderName>SetHeightBarcodeBars</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Set Height of the Bars in the Barcode Image</DisplayName>
+                    <Url>Set+Height+of+the+Bars+in+the+Barcode+Image</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode3.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode7.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode11.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Manage X Dimension and Y Dimension</Title>
+                  <Description>Aspose.BarCode provides an xDimension property in all barcode generating classes that allows developers to set the X-Dimension of the bars in the barcode. Normally, X-Dimension is configured in Mils but to ease the job of developers, Aspose.BarCode uses Millimeter as a measuring unit by default. But of course, developers can modify the measuring unit according to their choice using ImageUnit property of any barcode class. Just like X-Dimension in linear barcodes, Y-Dimension is for 2D barcodes. This examples discusses the management of X and Y dimensions using Aspose.BarCode in a very easy way.</Description>
+                  <FolderName>ManageXYDimension</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Manage X Dimension and Y Dimension</DisplayName>
+                    <Url>Manage+X+Dimension+and+Y+Dimension</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcodeXDimensionChanged.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcodeYDimensionChanged.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Wide Narrow Ratio</Title>
+                  <Description>Aspose.BarCode facilitates its developers to make use of WideNarrowRatio property of a barcode class to control the ratio of wide/narrow element of the barcode. To specify the ratio, you just need to pass a float value to the WideNarrowRatio property. This example depicts the usage of WideNarrowRatio property directly from the code.</Description>
+                  <FolderName>WideNarrowRatio</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Wide Narrow Ratio</DisplayName>
+                    <Url>Wide+Narrow+Ratio</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_3.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_5.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_7.jpg</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\barcode_ratio_9.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Generate AustraliaPost Barcode</Title>
+                  <Description>AustraliaPost barcode can be generated using following 6 different format control code options: 
+
+1.Standard
+2.ReplyPaid
+3.Customer2
+4.Customer3
+5.Routing
+6.Redirection</Description>
+                  <FolderName>GenerateAustraliaPostBarcode</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Generate AustraliaPost Barcode with Different Format Control Code Options</DisplayName>
+                    <Url>Generate+AustraliaPost+Barcode+with+Different+Format+Control+Code+Options</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Customer2.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Customer3.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Redirection.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\ReplyPaid.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Routing.png</Path>
+                    </DataFile>
+                    <DataFile>
+                      <Path>..\Data\Standard.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Set Start and Stop Symbols of Codabar Barcode</Title>
+                  <Description>The Codabar barcode has the following structure: 
+
+1.Start Symbol at the beginning (A, B, C or D)
+2.Data to be encoded
+3.End Symbol (A, B, C or D)
+
+Using Aspose.BarCode, you can customize the start and stop symbols according to your requirements, using BarCodeBuilder.CodabarStartSymbol and BarCodeBuilder.CodabarStopSymbol properties.</Description>
+                  <FolderName>SetStartAndStopSymbolsOfCodabarBarcode</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Set Start and Stop Symbols of Codabar Barcode</DisplayName>
+                    <Url>Set+Start+and+Stop+Symbols+of+Codabar+Barcode</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Use Checksum and Supplement Data for Barcodes</Title>
+                  <Description>Using Aspose.BarCode,developers can enable Checksum for the barcode by setting the EnableCheckSum property of the barcode class to true. Checksum can also be made visible or hidden in the barcode image by setting the EnableChecksum property to true or false.</Description>
+                  <FolderName>UseChecksumAndSupplementData</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Use Checksum and Supplement Data for Barcodes</DisplayName>
+                    <Url>Use+Checksum+and+Supplement+Data+for+Barcodes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\barcode.jpg</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Customize Code128 Barcodes</Title>
+                  <Description>It is also possible to use combined code sets to generate a single barcode. For example, you may generate a Code128 barcode using both Code set A and B. For achieving this, we have a special class Code128CodeBuilder .</Description>
+                  <FolderName>CustomizeCode128Barcodes</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Customize Code128 Barcodes</DisplayName>
+                    <Url>Customize+Code128+Barcodes</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\test.png</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with 2D Barcodes</Title>
+              <Description>This section includes the following example: 
+
+- 2D Barcodes Basic Features
+- 2D Barcodes Utility Features</Description>
+              <FolderName>WorkingWith2DBarcodes</FolderName>
+              <Order>3</Order>
+              <Folders>
+                <Folder>
+                  <Title>2D Barcodes Basic Features</Title>
+                  <Description>This section includes the following topics: 
+
+- How to Create Two Dimensional (2D) Barcodes
+- How to create a PDF417 Barcode
+- How to create a Datamatrix Barcode
+- How to create a QR Barcode
+- How to create a Aztec Barcode</Description>
+                  <FolderName>2DBarcodesBasicFeatures</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>How to Create Two Dimensional (2D) Barcodes</Title>
+                      <Description>Aspose.BarCode.BarCodeBuilder supports both one dimensional and two dimensional barcodes. It encapsulate both types of barcode into one unified interface. Creating two dimensional barcodes is just the same as creating one dimensional barcodes.</Description>
+                      <FolderName>CreateTwoDBarcodes</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>How to Create Two Dimensional (2D) Barcodes</DisplayName>
+                        <Url>How+to+Create+Two+Dimensional+%282D%29+Barcodes</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\result.bmp</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>How to create a PDF417 Barcode</Title>
+                      <Description>Pdf417 uses Reed Solomon error correction instead of check digits. This error correction allows the symbol to withstand some damage without causing loss of data. AIM standards recommend a minimum error correction level of 2.</Description>
+                      <FolderName>CreatePDF417Barcode</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>How to create a PDF417 Barcode</DisplayName>
+                        <Url>How+to+create+a+PDF417+Barcode</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.bmp</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>How to create a Datamatrix Barcode</Title>
+                      <Description>DataMatrix is being used to encode product and serial number information on electrical rating plates; to mark of surgical instruments in Japan; to identify lenses, circuit boards, and other items during manufacturing. DataMatrix barcodes can store up to 2000 characters.</Description>
+                      <FolderName>CreateDatamatrixBarcode</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>How to create a Datamatrix Barcode</DisplayName>
+                        <Url>How+to+create+a+Datamatrix+Barcode</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.bmp</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                  <Folders>
+                    <Folder>
+                      <Title>How to create a QR Barcode</Title>
+                      <Description>This section includes the following examples:
+
+- Produce a QR barcode
+- Error correction
+- Rotation
+- Encode Mode</Description>
+                      <FolderName>CreateQRBarcode</FolderName>
+                      <Order>4</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Produce a QR barcode</Title>
+                          <Description>QR barcode is a two dimensional barcode symbology developed in Japan. QR barcode has the following features: 
+
+- High capacity encoding of data, upto 7000 numeric digits or 4000 alphanumeric data
+- Dirt and damage resistant, a maximum 30% of codewords can be restored
+- Readable from all directions</Description>
+                          <FolderName>ProduceQRbarcode</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\test_qr.bmp</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Error Correction</Title>
+                          <Description>QR barcode can withstand certain damage and can still be decoded normally. This is decided by QR barcode's error correction level during encode. There are four levels of error correction, from low to high: 
+
+- LevelL. Allows recovery of 7% of the code text
+- LevelM. Allows recovery of 15% of the code text
+- LevelQ. Allows recovery of 25% of the code text
+- LevelH. Allows recovery of 30% of the code text</Description>
+                          <FolderName>ErrorCorrection</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\test_qr.bmp</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Rotation</Title>
+                          <Description>QR barcode can be read from any direction and in this example we will rotate the barcode using Aspose.BarCode API.</Description>
+                          <FolderName>Rotation</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\test_qr.bmp</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Encode Mode</Title>
+                          <Description>QR barcode supports below 3 encoding modes:
+
+- Numeric: Only encode numeric data. Ignore other characters
+- Alpha-numeric: Only encode numbers and alphabets. Ignore other characters
+- Binary: Encode all kind of dataAll above modes are supported by Aspose.BarCode for .NET. 
+
+However, you may also specify Auto encode mode to choose the best encoding mode.</Description>
+                          <FolderName>EncodeMode</FolderName>
+                          <Order>4</Order>
+                          <DocLink>
+                            <DisplayName>How to create a QR Barcode</DisplayName>
+                            <Url>How+to+create+a+QR+Barcode</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\barcode.png</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
+                </Folder>
+              </Folders>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+    <Folder>
+      <Title>Knowledge Base</Title>
+      <Description>This Section includes examples related to following topics: 
+
+- Technical Articles
+- Utilize Aspose.BarCode in Other Programming Languages</Description>
+      <FolderName>KnowledgeBase</FolderName>
+      <Order>2</Order>
+      <Folders>
+        <Folder>
+          <Title>Technical Articles</Title>
+          <Description>This Section includes examples related to following topics: 
+
+- Printing 
+- Databases 
+- Reporting 
+- Integration with Aspose Components 
+- How to read barcode from multi-page TIFF images 
+- How to Generate and Recognize BarCodes for UTF-8 (Unicode) Characters 
+- Get the Product Name and DLL Version Information 
+- How to use Web Service to Create Barcode</Description>
+          <FolderName>TechnicalArticles</FolderName>
+          <Order>1</Order>
+          <Folders>
+            <Folder>
+              <Title>Integration with Aspose Components</Title>
+              <Description>This Section includes examples related to following topics: 
+
+- How to Integrate Aspose.BarCode for .NET with Aspose.Pdf? 
+- Recognize Barcode from Pdf Document 
+- How to Integrate Aspose.BarCode for .NET with Aspose.Words? 
+- Recognize Barcode from Word Document 
+- How to Integrate Aspose.BarCode for .NET with Aspose.Cells?</Description>
+              <FolderName>IntegrationWithAsposeComponents</FolderName>
+              <Order>1</Order>
+              <Examples>
+                <Example>
+                  <Title>How to Integrate Aspose.BarCode with Aspose.Words</Title>
+                  <Description>In this example, we will learn about how we can add a barcode image generated by Aspose.BarCode into a Microsoft Word document (*.doc) programmatically by integrating Aspose.BarCode and Aspose.Word components.</Description>
+                  <FolderName>IntegrateWithAsposeWords</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>How to Integrate Aspose.BarCode for .NET with Aspose.Words</DisplayName>
+                    <Url>How+to+Integrate+Aspose.BarCode+for+.NET+with+Aspose.Words</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Myfile.doc</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Recognize Barcode from Pdf Document</Title>
+                  <Description>In this example, we will recognize barcode from a pdf document using Aspose.BarCode and Aspose.Pdf.
+We will follow the below steps for reading barcode from the pdf document:
+
+- Extract image from pdf document using Aspose.Pdf
+- Save the extracted image as stream
+- Pass the image in form of stream to Aspose.BarCode
+- Read barcode from the image</Description>
+                  <FolderName>RecognizeBarcodeFromPdf</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Recognize Barcode from Pdf Document</DisplayName>
+                    <Url>Recognize+Barcode+from+Pdf+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\document.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Recognize Barcode from Word Document</Title>
+                  <Description>In this example, recognition of barcode from a Word document using Aspose.BarCode and Aspose.Words is performed and is explained in detail.
+
+We will follow the below steps for reading barcode from the Word document:
+
+- Extract image from Word document using Aspose.Words for .NET
+- Save the extracted image as stream
+- Pass the image in form of stream to Aspose.BarCode for .NET
+- Read barcode from the image</Description>
+                  <FolderName>RecognizeBarcodeFromWord</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Recognize Barcode from Word Document</DisplayName>
+                    <Url>Recognize+Barcode+from+Word+Document</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\input.doc</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Export Pdf Pages to Images and Recognize BarCode</Title>
+                  <Description>In this example, we will recognize barcode from a pdf document using Aspose.BarCode for .NET and Aspose.Pdf for .NET. We will follow the below steps for reading barcode from the pdf document:
+
+1.Export Pdf page to image using Aspose.Pdf for .NET
+2.Save the extracted image as stream
+3.Pass the image in form of stream to Aspose.BarCode for .NET
+4.Read barcode from the image
+5.Repeat above steps till the end of Pdf document</Description>
+                  <FolderName>PdfToImagesToBarCode</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Export Pdf Pages to Images and Recognize BarCode</DisplayName>
+                    <Url>Export+Pdf+Pages+to+Images+and+Recognize+BarCode</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\document.pdf</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+          </Folders>
+        </Folder>
+      </Folders>
+    </Folder>
+  </Folders>
+</Data>
