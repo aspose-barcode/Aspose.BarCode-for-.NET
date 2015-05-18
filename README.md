@@ -1,6 +1,6 @@
 ##Aspose.BarCode for .NET Repository
 
-This package contains [Examples](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Examples) and Showcase projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx) and will help you write your own applications.
+This package contains [Examples](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Examples) for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx) and will help you write your own applications.
 
 <p align="center">
 
@@ -12,7 +12,6 @@ This package contains [Examples](https://github.com/asposebarcode/Aspose_BarCode
 Directory | Description
 --------- | -----------
 [Examples](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to product features
-[Showcases](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Showcases)  | Standalone ready-to-use applications that demonstrate some specific use cases
 
 ##How to use the Examples?
 
