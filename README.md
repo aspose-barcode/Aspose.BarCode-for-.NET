@@ -1,28 +1,24 @@
-##Aspose.BarCode for .NET Examples Repository
+##Aspose.BarCode for .NET Repository
 
-This repository contains .NET Examples Projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx).
-<br/><br/>
+This package contains [Examples](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Examples) and Showcase projects for [Aspose.BarCode for .NET](http://www.aspose.com/.net/barcode-component.aspx) and will help you write your own applications.
+
 <p align="center">
-  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx">
-	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
-  </a>
-  &nbsp;
-  <a title="Download Examples ZIP" href="https://github.com/asposebarcode/Aspose_BarCode_NET/archive/master.zip">
+
+  <a title="Download complete Aspose.BarCode for .NET source code" href="https://github.com/asposebarcode/Aspose_BarCode_NET/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
+Directory | Description
+--------- | -----------
+[Examples](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to product features
+[Showcases](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Showcases)  | Standalone ready-to-use applications that demonstrate some specific use cases
+
 ##How to use the Examples?
-
-###With the Examples Dashboard
-
-Download the [Aspose Examples Dashboard for .NET](http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
-
-![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/04/Dotnet-Dashboard.png "Aspose Examples Dashboard")
 
 ###With IDE
 
-Clone or Download the ZIP and extract the contents to your local hard drive. It has Solution (SLN) files for Microsoft Visual Studio 2005, 2008 and 2010.
+Clone or Download the ZIP and extract the contents to your local hard drive. It has Solution (SLN) files for Microsoft Visual Studio 2005, 2008, 2010 and 2012.
 
 Also download the [latest version](http://www.aspose.com/community/files/51/.net-components/aspose.barcode-for-.net/default.aspx) of Aspose.BarCode for .NET and set/fix dll references.
 
