@@ -8,6 +8,6 @@ This package contains C# and VB.NET Example Projects for [Aspose.BarCode for .NE
   </a>
 </p>
 
-## How to Run the Examples?
+## How to run the Examples?
 
 Each example is provided in the form of a separate Visual Studio project. You can just download the repository, browse the folder and open the file in Visual Studio. For more details, visit our [documentation website](http://www.aspose.com/docs/display/barcodenet/How+to+Run+the+Examples).
