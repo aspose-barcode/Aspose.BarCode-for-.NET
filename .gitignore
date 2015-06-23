@@ -16,3 +16,8 @@ out/
 Out/
 Out*/
 Data/*Out*
+TestResults/
+*.vsmdi
+test-results/
+*.userprefs
+packages/

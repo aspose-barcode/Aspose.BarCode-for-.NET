@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{241E5DF9-163C-4E21-9751-F709472B01F5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp</RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.BarCode">
+      <HintPath>..\packages\Aspose.BarCode.7.0.0\lib\net4.0\Aspose.BarCode.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarCode-Image\Basic-Features\BarcodeImageBorders.cs" />
+    <Compile Include="BarCode-Image\Basic-Features\BarcodeImageMargins.cs" />
+    <Compile Include="BarCode-Image\Basic-Features\BarcodeImageQuality.cs" />
+    <Compile Include="BarCode-Image\Basic-Features\ColorizeAnyPartoftheBarcodeImage.cs" />
+    <Compile Include="BarCode-Image\Basic-Features\RotateBarcodeImage.cs" />
+    <Compile Include="BarCode-Image\Utility-Features\BarcodeCustomSize.cs" />
+    <Compile Include="BarCode-Image\Utility-Features\BarcodeImageResolution.cs" />
+    <Compile Include="BarCode-Image\Utility-Features\PrintBarcodeImage.cs" />
+    <Compile Include="BarCode-Image\Utility-Features\SaveBarcodeImagesToDifferentFormats.cs" />
+    <Compile Include="BarCode-Image\Utility-Features\SetSizeUnitForBarcodeImage.cs" />
+    <Compile Include="BarCode-Recognition\DetectOrientationOfBarCode.cs" />
+    <Compile Include="Programming-BarCode\BarcodeCaption.cs" />
+    <Compile Include="Programming-BarCode\ChecksumSupplementData.cs" />
+    <Compile Include="Programming-BarCode\CodabarStartStopSymbols.cs" />
+    <Compile Include="Programming-BarCode\CodetextAppearance.cs" />
+    <Compile Include="Programming-BarCode\Create2DBarcodes.cs" />
+    <Compile Include="Programming-BarCode\CreateCode128Barcode.cs" />
+    <Compile Include="Programming-BarCode\CreateDatamatrixBarcode.cs" />
+    <Compile Include="Programming-BarCode\CreatePDF417Barcode.cs" />
+    <Compile Include="Programming-BarCode\CreateQRbarcode.cs" />
+    <Compile Include="Programming-BarCode\GenerateAustraliaPostBarcode.cs" />
+    <Compile Include="Programming-BarCode\ManageXYDimension.cs" />
+    <Compile Include="Programming-BarCode\RotateBarcode.cs" />
+    <Compile Include="Programming-BarCode\SetQREncodeMode.cs" />
+    <Compile Include="Programming-BarCode\SetCodeText.cs" />
+    <Compile Include="Programming-BarCode\SetHeightBarcodeBars.cs" />
+    <Compile Include="Programming-BarCode\SetQRErrorCorrection.cs" />
+    <Compile Include="Programming-BarCode\SpecifySymbology.cs" />
+    <Compile Include="Programming-BarCode\WideNarrowRatio.cs" />
+    <Compile Include="RunExamples.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BarCode-Image\Data\" />
+    <Folder Include="BarCode-Recognition\Data\" />
+    <Folder Include="Programming-BarCode\Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
