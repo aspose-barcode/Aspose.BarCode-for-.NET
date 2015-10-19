@@ -14,6 +14,7 @@ Aspose.BarCode for .NET is a robust and reliable barcode generation and recognit
 Directory | Description
 --------- | -----------
 [Examples](https://github.com/asposebarcode/Aspose_BarCode_NET/tree/master/Examples)  | A collection of .NET examples that help you learn how to product features
+[Plugins](Plugins)  | Standalone Plugins that will demonstrate one or multiple features on Aspose.BarCode for .NET
 
 ## Resources
 
