@@ -2,10 +2,10 @@
 
 [Aspose.BarCode for .NET](http://www.aspose.com/products/barcode/net) is a set of Barcode APIs to generate, read and recognize 1D and 2D barcodes from any image at any angle. It is written in managed C# thus allowing developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, ASP.NET, WPF, .NET Compact Framework and Silverlight).
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and [Showcase](Showcases) projects for [Aspose.BarCode for .NET](http://www.aspose.com/products/barcode/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.BarCode for .NET](http://www.aspose.com/products/barcode/net) to help you learn and write your own applications.
 
 <p align="center">
-  <a title="Download complete Aspose.BarCode for .NET source code" href="/archive/master.zip">
+  <a title="Download complete Aspose.BarCode for .NET source code" href="archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
