@@ -8,7 +8,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic
     Module RunExamples
 
         Sub Main()
-            Console.WriteLine("Open RunExamples.vb. \nIn Main() method uncomment the example that you want to run.")
+            Console.WriteLine("Open RunExamples.vb." & vbLf & "In Main() method uncomment the example that you want to run.")
             Console.WriteLine("=====================================================")
 
             ' Uncomment the example that you want to run.
