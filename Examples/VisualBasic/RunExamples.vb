@@ -1,85 +1,92 @@
 ﻿Imports System.IO
+Imports Aspose.BarCode.Examples.VisualBasic.BarCode.Image.Basic.Features
+Imports Aspose.BarCode.Examples.VisualBasic.BarCode.Image.Utility.Features
+Imports Aspose.BarCode.Examples.VisualBasic.BarCode.Recognition
+Imports Aspose.BarCode.Examples.VisualBasic.Programming.BarCode
 
-Module RunExamples
+Namespace Aspose.BarCode.Examples.VisualBasic
+    Module RunExamples
 
-    Sub Main()
-        Console.WriteLine("Open RunExamples.vb. In Main() method, Un-comment the example that you want to run")
-        Console.WriteLine("=====================================================")
-        ' Un-comment the one you want to try out
+        Sub Main()
+            Console.WriteLine("Open RunExamples.vb." & vbLf & "In Main() method uncomment the example that you want to run.")
+            Console.WriteLine("=====================================================")
 
-        '' =====================================================
-        '' =====================================================
-        '' Programming BarCode
-        '' =====================================================
-        '' =====================================================
+            ' Uncomment the example that you want to run.
 
-        CreateCode128Barcode.Run()
-        'GenerateAustraliaPostBarcode.Run()
-        'ManageXYDimension.Run()
-        'SetHeightBarcodeBars.Run()
-        'CodabarStartStopSymbols.Run()
-        'ChecksumSupplementData.Run()
-        'WideNarrowRatio.Run()
-        'CodetextAppearance.Run()
-        'BarcodeCaption.Run()
-        'SetCodeText.Run()
-        'SpecifySymbology.Run()
-        'SetQREncodeMode.Run()
-        'SetQRErrorCorrection.Run()
-        'CreateQRbarcode.Run()
-        'RotateBarcode.Run()
-        'CreateDatamatrixBarcode.Run()
-        'CreatePDF417Barcode.Run()
-        'Create2DBarcodes.Run()
+            '' =====================================================
+            '' =====================================================
+            '' Programming BarCode
+            '' =====================================================
+            '' =====================================================
 
-        '' =====================================================
-        '' =====================================================
-        '' BarCode Image
-        '' =====================================================
-        '' =====================================================
+            CreateCode128Barcode.Run()
+            'GenerateAustraliaPostBarcode.Run()
+            'ManageXYDimension.Run()
+            'SetHeightBarcodeBars.Run()
+            'CodabarStartStopSymbols.Run()
+            'ChecksumSupplementData.Run()
+            'WideNarrowRatio.Run()
+            'CodetextAppearance.Run()
+            'BarcodeCaption.Run()
+            'SetCodeText.Run()
+            'SpecifySymbology.Run()
+            'SetQREncodeMode.Run()
+            'SetQRErrorCorrection.Run()
+            'CreateQRbarcode.Run()
+            'RotateBarcode.Run()
+            'CreateDatamatrixBarcode.Run()
+            'CreatePDF417Barcode.Run()
+            'Create2DBarcodes.Run()
 
-        '' Basic Features
-        '' =====================================================
+            '' =====================================================
+            '' =====================================================
+            '' BarCode Image
+            '' =====================================================
+            '' =====================================================
 
-        'ColorizeAnyPartoftheBarcodeImage.Run()
-        'BarcodeImageQuality.Run()
-        'RotateBarcodeImage.Run()
-        'BarcodeImageMargins.Run()
-        'BarcodeImageBorders.Run()
+            '' Basic Features
+            '' =====================================================
 
-        '' Utility Features
-        '' =====================================================
+            'ColorizeAnyPartoftheBarcodeImage.Run()
+            'BarcodeImageQuality.Run()
+            'RotateBarcodeImage.Run()
+            'BarcodeImageMargins.Run()
+            'BarcodeImageBorders.Run()
 
-        'BarcodeImageResolution.Run()
-        'BarcodeCustomSize.Run()
-        'PrintBarcodeImage.Run()
-        'SaveBarcodeImagesToDifferentFormats.Run()
-        'SetSizeUnitForBarcodeImage.Run()
+            '' Utility Features
+            '' =====================================================
 
-        '' =====================================================
-        '' =====================================================
-        '' BarCode Recognition
-        '' =====================================================
-        '' =====================================================
+            'BarcodeImageResolution.Run()
+            'BarcodeCustomSize.Run()
+            'PrintBarcodeImage.Run()
+            'SaveBarcodeImagesToDifferentFormats.Run()
+            'SetSizeUnitForBarcodeImage.Run()
 
-        'DetectOrientationOfBarCode.Run()
+            '' =====================================================
+            '' =====================================================
+            '' BarCode Recognition
+            '' =====================================================
+            '' =====================================================
 
-        ' Stop before exiting
-        Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....")
-        Console.ReadKey()
+            'DetectOrientationOfBarCode.Run()
 
-    End Sub
+            ' Stop before exiting
+            Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....")
+            Console.ReadKey()
 
-    Friend Function GetDataDir_ProgrammingBarCode() As String
-        Return Path.GetFullPath("../../Programming-BarCode/Data/")
-    End Function
+        End Sub
 
-    Friend Function GetDataDir_BarCodeImage() As String
-        Return Path.GetFullPath("../../BarCode-Image/Data/")
-    End Function
+        Friend Function GetDataDir_ProgrammingBarCode() As String
+            Return Path.GetFullPath("../../Programming-BarCode/Data/")
+        End Function
 
-    Friend Function GetDataDir_BarCodeRecognition() As String
-        Return Path.GetFullPath("../../BarCode-Recognition/Data/")
-    End Function
+        Friend Function GetDataDir_BarCodeImage() As String
+            Return Path.GetFullPath("../../BarCode-Image/Data/")
+        End Function
 
-End Module
+        Friend Function GetDataDir_BarCodeRecognition() As String
+            Return Path.GetFullPath("../../BarCode-Recognition/Data/")
+        End Function
+
+    End Module
+End Namespace

@@ -5,8 +5,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6D456CEC-F980-4F62-ADA4-9C8D7C736974}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>VisualBasic.RunExamples</StartupObject>
-    <RootNamespace>VisualBasic</RootNamespace>
+    <StartupObject>Aspose.BarCode.Examples.VisualBasic.RunExamples</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>VisualBasic</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
@@ -141,7 +142,7 @@
     <Folder Include="BarCode-Recognition\Data\" />
     <Folder Include="Programming-BarCode\Data\" />
   </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

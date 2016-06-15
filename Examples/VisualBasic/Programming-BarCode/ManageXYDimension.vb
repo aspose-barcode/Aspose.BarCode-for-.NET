@@ -1,62 +1,57 @@
-﻿'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2015 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.BarCode. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
-Imports System.IO
+﻿Imports System.IO
 Imports Aspose.BarCode
 
-Public Class ManageXYDimension
-    Public Shared Sub Run()
-        ' The path to the documents directory.
-        Dim dataDir As String = RunExamples.GetDataDir_ProgrammingBarCode()
-        Dim dstCode128 As String = dataDir & Convert.ToString("code128-YDimensionChanged.jpg")
-        Dim dstPdf417 As String = dataDir & Convert.ToString("pdf417-YDimensionChanged.jpg")
+Namespace Aspose.BarCode.Examples.VisualBasic.Programming.BarCode
 
-        'Instantiate barcode object
-        Dim bb As New BarCodeBuilder()
+    Public Class ManageXYDimension
+        Public Shared Sub Run()
+            ' The path to the documents directory.
+            Dim dataDir As String = RunExamples.GetDataDir_ProgrammingBarCode()
+            Dim dstCode128 As String = dataDir & Convert.ToString("code128-YDimensionChanged.jpg")
+            Dim dstPdf417 As String = dataDir & Convert.ToString("pdf417-YDimensionChanged.jpg")
 
-        'Set the Code text for the barcode
-        bb.CodeText = "1234567"
+            'Instantiate barcode object
+            Dim bb As New BarCodeBuilder()
 
-        'Set the symbology type to Code128
-        bb.SymbologyType = Symbology.Code128
+            'Set the Code text for the barcode
+            bb.CodeText = "1234567"
 
-        'Save the image to your system
-        'and set its image format to Jpeg
-        bb.Save(dstCode128, System.Drawing.Imaging.ImageFormat.Jpeg)
+            'Set the symbology type to Code128
+            bb.SymbologyType = Symbology.Code128
 
-        'Set the X-Dimension for the bars of the barcode
-        bb.xDimension = 0.5F
+            'Save the image to your system
+            'and set its image format to Jpeg
+            bb.Save(dstCode128, System.Drawing.Imaging.ImageFormat.Jpeg)
 
-        'Set the measuring unit of barcode to millimeter
-        bb.GraphicsUnit = System.Drawing.GraphicsUnit.Millimeter
+            'Set the X-Dimension for the bars of the barcode
+            bb.xDimension = 0.5F
 
-        'Save the image to your system
-        'and set its image format to Jpeg
-        bb.Save(dstCode128, System.Drawing.Imaging.ImageFormat.Jpeg)
+            'Set the measuring unit of barcode to millimeter
+            bb.GraphicsUnit = System.Drawing.GraphicsUnit.Millimeter
+
+            'Save the image to your system
+            'and set its image format to Jpeg
+            bb.Save(dstCode128, System.Drawing.Imaging.ImageFormat.Jpeg)
 
 
-        'Instantiate barcode object
-        Dim bb1 As New BarCodeBuilder()
+            'Instantiate barcode object
+            Dim bb1 As New BarCodeBuilder()
 
-        'Set the Code text for the barcode
-        bb1.CodeText = "1234567"
+            'Set the Code text for the barcode
+            bb1.CodeText = "1234567"
 
-        'Set the symbology type to Pdf417
-        bb1.SymbologyType = Symbology.Pdf417
+            'Set the symbology type to Pdf417
+            bb1.SymbologyType = Symbology.Pdf417
 
-        'Set the Y-Dimension for the bars of the barcode
-        bb1.yDimension = 4
+            'Set the Y-Dimension for the bars of the barcode
+            bb1.yDimension = 4
 
-        'Save the image to your system
-        'and set its image format to Jpeg
-        bb1.Save(dstPdf417, System.Drawing.Imaging.ImageFormat.Jpeg)
+            'Save the image to your system
+            'and set its image format to Jpeg
+            bb1.Save(dstPdf417, System.Drawing.Imaging.ImageFormat.Jpeg)
 
-        Console.WriteLine(Environment.NewLine + "Barcode saved at " & dstCode128)
-        Console.WriteLine(Environment.NewLine + "Barcode saved at " & dstPdf417)
-    End Sub
-End Class
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " & dstCode128)
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " & dstPdf417)
+        End Sub
+    End Class
+End Namespace

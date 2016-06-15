@@ -1,22 +1,22 @@
-﻿using CSharp.BarCode_Image.Basic_Features;
-using CSharp.BarCode_Image.Utility_Features;
-using CSharp.BarCode_Recognition;
-using CSharp.Programming_BarCode;
+﻿using Aspose.BarCode.Examples.CSharp.BarCode.Recognition;
+using Aspose.BarCode.Examples.CSharp.Programming.BarCode;
+using Aspose.BarCode.Examples.CSharp.BarCode.Image.Basic.Features;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace CSharp
+namespace Aspose.BarCode.Examples.CSharp
 {
     class RunExamples
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
+            Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
-            // Un-comment the one you want to try out
+
+            // Uncomment the example that you want to run.
 
             //// =====================================================
             //// =====================================================
