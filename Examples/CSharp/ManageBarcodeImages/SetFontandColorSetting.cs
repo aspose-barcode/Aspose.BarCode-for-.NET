@@ -17,7 +17,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-            //ExStart:ManSetFontandColorSettingageCaption
+            //ExStart:SetFontandColorSettingageCaption
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -38,7 +38,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir + "SetFontandColorSetting.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
-            // ExEnd:ManageCaption            
+            // ExEnd:SetFontandColorSettingageCaption            
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir);
         }
     }

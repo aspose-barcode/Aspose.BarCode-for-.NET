@@ -31,7 +31,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     Console.WriteLine("GetCodeText : " & reader.GetCodeText().ToString() + " Type: " + reader.GetCodeType().ToString())
                     Dim percent As Single = reader.GetRecognitionQuality()
                 End While
-                'ExEnd:GetAllPossible1DBarcodesfromImage 
+                'ExEnd:GetBarCodeRecognitionQualityInPercent 
                 reader.Close()
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
