@@ -26,7 +26,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Initialize the BarCodeReader 
-                BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png", DecodeType.AllSupportedTypes);
+                BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png", BarCodeReadType.Code39Standard | BarCodeReadType.Pdf417);
 
                 // Call Read() method in a loop
                 while (reader.Read())

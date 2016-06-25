@@ -18,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
             try
             {
-                // read Code39 bar code
+                // read Code128 bar code
                 while (reader.Read())
                 {
                     // detect bar code orientation

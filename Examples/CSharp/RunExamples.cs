@@ -66,6 +66,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //PrintBarcodeImage.Run();
             //BarcodeCustomSize.Run();
             //SetITF14SpecifyBordeType.Run();
+            //SetFrameOut.Run();
             //SpecifyITF14BorderThicknes.Run();
             //SetCodetextLocation.Run();
             //SetCodeAlignment.Run();

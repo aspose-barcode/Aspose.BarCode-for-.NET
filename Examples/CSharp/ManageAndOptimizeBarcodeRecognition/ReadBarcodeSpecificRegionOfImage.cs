@@ -37,7 +37,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 }
                 // close the reader
                 reader.Close();
-                //ExEnd:MarkingBarCodeRegionsInImage 
+                //ExEnd:ReadBarcodeSpecificRegionOfImage 
             }
             catch (Exception ex)
             {

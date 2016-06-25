@@ -36,7 +36,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     float percent = reader.GetRecognitionQuality();
                 }
                 reader.Close();
-                //ExEnd:GetAllPossible1DBarcodesfromImage 
+                //ExEnd:GetBarCodeRecognitionQualityInPercent 
             }
             catch (Exception ex)
             {

@@ -23,7 +23,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir + "barcode-symbiology_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
-            // ExStart:SpecifySymbology
+            // ExEnd:SpecifySymbology
         }
     }
 }

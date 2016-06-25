@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
     <Compile Include="ManageBarCodes\DisplayChecksumCharacter.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\EncodeMicroQRCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\EncodeQRCode.cs" />
