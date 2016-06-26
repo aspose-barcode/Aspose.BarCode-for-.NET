@@ -22,7 +22,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
             try
             {
-                //ExStart:SupportImageFormat
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
                 // Create instance of BarCodeBuilder class 
@@ -33,7 +32,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.WriteLine("CodeText: " + reader.GetCodeText());
                 }
                 reader.Close();
-                //ExEnd:SupportImageFormat 
             }
             catch (Exception ex)
             {

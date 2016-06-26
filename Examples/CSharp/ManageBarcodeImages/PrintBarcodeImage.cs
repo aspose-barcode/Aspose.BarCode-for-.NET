@@ -9,7 +9,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-            //ExStart:PrintBarcodeImage
             // Get the default Printer Name
             PrinterSettings settings = new PrinterSettings();
 
@@ -22,7 +21,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             builder.PrinterName = printerName;
 
             builder.Print();
-            //ExEnd:PrintBarcodeImage
         }
     }
 }

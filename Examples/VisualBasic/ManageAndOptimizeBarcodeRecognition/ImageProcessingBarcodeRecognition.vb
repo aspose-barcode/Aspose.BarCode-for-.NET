@@ -12,12 +12,10 @@ Imports Aspose.BarCode
 'please feel free to contact us using http:// ww.aspose.com/community/forums/default.aspx
 '
 
-
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class ImageProcessingBarcodeRecognition
         Public Shared Sub Run()
             Try
-                'ExStart:ImageProcessingBarcodeRecognition               
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -34,7 +32,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                 End While
 
                 ' Close the reader
-                'ExEnd:ImageProcessingBarcodeRecognition 
                 barCodeReader.Close()
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")

@@ -4,7 +4,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SetCodeText
         Public Shared Sub Run()
-            'ExStart:SetCodeText
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -22,7 +21,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("barcode-codetext_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
-            'ExEnd:SetCodeText
             Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "barcode-codetext_out.jpg")
         End Sub
     End Class

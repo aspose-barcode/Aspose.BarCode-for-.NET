@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -21,7 +20,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
     {
         public static void Run()
         {
-            //ExStart:ECCTypeToEnCodeBarcode               
+                           
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -54,7 +53,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             
             // Save barcode
             builder2.Save(dataDir + "SampleBarcode2.png");
-            //ExEnd:ECCTypeToEnCodeBarcode 
         }
     }
 }

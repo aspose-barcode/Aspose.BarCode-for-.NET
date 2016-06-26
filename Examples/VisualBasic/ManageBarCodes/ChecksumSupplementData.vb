@@ -14,7 +14,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
-            'ExStart:ChecksumSupplementData
             ' Instantiate barcode object
             Dim barCodeBuilder As New BarCodeBuilder()
 
@@ -29,7 +28,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the image to your system and set its image format to png
             barCodeBuilder.Save(dataDir & Convert.ToString("code39-checeksum_out.png"))
-            'ExEnd:ChecksumSupplementData
             Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "code39-checeksum.png")
         End Sub
     End Class

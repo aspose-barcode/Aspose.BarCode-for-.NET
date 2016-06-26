@@ -12,7 +12,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SpecifySymbologies
         Public Shared Sub Run()
-            'ExStart:SpecifySymbologies
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -25,7 +24,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' Set the symbology type to Code128
             bb.SymbologyType = Symbology.Code128
 
-            'ExEnd:SpecifySymbologies
             ' Save the image to your system and set its image format to Jpeg
             bb.Save(dataDir & Convert.ToString("barcode-SpecifySymbologies_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
         End Sub

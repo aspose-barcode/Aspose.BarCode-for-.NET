@@ -4,7 +4,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SetHeightBarcodeBars
         Public Shared Sub Run()
-            'ExStart:SetHeightBarcodeBars
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -37,7 +36,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the image to disk
             barCodeBuilder.Save(dataDir & Convert.ToString("Code128-bar-height_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
-            'ExEnd:SetHeightBarcodeBars
         End Sub
     End Class
 End Namespace

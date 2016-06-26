@@ -16,7 +16,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:ManagePDF417Barcode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -33,8 +32,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             barCodeBuilder.CodeText = "This is the data to be encoded";
             
             barCodeBuilder.Save(dataDir + "ManagePDF417Barcode_out.bmp", ImageFormat.Bmp);
-            //ExEnd:ManagePDF417Barcode
-
         }
     }
 }

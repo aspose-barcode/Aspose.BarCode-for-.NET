@@ -5,7 +5,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class PrintBarcodeImage
         Public Shared Sub Run()
-            'ExStart:PrintBarcodeImage
             ' Get the default Printer Name
             Dim settings As New PrinterSettings()
 
@@ -18,7 +17,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             builder.PrinterName = printerName
 
             builder.Print()
-            'ExEnd:PrintBarcodeImage
         End Sub
     End Class
 End Namespace

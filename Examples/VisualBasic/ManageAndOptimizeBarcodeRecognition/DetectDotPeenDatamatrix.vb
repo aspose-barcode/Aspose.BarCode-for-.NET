@@ -18,7 +18,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
     Class DetectDotPeenDatamatrix
         Public Shared Sub Run()
             Try
-                'ExStart:DetectDecoratedDatamatrixBarcode                        
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -32,7 +31,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     While reader.Read()
                         Console.WriteLine("GetCode :: " & reader.GetCodeType().ToString() & ": " & reader.GetCodeText().ToString())
                     End While
-                    'ExEnd:ECCTypeToEnCodeBarcode 
 
                 End Using
             Catch ex As Exception

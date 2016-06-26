@@ -5,7 +5,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetSizeUnitForBarcodeImage
         Public Shared Sub Run()
-            'ExStart:SetSizeUnitForBarcodeImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -26,8 +25,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("barcode-size-unit_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
-            'ExEnd:SetSizeUnitForBarcodeImage
-
         End Sub
     End Class
 End Namespace

@@ -12,7 +12,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class CreateSimpleDatamatrixBarCode
         Public Shared Sub Run()
-            'ExStart:CreateSimpleDatamatrixBarCode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -29,9 +28,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             barCodeBuilder.CodeText = "123456789"
 
             ' Save the Barcode image
-            barCodeBuilder.Save(dataDir & Convert.ToString("Datamatrixbarcode_out.bmp"), BarCodeImageFormat.Bmp)
-            'ExEnd:CreateSimpleDatamatrixBarCode
-
+            barCodeBuilder.Save(dataDir & Convert.ToString("Datamatrixbarcode_out.bmp"), BarCodeImageFormat.Bmp)            
             Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "Datamatrixbarcode_out.bmp")
         End Sub
     End Class

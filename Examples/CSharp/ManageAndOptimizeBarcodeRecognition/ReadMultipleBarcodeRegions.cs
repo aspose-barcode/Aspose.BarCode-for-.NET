@@ -23,7 +23,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
           
-            //ExStart:ReadMultipleBarcodeRegions        
             // Initialize the Bitmap object            
             Bitmap bitmap = new Bitmap(dataDir + "Region.png");
 
@@ -40,7 +39,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());
                 }
             }
-            //ExEnd:ReadMultipleBarcodeRegions 
         }
     }
 }

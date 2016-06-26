@@ -79,7 +79,7 @@
     <Compile Include="ManageBarcodeImages\SaveBarcodeImagesToDifferentFormats.cs" />
     <Compile Include="ManageBarcodeImages\SetFontandColorSetting.cs" />
     <Compile Include="ManageBarcodeImages\SetForeColorText.cs" />
-    <Compile Include="ManageBarcodeImages\SetITF14SpecifyBordeType.cs" />
+    <Compile Include="ManageBarcodeImages\SetITF14SpecifyBorderType.cs" />
     <Compile Include="ManageBarcodeImages\SetSizeUnitForBarcodeImage.cs" />
     <Compile Include="ManageBarcodeImages\SpecifyITF14BorderThicknes.cs" />
     <Compile Include="ManageBarCodes\SpecifySymbologies.cs" />

@@ -5,7 +5,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class DetectOrientationOfBarCode
         Public Shared Sub Run()
-            'ExStart:DetectOrientationOfBarCode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -18,7 +17,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     ' detect bar code orientation
                     System.Console.Write(Environment.NewLine + "Rotaion Angle: " + reader.GetAngle())
                 End While
-                'ExEnd:DetectOrientationOfBarCode
                 reader.Close()
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")

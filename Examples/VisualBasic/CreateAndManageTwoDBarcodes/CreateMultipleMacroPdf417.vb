@@ -19,7 +19,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
-            'ExStart:CreateMultipleMacroPdf417
             ' create array for storing multiple barcodes
             Const nSize As Integer = 4
             Dim lstCodeText As String() = New String() {"code-1", "code-2", "code-3", "code-4"}
@@ -43,8 +42,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
                     Process.Start(dataDir & strFileId.ToString + "_" & nCount & "_out.png")
                 Next
             End Using
-            'ExEnd:CreateMultipleMacroPdf417 
-
         End Sub
     End Class
 End Namespace

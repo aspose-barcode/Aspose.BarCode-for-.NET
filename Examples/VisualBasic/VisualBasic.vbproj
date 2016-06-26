@@ -132,7 +132,7 @@
     <Compile Include="ManageBarcodeImages\SetFontandColorSetting.vb" />
     <Compile Include="ManageBarcodeImages\SetForeColorText.vb" />
     <Compile Include="ManageBarcodeImages\SetFrameOut.vb" />
-    <Compile Include="ManageBarcodeImages\SetITF14SpecifyBordeType.vb" />
+    <Compile Include="ManageBarcodeImages\SetITF14SpecifyBorderType.vb" />
     <Compile Include="ManageBarcodeImages\SetSizeUnitForBarcodeImage.vb" />
     <Compile Include="ManageBarcodeImages\SpecifyITF14BorderThicknes.vb" />
     <Compile Include="ManageBarCodes\BarcodeCaption.vb" />

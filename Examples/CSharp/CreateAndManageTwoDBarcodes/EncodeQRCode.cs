@@ -20,7 +20,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:DetectUnicodeEncoding
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -46,7 +45,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             Bitmap lBmp = builder.GenerateBarCodeImage();
             // Save QR code
             lBmp.Save(dataDir + "EncodeQA_out.bmp", ImageFormat.Bmp);
-            //ExEnd:DetectUnicodeEncoding
         }
     }
 }

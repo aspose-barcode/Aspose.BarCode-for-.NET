@@ -18,17 +18,15 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            //ExStart:DisplayChecksumCharacter
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder("0123456789", Symbology.Code39Standard);
-          
+
             // Always show checksum on image
             barCodeBuilder.AlwaysShowChecksum = true;
 
             // Save file to disk
             barCodeBuilder.Save(dataDir + "DisplayChecksumCharacter_out.png");
 
-            //ExEnd:DisplayChecksumCharacter
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "DisplayChecksumCharacter.png");
         }
     }

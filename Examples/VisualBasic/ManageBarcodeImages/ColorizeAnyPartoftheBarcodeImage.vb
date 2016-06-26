@@ -4,7 +4,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class ColorizeAnyPartoftheBarcodeImage
         Public Shared Sub Run()
-            'ExStart:ColorizeAnyPartoftheBarcodeImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
             Dim dst As String = dataDir & Convert.ToString("colorize-barcode_out.jpg")
@@ -32,7 +31,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg)
-            'ExEnd:ColorizeAnyPartoftheBarcodeImage
         End Sub
     End Class
 End Namespace

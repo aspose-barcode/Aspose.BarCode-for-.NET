@@ -17,7 +17,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
-            'ExStart:ReduceCodeTextFontSize
             ' Instantiate barcode object
             Dim barCodeBuilder As New BarCodeBuilder()
 
@@ -34,7 +33,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
 
             ' Save the Barcode image
             barCodeBuilder.Save(dataDir & Convert.ToString("HideBarcodeCodeText_out.png"), BarCodeImageFormat.Png)
-            'ExEnd:ReduceCodeTextFontSize
         End Sub
     End Class
 End Namespace

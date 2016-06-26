@@ -17,7 +17,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
         Public Shared Sub Run()
 
             Try
-                'ExStart:SupportImageFormat
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
                 ' Create instance of BarCodeBuilder class 
@@ -26,7 +25,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     ' Get code text
                     Console.WriteLine("CodeText: " + reader.GetCodeText())
                 End While
-                'ExEnd:SupportImageFormat 
                 reader.Close()
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")

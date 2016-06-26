@@ -16,7 +16,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
             Dim dst As String = dataDir & Convert.ToString("barcode-SetCodeAlignment_out.jpg")
 
-            'ExStart:SetCodeAlignment
             ' Instantiate barcode object
             Dim barCodeBuilder As New BarCodeBuilder()
 
@@ -25,8 +24,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' lign the code text to center
             barCodeBuilder.CodeTextAlignment = System.Drawing.StringAlignment.Center
-
-            'ExEnd:SetCodeAlignment            
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dst)
         End Sub
     End Class

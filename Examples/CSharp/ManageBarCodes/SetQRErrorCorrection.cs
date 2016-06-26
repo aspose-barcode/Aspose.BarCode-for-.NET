@@ -8,8 +8,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-
-            //ExStart:SetQRErrorCorrection
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -27,7 +25,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the file to disk
             builder.Save(dataDir + "QR-error-correction.jpg", BarCodeImageFormat.Jpeg);
-            //ExStart:SetQRErrorCorrection
         }
     }
 }

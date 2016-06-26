@@ -16,7 +16,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class FNC1SecondPositionInExtendedMode
         Public Shared Sub Run()
-            'ExStart:FNC1SecondPositionInExtendedMode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -51,7 +50,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
 
             ' Save QR code
             lBmp.Save(dataDir & Convert.ToString("FNC1SecondPositionInExtendedMode.bmp"), ImageFormat.Bmp)
-            'ExEnd:FNC1SecondPositionInExtendedMode
         End Sub
     End Class
 End Namespace

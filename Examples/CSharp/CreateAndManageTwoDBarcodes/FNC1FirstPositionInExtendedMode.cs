@@ -20,7 +20,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:FNC1FirstPositionInExtendedMode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -57,7 +56,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save QR code
             lBmp.Save(dataDir + "FNC1FirstPositionInExtendedMode_out.bmp", ImageFormat.Bmp);
-            //ExEnd:FNC1FirstPositionInExtendedMode
         }
     }
 }

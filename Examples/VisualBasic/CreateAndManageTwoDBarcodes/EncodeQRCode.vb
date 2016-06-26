@@ -16,7 +16,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class EncodeQRCode
         Public Shared Sub Run()
-            'ExStart:DetectUnicodeEncoding
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -42,7 +41,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             Dim lBmp As Bitmap = builder.GenerateBarCodeImage()
             ' Save QR code
             lBmp.Save(dataDir & Convert.ToString("EncodeQA_out.bmp"), ImageFormat.Bmp)
-            'ExEnd:DetectUnicodeEncoding
         End Sub
     End Class
 End Namespace

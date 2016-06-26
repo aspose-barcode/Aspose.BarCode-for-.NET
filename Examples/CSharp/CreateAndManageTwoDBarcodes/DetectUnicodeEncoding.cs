@@ -18,7 +18,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:DetectUnicodeEncoding
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -55,7 +54,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             {
 
             }
-            //ExEnd:DetectUnicodeEncoding
         }
     }
 }

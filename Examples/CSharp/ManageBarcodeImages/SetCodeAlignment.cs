@@ -20,7 +20,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
             string dst = dataDir + "barcode-SetCodeAlignment_out.jpg";
 
-            //ExStart:SetCodeAlignment
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
 
@@ -30,7 +29,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             // lign the code text to center
             barCodeBuilder.CodeTextAlignment = System.Drawing.StringAlignment.Center;
 
-            //ExEnd:SetCodeAlignment            
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dst);
         }
     }

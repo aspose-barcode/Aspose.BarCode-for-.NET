@@ -16,7 +16,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            //ExStart:SpecifySymbologies
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -29,7 +28,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Set the symbology type to Code128
             bb.SymbologyType = Symbology.Code128;
 
-            //ExEnd:SpecifySymbologies
             // Save the image to your system and set its image format to Jpeg
             bb.Save(dataDir + "barcode-SpecifySymbologies_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }

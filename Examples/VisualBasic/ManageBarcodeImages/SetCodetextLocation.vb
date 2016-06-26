@@ -16,7 +16,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
-            ' ExStart:ControlAppearanceCodetext
             ' Instantiate barcode object
             Dim barCodeBuilder As New BarCodeBuilder()
 
@@ -25,8 +24,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' Set the location of the code text to above the barcode
             barCodeBuilder.CodeLocation = CodeLocation.Above
-
-            ' ExEnd:ControlAppearanceCodetext            
             ' Save the image to your system in Jpeg format
             barCodeBuilder.Save(dataDir & Convert.ToString("barcode-SetCodetextLocation_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
         End Sub

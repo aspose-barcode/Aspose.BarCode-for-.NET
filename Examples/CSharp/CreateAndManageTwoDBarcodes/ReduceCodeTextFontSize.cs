@@ -21,7 +21,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            //ExStart:ReduceCodeTextFontSize
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
 
@@ -36,7 +35,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save the Barcode image
             barCodeBuilder.Save(dataDir + "HideBarcodeCodeText_out.png", BarCodeImageFormat.Png);
-            //ExEnd:ReduceCodeTextFontSize
         }
     }
 }

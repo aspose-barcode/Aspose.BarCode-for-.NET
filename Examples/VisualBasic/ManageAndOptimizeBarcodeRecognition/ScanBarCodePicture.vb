@@ -19,7 +19,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
             Try
-                'ExStart:ScanBarCodePicture
                 ' Read file from directory with DecodeType.EAN13
                 Dim reader As New BarCodeReader(dataDir & Convert.ToString("Scan.jpg"), DecodeType.EAN13)
                 While reader.Read()
@@ -28,7 +27,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     ' Read code text
                     Console.WriteLine("CodeText: " & reader.GetCodeText().ToString())
                 End While
-                'ExEnd:ScanBarCodePicture 
                 reader.Close()
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")

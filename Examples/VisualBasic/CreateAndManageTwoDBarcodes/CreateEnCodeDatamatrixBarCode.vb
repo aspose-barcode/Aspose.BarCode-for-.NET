@@ -13,7 +13,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class CreateEnCodeDatamatrixBarCode
         Public Shared Sub Run()
-            'ExStart:ManagePDF417Barcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -30,8 +29,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             barCodeBuilder.CodeText = "This is the data to be encoded"
 
             barCodeBuilder.Save(dataDir & Convert.ToString("ManagePDF417Barcode_out.bmp"), ImageFormat.Bmp)
-            'ExEnd:ManagePDF417Barcode
-
         End Sub
     End Class
 End Namespace

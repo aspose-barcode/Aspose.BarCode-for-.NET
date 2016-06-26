@@ -22,29 +22,28 @@ namespace Aspose.BarCode.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //CreatePDF417Barcode.Run();
-            //CreateQRbarcode.Run();
-            //CreateDatamatrixBarcode.Run();
-            //CodetextAppearance.Run();
-            //BarcodeCaption.Run();
-            //CreateCode128Barcode.Run();
-            //SpecifySymbologies.Run();
-            //SetCodeText.Run();
-            //ManageCaption.Run();
-            //SetHeightBarcodeBars.Run();
-            //ManageXYDimension.Run();
-            //ChecksumSupplementData.Run();
-            //WideNarrowRatio.Run();
-            //GenerateAustraliaPostBarcode.Run();
-            //CodabarStartStopSymbols.Run();
-            //SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
-            //ExportPropertiesToXML.Run();
-            //DisplayChecksumCharacter.Run();
-            //SetQREncodeMode.Run();
-            //SetQRErrorCorrection.Run();
-            //SetSupplementData.Run();
-            //SpecifySymbology.Run();
-
+            CreatePDF417Barcode.Run();
+            CreateQRbarcode.Run();
+            CreateDatamatrixBarcode.Run();
+            CodetextAppearance.Run();
+            BarcodeCaption.Run();
+            CreateCode128Barcode.Run();
+            SpecifySymbologies.Run();
+            SetCodeText.Run();
+            ManageCaption.Run();
+            SetHeightBarcodeBars.Run();
+            ManageXYDimension.Run();
+            ChecksumSupplementData.Run();
+            WideNarrowRatio.Run();
+            GenerateAustraliaPostBarcode.Run();
+            CodabarStartStopSymbols.Run();
+            SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
+            ExportPropertiesToXML.Run();
+            DisplayChecksumCharacter.Run();
+            SetQREncodeMode.Run();
+            SetQRErrorCorrection.Run();
+            SetSupplementData.Run();
+            SpecifySymbology.Run();
 
             //// =====================================================
             //// =====================================================
@@ -65,9 +64,8 @@ namespace Aspose.BarCode.Examples.CSharp
             //SaveBarcodeImageToStreams.Run();
             //PrintBarcodeImage.Run();
             //BarcodeCustomSize.Run();
-            //SetITF14SpecifyBordeType.Run();
-            //SetFrameOut.Run();
-            //SpecifyITF14BorderThicknes.Run();
+            //SetITF14SpecifyBorderType.Run();
+            //SetFrameOut.Run();            
             //SetCodetextLocation.Run();
             //SetCodeAlignment.Run();
             //SetForeColorText.Run();
@@ -129,14 +127,12 @@ namespace Aspose.BarCode.Examples.CSharp
             //ManualHints.Run();
             //ReadMultipleBarcodeRegions.Run();
             //ECCTypeToEnCodeBarcode.Run();
-            //DetectDecoratedDatamatrix.Run();
-          
+            //DetectDecoratedDatamatrix.Run();          
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");
             Console.ReadKey();
         }
-
 
         public static String GetDataDir_ManageBarCodes()
         {
@@ -157,12 +153,7 @@ namespace Aspose.BarCode.Examples.CSharp
         {
             return Path.GetFullPath(GetDataDir_Data() + "ManageAndOptimizeBarcodeRecognition/");
         }
-
         
-
-
-
-
         private static string GetDataDir_Data()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;

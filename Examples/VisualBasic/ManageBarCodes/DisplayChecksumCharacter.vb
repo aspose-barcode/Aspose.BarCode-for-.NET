@@ -14,7 +14,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
-            'ExStart:DisplayChecksumCharacter
             ' Instantiate barcode object
             Dim barCodeBuilder As New BarCodeBuilder("0123456789", Symbology.Code39Standard)
 
@@ -24,7 +23,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' Save file to disk
             barCodeBuilder.Save(dataDir & Convert.ToString("DisplayChecksumCharacter_out.png"))
 
-            'ExEnd:DisplayChecksumCharacter
             Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "DisplayChecksumCharacter.png")
         End Sub
     End Class

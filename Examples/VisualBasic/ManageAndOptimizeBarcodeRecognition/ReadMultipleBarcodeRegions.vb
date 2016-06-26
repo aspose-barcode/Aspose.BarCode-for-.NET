@@ -19,7 +19,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
-            'ExStart:ReadMultipleBarcodeRegions        
             ' Initialize the Bitmap object            
             Dim bitmap As New Bitmap(dataDir & Convert.ToString("Region.png"))
 
@@ -34,7 +33,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     Console.WriteLine("GetCodeType" & reader.GetCodeType().ToString() + "GetCodeText: " + reader.GetCodeText().ToString())
                 End While
             End Using
-            'ExEnd:ReadMultipleBarcodeRegions 
         End Sub
     End Class
 End Namespace

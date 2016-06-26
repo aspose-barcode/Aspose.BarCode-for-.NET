@@ -16,7 +16,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:CreateAztecbarcode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -32,7 +31,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // Save the Barcode image
             barCodeBuilder.Save(dataDir + "CreateAztecbarcode_out.bmp", BarCodeImageFormat.Bmp);
 
-            //ExEnd:CreateAztecbarcode
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "CreateAztecbarcode_out.bmp");
         }
     }

@@ -19,7 +19,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
     Class GetAllPossible1DBarcodesfromImage
         Public Shared Sub Run()
             Try
-                'ExStart:GetAllPossible1DBarcodesfromImage               
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -41,7 +40,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     Console.WriteLine("Bottom left coordinates: X = " + point(1).X + ", Y = " + point(1).Y)
                     Console.WriteLine("Bottom right coordinates: X = " + point(2).X + ", Y = " + point(2).Y)
                     Console.WriteLine("Top right coordinates: X = " + point(3).X + ", Y = " + point(3).Y)
-                    'ExEnd:GetAllPossible1DBarcodesfromImage 
                 Next
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")

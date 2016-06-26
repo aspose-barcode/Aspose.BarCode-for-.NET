@@ -18,7 +18,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
     Class ManualHints
         Public Shared Sub Run()
             Try
-                'ExStart:ManualHints               
                 Dim watch As New Stopwatch()
 
                 ' The path to the documents directory.
@@ -40,7 +39,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     ' End Stopwatch
                     watch.[Stop]()
                     Console.WriteLine("Time: " + watch.ElapsedMilliseconds + "ms.")
-                    'ExEnd:ManualHints 
                 End Using
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")

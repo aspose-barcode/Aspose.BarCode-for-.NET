@@ -5,7 +5,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class WideNarrowRatio
         Public Shared Sub Run()
 
-            'ExStart:WideNarrowRatio
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -41,7 +40,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("code39-wide-narrow-ratio_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
-            'ExEnd:WideNarrowRatio
 
             Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "code39-wide-narrow-ratio_out.png")
         End Sub
