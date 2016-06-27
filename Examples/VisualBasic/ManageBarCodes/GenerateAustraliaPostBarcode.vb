@@ -4,7 +4,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class GenerateAustraliaPostBarcode
         Public Shared Sub Run()
-            'ExStart:GenerateAustraliaPostBarcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -43,8 +42,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             builder.AustraliaPostFormatControlCode = AustraliaPostFormatControlCode.Redirection
             ' Save the image to disk in PNG format
             builder.Save(dataDir & Convert.ToString("AustraliaPost-Redirection_out.png"))
-            'ExEnd:GenerateAustraliaPostBarcode
-
             Console.WriteLine(Convert.ToString(Environment.NewLine + "AustraliaPost Barcodes saved at ") & dataDir)
         End Sub
     End Class

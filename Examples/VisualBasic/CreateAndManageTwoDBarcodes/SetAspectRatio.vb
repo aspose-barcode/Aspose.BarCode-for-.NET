@@ -17,7 +17,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
-            'ExStart:SetAspectRatio
             ' Create instance of BarCodeBuilder class
 
             Dim builder As New BarCodeBuilder("1234567890", Symbology.Pdf417)
@@ -27,7 +26,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             ' Save the barcode image to disk in PNG format
 
             builder.Save(dataDir & Convert.ToString("SetAspectRatio_out.png"), BarCodeImageFormat.Png)
-            'ExEnd:SetAspectRatio
         End Sub
     End Class
 End Namespace

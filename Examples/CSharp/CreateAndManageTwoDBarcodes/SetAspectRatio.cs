@@ -21,7 +21,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            //ExStart:SetAspectRatio
             // Create instance of BarCodeBuilder class
 
             BarCodeBuilder builder = new BarCodeBuilder("1234567890", Symbology.Pdf417);
@@ -31,7 +30,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // Save the barcode image to disk in PNG format
             
             builder.Save(dataDir + "SetAspectRatio_out.png", BarCodeImageFormat.Png);
-            //ExEnd:SetAspectRatio
         }
     }
 }

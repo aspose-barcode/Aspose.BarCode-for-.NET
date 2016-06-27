@@ -24,7 +24,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
-                //ExStart:SetBarcodeOrientation               
                 // Create an instance of BarCodeReader and set image and symbology type to recognize
                 BarCodeReader barCodeReader = new BarCodeReader(dataDir + "BarcodeOrientation.png", DecodeType.Code39Standard);
 
@@ -39,7 +38,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 }
                 // Close the reader
                 barCodeReader.Close();
-                //ExEnd:SetBarcodeOrientation
             }
             catch (Exception ex)
             {

@@ -19,10 +19,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
     {
         public static void Run()
         {
-
             try
             {
-                //ExStart:RecognizeSpecificBarcodeSymbology
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -36,7 +34,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.Write("Symbology Type: " + reader.GetCodeType());
                 }
                 reader.Close();
-                //ExEnd:RecognizeSpecificBarcodeSymbology 
             }
             catch (Exception ex)
             {

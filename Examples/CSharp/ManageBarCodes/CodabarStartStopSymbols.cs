@@ -8,10 +8,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            //ExStart:CodabarStartStopSymbols
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
- 
+
             // Create instance of BarCodeBuilder, specify codetext and symbology in the constructor
             BarCodeBuilder builder = new BarCodeBuilder("11112222333344", Symbology.Codabar);
 
@@ -23,7 +22,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the image to disk in PNG format
             builder.Save(dataDir + "Coabar-start-stop-symbols_out.png");
-            //ExEnd:CodabarStartStopSymbols
         }
     }
 }

@@ -17,7 +17,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:CustomEncodingModeInDataMatrix
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -37,7 +36,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             barCodeBuilder.CodeText = "Г¶Г¤ГјГ©Г ГЁ";
 
             barCodeBuilder.Save(dataDir + "CustomEncodingModeInDataMatrix_out.bmp", ImageFormat.Bmp);
-            //ExEnd:CustomEncodingModeInDataMatrix
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -23,9 +22,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
-
-          
-            //ExStart:DetectUnreadableBarcode               
+                                     
             // Initialize the BarCodeReader object
             using (BarCodeReader reader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard))
             {
@@ -37,7 +34,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.WriteLine("IsDeniable: " + reader.GetIsDeniable());
                 }
             }
-            //ExEnd:DetectUnreadableBarcode 
         }
     }
 }

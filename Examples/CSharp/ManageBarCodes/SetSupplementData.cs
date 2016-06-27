@@ -18,7 +18,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            //ExStart:SetSupplementData
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
 
@@ -37,7 +36,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Save the image to your system  
             barCodeBuilder.Save(dataDir + "SetSupplementData_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
-            //ExEnd:ChecksumSupplementData
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "SetSupplementData_out.jpg");
         }
     }

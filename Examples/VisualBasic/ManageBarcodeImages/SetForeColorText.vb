@@ -16,7 +16,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
             Dim dst As String = dataDir & Convert.ToString("barcode-SetForeColorText_out.jpg")
 
-            'ExStart:SetForeColorText
             ' Instantiate barcode object
             Dim barCodeBuilder As New BarCodeBuilder()
 
@@ -25,7 +24,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Set the code text fore color to red
             barCodeBuilder.CodeTextColor = System.Drawing.Color.Red
-            'ExEnd:SetForeColorText            
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dst)
         End Sub
     End Class

@@ -14,7 +14,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-            //ExStart:ControlBarsFillingofOneDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -24,7 +23,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 builder.FilledBars = false;
                 builder.Save(dataDir + "ControlBarsFillingofOneDBarcodes_out.png");
             }
-            //ExEnd:ControlBarsFillingofOneDBarcodes
         }
     }
 }

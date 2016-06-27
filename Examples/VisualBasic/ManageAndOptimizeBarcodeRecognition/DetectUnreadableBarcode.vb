@@ -19,8 +19,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
-
-            'ExStart:DetectUnreadableBarcode               
             ' Initialize the BarCodeReader object
             Using reader As New BarCodeReader(dataDir & Convert.ToString("code39.png"), DecodeType.Code39Standard)
                 ' Set RecognitionMode
@@ -31,7 +29,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     Console.WriteLine("IsDeniable: " & reader.GetIsDeniable().ToString())
                 End While
             End Using
-            'ExEnd:DetectUnreadableBarcode 
-        End Sub
+         End Sub
     End Class
 End Namespace

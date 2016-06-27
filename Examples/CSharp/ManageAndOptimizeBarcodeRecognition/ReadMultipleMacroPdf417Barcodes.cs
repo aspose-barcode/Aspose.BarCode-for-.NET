@@ -23,8 +23,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
             try
             {
-                //ExStart:ReadMultipleMacroPdf417Barcodes               
-
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
                 // Create array for storing multiple bar codes file names
@@ -51,8 +49,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                         Console.WriteLine();
                     }
                 }
-                //ExEnd:ReadMultipleMacroPdf417Barcodes 
-
 
             }
             catch (Exception ex)

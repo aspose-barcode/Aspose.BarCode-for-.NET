@@ -4,7 +4,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SetQREncodeMode
         Public Shared Sub Run()
-            ' ExStart:SetQREncodeMode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -16,7 +15,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the file to disk  
             builder.Save(dataDir & Convert.ToString("QR-Encode-mode_out.jpg"))
-            ' ExEnd:SetQREncodeMode
 
         End Sub
     End Class

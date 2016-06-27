@@ -16,7 +16,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class EncodeQRCodEInECIMode
         Public Shared Sub Run()
-            'ExStart:EncodeQRCodEInECIMode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -46,7 +45,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
 
             ' Save QR code
             lBmp.Save(dataDir & Convert.ToString("EncodeQRCodEInECIMode_out.bmp"), ImageFormat.Bmp)
-            'ExEnd:EncodeQRCodEInECIMode
         End Sub
     End Class
 End Namespace

@@ -5,7 +5,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class BarcodeImageBorders
         Public Shared Sub Run()
-            'ExStart:BarcodeImageBorders
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -26,15 +25,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("barcodeImageborders_out.jpeg"), ImageFormat.Jpeg)
-            'ExEnd:BarcodeImageBorders
 
         End Sub
     End Class
 End Namespace
-
-'=======================================================
-'Service provided by Telerik (www.telerik.com)
-'Conversion powered by NRefactory.
-'Twitter: @telerik
-'Facebook: facebook.com/telerik
-'=======================================================

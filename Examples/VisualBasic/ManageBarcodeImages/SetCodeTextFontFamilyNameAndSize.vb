@@ -13,7 +13,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetCodeTextFontFamilyNameAndSize
         Public Shared Sub Run()
 
-            'ExStart:SetCodeTextFontFamilyNameAndSize
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -25,8 +24,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' Save barcode image to file
             barCodeBuilder.Save(dataDir & Convert.ToString("SetCodeTextFontFamilyNameAndSize_out.bmp"), System.Drawing.Imaging.ImageFormat.Bmp)
-            'ExEnd:SetCodeTextFontFamilyNameAndSize            
-
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir)
         End Sub
     End Class

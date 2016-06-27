@@ -9,8 +9,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            //ExStart:CreateQRbarcode
-
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -25,7 +23,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the file on disk and set its image format to Jpeg
             barCodeBuilder.Save(dataDir + "CreateQRbarcode_out.bmp", BarCodeImageFormat.Bmp);
-            //ExEnd:CreateQRbarcode
         }
     }
 }

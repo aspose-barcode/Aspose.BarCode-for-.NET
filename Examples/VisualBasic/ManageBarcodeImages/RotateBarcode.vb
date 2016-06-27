@@ -4,7 +4,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class RotateBarcode
         Public Shared Sub Run()
-            'ExStart:RotateBarcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -21,7 +20,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             barCodeBuilder.CodeLocation = CodeLocation.None
             barCodeBuilder.RotationAngleF = 90
             barCodeBuilder.Save(dataDir & Convert.ToString("QR-rotate_out.jpeg"), BarCodeImageFormat.Jpeg)
-            'ExEnd:RotateBarcode
         End Sub
     End Class
 End Namespace

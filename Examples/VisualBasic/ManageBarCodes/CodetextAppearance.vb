@@ -8,7 +8,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
             Dim dst As String = dataDir & Convert.ToString("codetext-appearence.jpg")
 
-            'ExStart:CodetextAppearance
             ' Instantiate bar code object
             Dim barCodeBuilder As New BarCodeBuilder()
 
@@ -30,7 +29,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' Set the symbology type to Code128
             barCodeBuilder.SymbologyType = Symbology.Code128
 
-            'ExEnd:CodetextAppearance
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg)
 

@@ -12,14 +12,13 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class ExportPropertiesToXML
         Public Shared Sub Run()
-            'ExStart:ExportPropertiesToXML
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
             ' Initialize the BarCodeBuilder class by passing barcode text and barcode symbology as parameters.
             Dim builder As New BarCodeBuilder("abcdefghijklmnopqrstuvwxyzabcdef", Symbology.DataMatrix)
 
-            ' set various different properties/variables of the barcode.
+            ' Set various different properties/variables of the barcode.
             builder.BorderVisible = True
             builder.ImageQuality = ImageQualityMode.AntiAlias
             builder.CodeLocation = CodeLocation.Above
@@ -40,10 +39,9 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' Specify text font settings.
             builder.CodeTextFont = New Font("Courier New", 24, FontStyle.Bold Or FontStyle.Italic)
 
-            ' call the export to XML method to export the properties to XML file.
+            ' Call the export to XML method to export the properties to XML file.
             builder.ExportToXml(dataDir & Convert.ToString("BarCodeBuilder.DataMatrix_out.xml"))
 
-            'ExEnd:ExportPropertiesToXML
             Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "BarCodeBuilder.DataMatrix.xml")
         End Sub
     End Class

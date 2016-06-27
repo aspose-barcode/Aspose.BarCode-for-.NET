@@ -8,7 +8,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-            //ExStart:BarcodeCustomSize
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -26,7 +25,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Save image to disk
             builder.Save(dataDir + "barcode-custom-size_out.jpg");
-            //ExEnd:BarcodeCustomSize
         }
     }
 }

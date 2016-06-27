@@ -16,9 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-
-            //ExStart:SetCodeTextFontFamilyNameAndSize
-            // The path to the documents directory.
+             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object
@@ -29,7 +27,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Save barcode image to file
             barCodeBuilder.Save(dataDir + "SetCodeTextFontFamilyNameAndSize_out.bmp", System.Drawing.Imaging.ImageFormat.Bmp);
-            //ExEnd:SetCodeTextFontFamilyNameAndSize            
 
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir);
         }

@@ -8,7 +8,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            // ExStart:CreatePDF417Barcode 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -23,7 +22,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save file to disk
             barCodeBuilder.Save(dataDir + "pdf417-barcode_out.jpg", BarCodeImageFormat.Jpeg);
-            // ExEnd:CreatePDF417Barcode 
         }
     }
 }

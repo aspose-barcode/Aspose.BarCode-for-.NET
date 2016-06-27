@@ -12,7 +12,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
             string dst = dataDir + "codetext-appearence.jpg";
 
-            //ExStart:CodetextAppearance
             // Instantiate bar code object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
 
@@ -34,7 +33,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Set the symbology type to Code128
             barCodeBuilder.SymbologyType = Symbology.Code128;
 
-            //ExEnd:CodetextAppearance
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg);
 

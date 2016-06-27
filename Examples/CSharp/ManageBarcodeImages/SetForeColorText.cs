@@ -20,7 +20,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
             string dst = dataDir + "barcode-SetForeColorText_out.jpg";
 
-            //ExStart:SetForeColorText
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
 
@@ -29,7 +28,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Set the code text fore color to red
             barCodeBuilder.CodeTextColor = System.Drawing.Color.Red;
-            //ExEnd:SetForeColorText            
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dst);
         }
     }

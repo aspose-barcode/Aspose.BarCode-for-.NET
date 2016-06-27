@@ -10,9 +10,8 @@ Imports Aspose.BarCode
 '
 
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
-    Class SetITF14SpecifyBordeType
+    Class SetITF14SpecifyBorderType
         Public Shared Sub Run()
-            'ExStart:SetITF14SpecifyBordeType
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -46,8 +45,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' Save the Barcode image
             barCodeBuilder.Save(dataDir & Convert.ToString("ITF14_Border_Type_BarOut.png"), BarCodeImageFormat.Png)
-            'ExEnd:SetITF14SpecifyBordeType
-
         End Sub
     End Class
 End Namespace

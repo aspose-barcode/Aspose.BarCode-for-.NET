@@ -8,7 +8,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-            //ExStart:ColorizeAnyPartoftheBarcodeImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
             string dst = dataDir + "colorize-barcode_out.jpg";
@@ -36,7 +35,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg);
-            //ExEnd:ColorizeAnyPartoftheBarcodeImage
         }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -23,7 +22,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                //ExStart:DetectDecoratedDatamatrixBarcode                        
+                                         
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -41,7 +40,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                         Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());
                     }
                 }
-                //ExEnd:DetectDecoratedDatamatrixBarcode 
             }
             catch (Exception ex)
             {

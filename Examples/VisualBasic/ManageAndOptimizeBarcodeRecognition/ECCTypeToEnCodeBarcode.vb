@@ -16,7 +16,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class ECCTypeToEnCodeBarcode
         Public Shared Sub Run()
-            'ExStart:ECCTypeToEnCodeBarcode               
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -49,7 +48,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
 
             ' Save barcode
             builder2.Save(dataDir & Convert.ToString("SampleBarcode2.png"))
-            'ExEnd:ECCTypeToEnCodeBarcode 
         End Sub
     End Class
 End Namespace

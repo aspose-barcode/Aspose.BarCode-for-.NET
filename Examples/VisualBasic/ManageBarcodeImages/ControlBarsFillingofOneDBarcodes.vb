@@ -10,7 +10,6 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class ControlBarsFillingofOneDBarcodes
         Public Shared Sub Run()
-            'ExStart:ControlBarsFillingofOneDBarcodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -19,7 +18,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
                 builder.FilledBars = False
                 builder.Save(dataDir & Convert.ToString("ControlBarsFillingofOneDBarcodes_out.png"))
             End Using
-            'ExEnd:ControlBarsFillingofOneDBarcodes
         End Sub
     End Class
 End Namespace

@@ -19,7 +19,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
-            // ExStart:ControlAppearanceCodetext
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
 
@@ -29,7 +28,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             // Set the location of the code text to above the barcode
             barCodeBuilder.CodeLocation = CodeLocation.Above;
 
-            // ExEnd:ControlAppearanceCodetext            
             // Save the image to your system in Jpeg format
             barCodeBuilder.Save(dataDir + "barcode-SetCodetextLocation_out.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }

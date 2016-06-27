@@ -15,7 +15,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-            //ExStart:SpecifyITF14BorderThicknes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -49,8 +48,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Save the Barcode image
             barCodeBuilder.Save(dataDir + "ITF14_Border_TypeBar_Out.png", BarCodeImageFormat.Png);
-            //ExEnd:SpecifyITF14BorderThicknes
-
         }
     }
 }

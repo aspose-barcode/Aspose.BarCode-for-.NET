@@ -18,7 +18,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
     Class OptimizingBarCodeRecognitionProcess
         Public Shared Sub Run()
             Try
-                'ExStart:OptimizingBarCodeRecognitionProcess               
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -31,7 +30,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                 BarCodeReader.ProcessorSettings.UseOnlyThisCoresCount = 4
 
                 ' perform the BarCode recognition task Initialize the BarCodeReader object
-
                 Using reader As New BarCodeReader(dataDir & Convert.ToString("code39.png"), DecodeType.Code128)
                     While reader.Read()
                         Console.WriteLine("Code Text: " & reader.GetCodeText().ToString() & " Type: " & reader.GetCodeType().ToString())
@@ -40,7 +38,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
 
                 ' Stop the stopwatch
                 sw.[Stop]()
-                'ExEnd:OptimizingBarCodeRecognitionProcess               
 
                 ' Write the Elapsed time to console
                 Console.WriteLine("Elapsed: " & sw.Elapsed.ToString())

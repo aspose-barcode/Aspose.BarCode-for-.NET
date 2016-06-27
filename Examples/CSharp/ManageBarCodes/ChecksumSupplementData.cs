@@ -17,7 +17,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            //ExStart:ChecksumSupplementData
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
 
@@ -32,7 +31,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the image to your system and set its image format to png
             barCodeBuilder.Save(dataDir + "code39-checeksum_out.png");
-            //ExEnd:ChecksumSupplementData
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "code39-checeksum.png");
         }
     }

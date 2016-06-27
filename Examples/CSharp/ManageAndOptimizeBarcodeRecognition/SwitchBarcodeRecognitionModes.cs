@@ -22,7 +22,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                //ExStart:SwitchBarcodeRecognitionModes               
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -42,7 +41,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 }
                 // Close the reader
                 reader.Close();
-                //ExEnd:SwitchBarcodeRecognitionModes 
             }
             catch (Exception ex)
             {

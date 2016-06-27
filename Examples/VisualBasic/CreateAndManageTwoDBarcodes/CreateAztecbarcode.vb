@@ -13,7 +13,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class CreateAztecbarcode
         Public Shared Sub Run()
-            'ExStart:CreateAztecbarcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -29,7 +28,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             ' Save the Barcode image
             barCodeBuilder.Save(dataDir & Convert.ToString("CreateAztecbarcode_out.bmp"), BarCodeImageFormat.Bmp)
 
-            'ExEnd:CreateAztecbarcode
             Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "CreateAztecbarcode_out.bmp")
         End Sub
     End Class

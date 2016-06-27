@@ -22,7 +22,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                //ExStart:ManualHints               
                 Stopwatch watch = new Stopwatch();
 
                 // The path to the documents directory.
@@ -47,7 +46,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     watch.Stop();
                     Console.WriteLine("Time: " + watch.ElapsedMilliseconds + "ms.");
                 }
-                //ExEnd:ManualHints 
             }
             catch (Exception ex)
             {

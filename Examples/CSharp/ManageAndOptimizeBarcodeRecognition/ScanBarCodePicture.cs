@@ -24,7 +24,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
             try
             {
-                //ExStart:ScanBarCodePicture
                 // Read file from directory with DecodeType.EAN13
                 BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg", DecodeType.EAN13);
                 while (reader.Read())
@@ -35,7 +34,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.WriteLine("CodeText: " + reader.GetCodeText());
                 }
                 reader.Close();
-                //ExEnd:ScanBarCodePicture 
             }
             catch (Exception ex)
             {

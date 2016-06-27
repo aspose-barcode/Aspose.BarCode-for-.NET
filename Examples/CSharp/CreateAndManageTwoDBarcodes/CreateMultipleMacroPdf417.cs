@@ -23,7 +23,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            //ExStart:CreateMultipleMacroPdf417
             // create array for storing multiple barcodes
             const int nSize = 4;
             string[] lstCodeText = new[] { "code-1", "code-2", "code-3", "code-4" };
@@ -49,8 +48,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                     Process.Start(dataDir + strFileId + "_" + nCount + "_out.png");
                 }
             }
-            //ExEnd:CreateMultipleMacroPdf417 
-
         }
     }
 }

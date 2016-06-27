@@ -14,7 +14,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class HideBarcodeCodeText
         Public Shared Sub Run()
-            'ExStart:HideBarcodeCodeText
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -34,7 +33,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
 
             ' Save the Barcode image
             barCodeBuilder.Save(dataDir & Convert.ToString("HideBarcodeCodeText_out.png"), BarCodeImageFormat.Png)
-            'ExEnd:HideBarcodeCodeText
         End Sub
     End Class
 End Namespace

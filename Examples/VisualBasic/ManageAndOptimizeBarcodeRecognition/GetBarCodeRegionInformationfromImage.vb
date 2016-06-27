@@ -17,7 +17,6 @@ Imports Aspose.BarCode
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class GetBarCodeRegionInformationfromImage
         Public Shared Sub Run()
-            'ExStart:GetBarCodeRegionInformationfromImage               
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -40,7 +39,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
             End While
             ' Close reader
             barCodeReader.Close()
-            'ExEnd:GetBarCodeRegionInformationfromImage 
         End Sub
     End Class
 End Namespace

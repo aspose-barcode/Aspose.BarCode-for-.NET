@@ -7,7 +7,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
-            'Instantiate barcode object
+            ' Instantiate barcode object
             Dim barCodeBuilder As New BarCodeBuilder()
 
             ' Set the Code text for the barcode
@@ -41,7 +41,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("barcode-caption_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
-
         End Sub
     End Class
 End Namespace

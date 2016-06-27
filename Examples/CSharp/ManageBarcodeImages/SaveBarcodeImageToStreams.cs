@@ -16,7 +16,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
-            //ExStart:SaveBarcodeImageToStreams
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -34,7 +33,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Call save method of BarCodeImage to store Png barcode image to memory stream
             barCodeBuilder.BarCodeImage.Save(dataDir + mStream + ".png", System.Drawing.Imaging.ImageFormat.Png);
-            //ExEnd:SaveBarcodeImageToStreams
         }
     }
 }

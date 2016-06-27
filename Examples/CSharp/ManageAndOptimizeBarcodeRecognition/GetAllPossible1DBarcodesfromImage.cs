@@ -22,7 +22,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                //ExStart:GetAllPossible1DBarcodesfromImage               
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -46,7 +45,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.WriteLine("Bottom right coordinates: X = " + point[2].X + ", Y = " + point[2].Y);
                     Console.WriteLine("Top right coordinates: X = " + point[3].X + ", Y = " + point[3].Y);
                 }
-                //ExEnd:GetAllPossible1DBarcodesfromImage 
             }
             catch (Exception ex)
             {
