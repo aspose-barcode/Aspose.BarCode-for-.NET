@@ -20,7 +20,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
                 ' Initialize the BarCodeReader 
-                Dim reader As New BarCodeReader(dataDir & Convert.ToString("RecognizingMultipleSymbologies.png"), DecodeType.AllSupportedTypes)
+                Dim reader As New BarCodeReader(dataDir & Convert.ToString("RecognizingMultipleSymbologies.png"), BarCodeReadType.Code39Standard Or BarCodeReadType.Pdf417)
 
                 ' Call Read() method in a loop
                 While reader.Read()
