@@ -1,9 +1,5 @@
-﻿Imports System.IO
-Imports System.Diagnostics
+﻿Imports System.Diagnostics
 Imports System.Drawing.Imaging
-Imports System.Text
-Imports Aspose.BarCode.BarCodeRecognition
-Imports Aspose.BarCode
 
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -37,9 +33,13 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
                     ' set the segments count
                     builder.MacroPdf417SegmentsCount = nSize
 
-                    ' save the barcode (fileid_segmentid.png)
-                    builder.Save(dataDir & strFileId.ToString() + "_" & nCount & "_out.png", ImageFormat.Png)
-                    Process.Start(dataDir & strFileId.ToString + "_" & nCount & "_out.png")
+                    Try
+                        ' save the barcode (fileid_segmentid.png)
+                        builder.Save(dataDir + strFileId + "_" + nCount + "_out.png", ImageFormat.Png)
+                        Process.Start(dataDir + strFileId + "_" + nCount + "_out.png")
+                    Catch ex As Exception
+                        Console.WriteLine(ex.Message)
+                    End Try
                 Next
             End Using
         End Sub

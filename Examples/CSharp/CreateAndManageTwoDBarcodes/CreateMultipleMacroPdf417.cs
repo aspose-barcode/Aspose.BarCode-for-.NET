@@ -1,10 +1,6 @@
-﻿using System.IO;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Drawing.Imaging;
-using System.Text;
-using Aspose.BarCode.BarCodeRecognition;
-using Aspose.BarCode;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -42,10 +38,17 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                     builder.MacroPdf417SegmentID = nCount;
                     // set the segments count
                     builder.MacroPdf417SegmentsCount = nSize;
-
-                    // save the barcode (fileid_segmentid.png)
-                    builder.Save(dataDir + strFileId + "_" + nCount + "_out.png", ImageFormat.Png);
-                    Process.Start(dataDir + strFileId + "_" + nCount + "_out.png");
+                   
+                    try
+                    {
+                        // save the barcode (fileid_segmentid.png)
+                        builder.Save(dataDir + strFileId + "_" + nCount + "_out.png", ImageFormat.Png);
+                        Process.Start(dataDir + strFileId + "_" + nCount + "_out.png");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                 }
             }
         }
