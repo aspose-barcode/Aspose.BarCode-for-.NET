@@ -48,8 +48,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=8.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.8.0.0\lib\net4.0\Aspose.BarCode.dll</HintPath>
+    <Reference Include="Aspose.BarCode, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.16.11.0\lib\net4.0\Aspose.BarCode.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -140,6 +140,8 @@
     <Compile Include="ManageBarCodes\CodabarStartStopSymbols.vb" />
     <Compile Include="ManageBarCodes\CodetextAppearance.vb" />
     <Compile Include="ManageBarCodes\CreateCode128Barcode.vb" />
+    <Compile Include="ManageBarCodes\SetWideNarrowRatio.vb" />
+    <Compile Include="ManageBarCodes\CreateUpcaGs1DatabarCoupon.vb" />
     <Compile Include="ManageBarCodes\CreateDatamatrixBarcode.vb" />
     <Compile Include="ManageBarCodes\CreatePDF417Barcode.vb" />
     <Compile Include="ManageBarCodes\CreateQRbarcode.vb" />
@@ -149,6 +151,7 @@
     <Compile Include="ManageBarCodes\ManageCaption.vb" />
     <Compile Include="ManageBarCodes\ManageXYDimension.vb" />
     <Compile Include="ManageBarCodes\SetCodeText.vb" />
+    <Compile Include="ManageBarCodes\CreateCouponExtendedBarcode.vb" />
     <Compile Include="ManageBarCodes\SetHeightBarcodeBars.vb" />
     <Compile Include="ManageBarCodes\SetHeightOfBarsInDataBarStackedOmniDirectional.vb" />
     <Compile Include="ManageBarCodes\SetQREncodeMode.vb" />
