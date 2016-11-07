@@ -41,7 +41,9 @@ Namespace Aspose.BarCode.Examples.VisualBasic
             'SetQRErrorCorrection.Run()
             'SetSupplementData.Run()
             'SpecifySymbology.Run()
-
+            'CreateCouponExtendedBarcode.Run()
+            'CreateUpcaGs1DatabarCoupon.Run()
+            'SetWideNarrowRatio.Run()
 
             ' =====================================================
             ' =====================================================

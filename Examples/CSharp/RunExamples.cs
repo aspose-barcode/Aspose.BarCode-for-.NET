@@ -43,7 +43,10 @@ namespace Aspose.BarCode.Examples.CSharp
             //SetQREncodeMode.Run();
             //SetQRErrorCorrection.Run();
             //SetSupplementData.Run();
-            //SpecifySymbology.Run();
+            //SpecifySymbology.Run();            
+            //CreateCouponExtendedBarcode.Run();
+            //CreateUpcaGs1DatabarCoupon.Run();
+            //SetWideNarrowRatio.Run();
 
             //// =====================================================
             //// =====================================================
@@ -153,7 +156,7 @@ namespace Aspose.BarCode.Examples.CSharp
         {
             return Path.GetFullPath(GetDataDir_Data() + "ManageAndOptimizeBarcodeRecognition/");
         }
-        
+
         private static string GetDataDir_Data()
         {
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
