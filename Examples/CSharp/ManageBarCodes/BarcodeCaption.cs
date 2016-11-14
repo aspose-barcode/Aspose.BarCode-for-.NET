@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -11,34 +12,34 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            //Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
+            // Instantiate barcode object and set CodeText & Barcode Symbology
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128)
+            {
+                CaptionAbove = {Visible = false}
+            };
 
-            // Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567";
-
-            // Set the symbology type to Code128
-            barCodeBuilder.SymbologyType = Symbology.Code128;
-
-            barCodeBuilder.CaptionAbove.Visible = false;
 
             // Create caption object. Set its text and text alignment & also make it visible
-            Caption caption = new Caption();
-            caption.Text = "Aspose";
-            caption.TextAlign = System.Drawing.StringAlignment.Center;
-            caption.Visible = true;
-            caption.Font = new System.Drawing.Font("Pristina", 14f);
-            caption.ForeColor = System.Drawing.Color.Red;
+            Caption caption = new Caption
+            {
+                Text = "Aspose",
+                TextAlign = System.Drawing.StringAlignment.Center,
+                Visible = true,
+                Font = new System.Drawing.Font("Pristina", 14f),
+                ForeColor = System.Drawing.Color.Red
+            };
 
             // Assign caption object to be displayed above the barcode
             barCodeBuilder.CaptionAbove = caption;
 
-            Caption captionBelow = new Caption();
-            captionBelow.Text = "Aspose.BarCode Caption Below";
-            captionBelow.TextAlign = System.Drawing.StringAlignment.Center;
-            captionBelow.Visible = true;
-            captionBelow.Font = new System.Drawing.Font("Pristina", 14f);
-            captionBelow.ForeColor = System.Drawing.Color.OrangeRed;
+            Caption captionBelow = new Caption
+            {
+                Text = "Aspose.BarCode Caption Below",
+                TextAlign = System.Drawing.StringAlignment.Center,
+                Visible = true,
+                Font = new System.Drawing.Font("Pristina", 14f),
+                ForeColor = System.Drawing.Color.OrangeRed
+            };
 
             // Assign caption object to be displayed below the barcode
             barCodeBuilder.CaptionBelow = captionBelow;

@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -10,17 +11,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
-
-            // Instantiate BarCodeBuilder object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set the SymbologyType for the barcode
-            barCodeBuilder.SymbologyType = Symbology.Pdf417;
-
-            // Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567890";
-
-            // Save file to disk
+ 
+            // Instantiate BarCodeBuilder object Set the Code text & SymbologyType for the barcode
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890", EncodeTypes.Pdf417);
             barCodeBuilder.Save(dataDir + "pdf417-barcode_out.jpg", BarCodeImageFormat.Jpeg);
         }
     }

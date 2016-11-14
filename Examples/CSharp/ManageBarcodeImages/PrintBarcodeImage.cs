@@ -2,6 +2,7 @@
 using Aspose.BarCode;
 using System;
 using System.Drawing.Printing;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 {
@@ -11,16 +12,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
         {
             // Get the default Printer Name
             PrinterSettings settings = new PrinterSettings();
-
             string printerName = settings.PrinterName;
 
-            // Create instance of BarCodeBuilder, specify codetext and symbology in the constructor
-            BarCodeBuilder builder = new BarCodeBuilder("12345678", Symbology.Code128);
+            // Instantiate barcode object and set CodeText & Barcode Symbology
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890", EncodeTypes.Code128);
 
             // Set printer name
-            builder.PrinterName = printerName;
-
-            builder.Print();
+            barCodeBuilder.PrinterName = printerName;
+            barCodeBuilder.Print();
         }
     }
 }

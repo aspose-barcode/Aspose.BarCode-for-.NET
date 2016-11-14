@@ -1,21 +1,15 @@
 ﻿Imports System.IO
 Imports Aspose.BarCode
+Imports Aspose.BarCode.Generation
 
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class WideNarrowRatio
         Public Shared Sub Run()
-
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
             ' Instantiate linear barcode object
-            Dim barCodeBuilder As New BarCodeBuilder()
-
-            ' Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567"
-
-            ' Set the symbology type to Code39
-            barCodeBuilder.SymbologyType = Symbology.Code39Standard
+            Dim barCodeBuilder As New BarCodeBuilder("1234567", EncodeTypes.Code39Standard)
 
             ' Set the wide to narrow ratio for the barcode
             barCodeBuilder.WideNarrowRatio = 3.0F
@@ -41,7 +35,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("code39-wide-narrow-ratio_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
 
-            Console.WriteLine((Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir) + "code39-wide-narrow-ratio_out.png")
         End Sub
     End Class
 End Namespace

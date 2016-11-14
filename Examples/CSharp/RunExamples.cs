@@ -43,7 +43,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //SetQREncodeMode.Run();
             //SetQRErrorCorrection.Run();
             //SetSupplementData.Run();
-            //SpecifySymbology.Run();            
+            //SpecifySymbology.Run();
             //CreateCouponExtendedBarcode.Run();
             //CreateUpcaGs1DatabarCoupon.Run();
             //SetWideNarrowRatio.Run();
@@ -71,7 +71,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //PrintBarcodeImage.Run();
             //BarcodeCustomSize.Run();
             //SetITF14SpecifyBorderType.Run();
-            //SetFrameOut.Run();            
+            //SetFrameOut.Run();
             //SetCodetextLocation.Run();
             //SetCodeAlignment.Run();
             //SetForeColorText.Run();

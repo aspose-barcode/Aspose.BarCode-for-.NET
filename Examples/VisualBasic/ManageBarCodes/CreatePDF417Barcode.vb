@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports Aspose.BarCode
+Imports Aspose.BarCode.Generation
 
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class CreatePDF417Barcode
@@ -7,16 +8,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
-            ' Instantiate BarCodeBuilder object
-            Dim barCodeBuilder As New BarCodeBuilder()
-
-            ' Set the SymbologyType for the barcode
-            barCodeBuilder.SymbologyType = Symbology.Pdf417
-
-            ' Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567890"
-
-            ' Save file to disk
+            ' Instantiate BarCodeBuilder object Set the Code text & SymbologyType for the barcode
+            Dim barCodeBuilder As New BarCodeBuilder("1234567890", EncodeTypes.Pdf417)
             barCodeBuilder.Save(dataDir & Convert.ToString("pdf417-barcode_out.jpg"), BarCodeImageFormat.Jpeg)
         End Sub
     End Class

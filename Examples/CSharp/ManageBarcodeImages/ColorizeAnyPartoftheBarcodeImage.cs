@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 {
@@ -12,28 +13,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
             string dst = dataDir + "colorize-barcode_out.jpg";
 
-            // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567";
-
-            // Set the symbology type to Code128
-            barCodeBuilder.SymbologyType = Symbology.Code128;
-
-            // Set background color of the barcode
-            barCodeBuilder.BackColor = System.Drawing.Color.Yellow;
-
-            // Set color (fore color) of the barcode
-            barCodeBuilder.ForeColor = System.Drawing.Color.Blue;
-
-            // Set border color of the barcode
-            barCodeBuilder.BorderColor = System.Drawing.Color.Red;
-
-            // Set color of the code text of the barcode
-            barCodeBuilder.CodeTextColor = System.Drawing.Color.Red;
-
-            // Save the image to your system and set its image format to Jpeg
+            // Instantiate barcode object and differnt properties
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128)
+            {
+                BackColor = System.Drawing.Color.Yellow,
+                ForeColor = System.Drawing.Color.Blue,
+                BorderColor = System.Drawing.Color.Red,
+                CodeTextColor = System.Drawing.Color.Red
+            };
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg);
         }
     }

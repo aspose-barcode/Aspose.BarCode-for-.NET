@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -11,13 +12,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Create instance of BarCodeBuilder, specify codetext and symbology in the constructor
-            BarCodeBuilder builder = new BarCodeBuilder("test123", Symbology.QR);
-
-            // Set QR encode mode
-            builder.QREncodeMode = QREncodeMode.Auto;
-
-            // Save the file to disk  
+            // Create instance of BarCodeBuilder, specify codetext symbology and encode mode 
+            BarCodeBuilder builder = new BarCodeBuilder("test123", EncodeTypes.QR) {QREncodeMode = QREncodeMode.Auto};
             builder.Save(dataDir + "QR-Encode-mode_out.jpg");
         }
     }

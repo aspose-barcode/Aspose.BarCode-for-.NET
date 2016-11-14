@@ -2,6 +2,7 @@
 using Aspose.BarCode;
 using System;
 using System.Drawing.Printing;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 {
@@ -13,21 +14,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567";
-
-            // Set the symbology type to Code128
-            barCodeBuilder.SymbologyType = Symbology.Code128;
-
-            // Set the bar height to 3 points
-            barCodeBuilder.BarHeight = 3.0f;
-
-            // Set the measuring unit of barcode to point
-            barCodeBuilder.GraphicsUnit = System.Drawing.GraphicsUnit.Point;
-
-            // Save the image to your system and set its image format to Jpeg
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128)
+            {
+                // Set the bar height to 3 points and measuring unit of barcode to point
+                BarHeight = 3.0f,
+                GraphicsUnit = System.Drawing.GraphicsUnit.Point
+            };
             barCodeBuilder.Save(dataDir + "barcode-size-unit_out.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }
     }

@@ -1,14 +1,16 @@
-﻿Imports System.IO
+﻿
+Imports System.IO
 Imports System.Text
 Imports Aspose.BarCode.BarCodeRecognition
 Imports Aspose.BarCode
+Imports Aspose.BarCode.Generation
 
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
-'when the project is build. Please check https:// ocs.nuget.org/consume/nuget-faq for more information. 
-'If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http:// ww.aspose.com/downloads, 
+'when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+'If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
 'install it and then add its reference to this project. For any issues, questions or suggestions 
-'please feel free to contact us using http:// ww.aspose.com/community/forums/default.aspx
+'please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
@@ -17,15 +19,10 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
-            ' Create instance of BarCodeBuilder class
-
-            Dim builder As New BarCodeBuilder("1234567890", Symbology.Pdf417)
-            ' Set Aspect Ratio to 3:2 or 1.5
-
-            builder.AspectRatio = 1.5F
-            ' Save the barcode image to disk in PNG format
-
-            builder.Save(dataDir & Convert.ToString("SetAspectRatio_out.png"), BarCodeImageFormat.Png)
+            ' Create instance of BarCodeBuilder class, Set Aspect Ratio to 3:2 or 1.5 and Save the barcode image to disk in PNG format  
+            Dim barCodeBuilder As New BarCodeBuilder("1234567890", EncodeTypes.Pdf417)
+            barCodeBuilder.AspectRatio = 1.5F
+            barCodeBuilder.Save(dataDir & Convert.ToString("SetAspectRatio_out.png"), BarCodeImageFormat.Png)
         End Sub
     End Class
 End Namespace

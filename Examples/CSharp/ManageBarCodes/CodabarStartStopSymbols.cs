@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -12,15 +13,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Create instance of BarCodeBuilder, specify codetext and symbology in the constructor
-            BarCodeBuilder builder = new BarCodeBuilder("11112222333344", Symbology.Codabar);
-
-            // Set the codabar start symbol to A
-            builder.CodabarStartSymbol = CodabarSymbol.A;
-
-            // Set the codabar stop symbol to D
-            builder.CodabarStopSymbol = CodabarSymbol.D;
-
-            // Save the image to disk in PNG format
+            BarCodeBuilder builder = new BarCodeBuilder("11112222333344", EncodeTypes.Codabar)
+            {
+                // Set the codabar start symbol to A and stop symbol to D
+                CodabarStartSymbol = CodabarSymbol.A,
+                CodabarStopSymbol = CodabarSymbol.D
+            };           
             builder.Save(dataDir + "Coabar-start-stop-symbols_out.png");
         }
     }
