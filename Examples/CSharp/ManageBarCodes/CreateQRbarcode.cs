@@ -1,7 +1,7 @@
-﻿
-using System.IO;
+﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -12,17 +12,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Initialize BarCodeBuilder
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set the Smbology Type
-            barCodeBuilder.SymbologyType = Symbology.QR;
-
-            // Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567890";
-
-            // Save the file on disk and set its image format to Jpeg
-            barCodeBuilder.Save(dataDir + "CreateQRbarcode_out.bmp", BarCodeImageFormat.Bmp);
+            // Instantiate barcode object and set CodeText & Barcode Symbology
+            BarCodeBuilder barCodeBarCodeBuilder  = new BarCodeBuilder("1234567890", EncodeTypes.QR);
+            barCodeBarCodeBuilder.Save(dataDir + "CreateQRbarcode_out.bmp", BarCodeImageFormat.Bmp);
         }
     }
 }

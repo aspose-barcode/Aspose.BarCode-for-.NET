@@ -2,6 +2,7 @@
 using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -12,17 +13,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Set codetext
-            string codeText = "1234";
-
             // Initialize BarCodeBuilder
-            BarCodeBuilder builder = new BarCodeBuilder(codeText, Symbology.Code128);
-
-            // Code128 type handles Code A, B and C character sets automatically
-            
-            // Save the image to disk in PNG format
-            builder.Save(dataDir + "Code128-customized_out.png");
-
+            // Instantiate barcode object and set CodeText & Barcode Symbology
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234", EncodeTypes.Code128);
+            barCodeBuilder.Save(dataDir + "Code128-customized_out.png");
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -12,13 +13,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate linear barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567";
-
-            // Set the symbology type to Code39
-            barCodeBuilder.SymbologyType = Symbology.Code39Standard;
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567",EncodeTypes.Code39Standard);
 
             // Set the wide to narrow ratio for the barcode
             barCodeBuilder.WideNarrowRatio = 3.0f;
@@ -44,7 +39,6 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir + "code39-wide-narrow-ratio_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
 
-            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "code39-wide-narrow-ratio_out.png");
         }
     }
 }

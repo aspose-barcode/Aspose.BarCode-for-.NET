@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -10,16 +11,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
-            string dstCode128 = dataDir + "code128-YDimensionChanged.jpg";
+            string dstCode128 = dataDir + "code128-YDimensionChanged_out.jpg";
 
-            // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567";
-
-            // Set the symbology type to Code128
-            barCodeBuilder.SymbologyType = Symbology.Code128;
+            // Instantiate barcode object and set CodeText & Barcode Symbology
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128);
 
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dstCode128, System.Drawing.Imaging.ImageFormat.Jpeg);
@@ -33,17 +28,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dstCode128, System.Drawing.Imaging.ImageFormat.Jpeg);
 
-            // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder1 = new BarCodeBuilder();
-
-            // Set the Code text for the barcode
-            barCodeBuilder1.CodeText = "1234567";
-
-            // Set the symbology type to Pdf417
-            barCodeBuilder1.SymbologyType = Symbology.Pdf417;
-
-            // Set the Y-Dimension for the bars of the barcode
-            barCodeBuilder1.yDimension = 4;
+            // Instantiate barcode object and set differnt barcode properties
+            BarCodeBuilder barCodeBuilder1 = new BarCodeBuilder("1234567", EncodeTypes.Pdf417)
+            {
+                yDimension = 4
+            };
 
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder1.Save(dataDir + "pdf417-YDimensionChanged_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);

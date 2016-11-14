@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using Aspose.BarCode;
 using System;
+using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -10,33 +11,18 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
-            string dst = dataDir + "codetext-appearence.jpg";
-
-            // Instantiate bar code object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set the Code text for the bar code
-            barCodeBuilder.CodeText = "1234567";
-
-            // Align the code text to center
-            barCodeBuilder.CodeTextAlignment = System.Drawing.StringAlignment.Center;
-
-            // Set the location of the code text to above the bar code
-            barCodeBuilder.CodeLocation = CodeLocation.Above;
-
-            // Set the code text fore color to red
-            barCodeBuilder.CodeTextColor = System.Drawing.Color.Red;
-
-            // Increase the space between code text and barcode to 1 point
-            barCodeBuilder.CodeTextSpace = 1.0f;
+            string dst = dataDir + "codetext-appearence_out.jpg";
 
             // Set the symbology type to Code128
-            barCodeBuilder.SymbologyType = Symbology.Code128;
-
-            // Save the image to your system and set its image format to Jpeg
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128)
+            {
+                // set differnt barcode properties
+                CodeTextAlignment = System.Drawing.StringAlignment.Center,
+                CodeLocation = CodeLocation.Above,
+                CodeTextColor = System.Drawing.Color.Red,
+                CodeTextSpace = 1.0f
+            };          
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg);
-
-            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dst);
         }
     }
 }

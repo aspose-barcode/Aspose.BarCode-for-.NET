@@ -12,22 +12,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
-            // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder();
-
-            // Set border style to solid
-            barCodeBuilder.BorderDashStyle = BorderDashStyle.Solid;
-
-            // Set border margins by assigning an instance of MarginsF
-            barCodeBuilder.Margins = new MarginsF(2f, 2f, 2f, 2f);
-
-            // Set border width
-            barCodeBuilder.BorderWidth = 0.5f;
-
-            // Enable border to be shown in the barcode
-            barCodeBuilder.BorderVisible = true;
-
-            // Save the image to your system and set its image format to Jpeg
+            // Instantiate barcode object and set different properties
+            BarCodeBuilder barCodeBuilder = new BarCodeBuilder
+            {
+                BorderDashStyle = BorderDashStyle.Solid,
+                Margins = new MarginsF(2f, 2f, 2f, 2f),
+                BorderWidth = 0.5f,
+                BorderVisible = true
+            };
             barCodeBuilder.Save(dataDir + "barcodeImageborders_out.jpeg", ImageFormat.Jpeg);
         }
     }

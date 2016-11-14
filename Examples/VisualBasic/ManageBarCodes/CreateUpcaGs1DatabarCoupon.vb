@@ -1,4 +1,5 @@
 ﻿Imports Aspose.BarCode
+Imports Aspose.BarCode.Generation
 
 '
 'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -15,14 +16,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
-            ' Initialize BarCode builder class object
-            Dim barCodeBuilder As New BarCodeBuilder()
-
-            ' Set symbology type as UPCA & GS1 Databar coupon and set the barcode text
-            barCodeBuilder.SymbologyType = Symbology.UpcaGs1DatabarCoupon
-
-            ' Upca part is "514141100906", GS1Databar part is "(8110)001234502239811110555"
-            barCodeBuilder.CodeText = "512345678900(8110)001234502239811110555"
+            ' Instantiate barcode object and set CodeText & Barcode Symbology
+            Dim barCodeBuilder As New BarCodeBuilder("512345678900(8110)001234502239811110555", EncodeTypes.UpcaGs1DatabarCoupon)
 
             ' Set barcode caption and barcode
             barCodeBuilder.CaptionAbove.Text = "012345-022398"

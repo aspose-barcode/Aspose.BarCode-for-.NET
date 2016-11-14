@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports Aspose.BarCode
+Imports Aspose.BarCode.Generation
 
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class BarcodeImageMargins
@@ -7,28 +8,12 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
-            ' Instantiate barcode object
-            Dim barCodeBuilder As New BarCodeBuilder()
-
-            ' Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567"
-
-            ' Set the symbology type to Code128
-            barCodeBuilder.SymbologyType = Symbology.Code128
-
-            ' sets the left margin
+            ' Instantiate barcode object and different properties
+            Dim barCodeBuilder As New BarCodeBuilder("1234567890", EncodeTypes.Code128)
             barCodeBuilder.Margins.Left = 0.5F
-
-            ' sets the right margin
-            barCodeBuilder.Margins.Right = 0.0F
-
-            ' sets the top margin
-            barCodeBuilder.Margins.Top = 0.0F
-
-            ' sets the bottom margin
-            barCodeBuilder.Margins.Bottom = 0.0F
-
-            ' Save the image to your system and set its image format to Jpeg
+            barCodeBuilder.Margins.Right = 0.5F
+            barCodeBuilder.Margins.Top = 0.5F
+            barCodeBuilder.Margins.Bottom = 0.5F
             barCodeBuilder.Save(dataDir & Convert.ToString("barcode-image-margins_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
         End Sub
     End Class

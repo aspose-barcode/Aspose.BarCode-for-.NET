@@ -1,6 +1,7 @@
 ﻿Imports System.IO
-Imports System.Drawing.Printing
 Imports Aspose.BarCode
+Imports System.Drawing.Printing
+Imports Aspose.BarCode.Generation
 
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetSizeUnitForBarcodeImage
@@ -9,22 +10,12 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
             ' Instantiate barcode object
-            Dim barCodeBuilder As New BarCodeBuilder()
-
-            ' Set the Code text for the barcode
-            barCodeBuilder.CodeText = "1234567"
-
-            ' Set the symbology type to Code128
-            barCodeBuilder.SymbologyType = Symbology.Code128
-
-            ' Set the bar height to 3 points
-            barCodeBuilder.BarHeight = 3.0F
-
-            ' Set the measuring unit of barcode to point
-            barCodeBuilder.GraphicsUnit = System.Drawing.GraphicsUnit.Point
-
-            ' Save the image to your system and set its image format to Jpeg
-            barCodeBuilder.Save(dataDir & Convert.ToString("barcode-size-unit_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            ' Set the bar height to 3 points and measuring unit of barcode to point
+            Dim barCodeBuilder As New BarCodeBuilder("1234567", EncodeTypes.Code128) With { _
+                .BarHeight = 3.0F, _
+                .GraphicsUnit = System.Drawing.GraphicsUnit.Point _
+            }
+            BarCodeBuilder.Save(dataDir & Convert.ToString("barcode-size-unit_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
         End Sub
     End Class
 End Namespace
