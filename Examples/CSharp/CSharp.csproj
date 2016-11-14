@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
+    <Compile Include="ManageBarCodes\GeneratingGS1_128AI8012Barcode.cs" />
+    <Compile Include="ManageBarCodes\GeneratingGS1ForCodablock.cs" />
+    <Compile Include="ManageBarCodes\GeneratingCodablockF.cs" />
     <Compile Include="ManageBarCodes\SetWideNarrowRatio.cs" />
     <Compile Include="ManageBarCodes\CreateUpcaGs1DatabarCoupon.cs" />
     <Compile Include="ManageBarCodes\CreateCouponExtendedBarcode.cs" />

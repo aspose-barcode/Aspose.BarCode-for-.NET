@@ -140,6 +140,9 @@
     <Compile Include="ManageBarCodes\CodabarStartStopSymbols.vb" />
     <Compile Include="ManageBarCodes\CodetextAppearance.vb" />
     <Compile Include="ManageBarCodes\CreateCode128Barcode.vb" />
+    <Compile Include="ManageBarCodes\GeneratingCodablockF.vb" />
+    <Compile Include="ManageBarCodes\GeneratingGS1ForCodablock.vb" />
+    <Compile Include="ManageBarCodes\GeneratingGS1_128AI8012Barcode.vb" />
     <Compile Include="ManageBarCodes\SetWideNarrowRatio.vb" />
     <Compile Include="ManageBarCodes\CreateUpcaGs1DatabarCoupon.vb" />
     <Compile Include="ManageBarCodes\CreateDatamatrixBarcode.vb" />

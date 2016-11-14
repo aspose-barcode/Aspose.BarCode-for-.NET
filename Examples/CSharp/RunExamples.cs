@@ -47,6 +47,9 @@ namespace Aspose.BarCode.Examples.CSharp
             //CreateCouponExtendedBarcode.Run();
             //CreateUpcaGs1DatabarCoupon.Run();
             //SetWideNarrowRatio.Run();
+            //GeneratingCodablockF.Run();
+            //GeneratingGS1ForCodablock.Run();
+            //GeneratingGS1_128AI8012Barcode.Run();
 
             //// =====================================================
             //// =====================================================
