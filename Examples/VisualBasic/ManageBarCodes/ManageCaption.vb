@@ -1,5 +1,4 @@
 ﻿Imports System.IO
-Imports Aspose.BarCode.Examples.CSharp
 Imports Aspose.BarCode
 Imports Aspose.BarCode.Generation
 
