@@ -1,7 +1,14 @@
-﻿using System.IO;
-using Aspose.BarCode;
-using System;
+﻿using System.Drawing;
+using System.Drawing.Imaging;
 using Aspose.BarCode.Generation;
+
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
+when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
+If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
+install it and then add its reference to this project. For any issues, questions or suggestions 
+please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
@@ -18,34 +25,32 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 CaptionAbove = {Visible = false}
             };
 
-
             // Create caption object. Set its text and text alignment & also make it visible
             Caption caption = new Caption
             {
                 Text = "Aspose",
-                TextAlign = System.Drawing.StringAlignment.Center,
+                TextAlign = StringAlignment.Center,
                 Visible = true,
-                Font = new System.Drawing.Font("Pristina", 14f),
-                ForeColor = System.Drawing.Color.Red
+                Font = new Font("Pristina", 14f),
+                ForeColor = Color.Red
             };
 
             // Assign caption object to be displayed above the barcode
             barCodeBuilder.CaptionAbove = caption;
-
             Caption captionBelow = new Caption
             {
                 Text = "Aspose.BarCode Caption Below",
-                TextAlign = System.Drawing.StringAlignment.Center,
+                TextAlign = StringAlignment.Center,
                 Visible = true,
-                Font = new System.Drawing.Font("Pristina", 14f),
-                ForeColor = System.Drawing.Color.OrangeRed
+                Font = new Font("Pristina", 14f),
+                ForeColor = Color.OrangeRed
             };
 
             // Assign caption object to be displayed below the barcode
             barCodeBuilder.CaptionBelow = captionBelow;
 
             // Save the image to your system and set its image format to Jpeg
-            barCodeBuilder.Save(dataDir + "barcode-caption_out.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            barCodeBuilder.Save(dataDir + "barcode-caption_out.jpg", ImageFormat.Jpeg);
 
         }
     }

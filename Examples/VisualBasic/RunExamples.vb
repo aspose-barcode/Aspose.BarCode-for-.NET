@@ -75,6 +75,20 @@ Namespace Aspose.BarCode.Examples.VisualBasic
             'SetCodeTextFontFamilyNameAndSize.Run()
             'AddSpaceInBarCodeAndText.Run()
             'SetFontandColorSetting.Run()
+            'ReadBarcodeFromTIFFImages.Run()
+            'GenerateAndRecognizeUTF8Characters.Run()
+            'GetDLLVersionInformation.Run()
+            'CreatePdf417BarcodeWithTurkishCharacters.Run()
+            'CreatePdf417BarcodeWithChineseCharacters.Run()
+            'SwissPostParcelSymbology.Run()
+            'CreateImageWithExactBarcodeOnly.Run()
+            'CreateAndSetSizeForImageWithBarcode.Run()
+            'SwissPostParcelBarcodeWithAdditionalServiceType.Run()
+            'SwissPostParcelBarcodeWithInternationalMailType.Run()
+            'OptionalExceptionMessageWith1DBarCode.Run()
+            'RecognizeBarcodeWithTurkishCharacters.Run()
+            'RecognizeBarcodeWithChineseCharacters.Run()
+            'ReadAndSortBarcodesInSpecificOrder.Run()
 
             ' =====================================================
             ' =====================================================
@@ -102,7 +116,6 @@ Namespace Aspose.BarCode.Examples.VisualBasic
             'ReduceCodeTextFontSize.Run()
             'SetAspectRatio.Run()
             'CreateMultipleMacroPdf417.Run()
-
 
             ' =====================================================
             ' =====================================================

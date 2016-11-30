@@ -1,15 +1,10 @@
-﻿using System.IO;
-using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Drawing.Imaging;
-using System.Text;
-using Aspose.BarCode.BarCodeRecognition;
-using Aspose.BarCode;
 using Aspose.BarCode.Generation;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
@@ -27,19 +22,13 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // Initialize a BarCodeBuilder class object and Set CodeText & Symbology Type
             BarCodeBuilder builder = new BarCodeBuilder("12345TEXT", EncodeTypes.QR);
 
-            // Set encoding mode            
+            // Set encoding mode, Auto for Micro QR, error correction level          
             builder.QREncodeMode = QREncodeMode.Auto;
-            
-            // Set Auto for Micro QR
             builder.QREncodeType = QREncodeType.Auto;
-                         
-            // Set error correction level
             builder.QRErrorLevel = QRErrorLevel.LevelL;
-            
-            // Get barcode image Bitmap
+
+            // Get barcode image Bitmap and Save QR code
             Bitmap lBmp = builder.GenerateBarCodeImage();
-            
-            // Save QR code
             lBmp.Save(dataDir + "EncodeMicroQRCode_out.bmp", ImageFormat.Bmp);
         }
     }

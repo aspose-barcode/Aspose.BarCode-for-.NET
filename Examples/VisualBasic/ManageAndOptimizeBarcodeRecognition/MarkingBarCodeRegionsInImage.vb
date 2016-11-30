@@ -1,16 +1,12 @@
-﻿Imports System.IO
-Imports System.Diagnostics
-Imports System.Drawing
-Imports System.Drawing.Imaging
+﻿Imports System.Drawing
 Imports Aspose.BarCode.BarCodeRecognition
-Imports Aspose.BarCode
 
 '
-'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
-'when the project is build. Please check https:// ocs.nuget.org/consume/nuget-faq for more information. 
-'If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http:// ww.aspose.com/downloads, 
-'install it and then add its reference to this project. For any issues, questions or suggestions 
-'please feel free to contact us using http:// ww.aspose.com/community/forums/default.aspx
+' This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
+' When the project is build. Please check http://docs.nuget.org/consume/nuget-faq for more information. 
+' If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
+' Install it and then add its reference to this project. For any issues, questions or suggestions 
+' Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
 
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
@@ -22,16 +18,16 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
 
             ' Create an instance of BarCodeReader and set image and symbology type to recognize
             Dim barCodeReader As New BarCodeReader(dataDir & Convert.ToString("code39.png"), DecodeType.Code39Standard)
-
             Dim counter As Integer = 0
+
             ' Read all the barcodes from the images
             While barCodeReader.Read()
-                ' Display the symbology type
-                Console.WriteLine("BarCode Type: " & barCodeReader.GetCodeType().ToString())
-                ' Display the codetext
-                Console.WriteLine("BarCode CodeText: " & barCodeReader.GetCodeText().ToString())
-                ' Get the barcode region
 
+                ' Display the symbology type and codetext
+                Console.WriteLine("BarCode Type: " & barCodeReader.GetCodeType().ToString())
+                Console.WriteLine("BarCode CodeText: " & barCodeReader.GetCodeText().ToString())
+
+                ' Get the barcode region
                 Dim region As BarCodeRegion = barCodeReader.GetRegion()
                 If region IsNot Nothing Then
                     ' Initialize an object of type Image to get the Graphics object
@@ -40,10 +36,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     ' Initialize graphics object from the image
                     Dim graphics__2 As Graphics = Graphics.FromImage(image__1)
 
-                    ' Draw the barcode edges
+                    ' Draw the barcode edges and Save the image
                     region.DrawBarCodeEdges(graphics__2, New Pen(Color.Red, 1.0F))
-
-                    ' Save the image
                     image__1.Save(dataDir & String.Format("edge_{0}.png", System.Math.Max(System.Threading.Interlocked.Increment(counter), counter - 1)))
 
                     ' Fill the barcode area with some color
