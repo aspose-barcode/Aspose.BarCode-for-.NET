@@ -1,13 +1,9 @@
-﻿using System.IO;
-using System;
-using System.Diagnostics;
-using System.Drawing.Imaging;
+﻿using System;
 using Aspose.BarCode.BarCodeRecognition;
-using Aspose.BarCode;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
@@ -20,20 +16,15 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void Run()
         {
             try
-            {
-                 
+            {                 
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
-
                 BaseDecodeType[] objArray = new BaseDecodeType[] { DecodeType.Code39Standard, DecodeType.Pdf417 };
 
-                // Initialize the BarCodeReader 
+                // Initialize the BarCodeReader, Call Read() method in a loop and  Display the codetext and symbology type
                 BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png",objArray);
-
-                // Call Read() method in a loop
                 while (reader.Read())
                 {
-                    // Display the codetext and symbology type
                     Console.WriteLine("Codetext: " + reader.GetCodeText());
                     Console.WriteLine("Symbology type: " + reader.GetCodeType());
                 }

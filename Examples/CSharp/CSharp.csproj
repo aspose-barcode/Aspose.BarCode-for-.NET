@@ -51,6 +51,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
+    <Compile Include="ManageBarCodes\ReadAndSortBarcodesInSpecificOrder.cs" />
+    <Compile Include="ManageBarCodes\RecognizeBarcodeWithChineseCharacters.cs" />
+    <Compile Include="ManageBarCodes\RecognizeBarcodeWithTurkishCharacters.cs" />
+    <Compile Include="ManageBarCodes\SwissPostParcelBarcodeWithAdditionalServiceType.cs" />
+    <Compile Include="ManageBarCodes\CreateAndSetSizeForImageWithBarcode.cs" />
+    <Compile Include="ManageBarCodes\CreateImageWithExactBarcodeOnly.cs" />
+    <Compile Include="ManageBarCodes\OptionalExceptionMessageWith1DBarCode.cs" />
+    <Compile Include="ManageBarCodes\SwissPostParcelBarcodeWithInternationalMailType.cs" />
+    <Compile Include="ManageBarCodes\SwissPostParcelSymbology.cs" />
+    <Compile Include="ManageBarCodes\CreatePdf417BarcodeWithChineseCharacters.cs" />
+    <Compile Include="ManageBarCodes\CreatePdf417BarcodeWithTurkishCharacters.cs" />
+    <Compile Include="ManageBarCodes\GetDLLVersionInformation.cs" />
+    <Compile Include="ManageBarCodes\GenerateAndRecognizeUTF8Characters.cs" />
+    <Compile Include="ManageBarCodes\ReadBarcodeFromTIFFImages.cs" />
     <Compile Include="ManageBarCodes\GeneratingGS1_128AI8012Barcode.cs" />
     <Compile Include="ManageBarCodes\GeneratingGS1ForCodablock.cs" />
     <Compile Include="ManageBarCodes\GeneratingCodablockF.cs" />

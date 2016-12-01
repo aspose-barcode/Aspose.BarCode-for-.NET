@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Drawing.Imaging;
-using Aspose.BarCode;
 using Aspose.BarCode.Generation;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
@@ -23,13 +22,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // Instantiate barcode object
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890", EncodeTypes.Pdf417);
 
-            // Set Pdf417 Error correction level
+            // Set Pdf417 Error correction level, Compaction Mode to Text and CodeText for barcode
             barCodeBuilder.Pdf417ErrorLevel = Pdf417ErrorLevel.Level8;
-
-            // Set Pdf417 Compaction Mode to Text
             barCodeBuilder.Pdf417CompactionMode = Pdf417CompactionMode.Text;
-
-            // Set CodeText for barcode
             barCodeBuilder.CodeText = "1234567890";
             barCodeBuilder.Save(dataDir + "ManagePDF417Barcode_out.bmp", ImageFormat.Bmp);
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "Datamatrixbarcode_out.bmp");

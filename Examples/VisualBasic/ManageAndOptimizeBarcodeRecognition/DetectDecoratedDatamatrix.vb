@@ -1,18 +1,12 @@
-﻿Imports System.IO
-Imports System.Diagnostics
-Imports System.Drawing
-Imports System.Drawing.Imaging
-Imports Aspose.BarCode.BarCodeRecognition
-Imports Aspose.BarCode
+﻿Imports Aspose.BarCode.BarCodeRecognition
 
 '
-'This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
-'when the project is build. Please check https:// ocs.nuget.org/consume/nuget-faq for more information. 
-'If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http:// ww.aspose.com/downloads, 
-'install it and then add its reference to this project. For any issues, questions or suggestions 
-'please feel free to contact us using http:// ww.aspose.com/community/forums/default.aspx
+' This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
+' When the project is build. Please check http://docs.nuget.org/consume/nuget-faq for more information. 
+' If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
+' Install it and then add its reference to this project. For any issues, questions or suggestions 
+' Please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 '
-
 
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class DetectDecoratedDatamatrix
@@ -23,19 +17,17 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
 
                 ' Initialize the BarCodeReader class by passing barcode file name and barcode type as parameters            
                 Using reader As New BarCodeReader(dataDir & Convert.ToString("datamatrix-stars.png"), DecodeType.DataMatrix)
-                    ' Set the reader recognition mode.
+
+                    ' Set the reader recognition mode, Manual Hint property to speed up recognition process.
                     reader.RecognitionMode = RecognitionMode.ManualHints
-
-                    ' Set Manual Hint property to speed up recognition process.
                     reader.ManualHints = ManualHint.SpecialFormOfCells
-
                     While reader.Read()
                         Console.WriteLine("GetCodeType" & reader.GetCodeType().ToString() & ": " & reader.GetCodeText())
                     End While
                     ' DetectDecoratedDatamatrixBarcode 
                 End Using
             Catch ex As Exception
-                Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http:// Www.aspose.com/purchase/default.aspx.")
+                Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http://wwww.aspose.com/purchase/default.aspx.")
             End Try
         End Sub
     End Class

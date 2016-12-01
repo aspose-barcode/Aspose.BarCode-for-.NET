@@ -1,14 +1,10 @@
-﻿using System.IO;
-using System;
+﻿using System;
 using System.Diagnostics;
-using System.Drawing;
-using System.Drawing.Imaging;
 using Aspose.BarCode.BarCodeRecognition;
-using Aspose.BarCode;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
-when the project is build. Please check https://Docs.nuget.org/consume/nuget-faq for more information. 
+when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. 
 If you do not wish to use NuGet, you can manually download Aspose.BarCode for .NET API from http://www.aspose.com/downloads, 
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
@@ -26,22 +22,17 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
-
                 using (BarCodeReader reader = new BarCodeReader(dataDir + "SymbologyTypebarcode.png", DecodeType.Code128))
                 {
-                    // Start Stopwatch
+                    // Start Stopwatch and Set RecognitionMode, ManualHints
                     watch.Start();
-
-                    // Set RecognitionMode
                     reader.RecognitionMode = RecognitionMode.ManualHints;
-
-                    // Set ManualHints
                     reader.ManualHints = ManualHint.MedianSmoothing;
-
                     while (reader.Read())
                     {
                         Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());
                     }
+
                     // End Stopwatch
                     watch.Stop();
                     Console.WriteLine("Time: " + watch.ElapsedMilliseconds + "ms.");
