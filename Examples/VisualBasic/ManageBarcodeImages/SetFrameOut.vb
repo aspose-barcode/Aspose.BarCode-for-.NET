@@ -12,6 +12,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetFrameOut
         Public Shared Sub Run()
+            'ExStart:SetFrameOut
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -26,7 +27,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
                 .CodeTextSpace = 0.5F, _
                 .Resolution = New Resolution(1200.0F, 1200.0F, ResolutionMode.Customized) _
             }
-            BarCodeBuilder.Save(dataDir & Convert.ToString("ITF14_Border_Type_FrameOut_out.png"), BarCodeImageFormat.Png)
+            barCodeBuilder.Save(dataDir & Convert.ToString("ITF14_Border_Type_FrameOut_out.png"), BarCodeImageFormat.Png)
+            'ExEnd:SetFrameOut
         End Sub
     End Class
 End Namespace

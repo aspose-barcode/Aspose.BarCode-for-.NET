@@ -14,12 +14,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:CreateDatamatrixBarcode    
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890",EncodeTypes.DataMatrix);
             barCodeBuilder.Save(dataDir + "datamatrix-barcode_out.jpg", BarCodeImageFormat.Jpeg);
+            // ExEnd:CreateDatamatrixBarcode    
         }
     }
 }

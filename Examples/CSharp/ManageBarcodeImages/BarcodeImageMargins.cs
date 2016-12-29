@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:BarcodeImageMargins   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -24,6 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 Margins = {Left = 0.5f, Right = 0f, Top = 0f, Bottom = 0f}
             };
             barCodeBuilder.Save(dataDir + "barcode-image-margins_out.jpeg", ImageFormat.Jpeg);
+            // ExEnd:BarcodeImageMargins   
         }
     }
 }

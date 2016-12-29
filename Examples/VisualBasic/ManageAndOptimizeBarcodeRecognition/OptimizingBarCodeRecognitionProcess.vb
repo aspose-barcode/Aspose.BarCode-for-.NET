@@ -14,6 +14,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
     Class OptimizingBarCodeRecognitionProcess
         Public Shared Sub Run()
             Try
+                'ExStart:OptimizingBarCodeRecognitionProcess
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
                 Dim sw As New Stopwatch()
@@ -37,6 +38,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
 
                 ' Write the Elapsed time to console
                 Console.WriteLine("Elapsed: " & sw.Elapsed.ToString())
+                'ExEnd:OptimizingBarCodeRecognitionProcess
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http://wwww.aspose.com/purchase/default.aspx.")
             End Try

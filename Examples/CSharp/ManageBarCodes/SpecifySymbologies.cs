@@ -15,12 +15,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:SpecifySymbologies   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object
             BarCodeBuilder bb = new BarCodeBuilder("1234567", EncodeTypes.Code128);
             bb.Save(dataDir + "barcode-SpecifySymbologies_out.jpg", ImageFormat.Jpeg);
+            // ExEnd:SpecifySymbologies   
         }
     }
 }

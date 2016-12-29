@@ -14,12 +14,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:SetCodetextLocation                       
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object set codeText and location
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder {CodeText = "1234567", CodeLocation = CodeLocation.Above};
             barCodeBuilder.Save(dataDir + "barcode-SetCodetextLocation_out.jpeg", ImageFormat.Jpeg);
+            // ExEnd:SetCodetextLocation                       
         }
     }
 }

@@ -18,8 +18,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
+                // ExStart:MarkingBarCodeRegionsInImage
                 Stopwatch watch = new Stopwatch();
-
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
                 using (BarCodeReader reader = new BarCodeReader(dataDir + "SymbologyTypebarcode.png", DecodeType.Code128))
@@ -37,6 +37,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     watch.Stop();
                     Console.WriteLine("Time: " + watch.ElapsedMilliseconds + "ms.");
                 }
+                // ExEnd:MarkingBarCodeRegionsInImage
             }
             catch (Exception ex)
             {

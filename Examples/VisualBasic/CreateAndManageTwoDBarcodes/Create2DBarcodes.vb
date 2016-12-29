@@ -11,7 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class Create2DBarcodes
         Public Shared Sub Run()
-
+            'ExStart:Create2DBarcodes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -22,6 +22,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             }
             ' Save the Barcode image
             barCodeBuilder.Save(dataDir & Convert.ToString("2d-barcode_out.jpg"), BarCodeImageFormat.Jpeg)
+            'ExEnd:Create2DBarcodes
         End Sub
     End Class
 End Namespace

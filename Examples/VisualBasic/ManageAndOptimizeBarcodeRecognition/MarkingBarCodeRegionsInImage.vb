@@ -12,7 +12,7 @@ Imports Aspose.BarCode.BarCodeRecognition
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class MarkingBarCodeRegionsInImage
         Public Shared Sub Run()
-            
+            'ExStart:MarkingBarCodeRegionsInImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -46,6 +46,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                 End If
             End While
             barCodeReader.Close()
+            'ExEnd:MarkingBarCodeRegionsInImage
         End Sub
     End Class
 End Namespace

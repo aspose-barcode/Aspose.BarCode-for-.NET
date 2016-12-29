@@ -13,6 +13,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:SetHeightOfBarsInDataBarStackedOmniDirectional  
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -26,6 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the image to your system and set its image format to Jpeg
             builder.Save(dataDir + "Barheight_out.png", BarCodeImageFormat.Png);
+            // ExEnd:SetHeightOfBarsInDataBarStackedOmniDirectional  
         }
     }
 }

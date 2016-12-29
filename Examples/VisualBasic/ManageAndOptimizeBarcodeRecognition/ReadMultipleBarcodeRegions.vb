@@ -12,6 +12,7 @@ Imports Aspose.BarCode.BarCodeRecognition
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class ReadMultipleBarcodeRegions
         Public Shared Sub Run()
+            'ExStart:ReadMultipleBarcodeRegions
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -28,6 +29,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     Console.WriteLine("GetCodeType" & reader.GetCodeType().ToString() + "GetCodeText: " + reader.GetCodeText().ToString())
                 End While
             End Using
+            'ExEnd:ReadMultipleBarcodeRegions
         End Sub
     End Class
 End Namespace

@@ -16,6 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:SetSizeUnitForBarcodeImage                       
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -27,6 +28,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 GraphicsUnit = GraphicsUnit.Point
             };
             barCodeBuilder.Save(dataDir + "barcode-size-unit_out.jpeg", ImageFormat.Jpeg);
+            // ExEnd:SetSizeUnitForBarcodeImage                       
         }
     }
 }

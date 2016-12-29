@@ -13,6 +13,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class CreateMultipleMacroPdf417
         Public Shared Sub Run()
+            'ExStart:CreateMultipleMacroPdf417
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -44,6 +45,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
                     End Try
                 Next
             End Using
+            'ExEnd:CreateMultipleMacroPdf417
         End Sub
     End Class
 End Namespace

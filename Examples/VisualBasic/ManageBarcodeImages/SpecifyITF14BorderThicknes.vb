@@ -12,6 +12,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SpecifyITF14BorderThicknes
         Public Shared Sub Run()
+            'ExStart:SpecifyITF14BorderThicknes
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -26,7 +27,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
                 .CodeTextSpace = 0.5F, _
                 .Resolution = New Resolution(1200.0F, 1200.0F, ResolutionMode.Customized) _
             }
-            BarCodeBuilder.Save(dataDir & Convert.ToString("ITF14_Border_TypeBar_Out.png"), BarCodeImageFormat.Png)
+            barCodeBuilder.Save(dataDir & Convert.ToString("ITF14_Border_TypeBar_Out.png"), BarCodeImageFormat.Png)
+            'ExEnd:SpecifyITF14BorderThicknes
         End Sub
     End Class
 End Namespace

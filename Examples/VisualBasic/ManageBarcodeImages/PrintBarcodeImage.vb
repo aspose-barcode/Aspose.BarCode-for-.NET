@@ -11,6 +11,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class PrintBarcodeImage
         Public Shared Sub Run()
+            'ExStart:PrintBarcodeImage
             ' Get the default Printer Name
             Dim settings As New PrinterSettings()
             Dim printerName As String = settings.PrinterName
@@ -19,6 +20,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             Dim barCodeBuilder As New BarCodeBuilder("1234567890", EncodeTypes.Code128)
             barCodeBuilder.PrinterName = printerName
             barCodeBuilder.Print()
+            'ExEnd:PrintBarcodeImage
         End Sub
     End Class
 End Namespace

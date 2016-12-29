@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class CodetextAppearance
         Public Shared Sub Run()
+            'ExStart:CodetextAppearance
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
             Dim dst As String = dataDir & Convert.ToString("codetext-appearence_out.jpg")
@@ -23,6 +24,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
                 .CodeTextSpace = 1.0F _
             }
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:CodetextAppearance
         End Sub
     End Class
 End Namespace

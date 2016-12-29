@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:SetCodeAlignment       
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -25,6 +26,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 CodeTextAlignment = StringAlignment.Center
             };
             barCodeBuilder.Save(dataDir + "barcode-SetCodeAlignment_out.jpg", ImageFormat.Jpeg);
+            // ExEnd:SetCodeAlignment       
         }
     }
 }

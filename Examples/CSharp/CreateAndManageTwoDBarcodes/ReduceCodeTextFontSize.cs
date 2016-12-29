@@ -14,6 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
+            //ExStart:ReduceCodeTextFontSize
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
             string codeText = "The quick brown fox jumps over the lazy dog\n" + "The quick brown fox jumps over the lazy dog\n";
@@ -22,6 +23,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder(codeText, EncodeTypes.DataMatrix);
             barCodeBuilder.CodeLocation = CodeLocation.None;
             barCodeBuilder.Save(dataDir + "HideBarcodeCodeText_out.png", BarCodeImageFormat.Png);
+            //ExEnd:ReduceCodeTextFontSize
         }
     }
 }

@@ -13,7 +13,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     class RotateBarcode
     {
         public static void Run()
-        {            
+        {
+            // ExStart:RotateBarcode       
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -24,6 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 RotationAngleF = 90
             };
             barCodeBuilder.Save(dataDir + "QR-rotate_out.jpeg", BarCodeImageFormat.Jpeg);
+            // ExEnd:RotateBarcode       
         }
     }
 }

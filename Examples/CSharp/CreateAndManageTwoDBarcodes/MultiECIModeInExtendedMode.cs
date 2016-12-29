@@ -16,6 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
+            //ExStart:MultiECIModeInExtendedMode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -37,6 +38,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             builder.Display2DText = "My Text";
             Bitmap lBmp = builder.GenerateBarCodeImage();
             lBmp.Save(dataDir + "MultiECIModeInExtendedMode_out.bmp", ImageFormat.Bmp);
+            //ExEnd:MultiECIModeInExtendedMode
         }
     }
 }

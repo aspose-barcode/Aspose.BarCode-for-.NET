@@ -16,6 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
     {
         public static void Run()
         {
+            // ExStart:GetBarCodeRegionInformationfromImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -40,6 +41,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             }
             // Close reader
             barCodeReader.Close();
+            // ExEnd:GetBarCodeRegionInformationfromImage
+
         }
     }
 }

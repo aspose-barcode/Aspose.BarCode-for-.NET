@@ -16,6 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:ManageXYDimension                
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
             string dstCode128 = dataDir + "code128-YDimensionChanged_out.jpg";
@@ -43,6 +44,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder1.Save(dataDir + "pdf417-YDimensionChanged_out.jpg", ImageFormat.Jpeg);
+            // ExEnd:ManageXYDimension
         }
     }
 }

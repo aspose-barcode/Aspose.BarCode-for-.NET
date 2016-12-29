@@ -14,12 +14,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:SetQREncodeMode   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Create instance of BarCodeBuilder, specify codetext symbology and encode mode 
             BarCodeBuilder builder = new BarCodeBuilder("test123", EncodeTypes.QR) {QREncodeMode = QREncodeMode.Auto};
             builder.Save(dataDir + "QR-Encode-mode_out.jpg");
+            // ExEnd:SetQREncodeMode   
         }
     }
 }

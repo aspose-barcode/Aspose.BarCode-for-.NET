@@ -10,6 +10,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class BarcodeImageResolution
         Public Shared Sub Run()
+            'ExStart:BarcodeImageResolution
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -19,7 +20,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             }
 
             ' Save the image to your system and set its image format to Jpeg
-            BarCodeBuilder.Save(dataDir & Convert.ToString("barcode-image-resolution_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            barCodeBuilder.Save(dataDir & Convert.ToString("barcode-image-resolution_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:BarcodeImageResolution
         End Sub
     End Class
 End Namespace

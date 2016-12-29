@@ -10,6 +10,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class ColorizeAnyPartoftheBarcodeImage
         Public Shared Sub Run()
+            'ExStart:ColorizeAnyPartoftheBarcodeImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
             Dim dst As String = dataDir & Convert.ToString("colorize-barcode_out.jpg")
@@ -22,6 +23,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
                 .CodeTextColor = System.Drawing.Color.Red _
             }
             barCodeBuilder.Save(dst, System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:ColorizeAnyPartoftheBarcodeImage
         End Sub
     End Class
 End Namespace

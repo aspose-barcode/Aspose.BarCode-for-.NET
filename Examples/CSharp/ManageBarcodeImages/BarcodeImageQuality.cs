@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:BarcodeImageQuality   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -24,6 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 ImageQuality = ImageQualityMode.AntiAlias
             };
             barCodeBuilder.Save(dataDir + "barcode-image-quality_out.jpeg", ImageFormat.Jpeg);
+            // ExEnd:BarcodeImageQuality   
         }
     }
 }

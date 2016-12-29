@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SetQRErrorCorrection
         Public Shared Sub Run()
+            'ExStart:SetQRErrorCorrection
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -22,6 +23,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the file to disk
             builder.Save(dataDir & Convert.ToString("QR-error-correction_out.jpg"), BarCodeImageFormat.Jpeg)
+            'ExEnd:SetQRErrorCorrection
         End Sub
     End Class
 End Namespace

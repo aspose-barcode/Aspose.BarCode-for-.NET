@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SpecifySymbology
         Public Shared Sub Run()
+            'ExStart:SpecifySymbology
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -19,6 +20,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("barcode-symbiology_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:SpecifySymbology
         End Sub
     End Class
 End Namespace

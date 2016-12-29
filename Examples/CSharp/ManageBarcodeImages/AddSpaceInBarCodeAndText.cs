@@ -14,12 +14,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:AddSpaceInBarCodeAndText   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set Increase the space between code text and barcode to 1 point
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder {CodeTextSpace = 1.0f};
             barCodeBuilder.Save(dataDir + "AddSpaceInBarCodeAndText_out.bmp", ImageFormat.Bmp);
+            // ExEnd:AddSpaceInBarCodeAndText   
         }
     }
 }

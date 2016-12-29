@@ -14,6 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
+            // ExStart:Create2DBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -27,6 +28,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save the Barcode image
             barCodeBuilder.Save(dataDir + "2d-barcode_out.jpg", BarCodeImageFormat.Jpeg);
+            // ExEnd:Create2DBarcodes
         }
     }
 }

@@ -17,6 +17,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
+            //ExStart:CreateMultipleMacroPdf417
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -51,6 +52,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                     }
                 }
             }
+            //ExEnd:CreateMultipleMacroPdf417
         }
     }
 }

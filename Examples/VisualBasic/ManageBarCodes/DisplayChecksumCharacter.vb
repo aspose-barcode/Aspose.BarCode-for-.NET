@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class DisplayChecksumCharacter
         Public Shared Sub Run()
+            'ExStart:DisplayChecksumCharacter
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -18,7 +19,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             Dim barCodeBuilder As New BarCodeBuilder("0123456789", EncodeTypes.Code39Standard) With { _
                 .AlwaysShowChecksum = True _
             }
-            BarCodeBuilder.Save(dataDir & Convert.ToString("DisplayChecksumCharacter_out.png"))
+            barCodeBuilder.Save(dataDir & Convert.ToString("DisplayChecksumCharacter_out.png"))
+            'ExEnd:DisplayChecksumCharacter
         End Sub
     End Class
 End Namespace

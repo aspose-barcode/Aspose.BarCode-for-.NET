@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class BarcodeCustomSize
         Public Shared Sub Run()
+            'ExStart:BarcodeCustomSize
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -21,6 +22,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
                 .ImageWidth = 120 _
             }
             builder.Save(dataDir & Convert.ToString("barcode-custom-size_out.jpg"))
+            'ExEnd:BarcodeCustomSize
         End Sub
     End Class
 End Namespace

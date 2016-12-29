@@ -15,12 +15,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:SetCodeTextFontFamilyNameAndSize       
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and Set Code text font's type and size
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder { CodeTextFont = new Font("Verdana", 12f) };
             barCodeBuilder.Save(dataDir + "SetCodeTextFontFamilyNameAndSize_out.bmp", ImageFormat.Bmp);
+            // ExEnd:SetCodeTextFontFamilyNameAndSize       
         }
     }
 }

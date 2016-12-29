@@ -9,6 +9,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetCodetextLocation
         Public Shared Sub Run()
+            'ExStart:SetCodetextLocation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -19,6 +20,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             barCodeBuilder.CodeText = "1234567"
             barCodeBuilder.CodeLocation = CodeLocation.Above
             barCodeBuilder.Save(dataDir & Convert.ToString("barcode-SetCodetextLocation_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:SetCodetextLocation
         End Sub
     End Class
 End Namespace

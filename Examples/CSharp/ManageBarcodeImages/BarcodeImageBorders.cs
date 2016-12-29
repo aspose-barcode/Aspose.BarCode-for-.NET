@@ -14,6 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
     {
         public static void Run()
         {
+            // ExStart:BarcodeImageBorders   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -26,6 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 BorderVisible = true
             };
             barCodeBuilder.Save(dataDir + "barcodeImageborders_out.jpeg", ImageFormat.Jpeg);
+            // ExEnd:BarcodeImageBorders   
         }
     }
 }

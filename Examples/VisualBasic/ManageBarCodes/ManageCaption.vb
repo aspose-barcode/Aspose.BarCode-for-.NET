@@ -11,7 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class ManageCaption
         Public Shared Sub Run()
-
+            'ExStart:ManageCaption
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -32,6 +32,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("ManageCaption_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir)
+            'ExEnd:ManageCaption
         End Sub
     End Class
 End Namespace

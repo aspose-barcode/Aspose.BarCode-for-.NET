@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SetSupplementData
         Public Shared Sub Run()
+            'ExStart:SetSupplementData
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -19,7 +20,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
                 .SupplementData = "12345", _
                 .SupplementSpace = 2.0F _
             }
-            BarCodeBuilder.Save(dataDir & Convert.ToString("SetSupplementData_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            barCodeBuilder.Save(dataDir & Convert.ToString("SetSupplementData_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:SetSupplementData
         End Sub
     End Class
 End Namespace

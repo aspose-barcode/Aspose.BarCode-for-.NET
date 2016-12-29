@@ -14,6 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
+            //ExStart:SetAspectRatio
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -21,6 +22,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890", EncodeTypes.Pdf417);
             barCodeBuilder.AspectRatio = 1.5f;
             barCodeBuilder.Save(dataDir + "SetAspectRatio_out.png", BarCodeImageFormat.Png);
+            //ExEnd:SetAspectRatio
         }
     }
 }
