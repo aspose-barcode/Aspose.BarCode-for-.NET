@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class ChecksumSupplementData
         Public Shared Sub Run()
+            'ExStart:ChecksumSupplementData
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -18,7 +19,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             Dim barCodeBuilder As New BarCodeBuilder("1234567", EncodeTypes.Code39Standard) With { _
                 .EnableChecksum = EnableChecksum.Yes _
             }
-            BarCodeBuilder.Save(dataDir & Convert.ToString("code39-checeksum_out.png"))
+            barCodeBuilder.Save(dataDir & Convert.ToString("code39-checeksum_out.png"))
+            'ExEnd:ChecksumSupplementData
         End Sub
     End Class
 End Namespace

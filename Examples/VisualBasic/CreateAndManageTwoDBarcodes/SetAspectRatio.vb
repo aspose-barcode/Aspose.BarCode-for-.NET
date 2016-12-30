@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class SetAspectRatio
         Public Shared Sub Run()
+            'ExStart:SetAspectRatio
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -18,6 +19,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             Dim barCodeBuilder As New BarCodeBuilder("1234567890", EncodeTypes.Pdf417)
             barCodeBuilder.AspectRatio = 1.5F
             barCodeBuilder.Save(dataDir & Convert.ToString("SetAspectRatio_out.png"), BarCodeImageFormat.Png)
+            'ExEnd:SetAspectRatio
         End Sub
     End Class
 End Namespace

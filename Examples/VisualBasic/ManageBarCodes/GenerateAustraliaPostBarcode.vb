@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class GenerateAustraliaPostBarcode
         Public Shared Sub Run()
+            'ExStart:GenerateAustraliaPostBarcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -20,6 +21,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             ' Initialize BarCodeBuilder and Set format control code to standard
             Dim builder As New BarCodeBuilder(codeText, EncodeTypes.AustraliaPost)
             builder.Save(dataDir & Convert.ToString("AustraliaPost-Standard_out.png"))
+            'ExEnd:GenerateAustraliaPostBarcode
         End Sub
     End Class
 End Namespace

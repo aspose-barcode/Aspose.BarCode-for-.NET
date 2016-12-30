@@ -12,7 +12,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
     Class RecognizeMultipleSymbologies
         Public Shared Sub Run()
             Try
-
+                'ExStart:RecognizeMultipleSymbologies
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
                 Dim objArray As BaseDecodeType() = New BaseDecodeType() {DecodeType.Code39Standard, DecodeType.Pdf417}
@@ -26,6 +26,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     Console.WriteLine("Symbology type: " & DirectCast(reader.GetCodeType(), Object))
                 End While
                 reader.Close()
+                'ExEnd:RecognizeMultipleSymbologies
             Catch ex As Exception
                 Console.WriteLine(ex.Message + vbLf & "This example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http://wwww.aspose.com/purchase/default.aspx.")
             End Try

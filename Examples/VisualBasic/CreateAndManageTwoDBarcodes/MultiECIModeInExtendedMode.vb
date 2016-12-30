@@ -13,6 +13,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class MultiECIModeInExtendedMode
         Public Shared Sub Run()
+            'ExStart:MultiECIModeInExtendedMode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -34,6 +35,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             builder.Display2DText = "My Text"
             Dim lBmp As Bitmap = builder.GenerateBarCodeImage()
             lBmp.Save(dataDir & Convert.ToString("MultiECIModeInExtendedMode_out.bmp"), ImageFormat.Bmp)
+            'ExEnd:MultiECIModeInExtendedMode
         End Sub
     End Class
 End Namespace

@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SaveBarcodeImageToStreams
         Public Shared Sub Run()
+            'ExStart:SaveBarcodeImageToStreams
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -22,6 +23,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
 
             ' Call save method of BarCodeImage to store Png barcode image to memory stream
             barCodeBuilder.BarCodeImage.Save(dataDir & mStream.ToString() & "_out.png", System.Drawing.Imaging.ImageFormat.Png)
+            'ExEnd:SaveBarcodeImageToStreams
         End Sub
     End Class
 End Namespace

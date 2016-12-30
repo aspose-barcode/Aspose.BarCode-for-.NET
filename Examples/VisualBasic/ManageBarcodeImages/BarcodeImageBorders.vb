@@ -10,6 +10,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class BarcodeImageBorders
         Public Shared Sub Run()
+            'ExStart:BarcodeImageBorders
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -26,6 +27,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             barCodeBuilder.BorderWidth = 0.5F
             barCodeBuilder.BorderVisible = True
             barCodeBuilder.Save(dataDir & Convert.ToString("barcodeImageborders_out.jpeg"), ImageFormat.Jpeg)
+            'ExEnd:BarcodeImageBorders
         End Sub
     End Class
 End Namespace

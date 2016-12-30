@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognition
     Class DetectUnreadableBarcode
         Public Shared Sub Run()
+            'ExStart:DetectUnreadableBarcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition()
 
@@ -25,6 +26,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageAndOptimizeBarCodeRecognitio
                     Console.WriteLine("IsDeniable: " & reader.GetIsDeniable().ToString())
                 End While
             End Using
-         End Sub
+            'ExEnd:DetectUnreadableBarcode
+        End Sub
     End Class
 End Namespace

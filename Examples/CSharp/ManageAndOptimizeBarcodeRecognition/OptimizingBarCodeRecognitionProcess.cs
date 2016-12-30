@@ -17,7 +17,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void Run()
         {
             try
-            {                
+            {
+                // ExStart:OptimizingBarCodeRecognitionProcess
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
                 Stopwatch sw = new Stopwatch();
@@ -43,6 +44,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
                 // Write the Elapsed time to console
                 Console.WriteLine("Elapsed: " + sw.Elapsed);
+                // ExEnd:OptimizingBarCodeRecognitionProcess
             }
             catch (Exception ex)
             {

@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
     {
         public static void Run()
         {
+            // ExStart:DetectUnreadableBarcode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -28,6 +29,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.WriteLine("IsDeniable: " + reader.GetIsDeniable());
                 }
             }
+            // ExEnd:DetectUnreadableBarcode
         }
     }
 }

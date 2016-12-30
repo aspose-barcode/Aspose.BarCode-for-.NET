@@ -16,6 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:SetHeightBarcodeBars  
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -36,6 +37,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Set the bar height to 3 millimeters and  Save the image to disk
             barCodeBuilder.BarHeight = 11.0f;
             barCodeBuilder.Save(dataDir + "Code128-bar-height_out.jpg", ImageFormat.Jpeg);
+            // ExEnd:SetHeightBarcodeBars  
         }
     }
 }

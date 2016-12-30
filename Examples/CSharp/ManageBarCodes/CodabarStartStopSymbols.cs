@@ -14,6 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:CodabarStartStopSymbols 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -25,6 +26,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 CodabarStopSymbol = CodabarSymbol.D
             };           
             builder.Save(dataDir + "Coabar-start-stop-symbols_out.png");
+            // ExEnd:CodabarStartStopSymbols 
         }
     }
 }

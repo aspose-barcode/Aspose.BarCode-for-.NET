@@ -16,6 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:CodetextAppearance 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
             string dst = dataDir + "codetext-appearence_out.jpg";
@@ -30,6 +31,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 CodeTextSpace = 1.0f
             };          
             barCodeBuilder.Save(dst, ImageFormat.Jpeg);
+            // ExEnd:CodetextAppearance 
         }
     }
 }

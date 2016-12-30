@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
+            //ExStart:CreateSimpleDatamatrixBarCode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -25,6 +26,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             barCodeBuilder.xDimension = 0.6f;
             barCodeBuilder.Save(dataDir + "Datamatrixbarcode_out.bmp", BarCodeImageFormat.Bmp);
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "Datamatrixbarcode_out.bmp");
+            //ExEnd:CreateSimpleDatamatrixBarCode
         }
     }
 }

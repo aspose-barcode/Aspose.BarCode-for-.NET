@@ -12,6 +12,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class ExportPropertiesToXML
         Public Shared Sub Run()
+            'ExStart:ExportPropertiesToXML
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -40,6 +41,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Call the export to XML method to export the properties to XML file.
             builder.ExportToXml(dataDir & Convert.ToString("BarCodeBuilder.DataMatrix_out.xml"))
+            'ExEnd:ExportPropertiesToXML
         End Sub
     End Class
 End Namespace

@@ -13,7 +13,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
     class ECCTypeToEnCodeBarcode
     {
         public static void Run()
-        {                           
+        {
+            // ExStart:ECCTypeToEnCodeBarcode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
@@ -31,6 +32,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 DatamatrixEcc = DataMatrixEccType.Ecc050,
             };
             builder2.Save(dataDir + "SampleBarcode2_out.png");
+            // ExEnd:ECCTypeToEnCodeBarcode
         }
     }
 }

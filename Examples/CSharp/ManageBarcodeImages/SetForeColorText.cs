@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:SetForeColorText                       
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -25,6 +26,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 CodeTextColor = Color.Red
             };
             barCodeBuilder.Save(dataDir + "barcode-SetForeColorText_out.jpg", ImageFormat.Jpeg);
+            // ExEnd:SetForeColorText                       
         }
     }
 }

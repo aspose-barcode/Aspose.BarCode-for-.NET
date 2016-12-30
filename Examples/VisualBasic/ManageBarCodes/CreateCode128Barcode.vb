@@ -11,12 +11,14 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class CreateCode128Barcode
         Public Shared Sub Run()
+            'ExStart:CreateCode128Barcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
             ' Instantiate barcode object and set CodeText & Barcode Symbology
             Dim barCodeBuilder As New BarCodeBuilder("1234", EncodeTypes.Code128)
             barCodeBuilder.Save(dataDir & Convert.ToString("Code128-customized_out.png"))
+            'ExEnd:CreateCode128Barcode
         End Sub
     End Class
 End Namespace

@@ -11,6 +11,8 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class CodabarStartStopSymbols
         Public Shared Sub Run()
+            'ExStart:CodabarStartStopSymbols
+
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
@@ -20,6 +22,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
                 .CodabarStopSymbol = CodabarSymbol.D _
             }
             builder.Save(dataDir & Convert.ToString("Coabar-start-stop-symbols_out.png"))
+            'ExEnd:CodabarStartStopSymbols
         End Sub
     End Class
 End Namespace

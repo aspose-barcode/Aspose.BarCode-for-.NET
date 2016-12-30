@@ -11,12 +11,14 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class CreateAztecbarcode
         Public Shared Sub Run()
+            'ExStart:CreateEnCodeDatamatrixBarCode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
             ' Instantiate barcode object and set CodeText & Barcode Symbology
             Dim barCodeBuilder As New BarCodeBuilder("123456789", EncodeTypes.Aztec)
             barCodeBuilder.Save(dataDir & Convert.ToString("CreateAztecbarcode_out.bmp"), BarCodeImageFormat.Bmp)
+            'ExEnd:CreateEnCodeDatamatrixBarCode
         End Sub
     End Class
 End Namespace

@@ -13,6 +13,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class CustomEncodingModeInDataMatrix
         Public Shared Sub Run()
+            'ExStart:CustomEncodingModeInDataMatrix
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -23,6 +24,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             barCodeBuilder.DataMatrixEncodeMode = DataMatrixEncodeMode.[Custom]
             barCodeBuilder.CodeTextEncoding = Encoding.UTF8
             barCodeBuilder.Save(dataDir & Convert.ToString("CustomEncodingModeInDataMatrix_out.bmp"), ImageFormat.Bmp)
+            'ExEnd:CustomEncodingModeInDataMatrix
         End Sub
     End Class
 End Namespace

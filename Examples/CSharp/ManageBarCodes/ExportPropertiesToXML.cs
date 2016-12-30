@@ -14,6 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:ExportPropertiesToXML                
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -45,6 +46,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Call the export to XML method to export the properties to XML file.
             builder.ExportToXml(dataDir + "BarCodeBuilder.DataMatrix_out.xml");
+            // ExEnd:ExportPropertiesToXML                
         }
     }
 }

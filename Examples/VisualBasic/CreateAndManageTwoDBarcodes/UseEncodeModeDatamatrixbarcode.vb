@@ -12,6 +12,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class UseEncodeModeDatamatrixbarcode
         Public Shared Sub Run()
+            'ExStart:UseEncodeModeDatamatrixbarcode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
             Dim gtin As String = "898978777776665655"
@@ -35,6 +36,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
 
             ' Save the Barcode image
             builder.Save(dataDir & Convert.ToString("codetextRightDisplay_out.png"), BarCodeImageFormat.Png)
+            'ExEnd:UseEncodeModeDatamatrixbarcode
         End Sub
     End Class
 End Namespace

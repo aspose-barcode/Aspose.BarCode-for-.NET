@@ -13,6 +13,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class EncodeQRCode
         Public Shared Sub Run()
+            'ExStart:EncodeQRCode
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -27,6 +28,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             ' Get barcode image Bitmap and Save QR code
             Dim lBmp As Bitmap = builder.GenerateBarCodeImage()            ' 
             lBmp.Save(dataDir & Convert.ToString("EncodeQA_out.bmp"), ImageFormat.Bmp)
+            'ExEnd:EncodeQRCode
         End Sub
     End Class
 End Namespace

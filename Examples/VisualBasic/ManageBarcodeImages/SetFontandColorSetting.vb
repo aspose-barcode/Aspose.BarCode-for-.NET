@@ -11,7 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetFontandColorSetting
         Public Shared Sub Run()
-
+            'ExStart:SetFontandColorSetting
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -30,6 +30,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir & Convert.ToString("SetFontandColorSetting.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir)
+            'ExEnd:SetFontandColorSetting
         End Sub
     End Class
 End Namespace

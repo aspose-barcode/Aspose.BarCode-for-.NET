@@ -10,6 +10,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetSizeUnitForBarcodeImage
         Public Shared Sub Run()
+            'ExStart:SetSizeUnitForBarcodeImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -18,7 +19,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
                 .BarHeight = 3.0F, _
                 .GraphicsUnit = System.Drawing.GraphicsUnit.Point _
             }
-            BarCodeBuilder.Save(dataDir & Convert.ToString("barcode-size-unit_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            barCodeBuilder.Save(dataDir & Convert.ToString("barcode-size-unit_out.jpeg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:SetSizeUnitForBarcodeImage
         End Sub
     End Class
 End Namespace

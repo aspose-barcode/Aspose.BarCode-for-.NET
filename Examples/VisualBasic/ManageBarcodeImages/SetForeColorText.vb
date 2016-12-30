@@ -9,6 +9,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SetForeColorText
         Public Shared Sub Run()
+            'ExStart:SetForeColorText:SetForeColorText
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
             Dim dst As String = dataDir & Convert.ToString("barcode-SetForeColorText_out.jpg")
@@ -20,6 +21,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
             barCodeBuilder.CodeText = "1234567"
             barCodeBuilder.CodeTextColor = System.Drawing.Color.Red
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dst)
+            'ExEnd:SetForeColorText:SetForeColorText
         End Sub
     End Class
 End Namespace

@@ -14,7 +14,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     class WideNarrowRatio
     {
         public static void Run()
-        {           
+        {
+            // ExStart:WideNarrowRatio   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -44,7 +45,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             // Save the image to your system and set its image format to Jpeg
             barCodeBuilder.Save(dataDir + "code39-wide-narrow-ratio_out.jpg", ImageFormat.Jpeg);
-
+            // ExEnd:WideNarrowRatio   
         }
     }
 }

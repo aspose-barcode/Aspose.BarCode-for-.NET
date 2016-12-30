@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:SetSupplementData   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -26,6 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 SupplementSpace = 2.0f
             };
             barCodeBuilder.Save(dataDir + "SetSupplementData_out.jpg", ImageFormat.Jpeg);
+            // ExEnd:SetSupplementData   
         }
     }
 }

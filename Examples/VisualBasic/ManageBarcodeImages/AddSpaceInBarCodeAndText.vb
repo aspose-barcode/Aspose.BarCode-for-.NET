@@ -9,6 +9,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class AddSpaceInBarCodeAndText
         Public Shared Sub Run()
+            'ExStart:AddSpaceInBarCodeAndText
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
 
@@ -19,6 +20,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             barCodeBuilder.CodeTextSpace = 1.0F
             barCodeBuilder.Save(dataDir & Convert.ToString("AddSpaceInBarCodeAndText_out.bmp"), System.Drawing.Imaging.ImageFormat.Bmp)
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dataDir)
+            'ExEnd:AddSpaceInBarCodeAndText
         End Sub
     End Class
 End Namespace

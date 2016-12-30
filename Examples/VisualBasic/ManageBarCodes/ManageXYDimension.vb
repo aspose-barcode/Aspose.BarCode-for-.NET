@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class ManageXYDimension
         Public Shared Sub Run()
+            'ExStart:ManageXYDimension
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
             Dim dstCode128 As String = dataDir & Convert.ToString("code128-YDimensionChanged_out.jpg")
@@ -37,6 +38,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
 
             ' Save the image to your system and set its image format to Jpeg
             barCodeBuilder1.Save(dataDir & Convert.ToString("pdf417-YDimensionChanged_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:ManageXYDimension
         End Sub
     End Class
 End Namespace

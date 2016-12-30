@@ -11,12 +11,14 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodes
     Class SpecifySymbologies
         Public Shared Sub Run()
+            'ExStart:SpecifySymbology
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodes()
 
             ' Instantiate barcode object
             Dim bb As New BarCodeBuilder("1234567", EncodeTypes.Code128)
             bb.Save(dataDir & Convert.ToString("barcode-SpecifySymbologies_out.jpg"), System.Drawing.Imaging.ImageFormat.Jpeg)
+            'ExEnd:SpecifySymbology
         End Sub
     End Class
 End Namespace

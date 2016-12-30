@@ -9,6 +9,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
     Class SetCodeAlignment
         Public Shared Sub Run()
+            'ExStart:SetCodeAlignment
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_ManageBarCodesImages()
             Dim dst As String = dataDir & Convert.ToString("barcode-SetCodeAlignment_out.jpg")
@@ -18,6 +19,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.ManageBarCodeImages
             barCodeBuilder.CodeText = "1234567"
             barCodeBuilder.CodeTextAlignment = System.Drawing.StringAlignment.Center
             Console.WriteLine(Convert.ToString(Environment.NewLine + "Barcode saved at ") & dst)
+            'ExEnd:SetCodeAlignment
         End Sub
     End Class
 End Namespace

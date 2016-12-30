@@ -11,6 +11,7 @@
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class UseAztecErrorCorrection
         Public Shared Sub Run()
+            'ExStart:UseAztecErrorCorrection
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -18,7 +19,8 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
             Dim barCodeBuilder As New BarCodeBuilder("123456789", EncodeTypes.Aztec) With { _
                 .AztectErrorLevel = 10 _
             }
-            BarCodeBuilder.Save(dataDir & Convert.ToString("UseAztecErrorCorrection_out.bmp"), BarCodeImageFormat.Bmp)
+            barCodeBuilder.Save(dataDir & Convert.ToString("UseAztecErrorCorrection_out.bmp"), BarCodeImageFormat.Bmp)
+            'ExEnd:UseAztecErrorCorrection
         End Sub
     End Class
 End Namespace

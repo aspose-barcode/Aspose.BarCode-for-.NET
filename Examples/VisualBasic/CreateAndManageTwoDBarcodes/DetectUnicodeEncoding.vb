@@ -14,6 +14,7 @@ Imports Aspose.BarCode.Generation
 Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
     Class DetectUnicodeEncoding
         Public Shared Sub Run()
+            'ExStart:DetectUnicodeEncoding
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir_CreateAndManage2DBarCodes()
 
@@ -36,6 +37,7 @@ Namespace Aspose.BarCode.Examples.VisualBasic.CreateAndManageTwoDBarcodes
                     End If
                 End Using
             Catch generatedExceptionName As Exception
+                'ExEnd:DetectUnicodeEncoding
             End Try
         End Sub
     End Class
