@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
+    <Compile Include="ManageBarCodes\CodabarChecksumMode.cs" />
     <Compile Include="ManageBarCodes\ReadAndSortBarcodesInSpecificOrder.cs" />
     <Compile Include="ManageBarCodes\RecognizeBarcodeWithChineseCharacters.cs" />
     <Compile Include="ManageBarCodes\RecognizeBarcodeWithTurkishCharacters.cs" />
