@@ -21,5 +21,5 @@ Directory | Description
 + **Product Home:** [Aspose.BarCode for .NET](https://www.aspose.com/products/barcode/net)
 + **Download:** [Download Aspose.BarCode for .NET](https://downloads.aspose.com/barcode/net)
 + **Documentation:** [Aspose.BarCode for .NET Documentation](https://docs.aspose.com//display/barcodenet/Home)
-+ **Forum:** [Aspose.BarCode for .NET Forum](https://www.aspose.com/community/forums/aspose.barcode-product-family/193/showforum.aspx)
++ **Forum:** [Aspose.BarCode for .NET Forum](https://forum.aspose.com/c/barcode)
 + **Blog:** [Aspose.BarCode for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-barcode-product-family/)
