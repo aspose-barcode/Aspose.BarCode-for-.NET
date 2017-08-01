@@ -37,8 +37,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 // Save the barcode image
                 using (System.Drawing.Bitmap image = builder.BarCodeImage)
                     image.Save("minimumresult.png");
-            
-            // ExEnd:ChecksumSupplementData 
+
+                // ExEnd:ChecksumSupplementData 
+            }
         }
     }
 }
