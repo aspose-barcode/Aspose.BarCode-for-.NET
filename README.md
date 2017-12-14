@@ -18,7 +18,7 @@ Directory | Description
 ## Resources
 
 + **Website:** [www.aspose.com](https://www.aspose.com/)
-+ **Product Home:** [Aspose.BarCode for .NET](https://www.aspose.com/products/barcode/net)
++ **Product Home:** [Aspose.BarCode for .NET](https://products.aspose.com/barcode/net)
 + **Download:** [Download Aspose.BarCode for .NET](https://downloads.aspose.com/barcode/net)
 + **Documentation:** [Aspose.BarCode for .NET Documentation](https://docs.aspose.com//display/barcodenet/Home)
 + **Forum:** [Aspose.BarCode for .NET Forum](https://forum.aspose.com/c/barcode)
