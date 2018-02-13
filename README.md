@@ -19,7 +19,7 @@ Directory | Description
 
 + **Website:** [www.aspose.com](https://www.aspose.com/)
 + **Product Home:** [Aspose.BarCode for .NET](https://products.aspose.com/barcode/net)
-+ **Download:** [Download Aspose.BarCode for .NET](https://downloads.aspose.com/barcode/net)
++ **Download:** [Download Aspose.BarCode for .NET](https://www.nuget.org/packages/Aspose.Barcode/)
 + **Documentation:** [Aspose.BarCode for .NET Documentation](https://docs.aspose.com//display/barcodenet/Home)
 + **Forum:** [Aspose.BarCode for .NET Forum](https://forum.aspose.com/c/barcode)
 + **Blog:** [Aspose.BarCode for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-barcode-product-family/)
