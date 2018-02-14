@@ -24,22 +24,23 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
                 // Initialize the BarCodeReader object and Call read method
                 BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes);
-                reader.Read();
+                
+                // To get all possible barcodes
+                reader.RecognitionMode = RecognitionMode.MaxBarCodes;
 
-                // Now get all possible barcodes
-                BarCodeReader.PossibleBarCode[] barcodes = reader.GetAllPossibleBarCodes();
-                foreach (BarCodeReader.PossibleBarCode barcode in barcodes)
+                while (reader.Read())
                 {
                     // Display code text, symbology, detected angle, recognition percentage of the barcode
-                    Console.WriteLine("Code Text: " + barcode.Codetext + " Symbology: " + barcode.BarCodeReadType + " Recognition percentage: " + barcode.Angle);
+                    Console.WriteLine("Code Text: " + reader.GetCodeText() + " Symbology: " + reader.GetCodeType() + " Recognition percentage: " + reader.GetAngle());
 
                     // Display x and y coordinates of barcode detected
-                    Point[] point = barcode.Region.Points;
+                    Point[] point = reader.GetRegion().Points;
                     Console.WriteLine("Top left coordinates: X = " + point[0].X + ", Y = " + point[0].Y);
                     Console.WriteLine("Bottom left coordinates: X = " + point[1].X + ", Y = " + point[1].Y);
                     Console.WriteLine("Bottom right coordinates: X = " + point[2].X + ", Y = " + point[2].Y);
                     Console.WriteLine("Top right coordinates: X = " + point[3].X + ", Y = " + point[3].Y);
                 }
+
                 // ExEnd:GetAllPossible1DBarcodesfromImage
             }
             catch (Exception ex)

@@ -26,8 +26,30 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                yDimension = 1.2f
            };
 
-            // Save the Barcode image
+            // Save the Barcode image in JPEG format
             barCodeBuilder.Save(dataDir + "2d-barcode_out.jpg", BarCodeImageFormat.Jpeg);
+
+            // Save the Barcode image in TIFF format
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.tiff", BarCodeImageFormat.Tiff);
+            
+            // Save the Barcode image in PNG format
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.png", BarCodeImageFormat.Png);
+
+            // Save the Barcode image in BMP format
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.bmp", BarCodeImageFormat.Bmp);
+
+            // Save the Barcode image in GIF format
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.gif", BarCodeImageFormat.Gif);
+
+            // Save the Barcode image in TiffInCmyk format
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.tiff", BarCodeImageFormat.TiffInCmyk);
+
+            // Save the Barcode image in EMF format
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.emf", BarCodeImageFormat.Emf);
+
+            // Save the Barcode image in SVG format
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.svg", BarCodeImageFormat.Svg);
+
             // ExEnd:Create2DBarcodes
         }
     }
