@@ -36,8 +36,8 @@
     <StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.16.11.0\lib\net4.0\Aspose.BarCode.dll</HintPath>
+    <Reference Include="Aspose.BarCode, Version=18.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.18.1.0\lib\net4.0\Aspose.BarCode.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -50,7 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateAndManageTwoDBarcodes\CreatebarcodewithImageInsteadOfCodetext.cs" />
+    <Compile Include="CreateAndManageTwoDBarcodes\CreateTextDatamatrixBarCode.cs" />
+    <Compile Include="CreateAndManageTwoDBarcodes\CreateC40DatamatrixBarCode.cs" />
+    <Compile Include="CreateAndManageTwoDBarcodes\SettingQRVersion.cs" />
     <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
+    <Compile Include="ManageBarCodes\BarcodeWithSegments.cs" />
+    <Compile Include="ManageBarCodes\CreatePostalBarcodeWithHeight.cs" />
+    <Compile Include="ManageBarCodes\GetMinimumBarCodeSize.cs" />
+    <Compile Include="ManageBarCodes\IdentifyTypeOfCode128.cs" />
+    <Compile Include="ManageBarCodes\BarcodeWithChecksumValue.cs" />
     <Compile Include="ManageBarCodes\CodabarChecksumMode.cs" />
     <Compile Include="ManageBarCodes\ReadAndSortBarcodesInSpecificOrder.cs" />
     <Compile Include="ManageBarCodes\RecognizeBarcodeWithChineseCharacters.cs" />
@@ -159,7 +168,6 @@
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

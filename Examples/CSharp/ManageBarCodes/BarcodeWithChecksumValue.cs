@@ -25,7 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 while (reader.Read())
                 {
                     //Get code text by passing TRUE to get the Barcode along with checksum value
-                    Console.WriteLine("{0}: {1}", reader.GetCodeType(), reader.GetCodeText(true));
+                    System.Console.WriteLine("{0}: {1}", reader.GetCodeType(), reader.GetCodeText(true));
                 }
             }
             

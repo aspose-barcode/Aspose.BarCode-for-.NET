@@ -47,10 +47,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 while (reader.Read())
                 {
                     //Get code text
-                    Console.WriteLine("{0}:{1}", reader.GetCodeType(), reader.GetCodeText());
+                    System.Console.WriteLine("{0}:{1}", reader.GetCodeType(), reader.GetCodeText());
 
                     //Get checksum value
-                    Console.WriteLine("Checksum:" + reader.GetCheckSum());
+                    System.Console.WriteLine("Checksum:" + reader.GetCheckSum());
                 }
             }
             

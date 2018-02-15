@@ -35,8 +35,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                     foreach (Aspose.BarCode.BarCodeRecognition.Code128DataPortion code128DataPortion in code128DataPortions)
                     {
                         // Display the subtype and data
-                        Console.WriteLine("Code128SubType {0}", code128DataPortion.Code128SubType);
-                        Console.WriteLine("Data {0}", code128DataPortion.Data);
+                        System.Console.WriteLine("Code128SubType {0}", code128DataPortion.Code128SubType);
+                        System.Console.WriteLine("Data {0}", code128DataPortion.Data);
                     }
                 }
             }
