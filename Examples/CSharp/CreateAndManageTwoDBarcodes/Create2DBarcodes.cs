@@ -27,7 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
            };
 
             // Save the Barcode image in JPEG format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.jpg", BarCodeImageFormat.Jpeg);
+            barCodeBuilder.Save(dataDir + "2d-barcode_out.jpg", BarCodeImageFormat.Jpeg); 
 
             // Save the Barcode image in TIFF format
             barCodeBuilder.Save(dataDir + "2d-barcode_out.tiff", BarCodeImageFormat.Tiff);
