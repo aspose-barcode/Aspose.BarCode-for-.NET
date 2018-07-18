@@ -77,10 +77,10 @@ namespace CSharp.GenerateBarcode
                 generator.AutoSizeMode = AutoSizeMode.Nearest;
                 generator.BarCodeWidth.Millimeters = 20;
                 generator.BarCodeHeight.Millimeters = 20;
-                generator.Save(dataDir + "for_display.png");
+                generator.Save(dataDir + "for_display_out.png");
 
                 generator.Resolution = 300;
-                generator.Save(dataDir + "for_printer.png");
+                generator.Save(dataDir + "for_printer_out.png");
             }
             //ExEnd: UnitBasedBarcodeGenerateion
         }
@@ -92,7 +92,7 @@ namespace CSharp.GenerateBarcode
             {
                 generator.QR.Version = QRVersion.Version18;
                 generator.QR.ErrorLevel = QRErrorLevel.LevelM;
-                generator.Save(dataDir + "qr.png");
+                generator.Save(dataDir + "qr_out.png");
             }
             //ExEnd: GroupingPropertiesByBarcodeType
         }
