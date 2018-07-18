@@ -36,8 +36,8 @@
     <StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=18.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.18.6.0\lib\net40\Aspose.BarCode.dll</HintPath>
+    <Reference Include="Aspose.BarCode, Version=18.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.18.7.0\lib\net40\Aspose.BarCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +53,7 @@
     <Compile Include="CreateAndManageTwoDBarcodes\CreateTextDatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\CreateC40DatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\SettingQRVersion.cs" />
+    <Compile Include="CreatingBarcodes\GenerateBarcode.cs" />
     <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
     <Compile Include="ManageBarCodes\BarcodeWithSegments.cs" />
     <Compile Include="ManageBarCodes\CreatePostalBarcodeWithHeight.cs" />
@@ -168,9 +169,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

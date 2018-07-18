@@ -4,6 +4,7 @@ using Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes;
 using Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodeImages;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodes;
+using CSharp.GenerateBarcode;
 
 namespace Aspose.BarCode.Examples.CSharp
 {
@@ -147,6 +148,14 @@ namespace Aspose.BarCode.Examples.CSharp
             //ReadMultipleBarcodeRegions.Run();
             //ECCTypeToEnCodeBarcode.Run();
             //DetectDecoratedDatamatrix.Run();          
+
+            //// =====================================================
+            //// =====================================================
+            ////  CreatingBarcodes
+            //// =====================================================
+            //// =====================================================
+            GenerateBarcode.Run();
+
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");
