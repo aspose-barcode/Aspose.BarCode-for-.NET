@@ -3,6 +3,7 @@ using Aspose.BarCode.Examples.CSharp;
 using Aspose.BarCode.Generation;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 
@@ -23,6 +24,18 @@ namespace CSharp.GenerateBarcode
             UnitBasedBarcodeGenerateion();
 
             GettingDefaultCodeTextForGeneratedBarcode();
+
+            ImplementUpcaGs1DatabarCouponForNewBarcode();
+
+            ImplementInterpolationAutoSizemode();
+
+            GenerateCode16KBarCode();
+
+            ImplementMaxiCodeForBarcode();
+
+            ImplementDotCodeForBarcode();
+
+            GS1DatamatrixBarcodeWithWrappingText();
         }
 
         public static void GenerateBarcodeWithRestrictedBarcodeSize()
@@ -110,6 +123,88 @@ namespace CSharp.GenerateBarcode
                 string codetext = generator.CodeText; //590123412345
             }
             //ExEnd: GettingDefaultCodeTextForGeneratedBarcode
+        }
+
+        public static void ImplementUpcaGs1DatabarCouponForNewBarcode()
+        {
+            //ExStart: ImplementUpcaGs1DatabarCouponForNewBarcode
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.UpcaGs1DatabarCoupon))
+            {
+                generator.Save(dataDir + "UpcaGs1DatabarCoupon.png");
+            }
+            //ExEnd: ImplementUpcaGs1DatabarCouponForNewBarcode
+        }
+
+        public static void ImplementInterpolationAutoSizemode()
+        {
+            //ExStart: ImplementInterpolationAutoSizemode
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix))
+            {
+                generator.AutoSizeMode = AutoSizeMode.Interpolation;
+                generator.BarCodeWidth.Millimeters = 50;
+                generator.BarCodeHeight.Inches = 1.3f;
+
+                Bitmap barcode = generator.GenerateBarCodeImage();
+                barcode.Save(dataDir + "DataMatrix.png");
+            }
+            //ExEnd: ImplementInterpolationAutoSizemode
+        }
+
+        public static void GenerateCode16KBarCode()
+        {
+            //ExStart: GenerateCode16KBarCode
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code16K))
+            {
+                generator.AutoSizeMode = AutoSizeMode.Nearest;
+                generator.BarCodeWidth.Pixels = 100;
+                generator.CodeTextStyle.Location = CodeLocation.None;
+                generator.Save(dataDir + "Code16K_Nearest.png");
+            }
+            //ExEnd: GenerateCode16KBarCode
+        }
+
+        public static void ImplementMaxiCodeForBarcode()
+        {
+            //ExStart: ImplementMaxiCodeForBarcode
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.MaxiCode))
+            {
+                generator.MaxiCodeEncodeMode = 5;
+                Bitmap barcode = generator.GenerateBarCodeImage();
+                barcode.Save(dataDir + "MaxiCode.png");
+            }
+            //ExEnd: ImplementMaxiCodeForBarcode
+        }
+
+        public static void ImplementDotCodeForBarcode()
+        {
+            //ExStart: ImplementDotCodeForBarcode
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DotCode))
+            {
+                generator.DotCodeMask = 2;
+                Bitmap barcode = generator.GenerateBarCodeImage();
+                barcode.Save(dataDir + "DotCode.png");
+            }
+            //ExEnd: ImplementDotCodeForBarcode
+        }
+
+        public static void GS1DatamatrixBarcodeWithWrappingText()
+        {
+            //ExStart: GS1DatamatrixBarcodeWithWrappingText
+            string CODICE = "(90)0843110730<<<<452287005001T8";
+            string displayedText = "(90)0843" + Environment.NewLine +
+                                    "110730<<<<" + Environment.NewLine +
+                                    "452287" + Environment.NewLine +
+                                    "005001T8" + Environment.NewLine;
+
+            using (BarCodeBuilder builder = new BarCodeBuilder(CODICE, EncodeTypes.GS1DataMatrix))
+            {
+                builder.CodeLocation = CodeLocation.Right;
+                builder.Display2DText = displayedText;
+
+                Bitmap barcode = builder.GenerateBarCodeImage();
+                barcode.Save(dataDir + "Display2DText.png");
+            }
+            //ExEnd: GS1DatamatrixBarcodeWithWrappingText
         }
     }
 }
