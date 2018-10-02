@@ -147,14 +147,16 @@ namespace Aspose.BarCode.Examples.CSharp
             //ManualHints.Run();
             //ReadMultipleBarcodeRegions.Run();
             //ECCTypeToEnCodeBarcode.Run();
-            //DetectDecoratedDatamatrix.Run();          
+            //DetectDecoratedDatamatrix.Run();    
+            //BarCodeRecognitionFilters.Run();
+            //BarcodeReaderSetBarcodeImage.Run();
 
             //// =====================================================
             //// =====================================================
             ////  CreatingBarcodes
             //// =====================================================
             //// =====================================================
-            GenerateBarcode.Run();
+            //GenerateBarcode.Run();
 
 
             // Stop before exiting

@@ -15,27 +15,31 @@ namespace CSharp.GenerateBarcode
 
         public static void Run()
         {
-            GenerateBarcodeWithRestrictedBarcodeSize();
+            //GenerateBarcodeWithRestrictedBarcodeSize();
 
-            GenerateBarcodeWithoutRestrictedBarcodeSize();
+            //GenerateBarcodeWithoutRestrictedBarcodeSize();
 
-            GetGeneratedBarcodeSize();
+            //GetGeneratedBarcodeSize();
 
-            UnitBasedBarcodeGenerateion();
+            //UnitBasedBarcodeGenerateion();
 
-            GettingDefaultCodeTextForGeneratedBarcode();
+            //GettingDefaultCodeTextForGeneratedBarcode();
 
-            ImplementUpcaGs1DatabarCouponForNewBarcode();
+            //ImplementUpcaGs1DatabarCouponForNewBarcode();
 
-            ImplementInterpolationAutoSizemode();
+            ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation();
 
-            GenerateCode16KBarCode();
+            //ImplementInterpolationAutoSizemode();
 
-            ImplementMaxiCodeForBarcode();
+            //GenerateCode16KBarCode();
 
-            ImplementDotCodeForBarcode();
+            //ImplementMaxiCodeForBarcode();
 
-            GS1DatamatrixBarcodeWithWrappingText();
+            //ImplementDotCodeForBarcode();
+
+            //GS1DatamatrixBarcodeWithWrappingText();
+
+            GenarateBarcodeWithRotationAndDpi();
         }
 
         public static void GenerateBarcodeWithRestrictedBarcodeSize()
@@ -135,6 +139,22 @@ namespace CSharp.GenerateBarcode
             //ExEnd: ImplementUpcaGs1DatabarCouponForNewBarcode
         }
 
+        public static void ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation()
+        {
+            //ExStart: ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.UpcaGs1Code128Coupon))
+            {
+                generator.CodeText = "514141100906(01)88898765432109";
+
+                generator.AutoSizeMode = AutoSizeMode.Interpolation;
+                generator.BarCodeWidth.Pixels = 500;
+                generator.BarCodeHeight.Pixels = 200;
+
+                generator.Save(dataDir + "UpcaGs1Code128Coupon_Interpolation_500x200.png");
+            }
+            //ExEnd: ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation
+        }
+
         public static void ImplementInterpolationAutoSizemode()
         {
             //ExStart: ImplementInterpolationAutoSizemode
@@ -205,6 +225,18 @@ namespace CSharp.GenerateBarcode
                 barcode.Save(dataDir + "Display2DText.png");
             }
             //ExEnd: GS1DatamatrixBarcodeWithWrappingText
+        }
+
+        public static void GenarateBarcodeWithRotationAndDpi()
+        {
+            //ExStart: GenarateBarcodeWithRotationAndDpi
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128))
+            {
+                generator.Resolution = 144;
+                generator.RotationAngle = 90;
+                generator.Save(dataDir + "rotated_dpi144.png");
+            }
+            //ExEnd: GenarateBarcodeWithRotationAndDpi
         }
     }
 }
