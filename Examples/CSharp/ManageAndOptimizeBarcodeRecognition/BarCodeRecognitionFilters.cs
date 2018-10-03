@@ -74,7 +74,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
         public static void ImproveDetectionByInverting()
         {
-            //ExStart: QualitySettingWithManualOptionsHighPerformance
+            //ExStart: ImproveDetectionByInverting
             using (BarCodeReader reader = new BarCodeReader(@"c:\test.jpg", DecodeType.DataMatrix))
             {
                 reader.QualitySettings.AllowInvertImage = true;
@@ -82,7 +82,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 while (reader.Read())
                     Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
             }
-            //ExEnd: QualitySettingWithManualOptionsHighPerformance
+            //ExEnd: ImproveDetectionByInverting
         }
     }
 }

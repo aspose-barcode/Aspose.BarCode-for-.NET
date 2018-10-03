@@ -40,7 +40,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                             Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
                     }
                 }
-                //ExStart: ReadBarCodeFromStream
+                //ExEnd: ReadBarCodeFromStream
             }
             catch (Exception ex)
             {
@@ -62,7 +62,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                             Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
                     }
                 }
-                //ExStart: ReadBarCodeFromSpecificRegion
+                //ExEnd: ReadBarCodeFromSpecificRegion
             }
             catch (Exception ex)
             {
@@ -84,7 +84,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                             Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
                     }
                 }
-                //ExStart: ReadBarCodeFromMultipleRegions
+                //ExEnd: ReadBarCodeFromMultipleRegions
             }
             catch (Exception ex)
             {
