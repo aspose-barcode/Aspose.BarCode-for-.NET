@@ -36,8 +36,8 @@
     <StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=18.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.18.10.0\lib\net40\Aspose.BarCode.dll</HintPath>
+    <Reference Include="Aspose.BarCode, Version=18.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.18.11.0\lib\net40\Aspose.BarCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,6 +59,9 @@
     <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
     <Compile Include="ManageBarCodes\BarcodeWithSegments.cs" />
     <Compile Include="ManageBarCodes\CreatePostalBarcodeWithHeight.cs" />
+    <Compile Include="ManageBarCodes\ReadPostalTypesBarcode.cs" />
+    <Compile Include="ManageBarCodes\ReadMostCommonTypeBarcode.cs" />
+    <Compile Include="ManageBarCodes\ReadType1DBarcode.cs" />
     <Compile Include="ManageBarCodes\GetMinimumBarCodeSize.cs" />
     <Compile Include="ManageBarCodes\IdentifyTypeOfCode128.cs" />
     <Compile Include="ManageBarCodes\BarcodeWithChecksumValue.cs" />
