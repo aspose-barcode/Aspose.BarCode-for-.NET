@@ -19,12 +19,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Set the symbology and code text and X dimension reduction property of barcode and save barcode Image
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("blackReduction", EncodeTypes.Code128)
-            {
-                xDimension = 1.2f,
-                BarWidthReduction = 0.2f
-            };           
-            barCodeBuilder.Save(dataDir + "SetWideNarrowRatio_out.png");
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "blackReduction");
+            generator.XDimension.Millimeters = 1.2f;
+            //BarWidthReduction = 0.2f
+
+            generator.Save(dataDir + "SetWideNarrowRatio_out.png");
             // ExEnd:SetWideNarrowRatio
         }
     }

@@ -20,16 +20,16 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            // Initialize a BarCodeBuilder class object and Set CodeText & Symbology Type
-            BarCodeBuilder builder = new BarCodeBuilder("12345TEXT", EncodeTypes.QR);
+            // Initialize a BarCodeGenerator class object and Set CodeText & Symbology Type
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "12345TEXT");
 
             // Set encoding mode, Auto for Micro QR, error correction level          
-            builder.QREncodeMode = QREncodeMode.Auto;
-            builder.QREncodeType = QREncodeType.Auto;
-            builder.QRErrorLevel = QRErrorLevel.LevelL;
+            generator.QR.EncodeMode = QREncodeMode.Auto;
+            generator.QR.EncodeType = QREncodeType.Auto;
+            generator.QR.ErrorLevel = QRErrorLevel.LevelL;
 
             // Get barcode image Bitmap and Save QR code
-            Bitmap lBmp = builder.GenerateBarCodeImage();
+            Bitmap lBmp = generator.GenerateBarCodeImage();
             lBmp.Save(dataDir + "EncodeMicroQRCode_out.bmp", ImageFormat.Bmp);
             //ExEnd:EncodeMicroQRCode
         }

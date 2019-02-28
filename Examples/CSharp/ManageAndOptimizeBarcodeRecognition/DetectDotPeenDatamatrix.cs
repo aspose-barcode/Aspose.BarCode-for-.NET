@@ -24,9 +24,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // Initialize the BarCodeReader class by passing barcode file name and barcode type as parameters
                 using (BarCodeReader reader = new BarCodeReader(dataDir + "testDotPeen.png", DecodeType.DataMatrix))
                 {
-                    // Set the reader recognition mode, Manual Hint property to speed up recognition process.
-                    reader.RecognitionMode = RecognitionMode.ManualHints;
-                    reader.ManualHints = ManualHint.SpecialFormOfCells;
+                    //set high performance mode
+                    reader.QualitySettings = QualitySettings.HighPerformance;
+                    reader.QualitySettings.AllowDatamatrixIndustrialBarcodes = true;
                     while (reader.Read())
                     {
                         Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());

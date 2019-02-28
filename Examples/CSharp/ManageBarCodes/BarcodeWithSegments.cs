@@ -16,20 +16,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         {
             // ExStart:ChecksumSupplementData 
 
-            //Instantiate BarCodeBuilder object
-            Aspose.BarCode.BarCodeBuilder builder = new Aspose.BarCode.BarCodeBuilder();
+            //Instantiate BarCodeGenerator object
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DatabarExpandedStacked);
 
             //Set the Code text for the barcode
-            builder.CodeText = "(01)98898765432106(3202)012345(15)991231";
-
-            //Set the symbology type to Code128
-            builder.EncodeType = Aspose.BarCode.Generation.EncodeTypes.DatabarExpandedStacked;
-
-            //Set the cloumn property to define segments per row
-            builder.Columns = 6;
+            generator.CodeText = "(01)98898765432106(3202)012345(15)991231";
 
             //Save the image
-            builder.Save("6segmets.png");
+            generator.Save("6segmets.png");
             
             // ExEnd:ChecksumSupplementData 
         }

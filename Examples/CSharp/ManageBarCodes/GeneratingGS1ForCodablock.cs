@@ -19,15 +19,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Create instance of BarCodeBuilder class.
-            BarCodeBuilder b = new BarCodeBuilder();
-
-            // Specify code text and set encode type.
-            b.CodeText = "(01)03412345678900(17)010200";
-            b.EncodeType = EncodeTypes.GS1CodablockF;
+            // Create instance of BarCodeGenerator class.
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.GS1CodablockF, "(01)03412345678900(17)010200");
 
             // Save the image to disk in PNG format
-            b.BarCodeImage.Save("GS1CodablockF_out.png");
+            generator.Save("GS1CodablockF_out.png", BarCodeImageFormat.Png);
             // ExEnd:GeneratingGS1ForCodablock
         }
     }

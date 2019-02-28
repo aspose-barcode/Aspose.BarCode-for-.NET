@@ -25,15 +25,14 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string textToDisplay = "GTIN:" + gtin + "\nUID:" + uid + "\nBatch:" + batch + "\nExp.Date:" + expDate;
 
             // Instantiate barcode object and set N order to avoid including all the names into the codetext, the property called "Display2DText" should be used.            
-            BarCodeBuilder builder = new BarCodeBuilder("textToEncode", EncodeTypes.DataMatrix);
-            builder.Display2DText = textToDisplay;
-            builder.CodeLocation = CodeLocation.Right;
-            builder.Margins = new MarginsF(0, 0, 0, 0);
-          
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, "textToEncode");
+            generator.D2.DisplayText = textToDisplay;
+            generator.CodeTextStyle.Location = CodeLocation.Right;
+
             // Builder.CodeTextSpace = 0; // Not recommended small space
 
             // Save the Barcode image
-            builder.Save(dataDir + "codetextRightDisplay_out.png" , BarCodeImageFormat.Png);
+            generator.Save(dataDir + "codetextRightDisplay_out.png" , BarCodeImageFormat.Png);
             //ExEnd:UseEncodeModeDatamatrixbarcode
         }
     }

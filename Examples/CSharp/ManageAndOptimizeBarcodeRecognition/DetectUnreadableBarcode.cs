@@ -18,11 +18,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             // ExStart:DetectUnreadableBarcode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
-
-            // Initialize the BarCodeReader object and Set RecognitionMode
+            
             using (BarCodeReader reader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard))
             {
-                reader.RecognitionMode = RecognitionMode.MaxBarCodes;
+                reader.QualitySettings = QualitySettings.MaxBarCodes;
                 while (reader.Read())
                 {
                     Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());

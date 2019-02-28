@@ -31,15 +31,15 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string lCodetext = lTextBuilder.GetExtendedCodetext();
 
             // Instantiate barcode object and Set Codetext & SymbologyType
-            BarCodeBuilder builder = new BarCodeBuilder("1234567890", EncodeTypes.QR);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "1234567890");
 
             // Set encoding mode, error correction level and display text
-            builder.QREncodeMode = QREncodeMode.ExtendedCodetext;
-            builder.QRErrorLevel = QRErrorLevel.LevelL;
-            builder.Display2DText = "My Text";
+            generator.QR.EncodeMode = QREncodeMode.ExtendedCodetext;
+            generator.QR.ErrorLevel = QRErrorLevel.LevelL;
+            generator.D2.DisplayText = "My Text";
 
             // Get barcode image Bitmap and Save QR code
-            Bitmap lBmp = builder.GenerateBarCodeImage();
+            Bitmap lBmp = generator.GenerateBarCodeImage();
             lBmp.Save(dataDir + "FNC1FirstPositionInExtendedMode_out.bmp", ImageFormat.Bmp);
             //ExEnd:FNC1FirstPositionInExtendedMode
         }

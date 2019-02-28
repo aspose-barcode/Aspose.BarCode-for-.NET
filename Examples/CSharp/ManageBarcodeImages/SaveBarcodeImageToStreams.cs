@@ -21,13 +21,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
 
             // Create a memory stream object that would store barcode image in binary form
             MemoryStream mStream = new MemoryStream();
 
             // Call save method of BarCodeImage to store Png barcode image to memory stream
-            barCodeBuilder.BarCodeImage.Save(dataDir + mStream + "_out.png", ImageFormat.Png);
+            generator.Save(mStream, BarCodeImageFormat.Png);
             // ExEnd:SaveBarcodeImageToStreams       
         }
     }

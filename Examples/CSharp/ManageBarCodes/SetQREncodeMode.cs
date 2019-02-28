@@ -18,9 +18,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Create instance of BarCodeBuilder, specify codetext symbology and encode mode 
-            BarCodeBuilder builder = new BarCodeBuilder("test123", EncodeTypes.QR) {QREncodeMode = QREncodeMode.Auto};
-            builder.Save(dataDir + "QR-Encode-mode_out.jpg");
+            // Create instance of BarCodeGenerator, specify codetext symbology and encode mode 
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "test123");
+            generator.QR.EncodeMode = QREncodeMode.Auto;
+            generator.Save(dataDir + "QR-Encode-mode_out.jpg");
             // ExEnd:SetQREncodeMode   
         }
     }

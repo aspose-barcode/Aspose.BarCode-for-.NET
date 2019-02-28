@@ -22,28 +22,25 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dstCode128 = dataDir + "code128-YDimensionChanged_out.jpg";
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
 
             // Save the image to your system and set its image format to Jpeg
-            barCodeBuilder.Save(dstCode128, ImageFormat.Jpeg);
+            generator.Save(dstCode128, BarCodeImageFormat.Jpeg);
 
             // Set the X-Dimension for the bars of the barcode
-            barCodeBuilder.xDimension = 0.5f;
-
-            // Set the measuring unit of barcode to millimeter
-            barCodeBuilder.GraphicsUnit = GraphicsUnit.Millimeter;
+            generator.XDimension.Millimeters = 0.5f;
 
             // Save the image to your system and set its image format to Jpeg
-            barCodeBuilder.Save(dstCode128, ImageFormat.Jpeg);
+            generator.Save(dstCode128, BarCodeImageFormat.Jpeg);
 
             // Instantiate barcode object and set differnt barcode properties
-            BarCodeBuilder barCodeBuilder1 = new BarCodeBuilder("1234567", EncodeTypes.Pdf417)
+            using (BarCodeGenerator generator1 = new BarCodeGenerator(EncodeTypes.Pdf417, "1234567"))
             {
-                yDimension = 4
-            };
+                generator1.BarCodeHeight.Millimeters = 4;
 
-            // Save the image to your system and set its image format to Jpeg
-            barCodeBuilder1.Save(dataDir + "pdf417-YDimensionChanged_out.jpg", ImageFormat.Jpeg);
+                // Save the image to your system and set its image format to Jpeg
+                generator1.Save(dataDir + "pdf417-YDimensionChanged_out.jpg", BarCodeImageFormat.Jpeg);
+            }
             // ExEnd:ManageXYDimension
         }
     }

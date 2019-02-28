@@ -20,11 +20,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Set codetext
             string codeText = "1159628792";
 
-            // Initialize BarCodeBuilder
-            BarCodeBuilder builder = new BarCodeBuilder(codeText, EncodeTypes.AustraliaPost);
+            // Initialize BarCodeGenerator
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.AustraliaPost, codeText);
 
             // Set format control code to standard
-            builder.Save(dataDir + "AustraliaPost-Standard_out.png");            
+            generator.Save(dataDir + "AustraliaPost-Standard_out.png");            
         }
     }
 }

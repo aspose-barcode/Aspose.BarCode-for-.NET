@@ -15,29 +15,23 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         public static void Run()
         {
             // ExStart:ChecksumSupplementData 
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
-            // Create an instance of BarCodeBuilder class
+            // Create an instance of BarCodeGenerator class
             // Set barcode text
             // Set encoding type
-            using (Aspose.BarCode.BarCodeBuilder builder = new Aspose.BarCode.BarCodeBuilder("1234567890", Aspose.BarCode.Generation.EncodeTypes.Code128))
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567890"))
             {
-                // Set graphic unit
-                builder.GraphicsUnit = System.Drawing.GraphicsUnit.Pixel;
+                // Set Auto size to None
+                generator.AutoSizeMode = AutoSizeMode.None;
 
-                // Call GetMinimumBarCodeSize method to get the minimum size required
-                System.Drawing.SizeF minSize = builder.GetMinimumBarCodeSize();
-
-                // Set Auto size to false
-                builder.AutoSize = false;
-
-                // Set image height & width with the help of min size got from GetMinimumBarCodeSize method
-                builder.ImageWidth = minSize.Width;
-                builder.ImageHeight = minSize.Height;
+                // Set image height & width to minimum
+                generator.BarCodeWidth.Millimeters = 1;
+                generator.BarCodeHeight.Millimeters = 1;
 
                 // Save the barcode image
-                using (System.Drawing.Bitmap image = builder.BarCodeImage)
-                    image.Save("minimumresult.png");
-
+                generator.Save(dataDir + "barcode-image-minimum_out.jpeg", BarCodeImageFormat.Jpeg);
                 // ExEnd:ChecksumSupplementData 
             }
         }

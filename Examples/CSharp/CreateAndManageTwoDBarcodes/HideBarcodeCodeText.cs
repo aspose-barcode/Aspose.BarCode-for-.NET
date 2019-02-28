@@ -20,11 +20,10 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string codeText = "The quick brown fox jumps over the lazy dog\n" + "The quick brown fox jumps over the lazy dog\n"; ;
 
             // Instantiate barcode object and set CodeText, Symbology , and  CodeLocation
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder(codeText, EncodeTypes.DataMatrix)
-            {
-                CodeLocation = CodeLocation.None
-            };
-            barCodeBuilder.Save(dataDir + "HideBarcodeCodeText_out.png", BarCodeImageFormat.Png);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, codeText);
+            generator.CodeTextStyle.Location = CodeLocation.None;
+
+            generator.Save(dataDir + "HideBarcodeCodeText_out.png", BarCodeImageFormat.Png);
             //ExEnd:HideBarcodeCodeText
         }
     }

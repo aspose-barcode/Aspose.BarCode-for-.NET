@@ -19,8 +19,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("514141100906(8102)03", EncodeTypes.UpcaGs1Code128Coupon);
-            barCodeBuilder.Save(dataDir + "UpcaGs1Code128Coupon_out.png");
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.UpcaGs1Code128Coupon, "514141100906(8102)03");
+            generator.Save(dataDir + "UpcaGs1Code128Coupon_out.png");
             // ExEnd:CreateCouponExtendedBarcode
         }
     }

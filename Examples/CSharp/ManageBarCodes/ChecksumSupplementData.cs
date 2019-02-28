@@ -19,12 +19,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code39Standard)
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code39Standard, "1234567"))
             {
-                // Make the checksum to be visible on the barcode
-                EnableChecksum = EnableChecksum.Yes
-            };
-            barCodeBuilder.Save(dataDir + "code39-checeksum_out.png");
+                generator.Checksum.Enable = EnableChecksum.Yes;
+                generator.Save(dataDir + "code39-checeksum_out.png");
+            }
+            
             // ExEnd:ChecksumSupplementData 
         }
     }

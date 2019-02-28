@@ -18,11 +18,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object
-            using (BarCodeBuilder builder = new BarCodeBuilder("TEXT", EncodeTypes.Pdf417))
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Pdf417))
             {
-                builder.FilledBars = false;
-                builder.Save(dataDir + "ControlBarsFillingofOneDBarcodes_out.png");
-            }
+                generator.CodeText = "TEXT";
+                generator.FilledBars = false;
+                generator.Save(dataDir + "ControlBarsFillingofOneDBarcodes_out.png");
+            };
             // ExEnd:ControlBarsFillingofOneDBarcodes       
         }
     }

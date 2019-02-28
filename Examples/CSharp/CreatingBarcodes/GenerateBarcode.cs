@@ -27,7 +27,7 @@ namespace CSharp.GenerateBarcode
 
             //ImplementUpcaGs1DatabarCouponForNewBarcode();
 
-            ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation();
+            //ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation();
 
             //ImplementInterpolationAutoSizemode();
 
@@ -216,12 +216,13 @@ namespace CSharp.GenerateBarcode
                                     "452287" + Environment.NewLine +
                                     "005001T8" + Environment.NewLine;
 
-            using (BarCodeBuilder builder = new BarCodeBuilder(CODICE, EncodeTypes.GS1DataMatrix))
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.GS1DataMatrix))
             {
-                builder.CodeLocation = CodeLocation.Right;
-                builder.Display2DText = displayedText;
+                generator.CodeText = CODICE;
+                generator.CodeTextStyle.Location = CodeLocation.Right;
+                generator.D2.DisplayText = displayedText;
 
-                Bitmap barcode = builder.GenerateBarCodeImage();
+                Bitmap barcode = generator.GenerateBarCodeImage();
                 barcode.Save(dataDir + "Display2DText.png");
             }
             //ExEnd: GS1DatamatrixBarcodeWithWrappingText

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Aspose.BarCode.Generation;
+using System.Drawing;
 using System.Drawing.Imaging;
 
 /*
@@ -20,8 +21,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and Set Code text font's type and size
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder { CodeTextFont = new Font("Verdana", 12f) };
-            barCodeBuilder.Save(dataDir + "SetCodeTextFontFamilyNameAndSize_out.bmp", ImageFormat.Bmp);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128);
+            generator.CodeText = "Text";
+            generator.CodeTextStyle.Font.FamilyName = "Verdana";
+            generator.CodeTextStyle.Font.Size.Point = 12f;
+            generator.Save(dataDir + "SetCodeTextFontFamilyNameAndSize_out.bmp", BarCodeImageFormat.Bmp);
             // ExEnd:SetCodeTextFontFamilyNameAndSize       
         }
     }

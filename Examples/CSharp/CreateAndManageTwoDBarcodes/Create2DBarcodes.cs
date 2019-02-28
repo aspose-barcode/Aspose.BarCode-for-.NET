@@ -19,36 +19,35 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("this is some test code text. \n Second line \n third line.", EncodeTypes.Pdf417)
-           {
-               // Set width and height
-               xDimension = 0.6f,
-               yDimension = 1.2f
-           };
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Pdf417, "this is some test code text. \n Second line \n third line.");
+
+            // Set width and height
+            generator.XDimension.Millimeters = 0.6f;
+            generator.BarHeight.Millimeters = 1.2f;
 
             // Save the Barcode image in JPEG format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.jpg", BarCodeImageFormat.Jpeg); 
+            generator.Save(dataDir + "2d-barcode_out.jpg", BarCodeImageFormat.Jpeg);
 
             // Save the Barcode image in TIFF format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.tiff", BarCodeImageFormat.Tiff);
-            
+            generator.Save(dataDir + "2d-barcode_out.tiff", BarCodeImageFormat.Tiff);
+
             // Save the Barcode image in PNG format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.png", BarCodeImageFormat.Png);
+            generator.Save(dataDir + "2d-barcode_out.png", BarCodeImageFormat.Png);
 
             // Save the Barcode image in BMP format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.bmp", BarCodeImageFormat.Bmp);
+            generator.Save(dataDir + "2d-barcode_out.bmp", BarCodeImageFormat.Bmp);
 
             // Save the Barcode image in GIF format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.gif", BarCodeImageFormat.Gif);
+            generator.Save(dataDir + "2d-barcode_out.gif", BarCodeImageFormat.Gif);
 
             // Save the Barcode image in TiffInCmyk format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.tiff", BarCodeImageFormat.TiffInCmyk);
+            generator.Save(dataDir + "2d-barcode_out.tiff", BarCodeImageFormat.TiffInCmyk);
 
             // Save the Barcode image in EMF format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.emf", BarCodeImageFormat.Emf);
+            generator.Save(dataDir + "2d-barcode_out.emf", BarCodeImageFormat.Emf);
 
             // Save the Barcode image in SVG format
-            barCodeBuilder.Save(dataDir + "2d-barcode_out.svg", BarCodeImageFormat.Svg);
+            generator.Save(dataDir + "2d-barcode_out.svg", BarCodeImageFormat.Svg);
 
             // ExEnd:Create2DBarcodes
         }

@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Aspose.BarCode.Generation;
+using System.Drawing;
 using System.Drawing.Imaging;
 
 /*
@@ -20,12 +21,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set differnt Properties
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128))
             {
-                CodeText = "1234567",
-                CodeTextAlignment = StringAlignment.Center
+                generator.CodeText = "1234567";
+                generator.CodeTextStyle.Alignment = StringAlignment.Center;
+                generator.Save(dataDir + "barcode-SetCodeAlignment_out.jpg", BarCodeImageFormat.Jpeg);
             };
-            barCodeBuilder.Save(dataDir + "barcode-SetCodeAlignment_out.jpg", ImageFormat.Jpeg);
             // ExEnd:SetCodeAlignment       
         }
     }

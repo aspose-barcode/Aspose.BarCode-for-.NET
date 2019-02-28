@@ -18,10 +18,10 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            // Create instance of BarCodeBuilder class, Set Aspect Ratio to 3:2 or 1.5 and Save the barcode image to disk in PNG format  
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890", EncodeTypes.Pdf417);
-            barCodeBuilder.AspectRatio = 1.5f;
-            barCodeBuilder.Save(dataDir + "SetAspectRatio_out.png", BarCodeImageFormat.Png);
+            // Create instance of BarCodeGenerator class, Set Aspect Ratio to 3:2 or 1.5 and Save the barcode image to disk in PNG format  
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Pdf417, "1234567890");
+            generator.D2.AspectRatio = 1.5f;
+            generator.Save(dataDir + "SetAspectRatio_out.png", BarCodeImageFormat.Png);
             //ExEnd:SetAspectRatio
         }
     }

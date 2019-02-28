@@ -19,12 +19,11 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Instantiate barcode object and set Barcode CodeText & Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("123456789", EncodeTypes.Aztec)
-            { 
-                // Set Error Error Correction level and  Save the Barcode image
-                AztectErrorLevel = 10
-            };           
-            barCodeBuilder.Save(dataDir + "UseAztecErrorCorrection_out.bmp", BarCodeImageFormat.Bmp);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Aztec, "123456789");
+            // Set Error Error Correction level and  Save the Barcode image
+            generator.Aztec.ErrorLevel = 10;
+
+            generator.Save(dataDir + "UseAztecErrorCorrection_out.bmp", BarCodeImageFormat.Bmp);
             //ExEnd:UseAztecErrorCorrection
         }
     }

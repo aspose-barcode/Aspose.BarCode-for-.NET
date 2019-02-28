@@ -18,8 +18,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Generate the barcode and Save barcode on local
-            BarCodeBuilder builder = new BarCodeBuilder("RA121212122CH", EncodeTypes.SwissPostParcel);
-            builder.Save(dataDir + "SwissPostParcelBarcodeWithInternationalMailType_out.png");
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.SwissPostParcel, "RA121212122CH");
+            generator.Save(dataDir + "SwissPostParcelBarcodeWithInternationalMailType_out.png");
             // ExEnd:SwissPostParcelBarcodeWithInternationalMailType
         }
     }

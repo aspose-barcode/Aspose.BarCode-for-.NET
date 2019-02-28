@@ -21,13 +21,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128)
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567"))
             {
                 // Set the bar height to 3 points and measuring unit of barcode to point
-                BarHeight = 3.0f,
-                GraphicsUnit = GraphicsUnit.Point
+                generator.BarHeight.Point = 3.0f;
+                generator.Save(dataDir + "barcode-size-unit_out.jpeg", BarCodeImageFormat.Jpeg);
             };
-            barCodeBuilder.Save(dataDir + "barcode-size-unit_out.jpeg", ImageFormat.Jpeg);
             // ExEnd:SetSizeUnitForBarcodeImage                       
         }
     }

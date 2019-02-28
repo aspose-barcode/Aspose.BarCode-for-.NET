@@ -36,8 +36,8 @@
     <StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=19.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.19.1.0.1\lib\net40\Aspose.BarCode.dll</HintPath>
+    <Reference Include="Aspose.BarCode, Version=19.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.19.2.0\lib\net40\Aspose.BarCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateAndManageTwoDBarcodes\CreatebarcodewithImageInsteadOfCodetext.cs" />
+    <Compile Include="CreateAndManageTwoDBarcodes\CreateBarCodeWithImageInsteadOfCodeText.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\CreateTextDatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\CreateC40DatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\SettingQRVersion.cs" />

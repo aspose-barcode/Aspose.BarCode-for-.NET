@@ -19,13 +19,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("512345678900(8110)001234502239811110555",EncodeTypes.UpcaGs1DatabarCoupon)
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.UpcaGs1DatabarCoupon, "512345678900(8110)001234502239811110555")
             {
                 // Set barcode caption and barcode
                 CaptionAbove = {Text = "012345-022398"}            
             };
-           
-            barCodeBuilder.Save(dataDir + "couponUpcaDatabar_out.png");
+
+            generator.Save(dataDir + "couponUpcaDatabar_out.png");
             // ExEnd:CreateUpcaGs1DatabarCoupon
         }
     }

@@ -26,8 +26,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 {
                     // Start Stopwatch and Set RecognitionMode, ManualHints
                     watch.Start();
-                    reader.RecognitionMode = RecognitionMode.ManualHints;
-                    reader.ManualHints = ManualHint.MedianSmoothing;
+                    //reader.RecognitionMode = RecognitionMode.ManualHints;
+                    reader.QualitySettings.AllowMedianSmoothing = true;
+                    reader.QualitySettings.MedianSmoothingWindowSize = 5;
+
                     while (reader.Read())
                     {
                         Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());

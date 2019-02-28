@@ -1,4 +1,5 @@
-﻿using System.Drawing.Imaging;
+﻿using Aspose.BarCode.Generation;
+using System.Drawing.Imaging;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -19,14 +20,16 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set different properties
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder
-            {
-                BorderDashStyle = BorderDashStyle.Solid,
-                Margins = new MarginsF(2f, 2f, 2f, 2f),
-                BorderWidth = 0.5f,
-                BorderVisible = true
-            };
-            barCodeBuilder.Save(dataDir + "barcodeImageborders_out.jpeg", ImageFormat.Jpeg);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code93Standard);
+            generator.Border.DashStyle = BorderDashStyle.Solid;
+            generator.Margins.Top.Millimeters = 2f;
+            generator.Margins.Left.Millimeters = 2f;
+            generator.Margins.Right.Millimeters = 2f;
+            generator.Margins.Bottom.Millimeters = 2f;
+            generator.Border.Width.Millimeters = 0.5f;
+            generator.Border.Visible = true;
+
+            generator.Save(dataDir + "barcodeImageborders_out.jpeg", BarCodeImageFormat.Jpeg);
             // ExEnd:BarcodeImageBorders   
         }
     }

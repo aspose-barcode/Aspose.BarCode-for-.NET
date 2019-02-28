@@ -22,22 +22,30 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
 
-            // Create caption object. Set its text and text alignment & also make it visible
-            Caption caption = new Caption
-            {
-                Text = "Aspose.BarCode",
-                TextAlign = StringAlignment.Center,
-                Visible = true
-            };
+            // Set caption above its text and text alignment & also make it visible
+            generator.CaptionAbove.Visible = true;
+            generator.CaptionAbove.Text = "Aspose";
+            generator.CaptionAbove.Alignment = StringAlignment.Center;
+            generator.CaptionAbove.Color = Color.Red;
+            generator.CaptionAbove.Font.FamilyName = "Pristina";
+            generator.CaptionAbove.Font.Size.Point = 14;
+            //space between the barcode and the caption
+            generator.CaptionAbove.Space.Millimeters = 5;
 
-            // Assign caption object to be displayed above and below the barcode
-            barCodeBuilder.CaptionAbove = caption;
-            barCodeBuilder.CaptionBelow = caption;
+            // Assign caption object to be displayed above the barcode
+            generator.CaptionBelow.Visible = true;
+            generator.CaptionBelow.Text = "Aspose Caption below";
+            generator.CaptionBelow.Alignment = StringAlignment.Center;
+            generator.CaptionBelow.Color = Color.OrangeRed;
+            generator.CaptionBelow.Font.Size.Point = 14;
+            generator.CaptionBelow.Font.FamilyName = "Pristina";
+            //space between the barcode and the caption
+            generator.CaptionBelow.Space.Millimeters = 5;
 
             // Save the image to your system and set its image format to Jpeg
-            barCodeBuilder.Save(dataDir + "ManageCaption_out.jpg", ImageFormat.Jpeg);
+            generator.Save(dataDir + "ManageCaption_out.jpg", BarCodeImageFormat.Jpeg);
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir);
             // ExEnd:ManageCaption                
         }

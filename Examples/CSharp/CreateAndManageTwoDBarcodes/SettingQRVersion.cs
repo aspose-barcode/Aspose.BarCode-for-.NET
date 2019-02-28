@@ -21,23 +21,17 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            // Instantiate BarCodeBuilder object
-            Aspose.BarCode.BarCodeBuilder builder = new Aspose.BarCode.BarCodeBuilder();
-
-            // Set the Code text for the barcode
-            builder.CodeText = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-            // Set the symbology type to QR
-            builder.EncodeType = Aspose.BarCode.Generation.EncodeTypes.QR;
+            // Instantiate BarCodeGenerator object
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 
             // Set the error level
-            builder.QRErrorLevel = Aspose.BarCode.QRErrorLevel.LevelQ;
+            generator.QR.ErrorLevel = QRErrorLevel.LevelQ;
 
             // Set the QR barcode version number
-            builder.QRVersion = Aspose.BarCode.QRVersion.Version10;
+            generator.QR.Version = QRVersion.Version10;
 
             //Save the image
-            builder.Save("qr_version10_errorQ.png");
+            generator.Save("qr_version10_errorQ.png");
             
             //ExEnd:EncodeQRCode
         }

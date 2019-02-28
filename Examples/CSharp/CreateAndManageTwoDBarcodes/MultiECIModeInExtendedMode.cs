@@ -30,13 +30,15 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // Generate codetext
             string lCodetext = lTextBuilder.GetExtendedCodetext();
 
-            // Initialize a BarCodeBuilder class object, Set CodeText, Symbology, Encoding mode, correction level and display text
-            BarCodeBuilder builder = new BarCodeBuilder(lCodetext, EncodeTypes.QR);
-            builder.QREncodeMode = QREncodeMode.ExtendedCodetext;
-            builder.QRErrorLevel = QRErrorLevel.LevelL;
-            builder.CodeText = lCodetext;
-            builder.Display2DText = "My Text";
-            Bitmap lBmp = builder.GenerateBarCodeImage();
+            // Initialize a BarCodeGenerator class object, Set CodeText, Symbology, Encoding mode, correction level and display text
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, lCodetext);
+
+            generator.QR.EncodeMode = QREncodeMode.ExtendedCodetext;
+            generator.QR.ErrorLevel = QRErrorLevel.LevelL;
+            generator.CodeText = lCodetext;
+            generator.D2.DisplayText = "My Text";
+
+            Bitmap lBmp = generator.GenerateBarCodeImage();
             lBmp.Save(dataDir + "MultiECIModeInExtendedMode_out.bmp", ImageFormat.Bmp);
             //ExEnd:MultiECIModeInExtendedMode
         }

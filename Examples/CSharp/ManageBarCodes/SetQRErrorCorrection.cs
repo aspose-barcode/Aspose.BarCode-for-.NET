@@ -18,12 +18,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Create instance of BarCodeBuilder, specify codetext and symbology in the constructor
-            BarCodeBuilder builder = new BarCodeBuilder("1234567890", EncodeTypes.QR);
+            // Create instance of BarCodeGenerator, specify codetext and symbology in the constructor
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "1234567890");
 
             // Set QRErrorLevel and Save the file to disk.  
-            builder.QRErrorLevel = QRErrorLevel.LevelH;
-            builder.Save(dataDir + "QR-error-correction_out.jpg", BarCodeImageFormat.Jpeg);
+            generator.QR.ErrorLevel = QRErrorLevel.LevelH;
+            generator.Save(dataDir + "QR-error-correction_out.jpg", BarCodeImageFormat.Jpeg);
             // ExEnd:SetQRErrorCorrection   
         }
     }

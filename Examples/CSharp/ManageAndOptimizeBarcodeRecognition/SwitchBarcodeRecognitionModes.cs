@@ -21,10 +21,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
-                // Initialize the BarCodeReader object and  Set recognition mode and manual hints
+                // Initialize the BarCodeReader object and  Set recognition mode
                 BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-barcode.jpg", DecodeType.DataMatrix);
-                reader.RecognitionMode = RecognitionMode.ManualHints;
-                reader.ManualHints = ManualHint.InvertImage | ManualHint.IncorrectBarcodes;
+                reader.QualitySettings = QualitySettings.HighPerformance;
+                reader.QualitySettings.AllowInvertImage = true;
+                reader.QualitySettings.AllowIncorrectBarcodes = true;
 
                 // Try to recognize all possible barcodes in the image and Display the codetext
                 while (reader.Read())

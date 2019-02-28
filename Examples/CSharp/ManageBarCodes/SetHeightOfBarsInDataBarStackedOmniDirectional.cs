@@ -18,15 +18,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and Set the SymbologyType and Height and Resolution for barcode
-            BarCodeBuilder builder = new BarCodeBuilder("(01)90013670000396(3200)15(11)150819",EncodeTypes.DatabarStackedOmniDirectional)
-            {
-                xDimension = 0.330f,
-                BarHeight = 27.77f,
-                Resolution = new Resolution(1200.0f, 1200.0f, ResolutionMode.Customized)
-            };
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DatabarStackedOmniDirectional, "(01)90013670000396(3200)15(11)150819");
+            generator.XDimension.Millimeters = 0.330f;
+            generator.BarHeight.Millimeters = 27.77f;
+            generator.Resolution = 1200.0f;
 
             // Save the image to your system and set its image format to Jpeg
-            builder.Save(dataDir + "Barheight_out.png", BarCodeImageFormat.Png);
+            generator.Save(dataDir + "Barheight_out.png", BarCodeImageFormat.Png);
             // ExEnd:SetHeightOfBarsInDataBarStackedOmniDirectional  
         }
     }

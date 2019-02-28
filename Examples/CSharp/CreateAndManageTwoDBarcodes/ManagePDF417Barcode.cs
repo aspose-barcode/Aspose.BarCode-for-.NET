@@ -21,13 +21,14 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Instantiate barcode object
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890", EncodeTypes.Pdf417);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Pdf417, "1234567890");
 
             // Set Pdf417 Error correction level, Compaction Mode to Text and CodeText for barcode
-            barCodeBuilder.Pdf417ErrorLevel = Pdf417ErrorLevel.Level8;
-            barCodeBuilder.Pdf417CompactionMode = Pdf417CompactionMode.Text;
-            barCodeBuilder.CodeText = "1234567890";
-            barCodeBuilder.Save(dataDir + "ManagePDF417Barcode_out.bmp", ImageFormat.Bmp);
+            generator.Pdf417.ErrorLevel = Pdf417ErrorLevel.Level8;
+            generator.Pdf417.CompactionMode = Pdf417CompactionMode.Text;
+            generator.CodeText = "1234567890";
+
+            generator.Save(dataDir + "ManagePDF417Barcode_out.bmp", BarCodeImageFormat.Bmp);
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "Datamatrixbarcode_out.bmp");
             //ExEnd:ManagePDF417Barcode
         }

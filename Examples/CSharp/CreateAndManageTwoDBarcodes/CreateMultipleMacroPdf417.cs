@@ -27,23 +27,23 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             const int strFileId = 1;
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            using (BarCodeBuilder builder = new BarCodeBuilder("1234567890",EncodeTypes.MacroPdf417))
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.MacroPdf417, "1234567890"))
             {
                 for (int nCount = 1; nCount <= nSize; nCount++)
                 {
-                    builder.CodeText = lstCodeText[nCount - 1];
+                    generator.CodeText = lstCodeText[nCount - 1];
 
                     // FileID should be same for all the generated bar codes
-                    builder.MacroPdf417FileID = strFileId;
+                    generator.Pdf417.MacroFileID = strFileId;
 
                     // Assign segmentID in increasing order (1,2,3,....) and Set the segments count
-                    builder.MacroPdf417SegmentID = nCount;
-                    builder.MacroPdf417SegmentsCount = nSize;
+                    generator.Pdf417.MacroSegmentID = nCount;
+                    generator.Pdf417.MacroSegmentsCount = nSize;
                    
                     try
                     {
                         // Save the barcode (fileid_segmentid.png)
-                        builder.Save(dataDir + strFileId + "_" + nCount + "_out.png", ImageFormat.Png);
+                        generator.Save(dataDir + strFileId + "_" + nCount + "_out.png", BarCodeImageFormat.Png);
                         Process.Start(dataDir + strFileId + "_" + nCount + "_out.png");
                     }
                     catch (Exception ex)

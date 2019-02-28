@@ -18,25 +18,22 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
-
+            
             //Generation
-            //Instantiate BarCodeBuilder object
-            Aspose.BarCode.BarCodeBuilder builder = new Aspose.BarCode.BarCodeBuilder();
+            //Instantiate BarCodeGenerator object
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Codabar);
 
             //Set the Code text for the barcode
-            builder.CodeText = "1234567890";
-
-            //Set the symbology type to Code128
-            builder.EncodeType = Aspose.BarCode.Generation.EncodeTypes.Codabar;
+            generator.CodeText = "1234567890";
 
             //Set the EnableChecksum property to yes
-            builder.EnableChecksum = Aspose.BarCode.EnableChecksum.Yes;
+            generator.Checksum.Enable = EnableChecksum.Yes;
 
             //Set the CodabarChecksumMode
-            builder.CodabarChecksumMode = Aspose.BarCode.CodabarChecksumMode.Mod10;
+            generator.Codabar.ChecksumMode = Aspose.BarCode.CodabarChecksumMode.Mod10;
 
             //Save the image on the system
-            builder.Save("Codabar_Mod10.png");
+            generator.Save("Codabar_Mod10.png");
 
             //Recognition
             //Initialize reader object

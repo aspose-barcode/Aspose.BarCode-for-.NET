@@ -1,4 +1,5 @@
-﻿using System.Drawing.Imaging;
+﻿using Aspose.BarCode.Generation;
+using System.Drawing.Imaging;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -19,8 +20,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object set codeText and location
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder {CodeText = "1234567", CodeLocation = CodeLocation.Above};
-            barCodeBuilder.Save(dataDir + "barcode-SetCodetextLocation_out.jpeg", ImageFormat.Jpeg);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128);
+            generator.CodeText = "1234567";
+            generator.CodeTextStyle.Location = CodeLocation.Above;
+            generator.Save(dataDir + "barcode-SetCodetextLocation_out.jpeg", BarCodeImageFormat.Jpeg);
+
             // ExEnd:SetCodetextLocation                       
         }
     }

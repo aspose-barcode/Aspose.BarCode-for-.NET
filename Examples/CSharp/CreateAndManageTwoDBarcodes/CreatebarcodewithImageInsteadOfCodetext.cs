@@ -10,7 +10,7 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 {
-    class CreatebarcodewithImageInsteadOfCodetext
+    class CreateBarCodeWithImageInsteadOfCodeText
     {
         public static void Run()
         {
@@ -21,10 +21,10 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // Create an instance of BarCodeBuilder class
             // Set the barcode text
             // Set the barcode symbology 
-            using (Aspose.BarCode.BarCodeBuilder builder = new Aspose.BarCode.BarCodeBuilder("123456789012", Aspose.BarCode.Generation.EncodeTypes.EAN13))
+            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.EAN13, "123456789012"))
             {
                 // Generate Barcode image and store it in a Bitmap
-                using (System.Drawing.Bitmap barcode = builder.GenerateBarCodeImage())
+                using (System.Drawing.Bitmap barcode = generator.GenerateBarCodeImage())
                 {
                     // Load the logo/other image as Bitmap
                     using (System.Drawing.Bitmap picture = (System.Drawing.Bitmap)System.Drawing.Image.FromFile(@"path_to_your_picture.png"))
@@ -32,7 +32,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                         // Create a new empty image with new Calculated height &amp; width
                         using (System.Drawing.Bitmap output = new System.Drawing.Bitmap(System.Math.Max(barcode.Width, picture.Width), barcode.Height + picture.Height))
                         {
-                            // Get the Graphics object
+                            // Get the Graphics object9
                             using (System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(output))
                             {
                                 // Clear the canvas 
@@ -44,7 +44,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                                 // Draw the second image (logo image) on the canvas inside the barcode image
                                 g.DrawImage(barcode, new System.Drawing.PointF(0, picture.Height));
                             }
-                            output.Save("output.jpg");
+                            output.Save(dataDir + "output.jpg");
                         }
                     }
                 }

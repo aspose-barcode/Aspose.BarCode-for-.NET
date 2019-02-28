@@ -23,10 +23,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
                 // Generate the barcode and set code text, symbology type
-                BarCodeBuilder builder = new BarCodeBuilder("123456", EncodeTypes.Code128);
+                BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "123456");
 
                 // Get bitmap with exact barcode only and Save image on local disk
-                Bitmap bmp = builder.GetOnlyBarCodeImage();
+                Bitmap bmp = generator.GenerateBarCodeImage();
                 bmp.Save(dataDir + "CreateImageWithExactBarcodeOnly_out.png", ImageFormat.Png);
                 // ExEnd:CreateImageWithExactBarcodeOnly
             }

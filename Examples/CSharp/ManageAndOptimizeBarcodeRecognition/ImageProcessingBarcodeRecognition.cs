@@ -25,7 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 BarCodeReader barCodeReader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard);
 
                 // Set grayscale image processing
-                barCodeReader.RecognitionMode = RecognitionMode.MaxBarCodes;
+                barCodeReader.QualitySettings = QualitySettings.MaxBarCodes;
 
                 // Try to recognize all possible barcodes in the image and Display the codetext
                 while (barCodeReader.Read())

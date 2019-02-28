@@ -21,10 +21,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set differnt barcode properties
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128) { xDimension = 1f };
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
+            generator.XDimension.Millimeters = 1f;
 
             // Save the image to your system and set its image format to Jpeg
-            barCodeBuilder.Save(dataDir + "barcode-codetext_out.jpg", ImageFormat.Jpeg);
+            generator.Save(dataDir + "barcode-codetext_out.jpg", BarCodeImageFormat.Jpeg);
             Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "barcode-codetext_out.jpg");
             // ExEnd:SetCodeText  
         }

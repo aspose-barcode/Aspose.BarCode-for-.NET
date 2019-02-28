@@ -26,7 +26,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes);
                 
                 // To get all possible barcodes
-                reader.RecognitionMode = RecognitionMode.MaxBarCodes;
+                reader.QualitySettings = QualitySettings.MaxBarCodes;
 
                 while (reader.Read())
                 {

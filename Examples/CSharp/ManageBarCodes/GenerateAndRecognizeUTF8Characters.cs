@@ -25,12 +25,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
                 // Generate the barcode
                 Bitmap imgBarcode = null;
-                BarCodeBuilder objBarCodeBuilder = new BarCodeBuilder {EncodeType = EncodeTypes.MacroPdf417};
+                BarCodeGenerator barCodeGenerator = new BarCodeGenerator(EncodeTypes.MacroPdf417);
                 
                 // Set the codetext by converting it into unicode byte array
-                byte[] byteArray = Encoding.Unicode.GetBytes("منحة");
-                objBarCodeBuilder.SetBinaryCodeText(byteArray);
-                imgBarcode = objBarCodeBuilder.GenerateBarCodeImage();
+                barCodeGenerator.CodeText = "منحة";
+                barCodeGenerator.D2.CodeTextEncoding = Encoding.Unicode;
+
+                imgBarcode = barCodeGenerator.GenerateBarCodeImage();
                 imgBarcode.Save(dataDir + "GenerateAndRecognizeUTF8Characters_out.png");
 
                 // Recognize the above barcode

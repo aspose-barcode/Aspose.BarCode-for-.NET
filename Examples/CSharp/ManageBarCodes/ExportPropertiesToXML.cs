@@ -19,33 +19,32 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Initialize the BarCodeBuilder class by passing barcode text and barcode symbology as parameters.
-            BarCodeBuilder builder = new BarCodeBuilder("abcdefghijklmnopqrstuvwxyzabcdef", EncodeTypes.DataMatrix)
-            {
-                // Set various different properties/variables of the barcode.
-                BorderVisible = true,
-                ImageQuality = ImageQualityMode.AntiAlias,
-                CodeLocation = CodeLocation.Above,
-                Columns = 4,
-                Rows = 3,
-                CaptionAbove = new Caption("{Caption ABOVE}")
-                {
-                    TextAlign = StringAlignment.Center,
-                    Visible = true,
-                    ForeColor = Color.Green
-                }
-            };
-           
-            // Specify caption settings.
-            builder.CaptionBelow = new Caption("{Caption BELOW}");
-            builder.CaptionBelow.TextAlign = StringAlignment.Far;
-            builder.CaptionBelow.Visible = true;
-            builder.CaptionBelow.ForeColor = Color.Yellow;
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, "abcdefghijklmnopqrstuvwxyzabcdef");
+            // Set various different properties/variables of the barcode.
+            generator.Border.Visible = true;
+            generator.CodeTextStyle.Location = CodeLocation.Above;
+            generator.D2.Columns = 4;
+            generator.D2.Rows = 3;
+
+            // Specify caption Above settings.
+            generator.CaptionAbove.Text = "Caption ABOVE";
+            generator.CaptionAbove.Alignment = StringAlignment.Center;
+            generator.CaptionAbove.Visible = true;
+            generator.CaptionAbove.Color = Color.Green;
+                
+            // Specify caption Below settings.
+            generator.CaptionBelow.Text = "Caption BELOW";
+            generator.CaptionBelow.Alignment = StringAlignment.Far;
+            generator.CaptionBelow.Visible = true;
+            generator.CaptionBelow.Color = Color.Yellow;
 
             // Specify text font settings.
-            builder.CodeTextFont = new Font("Courier New", 24, FontStyle.Bold | FontStyle.Italic);
+            generator.CodeTextStyle.Font.FamilyName = "Courier New";
+            generator.CodeTextStyle.Font.Size.Point = 24;
+            generator.CodeTextStyle.Font.Style = FontStyle.Bold;
 
             // Call the export to XML method to export the properties to XML file.
-            builder.ExportToXml(dataDir + "BarCodeBuilder.DataMatrix_out.xml");
+            generator.Save(dataDir + "BarCodeBuilder.DataMatrix_out.xml");
             // ExEnd:ExportPropertiesToXML                
         }
     }

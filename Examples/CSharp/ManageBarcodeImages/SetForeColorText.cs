@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using Aspose.BarCode.Generation;
+using System.Drawing;
 using System.Drawing.Imaging;
 
 /*
@@ -20,12 +21,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set differnt barcode properties
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder
-            {
-                CodeText = "1234567",
-                CodeTextColor = Color.Red
-            };
-            barCodeBuilder.Save(dataDir + "barcode-SetForeColorText_out.jpg", ImageFormat.Jpeg);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
+            generator.CodeTextStyle.Color = Color.Red;
+            generator.Save(dataDir + "barcode-SetForeColorText_out.jpg", BarCodeImageFormat.Jpeg);
             // ExEnd:SetForeColorText                       
         }
     }

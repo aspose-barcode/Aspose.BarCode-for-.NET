@@ -20,8 +20,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set CodeText, Barcode Symbology and RotationAngleF
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567", EncodeTypes.Code128) {RotationAngleF = 180};
-            barCodeBuilder.Save(dataDir + "barcode-image-rotate_out.jpeg", ImageFormat.Jpeg);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128);
+            generator.CodeText = "1234567";
+            generator.RotationAngle = 180;
+            generator.Save(dataDir + "barcode-image-rotate_out.jpeg", BarCodeImageFormat.Jpeg);
             // ExEnd:RotateBarcodeImage       
         }
     }
