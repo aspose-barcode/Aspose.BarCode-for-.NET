@@ -53,7 +53,6 @@
     <Compile Include="CreateAndManageTwoDBarcodes\CreateTextDatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\CreateC40DatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\SettingQRVersion.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\ErrorCorrectionLevel.cs" />
     <Compile Include="CreatingBarcodes\GenerateBarcode.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\BarcodeReaderSetBarcodeImage.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\BarCodeRecognitionFilters.cs" />
@@ -70,7 +69,6 @@
     <Compile Include="ManageBarCodes\ReadAndSortBarcodesInSpecificOrder.cs" />
     <Compile Include="ManageBarCodes\RecognizeBarcodeWithChineseCharacters.cs" />
     <Compile Include="ManageBarCodes\RecognizeBarcodeWithTurkishCharacters.cs" />
-    <Compile Include="ManageBarCodes\SetAztecSymbolMode.cs" />
     <Compile Include="ManageBarCodes\SwissPostParcelBarcodeWithAdditionalServiceType.cs" />
     <Compile Include="ManageBarCodes\CreateAndSetSizeForImageWithBarcode.cs" />
     <Compile Include="ManageBarCodes\CreateImageWithExactBarcodeOnly.cs" />

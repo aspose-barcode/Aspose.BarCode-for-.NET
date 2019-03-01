@@ -16,9 +16,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:SettingQRVersion
-            // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
-
+            //ExStart:EncodeQRCode
+            
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -33,8 +32,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             //Save the image
             generator.Save("qr_version10_errorQ.png");
-
-            //ExEnd:SettingQRVersion
+            
+            //ExEnd:EncodeQRCode
         }
     }
 }

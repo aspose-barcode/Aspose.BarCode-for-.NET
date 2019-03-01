@@ -17,8 +17,6 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
         public static void Run()
         {
             //ExStart:EncodeMicroQRCode
-            // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
-
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 

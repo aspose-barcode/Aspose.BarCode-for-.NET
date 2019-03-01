@@ -15,8 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:CreateC40DatamatrixBarCode
-            // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
+            //ExStart:CreateEnCodeDatamatrixBarCode
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
@@ -30,8 +29,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save the barcode image
             generator.Save("dataMatrixC40.png");
-
-            //ExEnd:CreateC40DatamatrixBarCode
+            
+            //ExEnd:CreateEnCodeDatamatrixBarCode
         }
     }
 }

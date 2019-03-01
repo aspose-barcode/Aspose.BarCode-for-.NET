@@ -15,14 +15,12 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
         public static void Run()
         {
             // ExStart:CreateAztecbarcode
-            // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
-
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Aztec, "25");
-            generator.Save(dataDir + "CreateAztecbarcode_out.png", BarCodeImageFormat.Png);
+            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Aztec, "123456789");
+            generator.Save(dataDir + "CreateAztecbarcode_out.bmp", BarCodeImageFormat.Bmp);
             // ExEnd:CreateAztecbarcode
         }
     }

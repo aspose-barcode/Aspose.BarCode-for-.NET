@@ -14,7 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            // ExStart:BarcodeWithSegments 
+            // ExStart:ChecksumSupplementData 
 
             //Instantiate BarCodeGenerator object
             BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DatabarExpandedStacked);
@@ -24,8 +24,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             //Save the image
             generator.Save("6segmets.png");
-
-            // ExEnd:BarcodeWithSegments 
+            
+            // ExEnd:ChecksumSupplementData 
         }
     }
 }

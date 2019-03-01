@@ -54,7 +54,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //GeneratingCodablockF.Run();
             //GeneratingGS1ForCodablock.Run();
             //GeneratingGS1_128AI8012Barcode.Run();
-            //SetAztecSymbolMode.Run();
+
             //ReadType1DBarcode.Run();
             //ReadPostalTypesBarcode.Run();
             //ReadMostCommonTypeBarcode.Run();
@@ -128,7 +128,6 @@ namespace Aspose.BarCode.Examples.CSharp
             //SetAspectRatio.Run();
             //CreateMultipleMacroPdf417.Run();
             //CreateBarCodeWithImageInsteadOfCodeText.Run();
-            //ErrorCorrectionLevel.Run();
 
             //// =====================================================
             //// =====================================================

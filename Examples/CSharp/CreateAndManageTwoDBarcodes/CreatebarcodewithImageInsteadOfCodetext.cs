@@ -14,9 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            // ExStart:CreateBarCodeWithImageInsteadOfCodeText
-            // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
-
+            // ExStart:CreateAztecbarcode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
@@ -51,8 +49,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                     }
                 }
             }
-
-            // ExEnd:CreateBarCodeWithImageInsteadOfCodeText
+            
+            // ExEnd:CreateAztecbarcode
         }
     }
 }

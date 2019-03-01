@@ -17,9 +17,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                // ExStart:DetectDecoratedDatamatrix     
-                // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
-
+                // ExStart:DetectDecoratedDatamatrix                       
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 

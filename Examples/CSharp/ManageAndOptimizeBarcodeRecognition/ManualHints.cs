@@ -18,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                // ExStart:ManualHints
+                // ExStart:MarkingBarCodeRegionsInImage
                 Stopwatch watch = new Stopwatch();
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
@@ -39,7 +39,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     watch.Stop();
                     Console.WriteLine("Time: " + watch.ElapsedMilliseconds + "ms.");
                 }
-                // ExEnd:ManualHints
+                // ExEnd:MarkingBarCodeRegionsInImage
             }
             catch (Exception ex)
             {

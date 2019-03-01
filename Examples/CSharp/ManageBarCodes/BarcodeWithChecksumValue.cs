@@ -14,7 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            // ExStart:BarcodeWithChecksumValue 
+            // ExStart:ChecksumSupplementData 
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
@@ -28,8 +28,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                     System.Console.WriteLine("{0}: {1}", reader.GetCodeType(), reader.GetCodeText(true));
                 }
             }
-
-            // ExEnd:BarcodeWithChecksumValue 
+            
+            // ExEnd:ChecksumSupplementData 
         }
     }
 }
