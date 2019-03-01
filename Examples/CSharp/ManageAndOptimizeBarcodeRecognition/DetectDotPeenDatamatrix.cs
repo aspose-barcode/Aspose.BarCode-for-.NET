@@ -17,7 +17,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                // ExStart:DetectDotPeenDatamatrix               
+                // ExStart:DetectDotPeenDatamatrix         
+                // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
+
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 

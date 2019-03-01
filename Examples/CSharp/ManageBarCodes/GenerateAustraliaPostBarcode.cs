@@ -14,6 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
+            // ExStart:GenerateAustraliaPostBarcode 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
@@ -24,7 +25,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.AustraliaPost, codeText);
 
             // Set format control code to standard
-            generator.Save(dataDir + "AustraliaPost-Standard_out.png");            
+            generator.Save(dataDir + "AustraliaPost-Standard_out.png");
+            // ExEnd:GenerateAustraliaPostBarcode 
         }
     }
 }

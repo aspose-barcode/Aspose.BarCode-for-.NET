@@ -14,7 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            // ExStart:ChecksumSupplementData 
+            // ExStart:CreatePostalBarcodeWithHeight 
 
             // Create an instance of BarCodeGenerator class
             // Set barcode text
@@ -30,7 +30,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 generator.Save("postnet.png");
             }
 
-            // ExEnd:ChecksumSupplementData 
+            // ExEnd:CreatePostalBarcodeWithHeight 
         }
     }
 }

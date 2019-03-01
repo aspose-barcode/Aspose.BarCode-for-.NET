@@ -14,7 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            // ExStart:ChecksumSupplementData 
+            // ExStart:GetMinimumBarCodeSize 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -32,8 +32,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
                 // Save the barcode image
                 generator.Save(dataDir + "barcode-image-minimum_out.jpeg", BarCodeImageFormat.Jpeg);
-                // ExEnd:ChecksumSupplementData 
             }
+
+            // ExEnd:GetMinimumBarCodeSize 
         }
     }
 }
