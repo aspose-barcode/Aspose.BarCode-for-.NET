@@ -20,15 +20,27 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
             BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.ITF14, "00850006000227");
+
+            // Set ITF14 Barcode Border Type
             generator.ITF.BorderType = ITF14BorderType.FrameOut;
+
+            // Set Font
             generator.CodeTextStyle.Font.FamilyName = "OCR B Std";
             generator.CodeTextStyle.Font.Size.Point = 8;
+
+            // Set xDimension
             generator.XDimension.Millimeters = 0.495f;
+
+            // Set Bars Height
             generator.BarHeight.Millimeters = 12.7f;
+
+            // Specify space between characters
             generator.CodeTextStyle.Space.Millimeters = 0.5f;
+
+            // Define resolution
             generator.Resolution = 1200.0f;
 
-            generator.Save(dataDir + "ITF14_Border_Type_Bar_out.png", BarCodeImageFormat.Png);
+            generator.Save(dataDir + "ITF14_Border_Type_Frame_out.png", BarCodeImageFormat.Png);
             // ExEnd:SetITF14SpecifyBorderType                       
         }
     }

@@ -10,26 +10,41 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 */
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 {
-    class SpecifyITF14BorderThicknes
+    class SpecifyITF14BorderThickness
     {
         public static void Run()
         {
-            // ExEnd:SpecifyITF14BorderThicknes                       
+            // ExStart:SpecifyITF14BorderThickness                       
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object
             BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.ITF14, "00850006000227");
-            generator.ITF.BorderType = ITF14BorderType.BarOut;
+
+            // Set ITF Barcode Border Type
+            generator.ITF.BorderType = ITF14BorderType.FrameOut;
+
+            // Set ITF Barcode Border Thickness
+            generator.ITF.BorderThickness.Point = 1;
+
+            // Set Font
             generator.CodeTextStyle.Font.FamilyName = "OCR B Std";
             generator.CodeTextStyle.Font.Size.Point = 8;
+
+            // Set xDimension
             generator.XDimension.Millimeters = 0.495f;
+
+            // Set Bars Height
             generator.BarHeight.Millimeters = 12.7f;
+
+            // Specify space between characters
             generator.CodeTextStyle.Space.Millimeters = 0.5f;
+
+            // Define resolution
             generator.Resolution = 1200.0f;
 
-            generator.Save(dataDir + "ITF14_Border_TypeBar_Out.png", BarCodeImageFormat.Png);
-            // ExEnd:SpecifyITF14BorderThicknes                       
+            generator.Save(dataDir + "ITF14_Border_Thickness_Out.png", BarCodeImageFormat.Png);
+            // ExEnd:SpecifyITF14BorderThickness                       
         }
     }
 }

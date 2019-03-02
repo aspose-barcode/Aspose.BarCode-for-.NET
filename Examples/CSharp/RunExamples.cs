@@ -100,6 +100,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //RecognizeBarcodeWithTurkishCharacters.Run();
             //RecognizeBarcodeWithChineseCharacters.Run();
             //ReadAndSortBarcodesInSpecificOrder.Run();
+            //SpecifyITF14BorderThickness.Run();
 
             //// =====================================================
             //// =====================================================
