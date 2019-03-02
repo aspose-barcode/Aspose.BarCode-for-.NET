@@ -23,8 +23,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Set various different properties/variables of the barcode.
             generator.Border.Visible = true;
             generator.CodeTextStyle.Location = CodeLocation.Above;
-            generator.D2.Columns = 4;
-            generator.D2.Rows = 3;
+            //generator.D2.Columns = 4;
+            //generator.D2.Rows = 3;
 
             // Specify caption Above settings.
             generator.CaptionAbove.Text = "Caption ABOVE";
