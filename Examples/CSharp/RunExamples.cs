@@ -5,6 +5,7 @@ using Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodeImages;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodes;
 using CSharp.GenerateBarcode;
+using CSharp.ManageV3BarcodeGenerator;
 
 namespace Aspose.BarCode.Examples.CSharp
 {
@@ -167,6 +168,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //// =====================================================
             //GenerateBarcode.Run();
 
+            GenerateUsingV3BarcodeGenerator.Run();
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");
@@ -186,6 +188,11 @@ namespace Aspose.BarCode.Examples.CSharp
         public static String GetDataDir_CreateAndManage2DBarCodes()
         {
             return Path.GetFullPath(GetDataDir_Data() + "CreateAndManageTwoDBarcodes/");
+        }
+
+        public static string GetDataDir_ManageV3BarcodeGenerator()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "ManageV3BarcodeGenerator/");
         }
 
         public static String GetDataDir_ManageAndOptimizeBarcodeRecognition()
