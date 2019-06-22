@@ -19,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Aztec, "123456789");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Aztec, "123456789");
             generator.Save(dataDir + "CreateAztecbarcode_out.bmp", BarCodeImageFormat.Bmp);
             // ExEnd:CreateAztecbarcode
         }

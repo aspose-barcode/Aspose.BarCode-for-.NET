@@ -48,11 +48,11 @@ namespace CSharp.GenerateBarcode
             //If you have restricted requirements of barcode size, then you can set AutoSizeMode = Nearest 
             //and required barcode size. Barcode generator will calculate all other parameters like 
             //xDimension, AspectRatio, etc to fit barcode into desired size.
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "Aspose.BarCode sample"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "Aspose.BarCode sample"))
             {
-                generator.AutoSizeMode = AutoSizeMode.Nearest;
-                generator.BarCodeWidth.Pixels = 200;
-                generator.BarCodeHeight.Pixels = 200;
+                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
+                generator.Parameters.Barcode.BarCodeWidth.Pixels = 200;
+                generator.Parameters.Barcode.BarCodeHeight.Pixels = 200;
                 generator.Save(dataDir + "GenerateBarcodeWithRestrictedBarcodeSize_out.png");
             }
             //ExEnd: GenerateBarcodeWithRestrictedBarcodeSize
@@ -62,11 +62,11 @@ namespace CSharp.GenerateBarcode
         {
             //ExStart: GenerateBarcodeWithoutRestrictedBarcodeSize
             // if you  don't have required size, you can use AutoSizeMode = None and set all generator parameters by yourself
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "Aspose.BarCode sample"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "Aspose.BarCode sample"))
             {
-                generator.XDimension.Pixels = 3;
-                generator.Margins.Left.Pixels = 20;
-                generator.Margins.Right.Pixels = 20;
+                generator.Parameters.Barcode.XDimension.Pixels = 3;
+                generator.Parameters.Barcode.Padding.Left.Pixels = 20;
+                generator.Parameters.Barcode.Padding.Right.Pixels = 20;
                 generator.Save(dataDir + "GenerateBarcodeWithoutRestrictedBarcodeSize_out.png");
             }
             //ExEnd: GenerateBarcodeWithoutRestrictedBarcodeSize
@@ -75,13 +75,13 @@ namespace CSharp.GenerateBarcode
         public static void GetGeneratedBarcodeSize()
         {
             //ExStart: GetGeneratedBarcodeSize
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "Aspose.BarCode sample"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "Aspose.BarCode sample"))
             {
-                generator.XDimension.Pixels = 3;
-                generator.D2.AspectRatio = 1.5f;
-                generator.RecalculateValues();
-                Console.WriteLine("Width = " + generator.BarCodeWidth.Pixels);
-                Console.WriteLine("Height = " + generator.BarCodeWidth.Pixels);
+                generator.Parameters.Barcode.XDimension.Pixels = 3;
+                generator.Parameters.Barcode.QR.AspectRatio = 1.5f;
+                //generator.RecalculateValues();
+                Console.WriteLine("Width = " + generator.Parameters.Barcode.BarCodeWidth.Pixels);
+                Console.WriteLine("Height = " + generator.Parameters.Barcode.BarCodeWidth.Pixels);
             }
             //ExEnd: GetGeneratedBarcodeSize
         }
@@ -89,14 +89,14 @@ namespace CSharp.GenerateBarcode
         public static void UnitBasedBarcodeGenerateion()
         {
             //ExStart: UnitBasedBarcodeGenerateion
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "Aspose.BarCode sample"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "Aspose.BarCode sample"))
             {
-                generator.AutoSizeMode = AutoSizeMode.Nearest;
-                generator.BarCodeWidth.Millimeters = 20;
-                generator.BarCodeHeight.Millimeters = 20;
+                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
+                generator.Parameters.Barcode.BarCodeWidth.Millimeters = 20;
+                generator.Parameters.Barcode.BarCodeHeight.Millimeters = 20;
                 generator.Save(dataDir + "for_display_out.png");
 
-                generator.Resolution = 300;
+                generator.Parameters.Resolution = 300;
                 generator.Save(dataDir + "for_printer_out.png");
             }
             //ExEnd: UnitBasedBarcodeGenerateion
@@ -105,10 +105,10 @@ namespace CSharp.GenerateBarcode
         public static void GroupingPropertiesByBarcodeType()
         {
             //ExStart: GroupingPropertiesByBarcodeType
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR))
             {
-                generator.QR.Version = QRVersion.Version18;
-                generator.QR.ErrorLevel = QRErrorLevel.LevelM;
+                generator.Parameters.Barcode.QR.QrVersion = QRVersion.Version18;
+                generator.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelM;
                 generator.Save(dataDir + "qr_out.png");
             }
             //ExEnd: GroupingPropertiesByBarcodeType
@@ -117,12 +117,12 @@ namespace CSharp.GenerateBarcode
         public static void GettingDefaultCodeTextForGeneratedBarcode()
         {
             //ExStart: GettingDefaultCodeTextForGeneratedBarcode
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.AustralianPosteParcel))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.AustralianPosteParcel))
             {
                 string codetext = generator.CodeText; //99712345678901234567890103456
             }
 
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.EAN13))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.EAN13))
             {
                 string codetext = generator.CodeText; //590123412345
             }
@@ -132,7 +132,7 @@ namespace CSharp.GenerateBarcode
         public static void ImplementUpcaGs1DatabarCouponForNewBarcode()
         {
             //ExStart: ImplementUpcaGs1DatabarCouponForNewBarcode
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.UpcaGs1DatabarCoupon))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.UpcaGs1DatabarCoupon))
             {
                 generator.Save(dataDir + "UpcaGs1DatabarCoupon.png");
             }
@@ -142,13 +142,13 @@ namespace CSharp.GenerateBarcode
         public static void ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation()
         {
             //ExStart: ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.UpcaGs1Code128Coupon))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.UpcaGs1Code128Coupon))
             {
                 generator.CodeText = "514141100906(01)88898765432109";
 
-                generator.AutoSizeMode = AutoSizeMode.Interpolation;
-                generator.BarCodeWidth.Pixels = 500;
-                generator.BarCodeHeight.Pixels = 200;
+                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Interpolation;
+                generator.Parameters.Barcode.BarCodeWidth.Pixels = 500;
+                generator.Parameters.Barcode.BarCodeHeight.Pixels = 200;
 
                 generator.Save(dataDir + "UpcaGs1Code128Coupon_Interpolation_500x200.png");
             }
@@ -158,11 +158,11 @@ namespace CSharp.GenerateBarcode
         public static void ImplementInterpolationAutoSizemode()
         {
             //ExStart: ImplementInterpolationAutoSizemode
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix))
             {
-                generator.AutoSizeMode = AutoSizeMode.Interpolation;
-                generator.BarCodeWidth.Millimeters = 50;
-                generator.BarCodeHeight.Inches = 1.3f;
+                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Interpolation;
+                generator.Parameters.Barcode.BarCodeWidth.Millimeters = 50;
+                generator.Parameters.Barcode.BarCodeHeight.Inches = 1.3f;
 
                 Bitmap barcode = generator.GenerateBarCodeImage();
                 barcode.Save(dataDir + "DataMatrix.png");
@@ -173,11 +173,11 @@ namespace CSharp.GenerateBarcode
         public static void GenerateCode16KBarCode()
         {
             //ExStart: GenerateCode16KBarCode
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code16K))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code16K))
             {
-                generator.AutoSizeMode = AutoSizeMode.Nearest;
-                generator.BarCodeWidth.Pixels = 100;
-                generator.CodeTextStyle.Location = CodeLocation.None;
+                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
+                generator.Parameters.Barcode.BarCodeWidth.Pixels = 100;
+                generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
                 generator.Save(dataDir + "Code16K_Nearest.png");
             }
             //ExEnd: GenerateCode16KBarCode
@@ -186,9 +186,9 @@ namespace CSharp.GenerateBarcode
         public static void ImplementMaxiCodeForBarcode()
         {
             //ExStart: ImplementMaxiCodeForBarcode
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.MaxiCode))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.MaxiCode))
             {
-                generator.MaxiCodeEncodeMode = 5;
+                generator.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = 5;
                 Bitmap barcode = generator.GenerateBarCodeImage();
                 barcode.Save(dataDir + "MaxiCode.png");
             }
@@ -198,9 +198,9 @@ namespace CSharp.GenerateBarcode
         public static void ImplementDotCodeForBarcode()
         {
             //ExStart: ImplementDotCodeForBarcode
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DotCode))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DotCode))
             {
-                generator.DotCodeMask = 2;
+                generator.Parameters.Barcode.DotCode.DotCodeMask = 2;
                 Bitmap barcode = generator.GenerateBarCodeImage();
                 barcode.Save(dataDir + "DotCode.png");
             }
@@ -216,11 +216,11 @@ namespace CSharp.GenerateBarcode
                                     "452287" + Environment.NewLine +
                                     "005001T8" + Environment.NewLine;
 
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.GS1DataMatrix))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.GS1DataMatrix))
             {
                 generator.CodeText = CODICE;
-                generator.CodeTextStyle.Location = CodeLocation.Right;
-                generator.D2.DisplayText = displayedText;
+                generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Above;
+                generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = displayedText;
 
                 Bitmap barcode = generator.GenerateBarCodeImage();
                 barcode.Save(dataDir + "Display2DText.png");
@@ -231,10 +231,10 @@ namespace CSharp.GenerateBarcode
         public static void GenarateBarcodeWithRotationAndDpi()
         {
             //ExStart: GenarateBarcodeWithRotationAndDpi
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128))
             {
-                generator.Resolution = 144;
-                generator.RotationAngle = 90;
+                generator.Parameters.Resolution = 144;
+                generator.Parameters.RotationAngle = 90;
                 generator.Save(dataDir + "rotated_dpi144.png");
             }
             //ExEnd: GenarateBarcodeWithRotationAndDpi

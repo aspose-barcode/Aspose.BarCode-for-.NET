@@ -20,11 +20,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             const string codetext = "被洪水困住的";
 
             // Generate the barcode
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Pdf417, codetext);
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Pdf417, codetext);
 
             // Encode the code text and Set the display text   
-            generator.D2.CodeTextEncoding = Encoding.Unicode;
-            generator.D2.DisplayText = codetext;
+            generator.Parameters.Barcode.Pdf417.CodeTextEncoding = Encoding.Unicode;
+            generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = codetext;
             generator.Save(dataDir + "CreatePdf417BarcodeWithChineseCharacters_out.png");
             // ExEnd:CreatePdf417BarcodeWithChineseCharacters
         }

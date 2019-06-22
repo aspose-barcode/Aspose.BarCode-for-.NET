@@ -20,9 +20,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128);
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128);
             generator.CodeText = "1234567";
-            generator.Resolution = 400f;
+            generator.Parameters.Resolution = 400f;
             
             // Save the image to your system and set its image format to Jpeg
             generator.Save(dataDir + "barcode-image-resolution_out.jpeg", BarCodeImageFormat.Jpeg);

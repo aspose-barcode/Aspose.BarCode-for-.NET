@@ -21,18 +21,18 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set differnt barcode properties
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
-            generator.BarHeight.Millimeters = 3.0f;
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567");
+            generator.Parameters.Barcode.BarHeight.Millimeters = 3.0f;
 
             // Save the image locally and set its image format to Jpeg
             generator.Save(dataDir + "barcode3_out.jpg", BarCodeImageFormat.Jpeg);
 
             // Set the bar height to 3 millimeters and Save the image locally and set its image format to Jpeg
-            generator.BarHeight.Millimeters = 7.0f;
+            generator.Parameters.Barcode.BarHeight.Millimeters = 7.0f;
             generator.Save(dataDir + "barcode7_out.jpg", BarCodeImageFormat.Jpeg);
 
             // Set the bar height to 3 millimeters and  Save the image to disk
-            generator.BarHeight.Millimeters = 11.0f;
+            generator.Parameters.Barcode.BarHeight.Millimeters = 11.0f;
             generator.Save(dataDir + "Code128-bar-height_out.jpg", BarCodeImageFormat.Jpeg);
             // ExEnd:SetHeightBarcodeBars  
         }

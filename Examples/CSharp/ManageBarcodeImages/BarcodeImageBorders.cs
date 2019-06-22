@@ -20,14 +20,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set different properties
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code93Standard);
-            generator.Border.DashStyle = BorderDashStyle.Solid;
-            generator.Margins.Top.Millimeters = 2f;
-            generator.Margins.Left.Millimeters = 2f;
-            generator.Margins.Right.Millimeters = 2f;
-            generator.Margins.Bottom.Millimeters = 2f;
-            generator.Border.Width.Millimeters = 0.5f;
-            generator.Border.Visible = true;
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code93Standard);
+            generator.Parameters.Border.DashStyle = BorderDashStyle.Solid;
+            generator.Parameters.Barcode.Padding.Top.Millimeters = 2f;
+            generator.Parameters.Barcode.Padding.Left.Millimeters = 2f;
+            generator.Parameters.Barcode.Padding.Right.Millimeters = 2f;
+            generator.Parameters.Barcode.Padding.Bottom.Millimeters = 2f;
+            generator.Parameters.Border.Width.Millimeters = 0.5f;
+            generator.Parameters.Border.Visible = true;
 
             generator.Save(dataDir + "barcodeImageborders_out.jpeg", BarCodeImageFormat.Jpeg);
             // ExEnd:BarcodeImageBorders   

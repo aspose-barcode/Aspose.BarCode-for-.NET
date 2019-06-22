@@ -19,29 +19,29 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.ITF14, "00850006000227");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.ITF14, "00850006000227");
 
             // Set ITF Barcode Border Type
-            generator.ITF.BorderType = ITF14BorderType.FrameOut;
+            generator.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.FrameOut;
 
             // Set ITF Barcode Border Thickness
-            generator.ITF.BorderThickness.Point = 1;
+            generator.Parameters.Barcode.ITF.ItfBorderThickness.Point = 1;
 
             // Set Font
-            generator.CodeTextStyle.Font.FamilyName = "OCR B Std";
-            generator.CodeTextStyle.Font.Size.Point = 8;
+            generator.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "OCR B Std";
+            generator.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 8;
 
             // Set xDimension
-            generator.XDimension.Millimeters = 0.495f;
+            generator.Parameters.Barcode.XDimension.Millimeters = 0.495f;
 
             // Set Bars Height
-            generator.BarHeight.Millimeters = 12.7f;
+            generator.Parameters.Barcode.BarHeight.Millimeters = 12.7f;
 
             // Specify space between characters
-            generator.CodeTextStyle.Space.Millimeters = 0.5f;
+            generator.Parameters.Barcode.CodeTextParameters.Space.Millimeters = 0.5f;
 
             // Define resolution
-            generator.Resolution = 1200.0f;
+            generator.Parameters.Resolution = 1200.0f;
 
             generator.Save(dataDir + "ITF14_Border_Thickness_Out.png", BarCodeImageFormat.Png);
             // ExEnd:SpecifyITF14BorderThickness                       

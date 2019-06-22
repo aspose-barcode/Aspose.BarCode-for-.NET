@@ -19,29 +19,29 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Initialize the BarCodeBuilder class by passing barcode text and barcode symbology as parameters.
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, "abcdefghijklmnopqrstuvwxyzabcdef");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "abcdefghijklmnopqrstuvwxyzabcdef");
             // Set various different properties/variables of the barcode.
-            generator.Border.Visible = true;
-            generator.CodeTextStyle.Location = CodeLocation.Above;
+            generator.Parameters.Border.Visible = true;
+            generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Above;
             //generator.D2.Columns = 4;
             //generator.D2.Rows = 3;
 
             // Specify caption Above settings.
-            generator.CaptionAbove.Text = "Caption ABOVE";
-            generator.CaptionAbove.Alignment = StringAlignment.Center;
-            generator.CaptionAbove.Visible = true;
-            generator.CaptionAbove.Color = Color.Green;
+            generator.Parameters.CaptionAbove.Text = "Caption ABOVE";
+            generator.Parameters.CaptionAbove.Alignment = TextAlignment.Center;
+            generator.Parameters.CaptionAbove.Visible = true;
+            generator.Parameters.CaptionAbove.TextColor = Color.Green;
                 
             // Specify caption Below settings.
-            generator.CaptionBelow.Text = "Caption BELOW";
-            generator.CaptionBelow.Alignment = StringAlignment.Far;
-            generator.CaptionBelow.Visible = true;
-            generator.CaptionBelow.Color = Color.Yellow;
+            generator.Parameters.CaptionBelow.Text = "Caption BELOW";
+            generator.Parameters.CaptionBelow.Alignment = TextAlignment.Center;
+            generator.Parameters.CaptionBelow.Visible = true;
+            generator.Parameters.CaptionBelow.TextColor = Color.Yellow;
 
             // Specify text font settings.
-            generator.CodeTextStyle.Font.FamilyName = "Courier New";
-            generator.CodeTextStyle.Font.Size.Point = 24;
-            generator.CodeTextStyle.Font.Style = FontStyle.Bold;
+            generator.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "Courier New";
+            generator.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 24;
+            generator.Parameters.Barcode.CodeTextParameters.Font.Style = FontStyle.Bold;
 
             // Call the export to XML method to export the properties to XML file.
             generator.Save(dataDir + "BarCodeBuilder.DataMatrix_out.xml");

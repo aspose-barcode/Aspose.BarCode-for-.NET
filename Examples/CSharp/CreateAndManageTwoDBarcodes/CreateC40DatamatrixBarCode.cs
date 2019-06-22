@@ -22,10 +22,10 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Create an instance of BarCodeBuilder class
             // Set codetext value and EncodeType
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, "ABCDEF123456");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "ABCDEF123456");
 
             // Set the DataMatrix encoding mode to C40
-            generator.DataMatrix.EncodeMode = DataMatrixEncodeMode.C40;
+            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.C40;
 
             // Save the barcode image
             generator.Save("dataMatrixC40.png");

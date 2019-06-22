@@ -19,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Create instance of BarCodeBuilder class.
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.GS1Code128, "(8012)ABC123");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.GS1Code128, "(8012)ABC123");
 
             // Save the image to disk in PNG format
             generator.Save("AI8012_out.png", BarCodeImageFormat.Png);

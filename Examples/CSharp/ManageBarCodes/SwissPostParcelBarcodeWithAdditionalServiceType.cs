@@ -19,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Generate the barcode, Set codeText, SymbologyType and Save barcode on local disk
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.SwissPostParcel, "989967121212121212");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.SwissPostParcel, "989967121212121212");
 
             generator.Save(dataDir + "SwissPostParcelBarcodeWithAdditionalServiceType_out.Png");
             // ExEnd:SwissPostParcelBarcodeWithAdditionalServiceType

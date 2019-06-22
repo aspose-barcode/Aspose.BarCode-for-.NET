@@ -19,9 +19,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set Always show checksum on image
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code39Standard, "0123456789"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code39Standard, "0123456789"))
             {
-                generator.Checksum.AlwaysShow = true;
+                generator.Parameters.Barcode.ChecksumAlwaysShow = true;
                 generator.Save(dataDir + "DisplayChecksumCharacter_out.png");
             };
             // ExEnd:DisplayChecksumCharacter                

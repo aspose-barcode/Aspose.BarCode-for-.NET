@@ -20,12 +20,12 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            // Create an instance of BarCodeGenerator class
+            // Create an instance of BarcodeGenerator  class
             // Set codetext value and EncodeType
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, "abcdef123456");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "abcdef123456");
 
             // Set the DataMatrix encoding mode to Text encodation scheme 
-            generator.DataMatrix.EncodeMode = DataMatrixEncodeMode.Text;
+            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Text;
 
             // Save the barcode image
             generator.Save("dataMatrixText.png");

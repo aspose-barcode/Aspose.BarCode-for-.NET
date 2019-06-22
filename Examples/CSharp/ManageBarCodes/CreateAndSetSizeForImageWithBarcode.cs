@@ -22,19 +22,19 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
                 // Generate the barcode and set code text, symbology type
-                BarCodeBuilder builder = new BarCodeBuilder("One thing 2 thing", EncodeTypes.Pdf417);
+                BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Pdf417, "One thing 2 thing");
 
                 // Set the code text location,  graphics unit and margins
-                builder.CodeLocation = CodeLocation.None;
-                builder.GraphicsUnit = GraphicsUnit.Pixel;
-                builder.Margins.Set(0);
+                generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
+                generator.Parameters.Barcode.Padding.Bottom.Pixels = 0;
+                generator.Parameters.Barcode.Padding.Top.Pixels = 0;
+                generator.Parameters.Barcode.Padding.Left.Pixels = 0;
+                generator.Parameters.Barcode.Padding.Right.Pixels = 0;
                 
                 // Get Bitmap with exact barcode only
-                Bitmap bmp = builder.GetOnlyBarCodeImage();
+                Bitmap bmp = generator.GenerateBarCodeImage();
 
-                // Allows to set size for whole picture with barcode inside and Save image on local disk
-                Bitmap bitmap = builder.GetCustomSizeBarCodeImage(new Size(bmp.Width * 5, bmp.Height * 5), false);
-                bitmap.Save(dataDir +  "CreateAndSetSizeForImageWithBarcode_out.Png");
+                bmp.Save(dataDir +  "CreateAndSetSizeForImageWithBarcode_out.Png");
                 // ExEnd:CreateAndSetSizeForImageWithBarcode
             }
             catch (Exception ex)

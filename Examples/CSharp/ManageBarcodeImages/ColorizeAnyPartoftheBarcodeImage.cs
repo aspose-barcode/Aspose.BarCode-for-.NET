@@ -22,12 +22,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dst = dataDir + "colorize-barcode_out.jpg";
 
             // Instantiate barcode object and differnt properties
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128))
             {
-                generator.BackColor = Color.Yellow;
-                generator.ForeColor = Color.Blue;
-                generator.Border.Color = Color.Red;
-                generator.CodeTextStyle.Color = Color.Red;
+                generator.Parameters.BackColor = Color.Yellow;
+                generator.Parameters.Barcode.ForeColor = Color.Blue;
+                generator.Parameters.Border.Color = Color.Red;
+                generator.Parameters.Barcode.CodeTextParameters.Color = Color.Red;
                 generator.Save(dst, BarCodeImageFormat.Jpeg);
             };
             // ExEnd:ColorizeAnyPartoftheBarcodeImage       

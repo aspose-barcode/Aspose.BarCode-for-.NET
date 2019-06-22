@@ -5,7 +5,7 @@ using Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodeImages;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodes;
 using CSharp.GenerateBarcode;
-using CSharp.ManageV3BarcodeGenerator;
+//using CSharp.ManageV3BarcodeGenerator;
 
 namespace Aspose.BarCode.Examples.CSharp
 {
@@ -16,8 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
-            License lic = new License();
-            lic.SetLicense(@"D:\Aspose\Licenses\Aspose.Total.NET.lic");
+            
 
             // Uncomment the example that you want to run.
 
@@ -168,7 +167,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //// =====================================================
             //GenerateBarcode.Run();
 
-            GenerateUsingV3BarcodeGenerator.Run();
+            //GenerateUsingV3BarcodeGenerator.Run();
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");

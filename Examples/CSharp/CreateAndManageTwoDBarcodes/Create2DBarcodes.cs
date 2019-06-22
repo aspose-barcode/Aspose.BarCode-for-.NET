@@ -19,11 +19,11 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Pdf417, "this is some test code text. \n Second line \n third line.");
+            BarcodeGenerator generator = new BarcodeGenerator (EncodeTypes.Pdf417, "this is some test code text. \n Second line \n third line.");
 
             // Set width and height
-            generator.XDimension.Millimeters = 0.6f;
-            generator.BarHeight.Millimeters = 1.2f;
+            generator.Parameters.Barcode.XDimension.Millimeters = 0.6f;
+            generator.Parameters.Barcode.BarHeight.Millimeters = 1.2f;
 
             // Save the Barcode image in JPEG format
             generator.Save(dataDir + "2d-barcode_out.jpg", BarCodeImageFormat.Jpeg);

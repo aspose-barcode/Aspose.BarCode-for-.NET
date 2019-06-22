@@ -20,9 +20,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object set codeText and location
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128);
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128);
             generator.CodeText = "1234567";
-            generator.CodeTextStyle.Location = CodeLocation.Above;
+            generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Above;
             generator.Save(dataDir + "barcode-SetCodetextLocation_out.jpeg", BarCodeImageFormat.Jpeg);
 
             // ExEnd:SetCodetextLocation                       

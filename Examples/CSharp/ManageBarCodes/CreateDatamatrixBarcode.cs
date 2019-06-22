@@ -19,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, "1234567890");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "1234567890");
             generator.Save(dataDir + "datamatrix-barcode_out.jpg", BarCodeImageFormat.Jpeg);
             // ExEnd:CreateDatamatrixBarcode    
         }

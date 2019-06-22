@@ -21,13 +21,14 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // initialize a BarCodeBuilder class object and Set its CodeText & Symbology Type 
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "12345TEXT");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "12345TEXT");
 
             // Set encoding mode, ForceQR (default) for standard QR, ECI encoding type, error correction level
-            generator.QR.EncodeMode = QREncodeMode.ECIEncoding;
-            generator.QR.EncodeType = QREncodeType.ForceQR;
-            generator.QR.ECIEncoding = ECIEncodings.UTF8;
-            generator.QR.ErrorLevel = QRErrorLevel.LevelL;
+
+            generator.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
+            generator.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceQR;
+            generator.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+            generator.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
 
             // Get barcode image Bitmap & Save QR code
             Bitmap lBmp = generator.GenerateBarCodeImage();

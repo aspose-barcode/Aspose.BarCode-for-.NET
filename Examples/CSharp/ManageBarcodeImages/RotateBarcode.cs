@@ -19,10 +19,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set CodeText, Barcode Symbology and  hide code text
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR);
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR);
             generator.CodeText = "1234567890";
-            generator.CodeTextStyle.Location = CodeLocation.None;
-            generator.RotationAngle = 90;
+            generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
+            generator.Parameters.RotationAngle = 90;
             generator.Save(dataDir + "QR-rotate_out.jpeg", BarCodeImageFormat.Jpeg);
             // ExEnd:RotateBarcode       
         }

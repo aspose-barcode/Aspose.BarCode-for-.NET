@@ -21,7 +21,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567");
 
             // Create a memory stream object that would store barcode image in binary form
             MemoryStream mStream = new MemoryStream();

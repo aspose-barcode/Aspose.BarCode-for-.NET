@@ -20,13 +20,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and different properties
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128))
             {
                 generator.CodeText = "1234567890";
-                generator.Margins.Left.Millimeters = 0.5f;
-                generator.Margins.Right.Millimeters = 0f;
-                generator.Margins.Top.Millimeters = 0f;
-                generator.Margins.Bottom.Millimeters = 0f;
+                generator.Parameters.Barcode.Padding.Left.Millimeters = 0.5f;
+                generator.Parameters.Barcode.Padding.Right.Millimeters = 0f;
+                generator.Parameters.Barcode.Padding.Top.Millimeters = 0f;
+                generator.Parameters.Barcode.Padding.Bottom.Millimeters = 0f;
                 generator.Save(dataDir + "barcode-image-margins_out.jpeg", BarCodeImageFormat.Jpeg);
             };
             // ExEnd:BarcodeImageMargins   

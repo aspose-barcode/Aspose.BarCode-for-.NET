@@ -18,17 +18,17 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
-            // Create an instance of BarCodeGenerator class
+            // Create an instance of BarcodeGenerator  class
             // Set barcode text
             // Set encoding type
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567890"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567890"))
             {
                 // Set Auto size to None
-                generator.AutoSizeMode = AutoSizeMode.None;
+                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.None;
 
                 // Set image height & width to minimum
-                generator.BarCodeWidth.Millimeters = 1;
-                generator.BarCodeHeight.Millimeters = 1;
+                generator.Parameters.Barcode.BarCodeWidth.Millimeters = 1;
+                generator.Parameters.Barcode.BarCodeHeight.Millimeters = 1;
 
                 // Save the barcode image
                 generator.Save(dataDir + "barcode-image-minimum_out.jpeg", BarCodeImageFormat.Jpeg);

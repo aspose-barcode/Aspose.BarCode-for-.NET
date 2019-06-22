@@ -22,13 +22,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dst = dataDir + "codetext-appearence_out.jpg";
 
             // Set the symbology type to Code128
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567"))
             {
                 // Set differnt barcode properties
-                generator.CodeTextStyle.Alignment = StringAlignment.Center;
-                generator.CodeTextStyle.Location = CodeLocation.Above;
-                generator.CodeTextStyle.Color = Color.Red;
-                generator.CodeTextStyle.Space.Millimeters = 1.0f;
+                generator.Parameters.Barcode.CodeTextParameters.Alignment = TextAlignment.Center;
+                generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Above;
+                generator.Parameters.Barcode.CodeTextParameters.Color = Color.Red;
+                generator.Parameters.Barcode.CodeTextParameters.Space.Millimeters = 1.0f;
                 generator.Save(dst, BarCodeImageFormat.Jpeg);
             };
             

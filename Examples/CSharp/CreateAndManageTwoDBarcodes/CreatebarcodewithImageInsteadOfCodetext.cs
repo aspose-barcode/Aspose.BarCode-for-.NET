@@ -21,7 +21,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             // Create an instance of BarCodeBuilder class
             // Set the barcode text
             // Set the barcode symbology 
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.EAN13, "123456789012"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.EAN13, "123456789012"))
             {
                 // Generate Barcode image and store it in a Bitmap
                 using (System.Drawing.Bitmap barcode = generator.GenerateBarCodeImage())

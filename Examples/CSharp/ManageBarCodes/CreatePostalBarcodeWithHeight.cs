@@ -16,15 +16,15 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         {
             // ExStart:ChecksumSupplementData 
 
-            // Create an instance of BarCodeGenerator class
+            // Create an instance of BarcodeGenerator  class
             // Set barcode text
             // Set encoding type
 
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.AustraliaPost, "12345678"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.AustraliaPost, "12345678"))
             {
                 // Set barcode Dimension and height
-                generator.XDimension.Pixels = 1f;
-                generator.BarHeight.Millimeters = 40;
+                generator.Parameters.Barcode.XDimension.Pixels = 1f;
+                generator.Parameters.Barcode.BarHeight.Millimeters = 40;
 
                 // Save the barcode image
                 generator.Save("postnet.png");

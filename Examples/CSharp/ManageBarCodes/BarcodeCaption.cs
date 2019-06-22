@@ -21,30 +21,28 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567")
-            {
-                CaptionAbove = {Visible = false}
-            };
+            BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "1234567");
+            generator.Parameters.CaptionAbove.Visible = false;
 
             // Set caption above its text and text alignment & also make it visible
-            generator.CaptionAbove.Visible = true;
-            generator.CaptionAbove.Text = "Aspose";
-            generator.CaptionAbove.Alignment = StringAlignment.Center;
-            generator.CaptionAbove.Color = Color.Red;
-            generator.CaptionAbove.Font.FamilyName = "Pristina";
-            generator.CaptionAbove.Font.Size.Point = 14;
+            generator.Parameters.CaptionAbove.Visible = true;
+            generator.Parameters.CaptionAbove.Text = "Aspose";
+            generator.Parameters.CaptionAbove.Alignment = TextAlignment.Center;
+            generator.Parameters.CaptionAbove.TextColor = Color.Red;
+            generator.Parameters.CaptionAbove.Font.FamilyName = "Pristina";
+            generator.Parameters.CaptionAbove.Font.Size.Point = 14;
             //space between the barcode and the caption
-            generator.CaptionAbove.Space.Millimeters = 5;
+            //generator.Parameters.CaptionAbove.Space.Millimeters = 5;
 
             // Assign caption object to be displayed above the barcode
-            generator.CaptionBelow.Visible = true;
-            generator.CaptionBelow.Text = "Aspose Caption below";
-            generator.CaptionBelow.Alignment = StringAlignment.Center;
-            generator.CaptionBelow.Color = Color.OrangeRed;
-            generator.CaptionBelow.Font.Size.Point = 14;
-            generator.CaptionBelow.Font.FamilyName = "Pristina";
+            generator.Parameters.CaptionBelow.Visible = true;
+            generator.Parameters.CaptionBelow.Text = "Aspose Caption below";
+            generator.Parameters.CaptionBelow.Alignment = TextAlignment.Center;
+            generator.Parameters.CaptionBelow.TextColor = Color.OrangeRed;
+            generator.Parameters.CaptionBelow.Font.Size.Point = 14;
+            generator.Parameters.CaptionBelow.Font.FamilyName = "Pristina";
             //space between the barcode and the caption
-            generator.CaptionBelow.Space.Millimeters = 5;
+            //generator.Parameters.CaptionBelow.Space.Millimeters = 5;
 
             // Save the image to your system and set its image format to Jpeg
             generator.Save(dataDir + "barcode-caption_out.jpg",BarCodeImageFormat.Jpeg);

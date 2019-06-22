@@ -16,8 +16,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         {
             // ExStart:ChecksumSupplementData 
 
-            //Instantiate BarCodeGenerator object
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DatabarExpandedStacked);
+            //Instantiate BarcodeGenerator  object
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DatabarExpandedStacked);
 
             //Set the Code text for the barcode
             generator.CodeText = "(01)98898765432106(3202)012345(15)991231";

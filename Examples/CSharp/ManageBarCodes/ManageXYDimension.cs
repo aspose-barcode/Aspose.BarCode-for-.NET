@@ -22,21 +22,21 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dstCode128 = dataDir + "code128-YDimensionChanged_out.jpg";
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567");
 
             // Save the image to your system and set its image format to Jpeg
             generator.Save(dstCode128, BarCodeImageFormat.Jpeg);
 
             // Set the X-Dimension for the bars of the barcode
-            generator.XDimension.Millimeters = 0.5f;
+            generator.Parameters.Barcode.XDimension.Millimeters = 0.5f;
 
             // Save the image to your system and set its image format to Jpeg
             generator.Save(dstCode128, BarCodeImageFormat.Jpeg);
 
             // Instantiate barcode object and set differnt barcode properties
-            using (BarCodeGenerator generator1 = new BarCodeGenerator(EncodeTypes.Pdf417, "1234567"))
+            using (BarcodeGenerator  generator1 = new BarcodeGenerator (EncodeTypes.Pdf417, "1234567"))
             {
-                generator1.BarCodeHeight.Millimeters = 4;
+                generator1.Parameters.Barcode.BarCodeHeight.Millimeters = 4;
 
                 // Save the image to your system and set its image format to Jpeg
                 generator1.Save(dataDir + "pdf417-YDimensionChanged_out.jpg", BarCodeImageFormat.Jpeg);

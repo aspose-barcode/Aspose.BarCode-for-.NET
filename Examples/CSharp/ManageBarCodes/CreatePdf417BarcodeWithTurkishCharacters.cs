@@ -21,11 +21,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             const string codetext = "AYŞE" + "\n" + "Ümit" + "\n" + "Ümit@estee.com" + "\n" + "Türkiye";
 
             // Generate the barcode
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Pdf417, codetext);
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Pdf417, codetext);
 
             // Encode the code text and  Set the display text
-            generator.D2.CodeTextEncoding = Encoding.Unicode;
-            generator.D2.DisplayText = codetext;
+            generator.Parameters.Barcode.Pdf417.CodeTextEncoding = Encoding.Unicode;
+            generator.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = codetext;
             generator.Save(dataDir + "CreatePdf417BarcodeWithTurkishCharacters_out.png");
             // ExEnd:CreatePdf417BarcodeWithTurkishCharacters
         }

@@ -19,9 +19,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code39Standard, "1234567"))
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code39Standard, "1234567"))
             {
-                generator.Checksum.Enable = EnableChecksum.Yes;
+                generator.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
                 generator.Save(dataDir + "code39-checeksum_out.png");
             }
             

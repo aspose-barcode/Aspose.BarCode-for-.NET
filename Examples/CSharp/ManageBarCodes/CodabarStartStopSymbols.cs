@@ -19,12 +19,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Create instance of BarCodeGenerator, specify codetext and symbology in the constructor
-            using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Codabar, "11112222333344"))
+            // Create instance of BarcodeGenerator , specify codetext and symbology in the constructor
+            using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Codabar, "11112222333344"))
             {
                 // Set the codabar start symbol to A and stop symbol to D
-                generator.Codabar.StartSymbol = CodabarSymbol.A;
-                generator.Codabar.StopSymbol = CodabarSymbol.D;
+                generator.Parameters.Barcode.Codabar.CodabarStartSymbol = CodabarSymbol.A;
+                generator.Parameters.Barcode.Codabar.CodabarStopSymbol = CodabarSymbol.D;
 
                 generator.Save(dataDir + "Coabar-start-stop-symbols_out.png");
             }

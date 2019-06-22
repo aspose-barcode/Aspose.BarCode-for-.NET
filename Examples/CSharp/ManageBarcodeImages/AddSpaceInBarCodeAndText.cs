@@ -20,8 +20,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set Increase the space between code text and barcode to 1 point
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code93Standard);
-            generator.CodeTextStyle.Space.Millimeters = 1.0f;
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code93Standard);
+            generator.Parameters.Barcode.CodeTextParameters.Space.Millimeters = 1.0f;
             generator.Save(dataDir + "AddSpaceInBarCodeAndText_out.bmp", BarCodeImageFormat.Bmp);
             // ExEnd:AddSpaceInBarCodeAndText   
         }

@@ -19,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234");
             generator.Save(dataDir + "Code128-customized_out.png");
             // ExEnd:CreateCode128Barcode 
         }

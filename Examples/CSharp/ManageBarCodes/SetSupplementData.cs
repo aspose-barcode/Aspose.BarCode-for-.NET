@@ -20,11 +20,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Instantiate barcode object
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.EAN13, "123456789123");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.EAN13, "123456789123");
 
             // Set the supplement data (5 Digit)
-            generator.Supplement.Data = "12345";
-            generator.Supplement.Space.Millimeters = 2.0f;
+            generator.Parameters.Barcode.Supplement.SupplementData = "12345";
+            generator.Parameters.Barcode.Supplement.SupplementSpace.Millimeters = 2.0f;
 
             generator.Save(dataDir + "SetSupplementData_out.jpg", BarCodeImageFormat.Jpeg);
             // ExEnd:SetSupplementData   

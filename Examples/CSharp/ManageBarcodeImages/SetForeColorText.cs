@@ -21,8 +21,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and set differnt barcode properties
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128, "1234567");
-            generator.CodeTextStyle.Color = Color.Red;
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567");
+            generator.Parameters.Barcode.CodeTextParameters.Color = Color.Red;
             generator.Save(dataDir + "barcode-SetForeColorText_out.jpg", BarCodeImageFormat.Jpeg);
             // ExEnd:SetForeColorText                       
         }

@@ -21,21 +21,21 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128);
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128);
 
-            generator.CaptionAbove.Visible = true;
-            generator.CaptionAbove.Text = "Aspose";
-            generator.CaptionAbove.Alignment = StringAlignment.Center;
-            generator.CaptionAbove.Color = Color.Red;
-            generator.CaptionAbove.Font.FamilyName = "Pristina";
-            generator.CaptionAbove.Font.Size.Point = 14;
+            generator.Parameters.CaptionAbove.Visible = true;
+            generator.Parameters.CaptionAbove.Text = "Aspose";
+            generator.Parameters.CaptionAbove.Alignment = TextAlignment.Center;
+            generator.Parameters.CaptionAbove.TextColor = Color.Red;
+            generator.Parameters.CaptionAbove.Font.FamilyName = "Pristina";
+            generator.Parameters.CaptionAbove.Font.Size.Point = 14;
 
-            generator.CaptionBelow.Alignment = StringAlignment.Far;
-            generator.CaptionBelow.Text = "Aspose.Demo";
-            generator.CaptionBelow.Visible = true;
-            generator.CaptionBelow.Font.FamilyName = "Pristina";
-            generator.CaptionBelow.Font.Size.Point = 14;
-            generator.CaptionBelow.Color = Color.OrangeRed;
+            generator.Parameters.CaptionBelow.Alignment = TextAlignment.Center;
+            generator.Parameters.CaptionBelow.Text = "Aspose.Demo";
+            generator.Parameters.CaptionBelow.Visible = true;
+            generator.Parameters.CaptionBelow.Font.FamilyName = "Pristina";
+            generator.Parameters.CaptionBelow.Font.Size.Point = 14;
+            generator.Parameters.CaptionBelow.TextColor = Color.OrangeRed;
 
             // Save the image to your system and set its image format to Jpeg
             generator.Save(dataDir + "SetFontandColorSetting_out.jpeg", BarCodeImageFormat.Jpeg);

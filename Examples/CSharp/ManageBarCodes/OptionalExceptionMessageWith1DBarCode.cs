@@ -16,12 +16,12 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         public static void Run()
         {
             // ExStart:OptionalExceptionMessageWith1DBarCode
-            // Instantiate BarCodeGenerator object
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.EAN13, "348503498549085409");
+            // Instantiate BarcodeGenerator  object
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.EAN13, "348503498549085409");
             try
             {
                 // Error message will not been thrown in case of false, default value is also false and Get barcode image
-                generator.ThrowExceptionWhenCodeTextIncorrect = true;               
+                generator.Parameters.Barcode.ThrowExceptionWhenCodeTextIncorrect = true;               
                 Bitmap bitmap = generator.GenerateBarCodeImage();
             }
             catch (Exception ex)

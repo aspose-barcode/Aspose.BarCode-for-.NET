@@ -19,17 +19,17 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
             // Generate barcode (Sample 1) Initialize BarCode builder class object
-            using(BarCodeGenerator generator1 = new BarCodeGenerator(EncodeTypes.DataMatrix, "BASE-41 ONLY ALPHA, DIGITS AND PUNCTUATION"))
+            using(BarcodeGenerator  generator1 = new BarcodeGenerator (EncodeTypes.DataMatrix, "BASE-41 ONLY ALPHA, DIGITS AND PUNCTUATION"))
             {
                 // Set ECC level
-                generator1.DataMatrix.Ecc = DataMatrixEccType.Ecc050;
+                generator1.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc050;
                 generator1.Save(dataDir + "SampleBarcode1_out.png");
             }
 
             // Generate barcode (Sample 2) Initialize BarCode builder class object and Set ECC level.
-            using(BarCodeGenerator generator2 = new BarCodeGenerator(EncodeTypes.DataMatrix, "BASE-41 ONLY ALPHA, DIGITS AND PUNCTUATION."))
+            using(BarcodeGenerator  generator2 = new BarcodeGenerator (EncodeTypes.DataMatrix, "BASE-41 ONLY ALPHA, DIGITS AND PUNCTUATION."))
             {
-                generator2.DataMatrix.Ecc = DataMatrixEccType.Ecc050;
+                generator2.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc050;
                 generator2.Save(dataDir + "SampleBarcode2_out.png");
             };
             

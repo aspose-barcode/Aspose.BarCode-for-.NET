@@ -21,10 +21,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
             // Instantiate barcode object and Set Code text font's type and size
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Code128);
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128);
             generator.CodeText = "Text";
-            generator.CodeTextStyle.Font.FamilyName = "Verdana";
-            generator.CodeTextStyle.Font.Size.Point = 12f;
+            generator.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "Verdana";
+            generator.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 12f;
             generator.Save(dataDir + "SetCodeTextFontFamilyNameAndSize_out.bmp", BarCodeImageFormat.Bmp);
             // ExEnd:SetCodeTextFontFamilyNameAndSize       
         }

@@ -20,17 +20,17 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
             
             //Generation
-            //Instantiate BarCodeGenerator object
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Codabar);
+            //Instantiate BarcodeGenerator  object
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Codabar);
 
             //Set the Code text for the barcode
             generator.CodeText = "1234567890";
 
             //Set the EnableChecksum property to yes
-            generator.Checksum.Enable = EnableChecksum.Yes;
+            generator.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
 
             //Set the CodabarChecksumMode
-            generator.Codabar.ChecksumMode = Aspose.BarCode.CodabarChecksumMode.Mod10;
+            generator.Parameters.Barcode.Codabar.CodabarChecksumMode = BarCode.CodabarChecksumMode.Mod10;
 
             //Save the image on the system
             generator.Save("Codabar_Mod10.png");

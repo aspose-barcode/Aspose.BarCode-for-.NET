@@ -20,10 +20,10 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.DataMatrix, "This is the data to be encoded");
+            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "This is the data to be encoded");
 
             // Set Data Matrix EncodeMode 
-            generator.DataMatrix.EncodeMode = DataMatrixEncodeMode.ASCII;
+            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ASCII;
             generator.Save(dataDir + "ManagePDF417Barcode_out.bmp", BarCodeImageFormat.Bmp);
             //ExEnd:CreateEnCodeDatamatrixBarCode
         }

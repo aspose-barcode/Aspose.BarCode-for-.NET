@@ -27,9 +27,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                 MemoryStream memoryStream = new MemoryStream();
 
                 // Instantiate barcode object, Set CodeText, Barcode Symbology and Text Encoding
-                using (BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.QR, "Слово"))
+                using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "Слово"))
                 {
-                    generator.D2.CodeTextEncoding = Encoding.UTF8;
+                    generator.Parameters.Barcode.QR.CodeTextEncoding = Encoding.UTF8;
                     generator.Save(dataDir + "" + memoryStream + "_out.png", BarCodeImageFormat.Png);
                 }
 
