@@ -11,11 +11,11 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 {
-    class BarcodeImageMargins
+    class BarcodeImagePadding
     {
         public static void Run()
         {
-            // ExStart:BarcodeImageMargins   
+            // ExStart:BarcodeImagePadding   
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodesImages();
 
@@ -29,7 +29,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 generator.Parameters.Barcode.Padding.Bottom.Millimeters = 0f;
                 generator.Save(dataDir + "barcode-image-margins_out.jpeg", BarCodeImageFormat.Jpeg);
             };
-            // ExEnd:BarcodeImageMargins   
+            // ExEnd:BarcodeImagePadding   
         }
     }
 }

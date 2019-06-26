@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharp.ManageBarCodes
+namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 {
     class SetAztecSymbolMode
     {
@@ -19,10 +19,10 @@ namespace CSharp.ManageBarCodes
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
             // Create an instance of BarCodeGenerator class.
-            BarCodeGenerator generator = new BarCodeGenerator(EncodeTypes.Aztec, "25");
+            BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Aztec, "25");
 
             // Set AztecSymbolMode property.
-            generator.Aztec.SymbolMode = AztecSymbolMode.Rune;
+            generator.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Rune;
             generator.Save(dataDir + "SetAztecSymbolMode_out.png");
             // ExEnd:SetAztecSymbolMode 
         }

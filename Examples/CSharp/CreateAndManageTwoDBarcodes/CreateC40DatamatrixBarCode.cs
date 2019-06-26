@@ -15,12 +15,12 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:CreateEnCodeDatamatrixBarCode
+            //ExStart:createc40datamatrixbarcode
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            // Create an instance of BarCodeBuilder class
+            // Create an instance of BarcodeGenerator  class
             // Set codetext value and EncodeType
             BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "ABCDEF123456");
 
@@ -29,8 +29,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save the barcode image
             generator.Save("dataMatrixC40.png");
-            
-            //ExEnd:CreateEnCodeDatamatrixBarCode
+
+            //ExEnd:createc40datamatrixbarcode
         }
     }
 }

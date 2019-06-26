@@ -21,7 +21,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
-                // Create instance of BarCodeBuilder class 
+                // Create instance of BarCodeReader class 
                 BarCodeReader reader = new BarCodeReader(dataDir + "SymbologyTypebarcode.png", DecodeType.Code128);
                 while (reader.Read())
                 {

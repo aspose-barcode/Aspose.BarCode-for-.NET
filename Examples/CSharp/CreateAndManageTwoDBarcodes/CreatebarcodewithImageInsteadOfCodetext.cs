@@ -14,11 +14,11 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            // ExStart:CreateAztecbarcode
+            // ExStart:CreateBarCodeWithImageInsteadOfCodeText
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
-            // Create an instance of BarCodeBuilder class
+            // Create an instance of BarcodeGenerator class
             // Set the barcode text
             // Set the barcode symbology 
             using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.EAN13, "123456789012"))
@@ -49,8 +49,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                     }
                 }
             }
-            
-            // ExEnd:CreateAztecbarcode
+
+            // ExEnd:CreateBarCodeWithImageInsteadOfCodeText
         }
     }
 }

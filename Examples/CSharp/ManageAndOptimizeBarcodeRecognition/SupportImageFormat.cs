@@ -21,7 +21,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
-                // Create instance of BarCodeBuilder class and Get code text
+                // Create instance of BarCodeReader class and Get code text
                 BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg");
                 while (reader.Read())
                 {

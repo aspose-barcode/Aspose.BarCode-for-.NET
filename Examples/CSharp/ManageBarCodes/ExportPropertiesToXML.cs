@@ -18,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
-            // Initialize the BarCodeBuilder class by passing barcode text and barcode symbology as parameters.
+            // Initialize the BarcodeGenerator  class by passing barcode text and barcode symbology as parameters.
             BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "abcdefghijklmnopqrstuvwxyzabcdef");
             // Set various different properties/variables of the barcode.
             generator.Parameters.Border.Visible = true;
@@ -44,7 +44,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             generator.Parameters.Barcode.CodeTextParameters.Font.Style = FontStyle.Bold;
 
             // Call the export to XML method to export the properties to XML file.
-            generator.Save(dataDir + "BarCodeBuilder.DataMatrix_out.xml");
+            generator.Save(dataDir + "BarcodeGenerator .DataMatrix_out.xml");
             // ExEnd:ExportPropertiesToXML                
         }
     }

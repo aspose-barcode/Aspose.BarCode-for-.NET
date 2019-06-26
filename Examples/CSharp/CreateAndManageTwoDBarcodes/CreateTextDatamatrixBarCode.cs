@@ -15,7 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
     {
         public static void Run()
         {
-            //ExStart:CreateEnCodeDatamatrixBarCode
+            //ExStart:CreateTextDatamatrixBarCode
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
@@ -29,8 +29,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save the barcode image
             generator.Save("dataMatrixText.png");
-            
-            //ExEnd:CreateEnCodeDatamatrixBarCode
+
+            //ExEnd:CreateTextDatamatrixBarCode
         }
     }
 }

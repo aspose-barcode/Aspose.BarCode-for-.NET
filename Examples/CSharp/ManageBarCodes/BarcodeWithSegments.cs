@@ -14,18 +14,18 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            // ExStart:ChecksumSupplementData 
+            // ExStart:BarcodeWithSegments 
 
             //Instantiate BarcodeGenerator  object
-            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DatabarExpandedStacked);
+            BarcodeGenerator generator = new BarcodeGenerator (EncodeTypes.DatabarExpandedStacked);
 
             //Set the Code text for the barcode
             generator.CodeText = "(01)98898765432106(3202)012345(15)991231";
 
             //Save the image
             generator.Save("6segmets.png");
-            
-            // ExEnd:ChecksumSupplementData 
+
+            // ExEnd:BarcodeWithSegments 
         }
     }
 }
