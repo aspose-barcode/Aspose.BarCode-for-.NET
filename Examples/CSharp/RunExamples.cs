@@ -14,9 +14,9 @@ namespace Aspose.BarCode.Examples.CSharp
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
-            // Instantiate an instance of license and set the license file through its path
-            Aspose.BarCode.License license = new Aspose.BarCode.License();
-            license.SetLicense(@"D:\Aspose\Licenses\Aspose.Total.NET.lic");
+            //// Instantiate an instance of license and set the license file through its path
+            //Aspose.BarCode.License license = new Aspose.BarCode.License();
+            //license.SetLicense(@"Aspose.Total.NET.lic");
 
             // Uncomment the example that you want to run.
 
