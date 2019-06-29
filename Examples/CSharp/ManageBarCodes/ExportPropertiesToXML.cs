@@ -44,7 +44,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             generator.Parameters.Barcode.CodeTextParameters.Font.Style = FontStyle.Bold;
 
             // Call the export to XML method to export the properties to XML file.
-            generator.Save(dataDir + "BarcodeGenerator .DataMatrix_out.xml");
+            //generator.Save(dataDir + "BarcodeGenerator .DataMatrix_out.xml");
             // ExEnd:ExportPropertiesToXML                
         }
     }

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CSharp.CreateAndManageTwoDBarcodes
+namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 {
     class ErrorCorrectionLevel
     {
@@ -26,6 +26,7 @@ namespace CSharp.CreateAndManageTwoDBarcodes
 
             generator.Save(dataDir + "ManagePDF417Barcode_out.bmp", BarCodeImageFormat.Bmp);
             //ExEnd:ErrorCorrectionLevel
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "ManagePDF417Barcode_out.bmp");
         }
     }
 }

@@ -7,37 +7,37 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 
-namespace CSharp.GenerateBarcode
+namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 {
-    public class GenerateBarcode
+    public class GenerateCustomBarcodes
     {
         public static string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
         public static void Run()
         {
-            //GenerateBarcodeWithRestrictedBarcodeSize();
+            GenerateBarcodeWithRestrictedBarcodeSize();
 
-            //GenerateBarcodeWithoutRestrictedBarcodeSize();
+            GenerateBarcodeWithoutRestrictedBarcodeSize();
 
-            //GetGeneratedBarcodeSize();
+            GetGeneratedBarcodeSize();
 
-            //UnitBasedBarcodeGenerateion();
+            UnitBasedBarcodeGenerateion();
 
-            //GettingDefaultCodeTextForGeneratedBarcode();
+            GettingDefaultCodeTextForGeneratedBarcode();
 
-            //ImplementUpcaGs1DatabarCouponForNewBarcode();
+            ImplementUpcaGs1DatabarCouponForNewBarcode();
 
-            //ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation();
+            ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation();
 
-            //ImplementInterpolationAutoSizemode();
+            ImplementInterpolationAutoSizemode();
 
-            //GenerateCode16KBarCode();
+            GenerateCode16KBarCode();
 
-            //ImplementMaxiCodeForBarcode();
+            ImplementMaxiCodeForBarcode();
 
-            //ImplementDotCodeForBarcode();
+            ImplementDotCodeForBarcode();
 
-            //GS1DatamatrixBarcodeWithWrappingText();
+            GS1DatamatrixBarcodeWithWrappingText();
 
             GenarateBarcodeWithRotationAndDpi();
         }
@@ -56,6 +56,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "GenerateBarcodeWithRestrictedBarcodeSize_out.png");
             }
             //ExEnd: GenerateBarcodeWithRestrictedBarcodeSize
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "GenerateBarcodeWithRestrictedBarcodeSize_out.png");
         }
 
         public static void GenerateBarcodeWithoutRestrictedBarcodeSize()
@@ -70,6 +71,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "GenerateBarcodeWithoutRestrictedBarcodeSize_out.png");
             }
             //ExEnd: GenerateBarcodeWithoutRestrictedBarcodeSize
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "GenerateBarcodeWithoutRestrictedBarcodeSize_out.png");
         }
 
         public static void GetGeneratedBarcodeSize()
@@ -100,6 +102,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "for_printer_out.png");
             }
             //ExEnd: UnitBasedBarcodeGenerateion
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "for_printer_out.png");
         }
 
         public static void GroupingPropertiesByBarcodeType()
@@ -112,6 +115,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "qr_out.png");
             }
             //ExEnd: GroupingPropertiesByBarcodeType
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "qr_out.png");
         }
 
         public static void GettingDefaultCodeTextForGeneratedBarcode()
@@ -137,6 +141,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "UpcaGs1DatabarCoupon.png");
             }
             //ExEnd: ImplementUpcaGs1DatabarCouponForNewBarcode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "UpcaGs1DatabarCoupon.png");
         }
 
         public static void ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation()
@@ -153,6 +158,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "UpcaGs1Code128Coupon_Interpolation_500x200.png");
             }
             //ExEnd: ImplementUpcaGs1DatabarCouponWithAutoSizeModeInterpolation
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "UpcaGs1Code128Coupon_Interpolation_500x200.png");
         }
 
         public static void ImplementInterpolationAutoSizemode()
@@ -168,6 +174,7 @@ namespace CSharp.GenerateBarcode
                 barcode.Save(dataDir + "DataMatrix.png");
             }
             //ExEnd: ImplementInterpolationAutoSizemode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "DataMatrix.png");
         }
 
         public static void GenerateCode16KBarCode()
@@ -181,6 +188,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "Code16K_Nearest.png");
             }
             //ExEnd: GenerateCode16KBarCode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "Code16K_Nearest.png");
         }
 
         public static void ImplementMaxiCodeForBarcode()
@@ -193,6 +201,7 @@ namespace CSharp.GenerateBarcode
                 barcode.Save(dataDir + "MaxiCode.png");
             }
             //ExEnd: ImplementMaxiCodeForBarcode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "MaxiCode.png");
         }
 
         public static void ImplementDotCodeForBarcode()
@@ -205,6 +214,7 @@ namespace CSharp.GenerateBarcode
                 barcode.Save(dataDir + "DotCode.png");
             }
             //ExEnd: ImplementDotCodeForBarcode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "DotCode.png");
         }
 
         public static void GS1DatamatrixBarcodeWithWrappingText()
@@ -226,6 +236,7 @@ namespace CSharp.GenerateBarcode
                 barcode.Save(dataDir + "Display2DText.png");
             }
             //ExEnd: GS1DatamatrixBarcodeWithWrappingText
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "Display2DText.png");
         }
 
         public static void GenarateBarcodeWithRotationAndDpi()
@@ -238,6 +249,7 @@ namespace CSharp.GenerateBarcode
                 generator.Save(dataDir + "rotated_dpi144.png");
             }
             //ExEnd: GenarateBarcodeWithRotationAndDpi
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "rotated_dpi144.png");
         }
     }
 }

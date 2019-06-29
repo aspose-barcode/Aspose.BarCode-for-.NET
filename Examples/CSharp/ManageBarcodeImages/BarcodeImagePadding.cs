@@ -27,7 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
                 generator.Parameters.Barcode.Padding.Right.Millimeters = 0f;
                 generator.Parameters.Barcode.Padding.Top.Millimeters = 0f;
                 generator.Parameters.Barcode.Padding.Bottom.Millimeters = 0f;
-                generator.Save(dataDir + "barcode-image-margins_out.jpeg", BarCodeImageFormat.Jpeg);
+                generator.Save(dataDir + "barcode-image-paddings_out.jpeg", BarCodeImageFormat.Jpeg);
             };
             // ExEnd:BarcodeImagePadding   
         }

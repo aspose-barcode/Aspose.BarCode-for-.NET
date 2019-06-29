@@ -1,4 +1,5 @@
-﻿using System.Drawing.Imaging;
+﻿using System;
+using System.Drawing.Imaging;
 using Aspose.BarCode.Generation;
 
 /*
@@ -29,8 +30,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save the barcode image
             generator.Save("dataMatrixC40.png");
-
             //ExEnd:createc40datamatrixbarcode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "dataMatrixC40.png");
         }
     }
 }

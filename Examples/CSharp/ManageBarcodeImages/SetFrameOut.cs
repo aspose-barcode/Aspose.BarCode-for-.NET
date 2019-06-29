@@ -29,7 +29,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             generator.Parameters.Barcode.XDimension.Millimeters = 0.495f;
             generator.Parameters.Barcode.BarHeight.Millimeters = 12.7f;
             generator.Parameters.Barcode.CodeTextParameters.Space.Millimeters = 0.5f;
-            generator.Parameters.Resolution = 1200.0f;
+            
             generator.Save(dataDir + "ITF14_Border_Type_FrameOut_out.png", BarCodeImageFormat.Png);
             // ExEnd:SetFrameOut                       
         }

@@ -1,4 +1,5 @@
-﻿using System.Drawing.Imaging;
+﻿using System;
+using System.Drawing.Imaging;
 using Aspose.BarCode.Generation;
 
 /*
@@ -26,6 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ASCII;
             generator.Save(dataDir + "ManagePDF417Barcode_out.bmp", BarCodeImageFormat.Bmp);
             //ExEnd:CreateEnCodeDatamatrixBarCode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "ManagePDF417Barcode_out.bmp");
         }
     }
 }

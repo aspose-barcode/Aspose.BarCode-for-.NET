@@ -1,4 +1,5 @@
 ﻿using Aspose.BarCode.Generation;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -48,8 +49,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 
             // Save the Barcode image in SVG format
             generator.Save(dataDir + "2d-barcode_out.svg", BarCodeImageFormat.Svg);
-
             // ExEnd:Create2DBarcodes
+            Console.WriteLine(Environment.NewLine + "All Barcodes are saved at " + dataDir);
         }
     }
 }

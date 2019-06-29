@@ -31,7 +31,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             try
             {
                 //ExStart: ReadBarCodeFromStream
-                using (FileStream lStream = new FileStream(@"c:\test.jpg", FileMode.Open, FileAccess.Read, FileShare.Read))
+                using (FileStream lStream = new FileStream(dataDir + "Scan.jpg", FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
                     using (BarCodeReader reader = new BarCodeReader())
                     {
@@ -53,7 +53,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             try
             {
                 //ExStart: ReadBarCodeFromSpecificRegion
-                using (Bitmap lBitmap = new Bitmap(@"c:\test.jpg"))
+                using (Bitmap lBitmap = new Bitmap(dataDir + "Scan.jpg"))
                 {
                     using (BarCodeReader reader = new BarCodeReader())
                     {
@@ -75,7 +75,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             try
             {
                 //ExStart: ReadBarCodeFromMultipleRegions
-                using (Bitmap lBitmap = new Bitmap(@"c:\test.jpg"))
+                using (Bitmap lBitmap = new Bitmap(dataDir + "Scan.jpg"))
                 {
                     using (BarCodeReader reader = new BarCodeReader())
                     {

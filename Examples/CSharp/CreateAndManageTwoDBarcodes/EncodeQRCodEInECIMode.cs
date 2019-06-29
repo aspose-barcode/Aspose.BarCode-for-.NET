@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Drawing.Imaging;
 using Aspose.BarCode.Generation;
 
@@ -34,6 +35,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             Bitmap lBmp = generator.GenerateBarCodeImage();
             lBmp.Save(dataDir + "EncodeQRCodEInECIMode_out.bmp", ImageFormat.Bmp);
             //ExEnd:EncodeQRCodEInECIMode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "EncodeQRCodEInECIMode_out.bmp");
         }
     }
 }

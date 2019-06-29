@@ -22,7 +22,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Initialize the BarCodeReader class by passing barcode file name and barcode type as parameters
-                using (BarCodeReader reader = new BarCodeReader(dataDir + "testDotPeen.png", DecodeType.DataMatrix))
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-stars.png", DecodeType.DataMatrix))
                 {
                     //set high performance mode
                     reader.QualitySettings = QualitySettings.HighPerformance;

@@ -4,8 +4,6 @@ using Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes;
 using Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodeImages;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodes;
-using CSharp.GenerateBarcode;
-//using CSharp.ManageV3BarcodeGenerator;
 
 namespace Aspose.BarCode.Examples.CSharp
 {
@@ -16,8 +14,9 @@ namespace Aspose.BarCode.Examples.CSharp
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
-            License lic = new License();
-            lic.SetLicense(@"D:\Aspose\Licenses\Aspose.Total.NET.lic");
+            // Instantiate an instance of license and set the license file through its path
+            Aspose.BarCode.License license = new Aspose.BarCode.License();
+            license.SetLicense(@"D:\Aspose\Licenses\Aspose.Total.NET.lic");
 
             // Uncomment the example that you want to run.
 
@@ -27,38 +26,38 @@ namespace Aspose.BarCode.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //CreatePDF417Barcode.Run();
-            //CreateQRbarcode.Run();
-            //CreateDatamatrixBarcode.Run();
-            //CodetextAppearance.Run();
-            //BarcodeCaption.Run();
-            //CreateCode128Barcode.Run();
-            //SpecifySymbologies.Run();
-            //SetCodeText.Run();
-            //ManageCaption.Run();
-            //SetHeightBarcodeBars.Run();
-            //ManageXYDimension.Run();
-            //ChecksumSupplementData.Run();
-            //WideNarrowRatio.Run();
-            //GenerateAustraliaPostBarcode.Run();
-            //CodabarStartStopSymbols.Run();
-            //SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
-            //ExportPropertiesToXML.Run();
-            //DisplayChecksumCharacter.Run();
-            //SetQREncodeMode.Run();
-            //SetQRErrorCorrection.Run();
-            //SetSupplementData.Run();
-            //SpecifySymbology.Run();
-            //CreateCouponExtendedBarcode.Run();
-            //CreateUpcaGs1DatabarCoupon.Run();
-            //SetWideNarrowRatio.Run();
-            //GeneratingCodablockF.Run();
-            //GeneratingGS1ForCodablock.Run();
-            //GeneratingGS1_128AI8012Barcode.Run();
+            CreatePDF417Barcode.Run();
+            CreateQRbarcode.Run();
+            CreateDatamatrixBarcode.Run();
+            CodetextAppearance.Run();
+            BarcodeCaption.Run();
+            CreateCode128Barcode.Run();
+            SpecifySymbologies.Run();
+            SetCodeText.Run();
+            ManageCaption.Run();
+            SetHeightBarcodeBars.Run();
+            ManageXYDimension.Run();
+            ChecksumSupplementData.Run();
+            WideNarrowRatio.Run();
+            GenerateAustraliaPostBarcode.Run();
+            CodabarStartStopSymbols.Run();
+            SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
+            ExportPropertiesToXML.Run();
+            DisplayChecksumCharacter.Run();
+            SetQREncodeMode.Run();
+            SetQRErrorCorrection.Run();
+            SetSupplementData.Run();
+            SpecifySymbology.Run();
+            CreateCouponExtendedBarcode.Run();
+            CreateUpcaGs1DatabarCoupon.Run();
+            SetWideNarrowRatio.Run();
+            GeneratingCodablockF.Run();
+            GeneratingGS1ForCodablock.Run();
+            GeneratingGS1_128AI8012Barcode.Run();
 
-            //ReadType1DBarcode.Run();
-            //ReadPostalTypesBarcode.Run();
-            //ReadMostCommonTypeBarcode.Run();
+            ReadType1DBarcode.Run();
+            ReadPostalTypesBarcode.Run();
+            ReadMostCommonTypeBarcode.Run();
 
             //// =====================================================
             //// =====================================================
@@ -66,42 +65,40 @@ namespace Aspose.BarCode.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //RotateBarcode.Run();
-            //BarcodeImageBorders.Run();
-            //ColorizeAnyPartoftheBarcodeImage.Run();
-            //RotateBarcodeImage.Run();
-            //BarcodeImageQuality.Run();
-            //BarcodeImageMargins.Run();
-            //ControlBarsFillingofOneDBarcodes.Run();
-            //BarcodeImageResolution.Run();
-            //SetSizeUnitForBarcodeImage.Run();
-            //SaveBarcodeImagesToDifferentFormats.Run();
-            //SaveBarcodeImageToStreams.Run();
-            //PrintBarcodeImage.Run();
-            //BarcodeCustomSize.Run();
-            //SetITF14SpecifyBorderType.Run();
-            //SetFrameOut.Run();
-            //SetCodetextLocation.Run();
-            //SetCodeAlignment.Run();
-            //SetForeColorText.Run();
-            //SetCodeTextFontFamilyNameAndSize.Run();
-            //AddSpaceInBarCodeAndText.Run();
-            //SetFontandColorSetting.Run();
-            //ReadBarcodeFromTIFFImages.Run();
-            //GenerateAndRecognizeUTF8Characters.Run();
-            //GetDLLVersionInformation.Run();
-            //CreatePdf417BarcodeWithTurkishCharacters.Run();
-            //CreatePdf417BarcodeWithChineseCharacters.Run();
-            //SwissPostParcelSymbology.Run();
-            //CreateImageWithExactBarcodeOnly.Run();
-            //CreateAndSetSizeForImageWithBarcode.Run();
-            //SwissPostParcelBarcodeWithAdditionalServiceType.Run();
-            //SwissPostParcelBarcodeWithInternationalMailType.Run();
-            //OptionalExceptionMessageWith1DBarCode.Run();
-            //RecognizeBarcodeWithTurkishCharacters.Run();
-            //RecognizeBarcodeWithChineseCharacters.Run();
-            //ReadAndSortBarcodesInSpecificOrder.Run();
-            //SpecifyITF14BorderThickness.Run();
+            RotateBarcode.Run();
+            BarcodeImageBorders.Run();
+            ColorizeAnyPartoftheBarcodeImage.Run();
+            RotateBarcodeImage.Run();
+            BarcodeImagePadding.Run();
+            ControlBarsFillingofOneDBarcodes.Run();
+            BarcodeImageResolution.Run();
+            SetSizeUnitForBarcodeImage.Run();
+            SaveBarcodeImagesToDifferentFormats.Run();
+            SaveBarcodeImageToStreams.Run();
+            BarcodeCustomSize.Run();
+            SetITF14SpecifyBorderType.Run();
+            SetFrameOut.Run();
+            SetCodetextLocation.Run();
+            SetCodeAlignment.Run();
+            SetForeColorText.Run();
+            SetCodeTextFontFamilyNameAndSize.Run();
+            AddSpaceInBarCodeAndText.Run();
+            SetFontandColorSetting.Run();
+            ReadBarcodeFromTIFFImages.Run();
+            GenerateAndRecognizeUTF8Characters.Run();
+            GetDLLVersionInformation.Run();
+            CreatePdf417BarcodeWithTurkishCharacters.Run();
+            CreatePdf417BarcodeWithChineseCharacters.Run();
+            SwissPostParcelSymbology.Run();
+            CreateImageWithExactBarcodeOnly.Run();
+            CreateAndSetSizeForImageWithBarcode.Run();
+            SwissPostParcelBarcodeWithAdditionalServiceType.Run();
+            SwissPostParcelBarcodeWithInternationalMailType.Run();
+            OptionalExceptionMessageWith1DBarCode.Run();
+            RecognizeBarcodeWithTurkishCharacters.Run();
+            RecognizeBarcodeWithChineseCharacters.Run();
+            ReadAndSortBarcodesInSpecificOrder.Run();
+            SpecifyITF14BorderThickness.Run();
 
             //// =====================================================
             //// =====================================================
@@ -109,66 +106,62 @@ namespace Aspose.BarCode.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            //Create2DBarcodes.Run();
-            //ManagePDF417Barcode.Run();
-            //CreateSimpleDatamatrixBarCode.Run();
-            //CreateEnCodeDatamatrixBarCode.Run();
-            //CustomEncodingModeInDataMatrix.Run();
-            //UseEncodeModeDatamatrixbarcode.Run();
-            //DetectDotPeenDatamatrix.Run();
-            //CreateAztecbarcode.Run();
-            //UseAztecErrorCorrection.Run();
-            //DetectUnicodeEncoding.Run();
-            //EncodeQRCode.Run();
-            //EncodeMicroQRCode.Run();
-            //EncodeQRCodEInECIMode.Run();
-            //FNC1FirstPositionInExtendedMode.Run();
-            //FNC1SecondPositionInExtendedMode.Run();
-            //MultiECIModeInExtendedMode.Run();
-            //HideBarcodeCodeText.Run();
-            //ReduceCodeTextFontSize.Run();
-            //SetAspectRatio.Run();
-            //CreateMultipleMacroPdf417.Run();
-            //CreateBarCodeWithImageInsteadOfCodeText.Run();
-
+            Create2DBarcodes.Run();
+            CreateAztecbarcode.Run();
+            CreateBarCodeWithImageInsteadOfCodeText.Run();
+            CreateC40DatamatrixBarCode.Run();
+            CreateEnCodeDatamatrixBarCode.Run();
+            CreateMultipleMacroPdf417.Run();
+            CreateSimpleDatamatrixBarCode.Run();
+            CreateTextDatamatrixBarCode.Run();
+            CustomEncodingModeInDataMatrix.Run();
+            DetectUnicodeEncoding.Run();
+            EncodeMicroQRCode.Run();
+            EncodeQRCode.Run();
+            EncodeQRCodEInECIMode.Run();
+            ErrorCorrectionLevel.Run();
+            FNC1FirstPositionInExtendedMode.Run();
+            FNC1SecondPositionInExtendedMode.Run();
+            GenerateCustomBarcodes.Run();
+            HideBarcodeCodeText.Run();
+            ManagePDF417Barcode.Run();
+            MultiECIModeInExtendedMode.Run();
+            ReduceCodeTextFontSize.Run();
+            SetAspectRatio.Run();
+            SettingQRVersion.Run();
+            UseAztecErrorCorrection.Run();
+            UseEncodeModeDatamatrixbarcode.Run();
+            
             //// =====================================================
             //// =====================================================
             ////  ManageAndOptimizeBarcodeRecognition
             //// =====================================================
             //// =====================================================
 
-            //ScanBarCodePicture.Run();
-            //SupportImageFormat.Run();
-            //RecognizeSpecificBarcodeSymbology.Run();
-            //RecognizeMultipleSymbologies.Run();
-            //DetectOrientationOfBarCode.Run();
-            //DetectUnreadableBarcode.Run();
-            //SetBarcodeOrientation.Run();
-            //ImageProcessingBarcodeRecognition.Run();
-            //MarkingBarCodeRegionsInImage.Run();
-            //ReadBarcodeSpecificRegionOfImage.Run();
-            //ReadMultipleMacropdf417BarcodeImages.Run();
-            //ReadMultipleMacroPdf417Barcodes.Run();
-            //GetBarCodeRegionInformationfromImage.Run();
-            //GetAllPossible1DBarcodesfromImage.Run();
-            //GetBarCodeRecognitionQualityInPercent.Run();
-            //SwitchBarcodeRecognitionModes.Run();
-            //OptimizingBarCodeRecognitionProcess.Run();
-            //ManualHints.Run();
-            //ReadMultipleBarcodeRegions.Run();
-            //ECCTypeToEnCodeBarcode.Run();
-            //DetectDecoratedDatamatrix.Run();    
-            //BarCodeRecognitionFilters.Run();
-            //BarcodeReaderSetBarcodeImage.Run();
-
-            //// =====================================================
-            //// =====================================================
-            ////  CreatingBarcodes
-            //// =====================================================
-            //// =====================================================
-            //GenerateBarcode.Run();
-
-            //GenerateUsingV3BarcodeGenerator.Run();
+            ScanBarCodePicture.Run();
+            SupportImageFormat.Run();
+            RecognizeSpecificBarcodeSymbology.Run();
+            RecognizeMultipleSymbologies.Run();
+            DetectDotPeenDatamatrix.Run();
+            DetectOrientationOfBarCode.Run();
+            DetectUnreadableBarcode.Run();
+            SetBarcodeOrientation.Run();
+            ImageProcessingBarcodeRecognition.Run();
+            MarkingBarCodeRegionsInImage.Run();
+            ReadBarcodeSpecificRegionOfImage.Run();
+            ReadMultipleMacropdf417BarcodeImages.Run();
+            ReadMultipleMacroPdf417Barcodes.Run();
+            GetBarCodeRegionInformationfromImage.Run();
+            GetAllPossible1DBarcodesfromImage.Run();
+            GetBarCodeRecognitionQualityInPercent.Run();
+            SwitchBarcodeRecognitionModes.Run();
+            OptimizingBarCodeRecognitionProcess.Run();
+            ManualHints.Run();
+            ReadMultipleBarcodeRegions.Run();
+            ECCTypeToEnCodeBarcode.Run();
+            DetectDecoratedDatamatrix.Run();
+            BarCodeRecognitionFilters.Run();
+            BarcodeReaderSetBarcodeImage.Run();
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");

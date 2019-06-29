@@ -16,7 +16,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         public static void Run()
         {
             //ExStart:ReadMostCommonTypeBarcode
-            using (BarCodeReader reader = new BarCodeReader("test.png", DecodeType.MostCommonTypes))
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_ManageBarCodes();
+
+            using (BarCodeReader reader = new BarCodeReader(dataDir + "test.png", DecodeType.MostCommonTypes))
             {
                 while (reader.Read())
                 {

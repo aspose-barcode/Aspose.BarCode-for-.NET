@@ -1,4 +1,5 @@
 ﻿using Aspose.BarCode.Generation;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -27,7 +28,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                 using (System.Drawing.Bitmap barcode = generator.GenerateBarCodeImage())
                 {
                     // Load the logo/other image as Bitmap
-                    using (System.Drawing.Bitmap picture = (System.Drawing.Bitmap)System.Drawing.Image.FromFile(@"path_to_your_picture.png"))
+                    using (System.Drawing.Bitmap picture = (System.Drawing.Bitmap)System.Drawing.Image.FromFile(dataDir + "logo.png"))
                     {
                         // Create a new empty image with new Calculated height &amp; width
                         using (System.Drawing.Bitmap output = new System.Drawing.Bitmap(System.Math.Max(barcode.Width, picture.Width), barcode.Height + picture.Height))
@@ -45,6 +46,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                                 g.DrawImage(barcode, new System.Drawing.PointF(0, picture.Height));
                             }
                             output.Save(dataDir + "output.jpg");
+                            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "output.jpg");
                         }
                     }
                 }

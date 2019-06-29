@@ -1,4 +1,5 @@
 ﻿using Aspose.BarCode.Generation;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -22,6 +23,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Aztec, "123456789");
             generator.Save(dataDir + "CreateAztecbarcode_out.bmp", BarCodeImageFormat.Bmp);
             // ExEnd:CreateAztecbarcode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "CreateAztecbarcode_out.bmp");
         }
     }
 }

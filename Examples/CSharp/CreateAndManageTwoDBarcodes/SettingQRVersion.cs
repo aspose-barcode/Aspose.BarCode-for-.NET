@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Drawing.Imaging;
 using Aspose.BarCode.Generation;
 
@@ -31,9 +32,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             generator.Parameters.Barcode.QR.QrVersion = QRVersion.Version10;
 
             //Save the image
-            generator.Save("qr_version10_errorQ.png");
-
+            generator.Save(dataDir + "Setting_QRVersion10_errorQ.png");
             //ExEnd:SettingQRVersion
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "Setting_QRVersion10_errorQ.png");
         }
     }
 }

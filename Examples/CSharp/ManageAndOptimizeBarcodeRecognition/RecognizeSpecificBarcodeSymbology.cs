@@ -22,7 +22,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Create instance of BarCodeReader class 
-                BarCodeReader reader = new BarCodeReader(dataDir + "SymbologyTypebarcode.png", DecodeType.Code128);
+                BarCodeReader reader = new BarCodeReader(dataDir + "Code128.jpg", DecodeType.Code128);
                 while (reader.Read())
                 {
                     // Display code text and Symbology Type

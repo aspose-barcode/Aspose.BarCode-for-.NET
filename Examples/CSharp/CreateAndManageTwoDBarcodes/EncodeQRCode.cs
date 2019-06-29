@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Drawing.Imaging;
 using Aspose.BarCode.Generation;
 
@@ -32,6 +33,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             Bitmap lBmp = generator.GenerateBarCodeImage();
             lBmp.Save(dataDir + "EncodeQA_out.bmp", ImageFormat.Bmp);
             //ExEnd:EncodeQRCode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "EncodeQA_out.bmp");
         }
     }
 }

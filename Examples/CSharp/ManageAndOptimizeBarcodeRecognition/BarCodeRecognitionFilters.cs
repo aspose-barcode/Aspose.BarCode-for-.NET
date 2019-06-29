@@ -31,7 +31,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void QualitySetting()
         {
             //ExStart: QualitySetting
-            using (BarCodeReader reader = new BarCodeReader(@"c:\test.jpg"))
+            using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
             {
                 //set high performance mode
                 reader.QualitySettings = QualitySettings.HighPerformance;
@@ -44,7 +44,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void QualitySettingWithManualOptionsNormalQuality()
         {
             //ExStart: QualitySettingWithManualOptionsNormalQuality
-            using (BarCodeReader reader = new BarCodeReader(@"c:\test.jpg"))
+            using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
             {
                 //default mode is NormalQuality
                 //set separate options
@@ -59,7 +59,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void QualitySettingWithManualOptionsHighPerformance()
         {
             //ExStart: QualitySettingWithManualOptionsHighPerformance
-            using (BarCodeReader reader = new BarCodeReader(@"c:\test.jpg"))
+            using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
             {
                 //set high performance mode
                 reader.QualitySettings = QualitySettings.HighPerformance;
@@ -75,7 +75,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void ImproveDetectionByInverting()
         {
             //ExStart: ImproveDetectionByInverting
-            using (BarCodeReader reader = new BarCodeReader(@"c:\test.jpg", DecodeType.DataMatrix))
+            using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg", DecodeType.DataMatrix))
             {
                 reader.QualitySettings.AllowInvertImage = true;
                 

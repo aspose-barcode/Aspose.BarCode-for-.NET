@@ -45,6 +45,7 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                         // Save the barcode (fileid_segmentid.png)
                         generator.Save(dataDir + strFileId + "_" + nCount + "_out.png", BarCodeImageFormat.Png);
                         Process.Start(dataDir + strFileId + "_" + nCount + "_out.png");
+                        Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + strFileId + "_" + nCount + "_out.png");
                     }
                     catch (Exception ex)
                     {

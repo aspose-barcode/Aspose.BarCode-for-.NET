@@ -16,7 +16,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
         public static void Run()
         {
             //ExStart:ReadPostalTypesBarcode
-            using (BarCodeReader reader = new BarCodeReader("test.png", DecodeType.PostalTypes))
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_ManageBarCodes();
+
+            using (BarCodeReader reader = new BarCodeReader(dataDir + "test.png", DecodeType.PostalTypes))
             {
                 while (reader.Read())
                 {
