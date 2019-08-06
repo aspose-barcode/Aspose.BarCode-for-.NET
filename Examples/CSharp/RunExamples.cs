@@ -131,7 +131,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //SettingQRVersion.Run();
             //UseAztecErrorCorrection.Run();
             //UseEncodeModeDatamatrixbarcode.Run();
-            
+
             //// =====================================================
             //// =====================================================
             ////  ManageAndOptimizeBarcodeRecognition
@@ -162,6 +162,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //DetectDecoratedDatamatrix.Run();
             //BarCodeRecognitionFilters.Run();
             //BarcodeReaderSetBarcodeImage.Run();
+            SingleWipedBarsInPattern.Run();
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");
