@@ -162,7 +162,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //DetectDecoratedDatamatrix.Run();
             //BarCodeRecognitionFilters.Run();
             //BarcodeReaderSetBarcodeImage.Run();
-            SingleWipedBarsInPattern.Run();
+            //SingleWipedBarsInPattern.Run();
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");
