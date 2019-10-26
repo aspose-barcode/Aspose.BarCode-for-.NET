@@ -4,6 +4,7 @@ using Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes;
 using Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodeImages;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodes;
+using Aspose.BarCode.Examples.CSharp.ManageComplexBarcodes;
 
 namespace Aspose.BarCode.Examples.CSharp
 {
@@ -164,6 +165,15 @@ namespace Aspose.BarCode.Examples.CSharp
             //BarcodeReaderSetBarcodeImage.Run();
             //SingleWipedBarsInPattern.Run();
 
+            //// =====================================================
+            //// =====================================================
+            ////  ManageComplexBarcodes
+            //// =====================================================
+            //// =====================================================
+
+            GenerateComplexBarcodes.Run();
+            ReadComplexBarcodes.Run();
+
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");
             Console.ReadKey();
@@ -192,6 +202,11 @@ namespace Aspose.BarCode.Examples.CSharp
         public static String GetDataDir_ManageAndOptimizeBarcodeRecognition()
         {
             return Path.GetFullPath(GetDataDir_Data() + "ManageAndOptimizeBarcodeRecognition/");
+        }
+
+        public static String GetDataDir_ManageComplexBarcodes()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "ManageComplexBarcodes/");
         }
 
         private static string GetDataDir_Data()
