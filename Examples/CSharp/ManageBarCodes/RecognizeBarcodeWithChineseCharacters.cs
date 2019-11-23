@@ -23,9 +23,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
                 // Load barcode image and Read barcode
                 var reader = new BarCodeReader(dataDir + "Chinese.png", DecodeType.Pdf417);
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    var t = reader.GetCodeBytes();
+                    var t = result.CodeBytes;
                     var encodingValue = Encoding.GetEncoding(1254).GetString(t);
                 }
                 reader.Close();

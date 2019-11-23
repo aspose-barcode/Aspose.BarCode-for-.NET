@@ -26,10 +26,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 BarCodeReader reader = new BarCodeReader(new Bitmap(dataDir + "ReadBarcodefromSpecificRegionofImage.png"), new Rectangle(0, 0, 100, 50), DecodeType.Pdf417);
 
                 // Read all barcodes in the provided area
-                while (reader.Read() == true)
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
                     // Display the codetext and symbology type of the barcode found
-                    Console.WriteLine("Codetext: " + reader.GetCodeText() + " Symbology: " + reader.GetCodeType());
+                    Console.WriteLine("Codetext: " + result.CodeText + " Symbology: " + result.CodeType);
                 }
 
                 // Close the reader

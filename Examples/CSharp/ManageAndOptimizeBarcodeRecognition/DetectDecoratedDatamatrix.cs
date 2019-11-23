@@ -26,9 +26,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 {
                     //set high performance mode
                     reader.QualitySettings = QualitySettings.HighPerformance;
-                    while (reader.Read())
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());
+                        Console.WriteLine(result.CodeType + ": " + result.CodeText);
                     }
                 }
                 // ExEnd:DetectDecoratedDatamatrix                       

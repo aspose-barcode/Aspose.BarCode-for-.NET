@@ -30,13 +30,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     // Create instance of BarCodeReader class and set symbology
                     using (BarCodeReader reader = new BarCodeReader(dataDir + files[i], DecodeType.MacroPdf417))
                     {
-                        if (reader.Read())
+                        foreach (BarCodeResult result in reader.ReadBarCodes())
                         {
                             // Get code text, file id, segment id and segment count
-                            Console.WriteLine("File Name: " + files[i] + " Code Text: " + reader.GetCodeText());
-                            Console.WriteLine("FileID: " + reader.GetMacroPdf417FileID());
-                            Console.WriteLine("SegmentID: " + reader.GetMacroPdf417SegmentID());
-                            Console.WriteLine("Segment Count: " + reader.GetMacroPdf417SegmentsCount());
+                            Console.WriteLine("File Name: " + files[i] + " Code Text: " + result.CodeText);
+                            Console.WriteLine("FileID: " + result.Extended.Pdf417.MacroPdf417FileID);
+                            Console.WriteLine("SegmentID: " + result.Extended.Pdf417.MacroPdf417SegmentID);
+                            Console.WriteLine("Segment Count: " + result.Extended.Pdf417.MacroPdf417SegmentsCount);
                         }
                         Console.WriteLine();
                     }

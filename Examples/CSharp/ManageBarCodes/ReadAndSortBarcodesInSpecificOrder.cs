@@ -23,8 +23,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             List<FoundBarCodes> found = new List<FoundBarCodes>();
             using (BarCodeReader reader = new BarCodeReader(dataDir + "tiffImage.tif", DecodeType.Code128))
             {
-                while (reader.Read())
-                    found.Add(new FoundBarCodes(reader.GetCodeText(), reader.GetRegion()));
+                foreach (BarCodeResult result in reader.ReadBarCodes())
+                    found.Add(new FoundBarCodes(result.CodeText, result.Region));
             }
             found.Sort(new FoundComparator());
             int i = 1;
@@ -38,15 +38,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 Console.WriteLine();
                 i++;
             }
-
-           
         }
 
         public struct FoundBarCodes
         {
             public readonly string CodeText;
-            public readonly BarCodeRegion region;
-            public FoundBarCodes(string text, BarCodeRegion reg)
+            public readonly BarCodeRegionParameters region;
+            public FoundBarCodes(string text, BarCodeRegionParameters reg)
             {
                 CodeText = text;
                 region = reg;

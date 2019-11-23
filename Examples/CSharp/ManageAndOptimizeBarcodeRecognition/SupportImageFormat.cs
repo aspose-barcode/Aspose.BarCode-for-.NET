@@ -23,9 +23,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
                 // Create instance of BarCodeReader class and Get code text
                 BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg");
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.WriteLine("CodeText: " + reader.GetCodeText());
+                    Console.WriteLine("CodeText: " + result.CodeText);
                 }
                 reader.Close();
                 // ExEnd:SupportImageFormat

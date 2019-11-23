@@ -23,11 +23,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
                 // Create instance of BarCodeReader class 
                 BarCodeReader reader = new BarCodeReader(dataDir + "Code128.jpg", DecodeType.Code128);
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
                     // Display code text and Symbology Type
-                    Console.WriteLine("CodeText: " + reader.GetCodeText());
-                    Console.Write("Symbology Type: " + reader.GetCodeType());
+                    Console.WriteLine("CodeText: " + result.CodeText);
+                    Console.Write("Symbology Type: " + result.CodeType);
                 }
                 reader.Close();
             }

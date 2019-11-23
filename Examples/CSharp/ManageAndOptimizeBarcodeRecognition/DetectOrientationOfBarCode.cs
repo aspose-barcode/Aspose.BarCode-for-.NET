@@ -24,9 +24,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             try
             {
                 // Read Code128 bar code and Detect bar code orientation
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.Write(Environment.NewLine + "Rotaion Angle: " + reader.GetAngle());
+                    Console.Write(Environment.NewLine + "Rotaion Angle: " + result.Region.Angle);
                 }
                 reader.Close();
             }

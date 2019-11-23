@@ -1,4 +1,5 @@
-﻿using Aspose.BarCode.Generation;
+﻿using Aspose.BarCode.BarCodeRecognition;
+using Aspose.BarCode.Generation;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -22,17 +23,17 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Create an instance of BarCodeReader class
             // Set file path
             // Set the recognition type
-            using (Aspose.BarCode.BarCodeRecognition.BarCodeReader reader = new Aspose.BarCode.BarCodeRecognition.BarCodeReader("1bc.png", Aspose.BarCode.BarCodeRecognition.DecodeType.Code128))
+            using (BarCodeReader reader = new BarCodeReader(dataDir + "1bc.png", DecodeType.Code128))
             {
                 // Perform read operation
-                if (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
                     // Create an array of Code128DataPortion class
                     // Call the GetCode128DataPortions method
-                    Aspose.BarCode.BarCodeRecognition.Code128DataPortion[] code128DataPortions = reader.GetCode128DataPortions();
+                    Code128DataPortion[] code128DataPortions = result.Extended.Code128.Code128DataPortions;
 
                     // Execute Loop for each Code128DataPortion instance
-                    foreach (Aspose.BarCode.BarCodeRecognition.Code128DataPortion code128DataPortion in code128DataPortions)
+                    foreach (Code128DataPortion code128DataPortion in code128DataPortions)
                     {
                         // Display the subtype and data
                         System.Console.WriteLine("Code128SubType {0}", code128DataPortion.Code128SubType);

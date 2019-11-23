@@ -21,10 +21,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 {
                     reader.QualitySettings.AllowOneDWipedBarsRestoration = true;
                     List<string> lCodetexts = new List<string>();
-                    while (reader.Read())
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        lCodetexts.Add(reader.GetCodeText());
-                        Console.WriteLine(reader.GetCodeText());
+                        lCodetexts.Add(result.CodeText);
+                        Console.WriteLine(result.CodeText);
                     }
                 }
                 // ExEnd:SingleWipedBarsInPattern

@@ -30,9 +30,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             // Initialize the BarCodeReader object and load bitmap object       
             using (BarCodeReader reader = new BarCodeReader(bitmap, areas, DecodeType.Code39Standard))
             {
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());
+                    Console.WriteLine(result.CodeType + ": " + result.CodeText);
                 }
             }
             // ExEnd:ReadMultipleBarcodeRegions

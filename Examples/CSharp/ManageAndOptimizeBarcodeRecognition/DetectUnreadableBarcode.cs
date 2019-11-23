@@ -21,11 +21,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             
             using (BarCodeReader reader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard))
             {
+                //set max barcodes mode, which tries to find all possible barcodes, even incorrect. 
+                //The slowest recognition mode
                 reader.QualitySettings = QualitySettings.MaxBarCodes;
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());
-                    Console.WriteLine("IsDeniable: " + reader.GetIsDeniable());
+                    Console.WriteLine("BarCode CodeText: " + result.CodeText);
+                    Console.WriteLine("BarCode Type: " + result.CodeType);
                 }
             }
             // ExEnd:DetectUnreadableBarcode

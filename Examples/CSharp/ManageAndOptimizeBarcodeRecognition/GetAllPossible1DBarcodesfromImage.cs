@@ -28,13 +28,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // To get all possible barcodes
                 reader.QualitySettings = QualitySettings.MaxBarCodes;
 
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
                     // Display code text, symbology, detected angle, recognition percentage of the barcode
-                    Console.WriteLine("Code Text: " + reader.GetCodeText() + " Symbology: " + reader.GetCodeType() + " Recognition percentage: " + reader.GetAngle());
+                    Console.WriteLine("Code Text: " + result.CodeText + " Symbology: " + result.CodeType + " Recognition percentage: " + result.Region.Angle);
 
                     // Display x and y coordinates of barcode detected
-                    Point[] point = reader.GetRegion().Points;
+                    Point[] point = result.Region.Points;
                     Console.WriteLine("Top left coordinates: X = " + point[0].X + ", Y = " + point[0].Y);
                     Console.WriteLine("Bottom left coordinates: X = " + point[1].X + ", Y = " + point[1].Y);
                     Console.WriteLine("Bottom right coordinates: X = " + point[2].X + ", Y = " + point[2].Y);

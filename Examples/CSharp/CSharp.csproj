@@ -36,8 +36,8 @@
     <StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=19.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.19.10.0\lib\net40\Aspose.BarCode.dll</HintPath>
+    <Reference Include="Aspose.BarCode, Version=19.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.19.11.0\lib\net40\Aspose.BarCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +53,7 @@
     <Compile Include="CreateAndManageTwoDBarcodes\CreateTextDatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\CreateC40DatamatrixBarCode.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\ErrorCorrectionLevel.cs" />
+    <Compile Include="CreateAndManageTwoDBarcodes\ImportExportBarcodeToXML.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\SettingQRVersion.cs" />
     <Compile Include="CreateAndManageTwoDBarcodes\GenerateCustomBarcodes.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\BarcodeReaderSetBarcodeImage.cs" />
@@ -134,7 +135,6 @@
     <Compile Include="ManageAndOptimizeBarcodeRecognition\ReadMultipleMacroPdf417Barcodes.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\SetBarcodeOrientation.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\DetectOrientationOfBarCode.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\MarkingBarCodeRegionsInImage.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\SwitchBarcodeRecognitionModes.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\DetectDecoratedDatamatrix.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\DetectDotPeenDatamatrix.cs" />

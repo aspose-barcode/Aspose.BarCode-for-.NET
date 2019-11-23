@@ -33,9 +33,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // Perform the BarCode recognition task Initialize the BarCodeReader object
                 using (BarCodeReader reader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code128))
                 {
-                    while (reader.Read())
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        Console.WriteLine(" Code Text: " + reader.GetCodeText() + " Type: " + reader.GetCodeType());
+                        Console.WriteLine(" Code Text: " + result.CodeText + " Type: " + result.CodeType);
                     }
                 }
 

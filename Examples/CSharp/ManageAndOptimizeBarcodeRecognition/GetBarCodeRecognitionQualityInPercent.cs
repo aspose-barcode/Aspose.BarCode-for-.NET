@@ -23,10 +23,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
                 // Initialize the BarCodeReader object and Call read method
                 BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes);
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.WriteLine(reader.GetCodeText() + " Type: " + reader.GetCodeType());
-                    float percent = reader.GetRecognitionQuality();
+                    Console.WriteLine(result.CodeText + " Type: " + result.CodeType);
+                    double percent = result.ReadingQuality;
                 }
                 reader.Close();
                 // ExEnd:GetBarCodeRegionInformationfromImage

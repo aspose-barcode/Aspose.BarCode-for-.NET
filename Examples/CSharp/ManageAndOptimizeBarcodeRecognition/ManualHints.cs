@@ -30,9 +30,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     reader.QualitySettings.AllowMedianSmoothing = true;
                     reader.QualitySettings.MedianSmoothingWindowSize = 5;
 
-                    while (reader.Read())
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        Console.WriteLine(reader.GetCodeType() + ": " + reader.GetCodeText());
+                        Console.WriteLine(result.CodeType + ": " + result.CodeText);
                     }
 
                     // End Stopwatch

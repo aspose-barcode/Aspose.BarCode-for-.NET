@@ -28,9 +28,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 reader.QualitySettings.AllowIncorrectBarcodes = true;
 
                 // Try to recognize all possible barcodes in the image and Display the codetext
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.WriteLine("Codetext: " + reader.GetCodeText());
+                    Console.WriteLine("Codetext: " + result.CodeText);
                 }
                 // Close the reader
                 reader.Close();

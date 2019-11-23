@@ -1,4 +1,6 @@
-﻿using Aspose.BarCode.Generation;
+﻿using Aspose.BarCode.BarCodeRecognition;
+using Aspose.BarCode.Generation;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -41,13 +43,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             {
                 //Set ChecksumValidation property of the reader to On
                 reader.ChecksumValidation = Aspose.BarCode.BarCodeRecognition.ChecksumValidation.On;
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
                     //Get code text
-                    System.Console.WriteLine("{0}:{1}", reader.GetCodeType(), reader.GetCodeText());
+                    Console.WriteLine("BarCode Type: " + result.CodeType);
+                    Console.WriteLine("BarCode CodeText: " + result.CodeText);
 
                     //Get checksum value
-                    System.Console.WriteLine("Checksum:" + reader.GetCheckSum());
+                    System.Console.WriteLine("Checksum:" + result.Extended.OneD.CheckSum);
                 }
             }
 

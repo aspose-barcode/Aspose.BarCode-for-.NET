@@ -23,11 +23,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             {
                 // Read file from directory with DecodeType.EAN13
                 BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg", DecodeType.EAN13);
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
                     // Read symbology type and code text
-                    Console.WriteLine("Symbology Type: " + reader.GetCodeType());
-                    Console.WriteLine("CodeText: " + reader.GetCodeText());
+                    Console.WriteLine("Symbology Type: " + result.CodeType);
+                    Console.WriteLine("CodeText: " + result.CodeText);
                 }
                 reader.Close();
             }

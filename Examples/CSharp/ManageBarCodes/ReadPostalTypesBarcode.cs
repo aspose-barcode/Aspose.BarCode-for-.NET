@@ -21,9 +21,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
 
             using (BarCodeReader reader = new BarCodeReader(dataDir + "test.png", DecodeType.PostalTypes))
             {
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.WriteLine(reader.GetCodeType().ToString() + " " + reader.GetCodeText());
+                    Console.WriteLine(result.CodeType.ToString() + " " + result.CodeText);
                 }
             }
             //ExEnd: ReadPostalTypesBarcode

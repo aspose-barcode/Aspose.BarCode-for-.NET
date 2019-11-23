@@ -24,10 +24,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard);
 
             // Try to recognize all possible barcodes in the image
-            while (barCodeReader.Read())
+            foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
             {
                 // Get the region information
-                BarCodeRegion region = barCodeReader.GetRegion();
+                var region = result.Region;
                 if (region != null)
                 {
                     // Display x and y coordinates of barcode detected
@@ -37,7 +37,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     Console.WriteLine("Bottom right coordinates: X = " + point[2].X + ", Y = " + point[2].Y);
                     Console.WriteLine("Bottom left coordinates: X = " + point[3].X + ", Y = " + point[3].Y);
                 }
-                Console.WriteLine("Codetext: " + barCodeReader.GetCodeText());
+                Console.WriteLine("Codetext: " + result.CodeText);
             }
             // Close reader
             barCodeReader.Close();

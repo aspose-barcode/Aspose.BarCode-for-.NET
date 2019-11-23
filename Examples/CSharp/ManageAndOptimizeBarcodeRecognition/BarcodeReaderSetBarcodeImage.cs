@@ -36,8 +36,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     using (BarCodeReader reader = new BarCodeReader())
                     {
                         reader.SetBarCodeImage(lStream);
-                        while (reader.Read())
-                            Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
+                        foreach (BarCodeResult result in reader.ReadBarCodes())
+                            Console.WriteLine("BarCode CodeText: " + result.CodeText);
                     }
                 }
                 //ExEnd: ReadBarCodeFromStream
@@ -58,8 +58,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     using (BarCodeReader reader = new BarCodeReader())
                     {
                         reader.SetBarCodeImage(lBitmap, new Rectangle(0, 0, lBitmap.Width, lBitmap.Height));
-                        while (reader.Read())
-                            Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
+                        foreach (BarCodeResult result in reader.ReadBarCodes())
+                            Console.WriteLine("BarCode CodeText: " + result.CodeText);
                     }
                 }
                 //ExEnd: ReadBarCodeFromSpecificRegion
@@ -80,8 +80,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                     using (BarCodeReader reader = new BarCodeReader())
                     {
                         reader.SetBarCodeImage(lBitmap, new Rectangle[] { new Rectangle(0, 0, lBitmap.Width, lBitmap.Height) });
-                        while (reader.Read())
-                            Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
+                        foreach (BarCodeResult result in reader.ReadBarCodes())
+                            Console.WriteLine("BarCode CodeText: " + result.CodeText);
                     }
                 }
                 //ExEnd: ReadBarCodeFromMultipleRegions

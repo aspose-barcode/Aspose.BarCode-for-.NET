@@ -28,10 +28,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 barCodeReader.QualitySettings = QualitySettings.MaxBarCodes;
 
                 // Try to recognize all possible barcodes in the image and Display the codetext
-                while (barCodeReader.Read())
+                foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
                 {                  
-                    Console.WriteLine("Codetext: " + barCodeReader.GetCodeText());
+                    Console.WriteLine("Codetext: " + result.CodeText);
                 }                
+
                 // Close the reader
                 barCodeReader.Close();
             }

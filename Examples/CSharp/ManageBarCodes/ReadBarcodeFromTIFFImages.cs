@@ -31,9 +31,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                     var w = img.SelectActiveFrame(FrameDimension.Page, i);
                     var bitmap = new Bitmap(img);
                     BarCodeReader reader = new BarCodeReader(bitmap, DecodeType.AllSupportedTypes);
-                    while (reader.Read())
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        Console.WriteLine(reader.GetCodeText() + " " + reader.GetCodeType());
+                        Console.WriteLine(result.CodeText + " " + result.CodeType);
                     }
                 }
                 // ExEnd:ReadBarcodeFromTIFFImages

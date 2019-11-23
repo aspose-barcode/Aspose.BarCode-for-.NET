@@ -125,6 +125,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //FNC1SecondPositionInExtendedMode.Run();
             //GenerateCustomBarcodes.Run();
             //HideBarcodeCodeText.Run();
+            //ImportExportBarcodeToXML.Run();
             //ManagePDF417Barcode.Run();
             //MultiECIModeInExtendedMode.Run();
             //ReduceCodeTextFontSize.Run();
@@ -171,8 +172,8 @@ namespace Aspose.BarCode.Examples.CSharp
             //// =====================================================
             //// =====================================================
 
-            GenerateComplexBarcodes.Run();
-            ReadComplexBarcodes.Run();
+            //GenerateComplexBarcodes.Run();
+            //ReadComplexBarcodes.Run();
 
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");

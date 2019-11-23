@@ -36,9 +36,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                 string fileName = dataDir + "" + memoryStream + "_out.png";
                 using (BarCodeReader reader = new BarCodeReader(fileName, DecodeType.QR))
                 {
-                    reader.SetDetectEncoding(false);
-                    if (reader.Read())
-                        Console.WriteLine(reader.GetCodeText(Encoding.UTF8)); //"Слово"
+                    var detectEnc = reader.DetectEncoding;
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                        Console.WriteLine(result.CodeText); //"Слово"
                 }
 
             }

@@ -19,11 +19,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageComplexBarcodes
 
                 using (var reader = new BarCodeReader(dataDir + "swissQRCodetext_out.png", DecodeType.QR))
                 {
-                    reader.Read();
-                    SwissQRCodetext result = ComplexCodetextReader.TryDecodeSwissQR(reader.GetCodeText());
-                    Console.WriteLine("Account :" + result.Bill.Account);
-                    Console.WriteLine("BillInformation = " + result.Bill.BillInformation);
-                    Console.WriteLine("Currency :" + result.Bill.Currency);
+                    foreach (BarCodeResult barcodeResult in reader.ReadBarCodes())
+                    {
+                        SwissQRCodetext result = ComplexCodetextReader.TryDecodeSwissQR(barcodeResult.CodeText);
+                        Console.WriteLine("Account :" + result.Bill.Account);
+                        Console.WriteLine("BillInformation = " + result.Bill.BillInformation);
+                        Console.WriteLine("Currency :" + result.Bill.Currency);
+                    }
                 }
                 // ExEnd:ReadComplexBarcodes
             }

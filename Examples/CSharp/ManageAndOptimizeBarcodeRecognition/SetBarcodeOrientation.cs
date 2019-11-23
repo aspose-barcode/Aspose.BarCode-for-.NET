@@ -29,9 +29,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 // barCodeReader.OrientationHints = RecognitionHints.Orientation.Rotate90;
 
                 // Try to recognize all possible barcodes in the image and Display the codetext
-                while (barCodeReader.Read())
+                foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
                 {
-                    Console.WriteLine("Codetext: " + barCodeReader.GetCodeText());
+                    Console.WriteLine("Codetext: " + result.CodeText);
                 }
 
                 // Close the reader

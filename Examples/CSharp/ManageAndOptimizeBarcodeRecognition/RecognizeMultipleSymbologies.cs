@@ -24,10 +24,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 
                 // Initialize the BarCodeReader, Call Read() method in a loop and  Display the codetext and symbology type
                 BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png",objArray);
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    Console.WriteLine("Codetext: " + reader.GetCodeText());
-                    Console.WriteLine("Symbology type: " + reader.GetCodeType());
+                    Console.WriteLine("Codetext: " + result.CodeText);
+                    Console.WriteLine("Symbology type: " + result.CodeType);
                 }
                 reader.Close();
             }

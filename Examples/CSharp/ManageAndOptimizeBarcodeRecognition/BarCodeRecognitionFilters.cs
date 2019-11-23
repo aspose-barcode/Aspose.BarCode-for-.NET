@@ -33,10 +33,10 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             //ExStart: QualitySetting
             using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
             {
-                //set high performance mode
-                reader.QualitySettings = QualitySettings.HighPerformance;
-                while (reader.Read())
-                    Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
+                //set high quality mode with low speed recognition 
+                reader.QualitySettings = QualitySettings.HighQuality;
+                foreach (BarCodeResult result in reader.ReadBarCodes())
+                    Console.WriteLine("BarCode CodeText: " + result.CodeText);
             }
             //ExEnd: QualitySetting
         }
@@ -50,8 +50,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 //set separate options
                 reader.QualitySettings.AllowMedianSmoothing = true;
                 reader.QualitySettings.MedianSmoothingWindowSize = 5;
-                while (reader.Read())
-                    Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
+                foreach (BarCodeResult result in reader.ReadBarCodes())
+                    Console.WriteLine("BarCode CodeText: " + result.CodeText);
             }
             //ExEnd: QualitySettingWithManualOptionsNormalQuality
         }
@@ -66,8 +66,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 //set separate options
                 reader.QualitySettings.AllowMedianSmoothing = true;
                 reader.QualitySettings.MedianSmoothingWindowSize = 5;
-                while (reader.Read())
-                    Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
+                foreach (BarCodeResult result in reader.ReadBarCodes())
+                    Console.WriteLine("BarCode CodeText: " + result.CodeText);
             }
             //ExEnd: QualitySettingWithManualOptionsHighPerformance
         }
@@ -78,9 +78,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg", DecodeType.DataMatrix))
             {
                 reader.QualitySettings.AllowInvertImage = true;
-                
-                while (reader.Read())
-                    Console.WriteLine("BarCode CodeText: " + reader.GetCodeText());
+
+                foreach (BarCodeResult result in reader.ReadBarCodes())
+                    Console.WriteLine("BarCode CodeText: " + result.CodeText);
             }
             //ExEnd: ImproveDetectionByInverting
         }

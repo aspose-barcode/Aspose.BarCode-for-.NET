@@ -1,4 +1,6 @@
-﻿using Aspose.BarCode.Generation;
+﻿using Aspose.BarCode.BarCodeRecognition;
+using Aspose.BarCode.Generation;
+using System;
 
 /*
 This project uses Automatic Package Restore feature of NuGet to resolve Aspose.BarCode for .NET API reference 
@@ -22,10 +24,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             //Initialize reader object
             using (Aspose.BarCode.BarCodeRecognition.BarCodeReader reader = new Aspose.BarCode.BarCodeRecognition.BarCodeReader("error5.jpg", Aspose.BarCode.BarCodeRecognition.DecodeType.EAN13))
             {
-                while (reader.Read())
+                foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
                     //Get code text by passing TRUE to get the Barcode along with checksum value
-                    System.Console.WriteLine("{0}: {1}", reader.GetCodeType(), reader.GetCodeText(true));
+                    Console.WriteLine("BarCode Type: " + result.CodeType);
+                    Console.WriteLine("BarCode CodeText: " + result.CodeText);
                 }
             }
             
