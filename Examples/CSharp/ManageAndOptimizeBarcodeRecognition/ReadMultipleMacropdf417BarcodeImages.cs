@@ -26,15 +26,16 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 foreach (string strFile in strFileslist)
                 {
                     // We got list of all the files, now read barcodes
-                    BarCodeReader reader = new BarCodeReader(strFile, DecodeType.MacroPdf417);
-                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    using (BarCodeReader reader = new BarCodeReader(strFile, DecodeType.MacroPdf417))
                     {
-                        Console.WriteLine("File: " + strFile + " == FileID: " + result.Extended.Pdf417.MacroPdf417FileID +
-                            " == SegmentID: " + result.Extended.Pdf417.MacroPdf417SegmentID + "  == CodeText: " + result.CodeText);
+                        foreach (BarCodeResult result in reader.ReadBarCodes())
+                        {
+                            Console.WriteLine("File: " + strFile 
+                                + " == FileID: " + result.Extended.Pdf417.MacroPdf417FileID 
+                                + " == SegmentID: " + result.Extended.Pdf417.MacroPdf417SegmentID 
+                                + "  == CodeText: " + result.CodeText);
+                        }
                     }
-
-                    // Close the reader
-                    reader.Close();
                 }
             }
             catch (Exception ex)

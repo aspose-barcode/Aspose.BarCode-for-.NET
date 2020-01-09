@@ -23,13 +23,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 BaseDecodeType[] objArray = new BaseDecodeType[] { DecodeType.Code39Standard, DecodeType.Pdf417 };
 
                 // Initialize the BarCodeReader, Call Read() method in a loop and  Display the codetext and symbology type
-                BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png",objArray);
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png", objArray))
                 {
-                    Console.WriteLine("Codetext: " + result.CodeText);
-                    Console.WriteLine("Symbology type: " + result.CodeType);
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        Console.WriteLine("Codetext: " + result.CodeText);
+                        Console.WriteLine("Symbology type: " + result.CodeType);
+                    }
                 }
-                reader.Close();
             }
             catch (Exception ex)
             {

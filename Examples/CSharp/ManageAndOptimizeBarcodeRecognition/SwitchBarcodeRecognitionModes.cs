@@ -22,18 +22,18 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Initialize the BarCodeReader object and  Set recognition mode
-                BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-barcode.jpg", DecodeType.DataMatrix);
-                reader.QualitySettings = QualitySettings.HighPerformance;
-                reader.QualitySettings.AllowInvertImage = true;
-                reader.QualitySettings.AllowIncorrectBarcodes = true;
-
-                // Try to recognize all possible barcodes in the image and Display the codetext
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-barcode.jpg", DecodeType.DataMatrix))
                 {
-                    Console.WriteLine("Codetext: " + result.CodeText);
+                    reader.QualitySettings = QualitySettings.HighPerformance;
+                    reader.QualitySettings.AllowInvertImage = true;
+                    reader.QualitySettings.AllowIncorrectBarcodes = true;
+
+                    // Try to recognize all possible barcodes in the image and Display the codetext
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        Console.WriteLine("Codetext: " + result.CodeText);
+                    }
                 }
-                // Close the reader
-                reader.Close();
                 // ExEnd:SwitchBarcodeRecognitionModes
             }
             catch (Exception ex)

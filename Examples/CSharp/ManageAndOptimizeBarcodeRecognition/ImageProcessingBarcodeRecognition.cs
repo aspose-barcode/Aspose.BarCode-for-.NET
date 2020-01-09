@@ -22,19 +22,17 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Create an instance of BarCodeReader and set image and symbology type to recognize
-                BarCodeReader barCodeReader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard);
+                using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "code39.png", DecodeType.Code39Standard))
+                {
+                    // Set grayscale image processing
+                    barCodeReader.QualitySettings = QualitySettings.MaxBarCodes;
 
-                // Set grayscale image processing
-                barCodeReader.QualitySettings = QualitySettings.MaxBarCodes;
-
-                // Try to recognize all possible barcodes in the image and Display the codetext
-                foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
-                {                  
-                    Console.WriteLine("Codetext: " + result.CodeText);
-                }                
-
-                // Close the reader
-                barCodeReader.Close();
+                    // Try to recognize all possible barcodes in the image and Display the codetext
+                    foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
+                    {
+                        Console.WriteLine("Codetext: " + result.CodeText);
+                    }
+                }
             }
             catch (Exception ex)
             {

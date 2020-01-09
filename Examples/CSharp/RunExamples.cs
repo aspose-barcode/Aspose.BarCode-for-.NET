@@ -35,7 +35,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //CreateCode128Barcode.Run();
             //SpecifySymbologies.Run();
             //SetCodeText.Run();
-            //ManageCaption.Run();
+            ManageCaption.Run();
             //SetHeightBarcodeBars.Run();
             //ManageXYDimension.Run();
             //ChecksumSupplementData.Run();

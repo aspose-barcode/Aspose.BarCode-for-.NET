@@ -21,26 +21,25 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
             // Create an instance of BarCodeReader class and read barcode file
-            BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard);
-
-            // Try to recognize all possible barcodes in the image
-            foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
+            using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard))
             {
-                // Get the region information
-                var region = result.Region;
-                if (region != null)
+                // Try to recognize all possible barcodes in the image
+                foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
                 {
-                    // Display x and y coordinates of barcode detected
-                    Point[] point = region.Points;
-                    Console.WriteLine("Top left coordinates: X = " + point[0].X + ", Y = " + point[0].Y);
-                    Console.WriteLine("Top right coordinates: X = " + point[1].X + ", Y = " + point[1].Y);
-                    Console.WriteLine("Bottom right coordinates: X = " + point[2].X + ", Y = " + point[2].Y);
-                    Console.WriteLine("Bottom left coordinates: X = " + point[3].X + ", Y = " + point[3].Y);
+                    // Get the region information
+                    var region = result.Region;
+                    if (region != null)
+                    {
+                        // Display x and y coordinates of barcode detected
+                        Point[] point = region.Points;
+                        Console.WriteLine("Top left coordinates: X = " + point[0].X + ", Y = " + point[0].Y);
+                        Console.WriteLine("Top right coordinates: X = " + point[1].X + ", Y = " + point[1].Y);
+                        Console.WriteLine("Bottom right coordinates: X = " + point[2].X + ", Y = " + point[2].Y);
+                        Console.WriteLine("Bottom left coordinates: X = " + point[3].X + ", Y = " + point[3].Y);
+                    }
+                    Console.WriteLine("Codetext: " + result.CodeText);
                 }
-                Console.WriteLine("Codetext: " + result.CodeText);
             }
-            // Close reader
-            barCodeReader.Close();
             // ExEnd:GetBarCodeRegionInformationfromImage
 
         }

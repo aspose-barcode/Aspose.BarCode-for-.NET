@@ -22,13 +22,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 string dataDir = RunExamples.GetDataDir_ManageBarCodes();
 
                 // Load barcode image and Read barcode
-                var reader = new BarCodeReader(dataDir + "Turkish.png", DecodeType.Pdf417);
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "Turkish.png", DecodeType.Pdf417))
                 {
-                    var t = result.CodeBytes;
-                    var encodingValue = Encoding.GetEncoding(1254).GetString(t);
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        var t = result.CodeBytes;
+                        var encodingValue = Encoding.GetEncoding(1254).GetString(t);
+                    }
                 }
-                reader.Close();
                 // ExEnd:RecognizeBarcodeWithTurkishCharacters
             }
             catch (Exception ex)

@@ -22,14 +22,15 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Create instance of BarCodeReader class 
-                BarCodeReader reader = new BarCodeReader(dataDir + "Code128.jpg", DecodeType.Code128);
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "Code128.jpg", DecodeType.Code128))
                 {
-                    // Display code text and Symbology Type
-                    Console.WriteLine("CodeText: " + result.CodeText);
-                    Console.Write("Symbology Type: " + result.CodeType);
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        // Display code text and Symbology Type
+                        Console.WriteLine("CodeText: " + result.CodeText);
+                        Console.Write("Symbology Type: " + result.CodeType);
+                    }
                 }
-                reader.Close();
             }
             catch (Exception ex)
             {

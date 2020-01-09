@@ -35,20 +35,21 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                 imgBarcode.Save(dataDir + "GenerateAndRecognizeUTF8Characters_out.png");
 
                 // Recognize the above barcode
-                BarCodeReader reader = new BarCodeReader(dataDir + "GenerateAndRecognizeUTF8Characters_out.png");
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "GenerateAndRecognizeUTF8Characters_out.png"))
                 {
-                    Encoding unicode = Encoding.Unicode;
-                   
-                    // Get the characters array from the bytes
-                    char[] unicodeChars = new char[unicode.GetCharCount(result.CodeBytes, 0, result.CodeBytes.Length)];
-                    unicode.GetChars(result.CodeBytes, 0, result.CodeBytes.Length, unicodeChars, 0);
-                    
-                    // Build unicode string
-                    string strCodeText = new string(unicodeChars);
-                    Console.WriteLine(strCodeText);
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        Encoding unicode = Encoding.Unicode;
+
+                        // Get the characters array from the bytes
+                        char[] unicodeChars = new char[unicode.GetCharCount(result.CodeBytes, 0, result.CodeBytes.Length)];
+                        unicode.GetChars(result.CodeBytes, 0, result.CodeBytes.Length, unicodeChars, 0);
+
+                        // Build unicode string
+                        string strCodeText = new string(unicodeChars);
+                        Console.WriteLine(strCodeText);
+                    }
                 }
-                reader.Close();
                 // ExEnd:GenerateAndRecognizeUTF8Characters
             }
             catch (Exception ex)

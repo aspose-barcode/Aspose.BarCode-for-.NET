@@ -22,12 +22,13 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Create instance of BarCodeReader class and Get code text
-                BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg");
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "Scan.jpg"))
                 {
-                    Console.WriteLine("CodeText: " + result.CodeText);
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        Console.WriteLine("CodeText: " + result.CodeText);
+                    }
                 }
-                reader.Close();
                 // ExEnd:SupportImageFormat
             }
             catch (Exception ex)

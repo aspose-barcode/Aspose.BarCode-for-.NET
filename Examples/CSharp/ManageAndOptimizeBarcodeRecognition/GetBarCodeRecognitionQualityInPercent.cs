@@ -17,19 +17,20 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                // ExStart:GetBarCodeRegionInformationfromImage
+                // ExStart:GetBarCodeRecognitionQualityInPercent
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Initialize the BarCodeReader object and Call read method
-                BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes);
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes))
                 {
-                    Console.WriteLine(result.CodeText + " Type: " + result.CodeType);
-                    double percent = result.ReadingQuality;
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        Console.WriteLine(result.CodeText + " Type: " + result.CodeType);
+                        double percent = result.ReadingQuality;
+                    }
                 }
-                reader.Close();
-                // ExEnd:GetBarCodeRegionInformationfromImage
+                // ExEnd:GetBarCodeRecognitionQualityInPercent
             }
             catch (Exception ex)
             {

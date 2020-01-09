@@ -36,8 +36,8 @@
     <StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=19.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.19.11.0\lib\net40\Aspose.BarCode.dll</HintPath>
+    <Reference Include="Aspose.BarCode, Version=19.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.BarCode.19.12.0\lib\net40\Aspose.BarCode.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,6 +58,7 @@
     <Compile Include="CreateAndManageTwoDBarcodes\GenerateCustomBarcodes.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\BarcodeReaderSetBarcodeImage.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\BarCodeRecognitionFilters.cs" />
+    <Compile Include="ManageAndOptimizeBarcodeRecognition\MarkingBarCodeRegionsInImage.cs" />
     <Compile Include="ManageAndOptimizeBarcodeRecognition\SingleWipedBarsInPattern.cs" />
     <Compile Include="ManageBarcodeImages\EnableImageBorder.cs" />
     <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />

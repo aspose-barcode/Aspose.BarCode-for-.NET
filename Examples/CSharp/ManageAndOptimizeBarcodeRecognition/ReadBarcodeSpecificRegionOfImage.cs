@@ -18,25 +18,21 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         {
             try
             {
-                // ExStart:ReadMultipleBarcodeRegions
+                // ExStart:ReadBarcodeSpecificRegionOfImage
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Create an instance of BarCodeReader class and specify an area to look for the barcode
-                BarCodeReader reader = new BarCodeReader(new Bitmap(dataDir + "ReadBarcodefromSpecificRegionofImage.png"), new Rectangle(0, 0, 100, 50), DecodeType.Pdf417);
-
-                // Read all barcodes in the provided area
-                foreach (BarCodeResult result in reader.ReadBarCodes())
+                using (BarCodeReader reader = new BarCodeReader(new Bitmap(dataDir + "ReadBarcodefromSpecificRegionofImage.png"), new Rectangle(0, 0, 100, 50), DecodeType.Pdf417))
                 {
-                    // Display the codetext and symbology type of the barcode found
-                    Console.WriteLine("Codetext: " + result.CodeText + " Symbology: " + result.CodeType);
+                    // Read all barcodes in the provided area
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        // Display the codetext and symbology type of the barcode found
+                        Console.WriteLine("Codetext: " + result.CodeText + " Symbology: " + result.CodeType);
+                    }
                 }
-
-                // Close the reader
-                reader.Close();
-                
-                // ExEnd:ReadMultipleBarcodeRegions
-
+                // ExEnd:ReadBarcodeSpecificRegionOfImage
             }
             catch (Exception ex)
             {

@@ -22,22 +22,19 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
                 // Create an instance of BarCodeReader and set image and symbology type to recognize
-                BarCodeReader barCodeReader = new BarCodeReader(dataDir + "BarcodeOrientation.png", DecodeType.Code39Standard);
-
-                // Aspose.BarCode.BarCodeRecognition.RecognitionHints is obsolete: RecognitionHints is depricated
-                // Barcode orientation is detected automatically
-                // barCodeReader.OrientationHints = RecognitionHints.Orientation.Rotate90;
-
-                // Try to recognize all possible barcodes in the image and Display the codetext
-                foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
+                using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "BarcodeOrientation.png", DecodeType.Code39Standard))
                 {
-                    Console.WriteLine("Codetext: " + result.CodeText);
+                    // Aspose.BarCode.BarCodeRecognition.RecognitionHints is obsolete: RecognitionHints is depricated
+                    // Barcode orientation is detected automatically
+                    // barCodeReader.OrientationHints = RecognitionHints.Orientation.Rotate90;
+
+                    // Try to recognize all possible barcodes in the image and Display the codetext
+                    foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
+                    {
+                        Console.WriteLine("Codetext: " + result.CodeText);
+                    }
                 }
-
-                // Close the reader
-                barCodeReader.Close();
                 // ExEnd:SetBarcodeOrientation
-
             }
             catch (Exception ex)
             {
