@@ -39,6 +39,15 @@
     <Reference Include="Aspose.BarCode, Version=20.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.BarCode.20.1.0\lib\net40\Aspose.BarCode.dll</HintPath>
     </Reference>
+    <Reference Include="Aspose.Cells, Version=20.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.1.0\lib\net40\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.PDF, Version=20.1.0.0, Culture=neutral, PublicKeyToken=f0262d67fe233d63, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.PDF.20.1.0\lib\net4.0\Aspose.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=20.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Words.20.2.0\lib\net40\Aspose.Words.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -179,6 +188,15 @@
     <Compile Include="ManageComplexBarcodes\ReadComplexBarcodes.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TechnicalArticles\AddBarcodeImageToPDFDocument.cs" />
+    <Compile Include="TechnicalArticles\AddingBarcodeImageToExcelWorksheet.cs" />
+    <Compile Include="TechnicalArticles\CreatingWordDocumentWithBarcodeImage.cs" />
+    <Compile Include="TechnicalArticles\ExportPDFPagesToImagesAndRecognizeBarCode.cs" />
+    <Compile Include="TechnicalArticles\GenerateMultipleBarcodesOnSingleImage.cs" />
+    <Compile Include="TechnicalArticles\RecognizeBarcodeFromPDFDocuments.cs" />
+    <Compile Include="TechnicalArticles\RecognizeBarcodeFromWordDocument.cs" />
+    <Compile Include="TechnicalArticles\SaveBarCodeToMemoryStream.cs" />
+    <Compile Include="TechnicalArticles\CreatingBarCode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

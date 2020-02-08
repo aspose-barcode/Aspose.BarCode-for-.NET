@@ -5,6 +5,7 @@ using Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodeImages;
 using Aspose.BarCode.Examples.CSharp.ManageBarCodes;
 using Aspose.BarCode.Examples.CSharp.ManageComplexBarcodes;
+using Aspose.BarCode.Examples.CSharp.TechnicalArticles;
 
 namespace Aspose.BarCode.Examples.CSharp
 {
@@ -35,7 +36,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //CreateCode128Barcode.Run();
             //SpecifySymbologies.Run();
             //SetCodeText.Run();
-            ManageCaption.Run();
+            //ManageCaption.Run();
             //SetHeightBarcodeBars.Run();
             //ManageXYDimension.Run();
             //ChecksumSupplementData.Run();
@@ -175,6 +176,23 @@ namespace Aspose.BarCode.Examples.CSharp
             //GenerateComplexBarcodes.Run();
             //ReadComplexBarcodes.Run();
 
+            //// =====================================================
+            //// =====================================================
+            ////  Technical Articles
+            //// =====================================================
+            //// =====================================================
+
+            //AddBarcodeImageToPDFDocument.Run();
+            //AddingBarcodeImageToExcelWorksheet.Run();
+            //CreatingBarCode.Run();
+            //CreatingWordDocumentWithBarcodeImage.Run();
+            //ExportPDFPagesToImagesAndRecognizeBarCode.Run();
+            //GenerateMultipleBarcodesOnSingleImage.Run();
+            //RecognizeBarcodeFromPDFDocuments.Run();
+            //RecognizeBarcodeFromWordDocument.Run();
+            //SaveBarCodeToMemoryStream.Run();
+
+
             // Stop before exiting
             Console.WriteLine(Environment.NewLine + "Program Finished. Press any key to exit....");
             Console.ReadKey();
@@ -208,6 +226,11 @@ namespace Aspose.BarCode.Examples.CSharp
         public static String GetDataDir_ManageComplexBarcodes()
         {
             return Path.GetFullPath(GetDataDir_Data() + "ManageComplexBarcodes/");
+        }
+
+        public static String GetDataDir_TechnicalArticles()
+        {
+            return Path.GetFullPath(GetDataDir_Data() + "TechnicalArticles/");
         }
 
         private static string GetDataDir_Data()
