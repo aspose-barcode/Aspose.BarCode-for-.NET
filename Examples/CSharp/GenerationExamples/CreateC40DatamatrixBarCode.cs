@@ -10,27 +10,28 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
-namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
+namespace Aspose.BarCode.Examples.CSharp.GenerationExamples
 {
-    class CreateEDIFACTDatamatrixBarCode
+    class CreateC40DatamatrixBarCode
     {
         public static void Run()
         {
-            //ExStart:createEDIFACTdatamatrixbarcode
+            //ExStart:CreateC40DatamatrixBarCode
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Generation();
 
-            // Create an instance of BarcodeGenerator  class
+            // Create an instance of BarCodeBuilder class
             // Set codetext value and EncodeType
             BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.DataMatrix, "ABCDEF123456");
 
-            // Set the DataMatrix encoding mode to X12
-            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.EDIFACT;
+            // Set the DataMatrix encoding mode to C40
+            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.C40;
 
             // Save the barcode image
-            generator.Save(dataDir + "EDIFACTdataMatrix.png");
-            //ExEnd:createEDIFACTdatamatrixbarcode
-            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "EDIFACTdataMatrix.png");
+            generator.Save(dataDir + "dataMatrixC40.png");
+            //ExEnd:CreateC40DatamatrixBarCode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "dataMatrixC40.png");
         }
     }
 }

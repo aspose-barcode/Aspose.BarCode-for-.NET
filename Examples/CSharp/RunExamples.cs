@@ -1,11 +1,9 @@
 ﻿using System;
 using System.IO;
-using Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes;
-using Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition;
-using Aspose.BarCode.Examples.CSharp.ManageBarCodeImages;
-using Aspose.BarCode.Examples.CSharp.ManageBarCodes;
 using Aspose.BarCode.Examples.CSharp.ManageComplexBarcodes;
 using Aspose.BarCode.Examples.CSharp.TechnicalArticles;
+using Aspose.BarCode.Examples.CSharp.GenerationExamples;
+using Aspose.BarCode.Examples.CSharp.RecognitionExamples;
 
 namespace Aspose.BarCode.Examples.CSharp
 {
@@ -24,125 +22,111 @@ namespace Aspose.BarCode.Examples.CSharp
 
             //// =====================================================
             //// =====================================================
-            ////  ManageBarCode 
+            ////  Generation Examples
             //// =====================================================
             //// =====================================================
 
+            //// Generate various symbologies examples
+            GenerateCustomBarcodes.Run();
             //CreatePDF417Barcode.Run();
-            //CreateQRbarcode.Run();
+            //CreateQrBarcode.Run();
             //CreateDatamatrixBarcode.Run();
-            //CodetextAppearance.Run();
-            //BarcodeCaption.Run();
+            //CreateTextDatamatrixBarCode.Run();
+            //CreateAustraliaPostBarcode.Run();
             //CreateCode128Barcode.Run();
-            //SpecifySymbologies.Run();
-            //SetCodeText.Run();
-            //ManageCaption.Run();
-            //SetHeightBarcodeBars.Run();
-            //ManageXYDimension.Run();
-            //ChecksumSupplementData.Run();
-            //WideNarrowRatio.Run();
-            //GenerateAustraliaPostBarcode.Run();
-            //CodabarStartStopSymbols.Run();
-            //SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
-            //ExportPropertiesToXML.Run();
-            //DisplayChecksumCharacter.Run();
-            //SetQREncodeMode.Run();
-            //SetQRErrorCorrection.Run();
-            //SetSupplementData.Run();
-            //SpecifySymbology.Run();
-            //CreateCouponExtendedBarcode.Run();
+            //CreatePdf417BarcodeWithTurkishCharacters.Run();
+            //CreatePdf417BarcodeWithChineseCharacters.Run();
+            //CreateUpcaGs1Code128Coupon.Run();
             //CreateUpcaGs1DatabarCoupon.Run();
-            //SetWideNarrowRatio.Run();
-            //GeneratingCodablockF.Run();
-            //GeneratingGS1ForCodablock.Run();
-            //GeneratingGS1_128AI8012Barcode.Run();
+            //CreateCodablockF.Run();
+            //CreateGS1ForCodablock.Run();
+            //CreateGS1_128AI8012Barcode.Run();
+            //CreateSwissPostParcel.Run();
+            //CreateAztecBarcode.Run();
 
-            //ReadType1DBarcode.Run();
-            //ReadPostalTypesBarcode.Run();
-            //ReadMostCommonTypeBarcode.Run();
-
-            //// =====================================================
-            //// =====================================================
-            ////  Manage BarCode Images
-            //// =====================================================
-            //// =====================================================
-
-            //RotateBarcode.Run();
-            //BarcodeImageBorders.Run();
-            //ColorizeAnyPartoftheBarcodeImage.Run();
-            //RotateBarcodeImage.Run();
-            //BarcodeImagePadding.Run();
-            //ControlBarsFillingofOneDBarcodes.Run();
-            //BarcodeImageResolution.Run();
-            //SetSizeUnitForBarcodeImage.Run();
-            //SaveBarcodeImagesToDifferentFormats.Run();
-            //SaveBarcodeImageToStreams.Run();
+            //// Manage barcode size examples
+            //ManageXDimension.Run();
+            //SetHeightBarcodeBars.Run();
+            //SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
             //BarcodeCustomSize.Run();
-            //SetITF14SpecifyBorderType.Run();
-            //SetFrameOut.Run();
+
+            //// Manage codetext examples
+            //SetCodeText.Run();
+            //CodetextAppearance.Run();
             //SetCodetextLocation.Run();
             //SetCodeAlignment.Run();
             //SetForeColorText.Run();
             //SetCodeTextFontFamilyNameAndSize.Run();
             //AddSpaceInBarCodeAndText.Run();
-            //SetFontandColorSetting.Run();
-            //ReadBarcodeFromTIFFImages.Run();
-            //GenerateAndRecognizeUTF8Characters.Run();
+            //HideBarcodeCodeText.Run();
+
+            //// Manage image examples
+            //RotateBarcode.Run();
+            //BarcodeImageBorders.Run();
+            //BarcodeImagePadding.Run();
+            //SetCaptionFontAndColorSetting.Run();
+            ////BarcodeCaption.Run();
+            ////ManageCaption.Run();
+            //ColorizeAnyPartOfTheBarcodeImage.Run();
+            //BarcodeImageResolution.Run();
+            //ImportExportParametersToXML.Run();
+            //SaveBarcodeImageToStreams.Run();
             //GetDLLVersionInformation.Run();
-            //CreatePdf417BarcodeWithTurkishCharacters.Run();
-            //CreatePdf417BarcodeWithChineseCharacters.Run();
-            //SwissPostParcelSymbology.Run();
-            //CreateImageWithExactBarcodeOnly.Run();
-            //CreateAndSetSizeForImageWithBarcode.Run();
+
+            //// Manage barcode's specific parameters
+            //ChecksumSupplementData.Run();
+            //WideNarrowRatio.Run();
+            //CodabarStartStopSymbols.Run();
+            //DisplayChecksumCharacter.Run();
+            //SetQREncodeMode.Run();
+            //SetQRErrorCorrection.Run();
+            //SetSupplementData.Run();
+            //SetWideNarrowRatio.Run();
+            //ControlBarsFillingofOneDBarcodes.Run();
+            //SetSizeUnitForBarcodeImage.Run();
+            //SetITF14SpecifyBorderType.Run();
+            //SetFrameOut.Run();
+            //GenerationExamples.GenerateAndRecognizeUTF8Characters.Run();
             //SwissPostParcelBarcodeWithAdditionalServiceType.Run();
             //SwissPostParcelBarcodeWithInternationalMailType.Run();
             //OptionalExceptionMessageWith1DBarCode.Run();
-            //RecognizeBarcodeWithTurkishCharacters.Run();
-            //RecognizeBarcodeWithChineseCharacters.Run();
-            //ReadAndSortBarcodesInSpecificOrder.Run();
             //SpecifyITF14BorderThickness.Run();
-
-            //// =====================================================
-            //// =====================================================
-            ////  Create-And-Managing-2D-Barcodes
-            //// =====================================================
-            //// =====================================================
-
-            //Create2DBarcodes.Run();
-            //CreateAztecbarcode.Run();
-            //CreateBarCodeWithImageInsteadOfCodeText.Run();
+            ////CreateBarCodeWithImageInsteadOfCodeText.Run();
             //CreateC40DatamatrixBarCode.Run();
             //CreateEnCodeDatamatrixBarCode.Run();
             //CreateMultipleMacroPdf417.Run();
-            //CreateSimpleDatamatrixBarCode.Run();
-            //CreateTextDatamatrixBarCode.Run();
             //CustomEncodingModeInDataMatrix.Run();
-            //DetectUnicodeEncoding.Run();
+            //GenerationExamples.DetectUnicodeEncoding.Run();
             //EncodeMicroQRCode.Run();
             //EncodeQRCode.Run();
             //EncodeQRCodEInECIMode.Run();
             //ErrorCorrectionLevel.Run();
             //FNC1FirstPositionInExtendedMode.Run();
             //FNC1SecondPositionInExtendedMode.Run();
-            //GenerateCustomBarcodes.Run();
-            //HideBarcodeCodeText.Run();
-            //ImportExportBarcodeToXML.Run();
             //ManagePDF417Barcode.Run();
             //MultiECIModeInExtendedMode.Run();
-            //ReduceCodeTextFontSize.Run();
             //SetAspectRatio.Run();
             //SettingQRVersion.Run();
             //UseAztecErrorCorrection.Run();
             //UseEncodeModeDatamatrixbarcode.Run();
             //CreateX12DatamatrixBarCode.Run();
             //CreateEDIFACTDatamatrixBarCode.Run();
+            //UseEncodeModeDatamatrixBarcode.Run();
+
 
             //// =====================================================
             //// =====================================================
-            ////  ManageAndOptimizeBarcodeRecognition
+            ////  Recognition Examples
             //// =====================================================
             //// =====================================================
 
+            //ReadType1DBarcode.Run();
+            //ReadPostalTypesBarcode.Run();
+            //RecognizeBarcodeWithTurkishCharacters.Run();
+            //RecognizeBarcodeWithChineseCharacters.Run();
+            //ReadAndSortBarcodesInSpecificOrder.Run();
+            //ReadMostCommonTypeBarcode.Run();
+            //ReadBarcodeFromTIFFImages.Run();
             //ScanBarCodePicture.Run();
             //SupportImageFormat.Run();
             //RecognizeSpecificBarcodeSymbology.Run();
@@ -159,15 +143,16 @@ namespace Aspose.BarCode.Examples.CSharp
             //GetBarCodeRegionInformationfromImage.Run();
             //GetAllPossible1DBarcodesfromImage.Run();
             //GetBarCodeRecognitionQualityInPercent.Run();
+            //RecognitionExamples.GenerateAndRecognizeUTF8Characters.Run();
             //SwitchBarcodeRecognitionModes.Run();
             //OptimizingBarCodeRecognitionProcess.Run();
-            //ManualHints.Run();
+            //RecognitionExamples.DetectUnicodeEncoding.Run();
             //ReadMultipleBarcodeRegions.Run();
             //ECCTypeToEnCodeBarcode.Run();
             //DetectDecoratedDatamatrix.Run();
             //BarCodeRecognitionFilters.Run();
             //BarcodeReaderSetBarcodeImage.Run();
-            //SingleWipedBarsInPattern.Run();
+
 
             //// =====================================================
             //// =====================================================
@@ -177,6 +162,7 @@ namespace Aspose.BarCode.Examples.CSharp
 
             //GenerateComplexBarcodes.Run();
             //ReadComplexBarcodes.Run();
+
 
             //// =====================================================
             //// =====================================================
@@ -200,39 +186,32 @@ namespace Aspose.BarCode.Examples.CSharp
             Console.ReadKey();
         }
 
-        public static String GetDataDir_ManageBarCodes()
+        public static String GetDataDir_Generation()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "ManageBarCodes/");
+            var directory = Path.GetFullPath(GetDataDir_Data() + "Generation/");
+            Directory.CreateDirectory(directory);
+            return directory;
         }
 
-        public static String GetDataDir_ManageBarCodesImages()
+        public static String GetDataDir_Recognition()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "ManageBarcodeImages/");
-        }
-
-        public static String GetDataDir_CreateAndManage2DBarCodes()
-        {
-            return Path.GetFullPath(GetDataDir_Data() + "CreateAndManageTwoDBarcodes/");
-        }
-
-        public static string GetDataDir_ManageV3BarcodeGenerator()
-        {
-            return Path.GetFullPath(GetDataDir_Data() + "ManageV3BarcodeGenerator/");
-        }
-
-        public static String GetDataDir_ManageAndOptimizeBarcodeRecognition()
-        {
-            return Path.GetFullPath(GetDataDir_Data() + "ManageAndOptimizeBarcodeRecognition/");
+            var directory = Path.GetFullPath(GetDataDir_Data() + "Recognition/");
+            Directory.CreateDirectory(directory);
+            return directory;
         }
 
         public static String GetDataDir_ManageComplexBarcodes()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "ManageComplexBarcodes/");
+            var directory = Path.GetFullPath(GetDataDir_Data() + "ManageComplexBarcodes/");
+            Directory.CreateDirectory(directory);
+            return directory;
         }
 
         public static String GetDataDir_TechnicalArticles()
         {
-            return Path.GetFullPath(GetDataDir_Data() + "TechnicalArticles/");
+            var directory = Path.GetFullPath(GetDataDir_Data() + "TechnicalArticles/");
+            Directory.CreateDirectory(directory);
+            return directory;
         }
 
         private static string GetDataDir_Data()

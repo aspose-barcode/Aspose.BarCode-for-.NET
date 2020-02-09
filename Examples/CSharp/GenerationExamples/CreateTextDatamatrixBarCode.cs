@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing.Imaging;
+﻿using System.Drawing.Imaging;
 using Aspose.BarCode.Generation;
 
 /*
@@ -10,27 +9,28 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
-namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
+namespace Aspose.BarCode.Examples.CSharp.GenerationExamples
 {
-    class CreateEDIFACTDatamatrixBarCode
+    class CreateTextDatamatrixBarCode
     {
         public static void Run()
         {
-            //ExStart:createEDIFACTdatamatrixbarcode
+            //ExStart:CreateEnCodeDatamatrixBarCode
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Generation();
 
-            // Create an instance of BarcodeGenerator  class
+            // Create an instance of BarcodeGenerator class
             // Set codetext value and EncodeType
-            BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.DataMatrix, "ABCDEF123456");
+            BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.DataMatrix, "abcdef123456");
 
-            // Set the DataMatrix encoding mode to X12
-            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.EDIFACT;
+            // Set the DataMatrix encoding mode to Text encodation scheme 
+            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Text;
 
             // Save the barcode image
-            generator.Save(dataDir + "EDIFACTdataMatrix.png");
-            //ExEnd:createEDIFACTdatamatrixbarcode
-            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "EDIFACTdataMatrix.png");
+            generator.Save(dataDir + "dataMatrixText.png");
+            
+            //ExEnd:CreateEnCodeDatamatrixBarCode
         }
     }
 }

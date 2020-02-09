@@ -10,28 +10,24 @@ install it and then add its reference to this project. For any issues, questions
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
 
-namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
+namespace Aspose.BarCode.Examples.CSharp.GenerationExamples
 {
-    class CreateX12DatamatrixBarCode
+    class SetCodeText
     {
         public static void Run()
         {
-            //ExStart:createX12datamatrixbarcode
+            // ExStart:SetCodeText  
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_Generation();
 
-            // Create an instance of BarcodeGenerator  class
-            // Set codetext value and EncodeType
-            BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.DataMatrix, "ABCDEF123456");
+            // Instantiate barcode object and set CodeTExt
+            BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128);
+            generator.CodeText = "1234567";
 
-            // Set the DataMatrix encoding mode to X12
-            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ANSIX12;
-
-            // Save the barcode image
-            generator.Save(dataDir + "X12dataMatrix.png");
-            //ExEnd:createX12datamatrixbarcode
-            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "X12dataMatrix.png");
+            // Save the image to your system and set its image format to Jpeg
+            generator.Save(dataDir + "barcode-codetext_out.jpg", BarCodeImageFormat.Jpeg);
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "barcode-codetext_out.jpg");
+            // ExEnd:SetCodeText  
         }
     }
 }
-
