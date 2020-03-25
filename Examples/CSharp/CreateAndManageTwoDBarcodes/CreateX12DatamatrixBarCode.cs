@@ -12,25 +12,25 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
 {
-    class CreateC40DatamatrixBarCode
+    class CreateX12DatamatrixBarCode
     {
         public static void Run()
         {
-            //ExStart:createc40datamatrixbarcode
+            //ExStart:createX12datamatrixbarcode
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_CreateAndManage2DBarCodes();
 
             // Create an instance of BarcodeGenerator  class
             // Set codetext value and EncodeType
-            BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix, "ABCDEF123456");
+            BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.DataMatrix, "ABCDEF123456");
 
-            // Set the DataMatrix encoding mode to C40
-            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.C40;
+            // Set the DataMatrix encoding mode to X12
+            generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.ANSIX12;
 
             // Save the barcode image
-            generator.Save(dataDir + "dataMatrixC40.png");
-            //ExEnd:createc40datamatrixbarcode
-            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "dataMatrixC40.png");
+            generator.Save(dataDir + "X12dataMatrix.png");
+            //ExEnd:createX12datamatrixbarcode
+            Console.WriteLine(Environment.NewLine + "Barcode saved at " + dataDir + "X12dataMatrix.png");
         }
     }
 }

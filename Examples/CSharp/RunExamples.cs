@@ -134,6 +134,8 @@ namespace Aspose.BarCode.Examples.CSharp
             //SettingQRVersion.Run();
             //UseAztecErrorCorrection.Run();
             //UseEncodeModeDatamatrixbarcode.Run();
+            //CreateX12DatamatrixBarCode.Run();
+            //CreateEDIFACTDatamatrixBarCode.Run();
 
             //// =====================================================
             //// =====================================================
