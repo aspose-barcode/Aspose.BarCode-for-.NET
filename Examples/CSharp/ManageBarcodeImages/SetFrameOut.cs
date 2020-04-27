@@ -22,7 +22,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.ITF14, "00850006000227");
             
             // Set Different properties
-            generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
+            generator.Parameters.AutoSizeMode = AutoSizeMode.Nearest;
             generator.Parameters.Barcode.ITF.ItfBorderType = ITF14BorderType.FrameOut;
             generator.Parameters.Barcode.CodeTextParameters.Font.FamilyName = "OCR B Std";
             generator.Parameters.Barcode.CodeTextParameters.Font.Size.Point = 8;

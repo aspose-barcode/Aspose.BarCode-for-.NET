@@ -25,7 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
             using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128))
             {
                 generator.Parameters.BackColor = Color.Yellow;
-                generator.Parameters.Barcode.ForeColor = Color.Blue;
+                generator.Parameters.Barcode.BarColor = Color.Blue;
                 generator.Parameters.Border.Color = Color.Red;
                 generator.Parameters.Barcode.CodeTextParameters.Color = Color.Red;
                 generator.Save(dst, BarCodeImageFormat.Jpeg);

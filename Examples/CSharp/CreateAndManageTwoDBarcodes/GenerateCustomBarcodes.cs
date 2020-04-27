@@ -50,9 +50,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             //xDimension, AspectRatio, etc to fit barcode into desired size.
             using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "Aspose.BarCode sample"))
             {
-                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
-                generator.Parameters.Barcode.BarCodeWidth.Pixels = 200;
-                generator.Parameters.Barcode.BarCodeHeight.Pixels = 200;
+                generator.Parameters.AutoSizeMode = AutoSizeMode.Nearest;
+                generator.Parameters.ImageWidth.Pixels = 200;
+                generator.Parameters.ImageHeight.Pixels = 200;
                 generator.Save(dataDir + "GenerateBarcodeWithRestrictedBarcodeSize_out.png");
             }
             //ExEnd: GenerateBarcodeWithRestrictedBarcodeSize
@@ -82,8 +82,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
                 generator.Parameters.Barcode.XDimension.Pixels = 3;
                 generator.Parameters.Barcode.QR.AspectRatio = 1.5f;
                 //generator.RecalculateValues();
-                Console.WriteLine("Width = " + generator.Parameters.Barcode.BarCodeWidth.Pixels);
-                Console.WriteLine("Height = " + generator.Parameters.Barcode.BarCodeWidth.Pixels);
+                Console.WriteLine("Width = " + generator.Parameters.ImageWidth.Pixels);
+                Console.WriteLine("Height = " + generator.Parameters.ImageWidth.Pixels);
             }
             //ExEnd: GetGeneratedBarcodeSize
         }
@@ -93,9 +93,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             //ExStart: UnitBasedBarcodeGenerateion
             using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.QR, "Aspose.BarCode sample"))
             {
-                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
-                generator.Parameters.Barcode.BarCodeWidth.Millimeters = 20;
-                generator.Parameters.Barcode.BarCodeHeight.Millimeters = 20;
+                generator.Parameters.AutoSizeMode = AutoSizeMode.Nearest;
+                generator.Parameters.ImageWidth.Millimeters = 20;
+                generator.Parameters.ImageHeight.Millimeters = 20;
                 generator.Save(dataDir + "for_display_out.png");
 
                 generator.Parameters.Resolution = 300;
@@ -151,9 +151,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             {
                 generator.CodeText = "514141100906(01)88898765432109";
 
-                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Interpolation;
-                generator.Parameters.Barcode.BarCodeWidth.Pixels = 500;
-                generator.Parameters.Barcode.BarCodeHeight.Pixels = 200;
+                generator.Parameters.AutoSizeMode = AutoSizeMode.Interpolation;
+                generator.Parameters.ImageWidth.Pixels = 500;
+                generator.Parameters.ImageHeight.Pixels = 200;
 
                 generator.Save(dataDir + "UpcaGs1Code128Coupon_Interpolation_500x200.png");
             }
@@ -166,9 +166,9 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             //ExStart: ImplementInterpolationAutoSizemode
             using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.DataMatrix))
             {
-                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Interpolation;
-                generator.Parameters.Barcode.BarCodeWidth.Millimeters = 50;
-                generator.Parameters.Barcode.BarCodeHeight.Inches = 1.3f;
+                generator.Parameters.AutoSizeMode = AutoSizeMode.Interpolation;
+                generator.Parameters.ImageWidth.Millimeters = 50;
+                generator.Parameters.ImageHeight.Inches = 1.3f;
 
                 Bitmap barcode = generator.GenerateBarCodeImage();
                 barcode.Save(dataDir + "DataMatrix.png");
@@ -182,8 +182,8 @@ namespace Aspose.BarCode.Examples.CSharp.CreateAndManageTwoDBarcodes
             //ExStart: GenerateCode16KBarCode
             using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code16K))
             {
-                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
-                generator.Parameters.Barcode.BarCodeWidth.Pixels = 100;
+                generator.Parameters.AutoSizeMode = AutoSizeMode.Nearest;
+                generator.Parameters.ImageWidth.Pixels = 100;
                 generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
                 generator.Save(dataDir + "Code16K_Nearest.png");
             }

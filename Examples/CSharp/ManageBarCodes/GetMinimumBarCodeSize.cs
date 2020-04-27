@@ -24,11 +24,11 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             using (BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567890"))
             {
                 // Set Auto size to None
-                generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.None;
+                generator.Parameters.AutoSizeMode = AutoSizeMode.None;
 
                 // Set image height & width to minimum
-                generator.Parameters.Barcode.BarCodeWidth.Millimeters = 1;
-                generator.Parameters.Barcode.BarCodeHeight.Millimeters = 1;
+                generator.Parameters.ImageWidth.Millimeters = 1;
+                generator.Parameters.ImageHeight.Millimeters = 1;
 
                 // Save the barcode image
                 generator.Save(dataDir + "barcode-image-minimum_out.jpeg", BarCodeImageFormat.Jpeg);

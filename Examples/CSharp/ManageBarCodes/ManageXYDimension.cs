@@ -36,7 +36,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Instantiate barcode object and set differnt barcode properties
             using (BarcodeGenerator  generator1 = new BarcodeGenerator (EncodeTypes.Pdf417, "1234567"))
             {
-                generator1.Parameters.Barcode.BarCodeHeight.Millimeters = 4;
+                generator1.Parameters.ImageHeight.Millimeters = 4;
 
                 // Save the image to your system and set its image format to Jpeg
                 generator1.Save(dataDir + "pdf417-YDimensionChanged_out.jpg", BarCodeImageFormat.Jpeg);

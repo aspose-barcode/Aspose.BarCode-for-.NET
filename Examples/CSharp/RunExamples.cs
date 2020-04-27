@@ -56,7 +56,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //GeneratingCodablockF.Run();
             //GeneratingGS1ForCodablock.Run();
             //GeneratingGS1_128AI8012Barcode.Run();
-
+            GenerateAPatchCode.Run();
             //ReadType1DBarcode.Run();
             //ReadPostalTypesBarcode.Run();
             //ReadMostCommonTypeBarcode.Run();

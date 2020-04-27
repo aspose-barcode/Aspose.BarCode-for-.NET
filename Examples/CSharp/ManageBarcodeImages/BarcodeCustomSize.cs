@@ -20,9 +20,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
 
             // Instantiate barcode object and set CodeText & Barcode Symbology
             BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code39Standard, "1234567890");
-            generator.Parameters.Barcode.AutoSizeMode = AutoSizeMode.Nearest;
-            generator.Parameters.Barcode.BarCodeHeight.Millimeters = 50;
-            generator.Parameters.Barcode.BarCodeWidth.Millimeters = 120;
+            generator.Parameters.AutoSizeMode = AutoSizeMode.Nearest;
+            generator.Parameters.ImageHeight.Millimeters = 50;
+            generator.Parameters.ImageWidth.Millimeters = 120;
 
             generator.Save(dataDir + "barcode-custom-size_out.jpg");
             // ExEnd:BarcodeCustomSize   
