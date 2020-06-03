@@ -43,7 +43,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //WideNarrowRatio.Run();
             //GenerateAustraliaPostBarcode.Run();
             //CodabarStartStopSymbols.Run();
-            //SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
+            SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
             //ExportPropertiesToXML.Run();
             //DisplayChecksumCharacter.Run();
             //SetQREncodeMode.Run();
@@ -193,6 +193,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //RecognizeBarcodeFromPDFDocuments.Run();
             //RecognizeBarcodeFromWordDocument.Run();
             //SaveBarCodeToMemoryStream.Run();
+            BarcodeWithDatabase.Run();
 
 
             // Stop before exiting
