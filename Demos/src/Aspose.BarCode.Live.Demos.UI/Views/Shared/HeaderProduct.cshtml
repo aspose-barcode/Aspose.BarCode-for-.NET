@@ -1,0 +1,4 @@
+﻿@model ResourcesModel
+
+<h1 id="ProductTitle">@(Model.ProductTitle ?? Model.Resources[Model.ProductTitleKey])</h1>
+<h2 id="ProductTitleSub">@(Model.ProductTitleSub ?? Model.Resources[Model.ProductTitleSubKey])</h2>

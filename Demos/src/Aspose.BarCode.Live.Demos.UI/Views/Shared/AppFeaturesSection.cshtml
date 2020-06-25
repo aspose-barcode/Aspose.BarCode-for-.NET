@@ -1,0 +1,33 @@
+﻿@using Aspose.Barcode.Live.Demos.UI.Models.Common
+@using Aspose.Barcode.Live.Demos.UI.Resources
+@model AppFeaturesSectionModel
+
+<section class="pt-5 app-features-section">
+	<div class="container tc pt-5">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="imgcircle fasteasy">
+					<img src="../../img/fast-easy.png" alt="@Model.Feature1" />
+				</div>
+				<h4>@Model.Feature1</h4>
+				<p>@Model.Feature1Description</p>
+			</div>
+
+			<div class="col-md-4">
+				<div class="imgcircle anywhere">
+					<img src="../../img/anywhere.png" alt="@Model.Feature2" />
+				</div>
+				<h4>@Model.Feature2</h4>
+				<p>@(Model.Feature2Description)</p>
+			</div>
+
+			<div class="col-md-4">
+				<div class="imgcircle quality">
+					<img src="../../img/quality.png" alt="@Model.Feature3" />
+				</div>
+				<h4>@Model.Feature3</h4>
+				<p>@AppStrings.PoweredBy <a target="_blank" id="PoweredBy" href="@($"https://products.aspose.com/{Model.Product}")" rel="noopener">@Model.ProductFullName</a>. @(Model.Feature3Description)</p>
+			</div>
+		</div>
+	</div>
+</section>

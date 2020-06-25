@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="@ViewBag.MetaDescription" />
+    <meta name="keywords" content="@ViewBag.MetaKeywords" />
+    <meta name="theme-color" content="#3C7DE7" />
+
+    @if (Request.Url.AbsoluteUri.Contains("ocr"))
+    {
+        <link rel="manifest" href="/manifest_ocr.json">
+    }
+    @if (Request.Url.AbsoluteUri.Contains("omr"))
+    {
+        <link rel="manifest" href="/manifest_omr.json">
+    }
+    @if (Request.Url.AbsoluteUri.Contains("ocr") || Request.Url.AbsoluteUri.Contains("omr"))
+    {
+        <meta property="og:title" content="@ViewBag.Title">
+        <meta property="og:site_name" content="Free File Format Apps">
+        <meta property="og:url" content="@ViewBag.MetaUrl">
+        <meta property="og:description" content="@ViewBag.MetaDescription">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="@ViewBag.MetaImageUrl">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@ViewBag.MetaUrl">
+        <meta name="twitter:title" content="@ViewBag.Title">
+        <meta name="twitter:description" content="@ViewBag.MetaDescription">
+        <meta name="twitter:image" content="@ViewBag.MetaImageUrl" />
+    }
+
+    @if (ViewBag.JsonLdBreadcrumbLists != null)
+    {
+        <script type="application/ld+json">
+            @Html.Raw(ViewBag.JsonLdBreadcrumbLists)
+        </script>
+    }
+    @if (ViewBag.JsonLd != null)
+    {
+        <script type="application/ld+json">
+            @Html.Raw(ViewBag.JsonLd)
+        </script>
+    }
+    @if (ViewBag.JsonLdFaq != null)
+    {
+        <script type="application/ld+json">
+            @Html.Raw(ViewBag.JsonLdFaq)
+        </script>
+    }
+    @if (ViewBag.JsonLdHowTo != null)
+    {
+        <script type="application/ld+json">
+            @Html.Raw(ViewBag.JsonLdHowTo)
+        </script>
+    }
+
+    <link href="@Url.Content("~/img/favicon.ico")" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+    <!-- Bootstrap & Font CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" type="text/css" />
+
+    <!-- Common CSS -->
+    @*<link rel="stylesheet" href="https://cms.dynabic.com/templates/aspose/css/common.css" type="text/css" />*@
+    <link type="text/css" rel="stylesheet" href="/css/common.min.css" />
+    <link rel="stylesheet" href="https://products.aspose.app/css/error404.css" type="text/css" />
+
+    <!-- Dynabic.Menu CSS -->
+    <script src="https://menu.containerize.com/Scripts/Containerize.Menu.min.js"></script>
+    @*<link href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" rel="stylesheet" type="text/css" />*@
+    <link type="text/css" rel="stylesheet" href="/css/AsposePtyLtdMenu.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    @*  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>*@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="~/css/asposeapp.min.css" type="text/css" />
+
+    @if (IsSectionDefined("styles"))
+    {
+        @RenderSection("styles", false)
+    }
+
+    
+
+
+</head>
+<body>
+    <div id='DynabicMenuInnerDiv'></div>
+
+    @RenderBody()
+
+    <div id='DynabicMenuFooter'></div>
+
+    <script>
+        LoadMenu("AsposeApp");
+    </script>
+
+    @if (IsSectionDefined("scripts"))
+    {
+        @RenderSection("scripts", false)
+    }
+
+</body>
+</html>

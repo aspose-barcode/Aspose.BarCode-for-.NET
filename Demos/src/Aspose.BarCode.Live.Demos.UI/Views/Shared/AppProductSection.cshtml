@@ -1,0 +1,24 @@
+﻿
+@model Aspose.Barcode.Live.Demos.UI.Models.Common.AppProductSectionModel
+<section class="app-product-section pt-5 tl">
+	<a class="anchor" name=@Model.Anchor></a>
+	<div class="container tc pt-5">
+		<div class="row">
+			<div class="col-md-9">
+				<h2 id="AsposeProductTitle">@Model.PageProductTitle</h2>
+				<ul>
+					@if (Model.AppFeatures != null)
+					{
+						foreach (var feature in Model.AppFeatures)
+						{
+							<li>@feature</li>
+						}
+					}
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<img id="ProductImage" src="~/img/aspose-@Model.Product-app.png" alt="@Model.PageProductTitle " />
+			</div>
+		</div>
+	</div>
+</section>

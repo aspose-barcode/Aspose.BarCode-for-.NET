@@ -1,0 +1,104 @@
+﻿@using Aspose.Barcode.Live.Demos.UI.Helpers
+@using  Aspose.Barcode.Live.Demos.UI.Models
+@using Aspose.Barcode.Live.Demos.UI.Models.Common
+@using Aspose.Barcode.Live.Demos.UI.Resources
+@model  Aspose.Barcode.Live.Demos.UI.Models.BarcodeRecognizeViewModel
+@{
+	ViewBag.Title = Model.BarcodeRecognizePageTitle;
+	ViewBag.MetaDescription = Model.BarcodeRecognizeMetaDescription;
+	ViewBag.MetaKeywords = Model.BarcodeRecognizeMetaKeywords;
+	ViewBag.JsonLdBreadcrumbLists = Model.JsonLdBreadcrumbLists;
+	ViewBag.JsonLdFaq = JsonLdModels.PrepareJsonLdProduct(
+		Model.BarcodeRecognizePageTitle,
+		"https://products.aspose.app/img/barcode/aspose_recognize-app-48.png",
+		Model.BarcodeRecognizeMetaDescription);
+	ViewBag.JsonLdHowTo = JsonLdModels.PrepareJsonLdHowTo(
+		HowToSectionModel.BarcodeRecognize,
+		"https://products.aspose.app/img/barcode/aspose_recognize-app-48.png",
+		Model.BarcodeRecognizePageTitle,
+		Model.BarcodeRecognizeMetaDescription,
+		"HowToRead");
+	Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+@section scripts {
+	@Scripts.Render("~/scripts/Shared/Alert.min.js")
+	
+	@Scripts.Render("~/scripts/Barcode/barcodeRecognize.min.js")
+}
+@section styles {
+	
+	<link href="/css/barcode.min.css" rel="stylesheet" type="text/css" />
+}
+<div class="container-fluid asposetools pb5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 pt-5 pb-5" style="min-height:450px">
+				<a href="/default" class="btn btn-success btn-lg">Home</a> <br />
+				<h1 id="ProductTitle">@Model.BarcodeRecognizeAppTitle</h1>
+				<h2 id="ProductTitleSub">@Model.BarcodeRecognizeAppTitleSub</h2>
+				<div id="WorkPlaceHolder">
+					<div class="barcodeAppRow">
+						<div id="inputTypesContainer" class="barcodeSizes btn-group btn-group-lg " role="group">
+							<label for="barcodeUploadFile" class="custom-file-upload btn btn-secondary selected" onclick="selectCamera(1)">
+								<i></i>@AppStrings.UploadFile
+							</label>
+							<input id="barcodeUploadFile" style="display: none" type="file" accept="image/*" />
+							<label for="barcodeCaptureFile" class="custom-file-upload btn btn-secondary" onclick="selectCamera(3)">
+								<i></i>@AppStrings.Camera
+							</label>
+							<input id="barcodeCaptureFile" style="display: none" type="file" accept="image/*" capture />
+						</div>
+						<div id="selectedFileName">@AppStrings.NoFileSelected</div>
+					</div>
+					<div class="barcodeAppRow">
+						<div id="recognizeQualityContainer" class="barcodeSizes btn-group btn-group-lg " role="group">
+							<button type="button" value="1" onclick="selectQuality(1)" class="btn btn-secondary">@AppStrings.Fast</button>
+							<button type="button" value="2" onclick="selectQuality(2)" class="btn btn-secondary selected">@AppStrings.Normal</button>
+							<button type="button" value="3" onclick="selectQuality(3)" class="btn btn-secondary">@AppStrings.Excelent</button>
+						</div>
+					</div>
+					<div class="barcodeAppRow">
+						<div class="btn-group">
+							<button id="barcodeTypeDdl" value="@Model.BarcodeTypes[0].GroupName" aria-expanded="true" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle" role="button">
+								<span>@Model.BarcodeTypes[0].GroupTitle</span>
+							</button>
+							<ul class="barcode-menu dropdown-menu">
+								@foreach (var barcodeType in Model.BarcodeTypes)
+								{
+									<li onclick="selectBarcodeType('@barcodeType.GroupName', '@barcodeType.GroupTitle', '@AppStrings.BarcodeRecognizeAppTitle', '@AppStrings.BarcodeRecognizeAppTitleSub')">
+										<a>
+											@barcodeType.GroupTitle
+										</a>
+									</li>
+								}
+							</ul>
+						</div>
+						<div id="barcodeTypeDescription">
+							@Html.Raw(Model.BarcodeTypes[0].FirstTypeInGroupDescription)
+						</div>
+					</div>
+					<a class="anchor" name="result"></a>
+					<div class="barcodeAppRow">
+						<button type="button" onclick="recognizeBarcode()" class="btn btn-success btn-lg">@AppStrings.BarcodeRecognize</button>
+					</div>
+					<div class="barcodeAppRow">
+						<div id="recognitionLoader" class="spinner-border text-success" role="status">
+							<span class="sr-only">Loading...</span>
+						</div>
+						<div id="recognitionResult">
+							<pre></pre>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@{
+	
+	Html.RenderPartial("AppProductSection", AppProductSectionModel.BarcodeRecognize);
+	Html.RenderPartial("HowToSection", HowToSectionModel.BarcodeRecognize);
+	Html.RenderPartial("AppFeaturesSection", AppFeaturesSectionModel.BarcodeRecognize);
+
+
+}

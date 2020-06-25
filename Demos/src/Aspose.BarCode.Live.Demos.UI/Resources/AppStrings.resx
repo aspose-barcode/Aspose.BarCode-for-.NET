@@ -1,0 +1,1346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="APIResponseTime" xml:space="preserve">
+    <value>API response timeout</value>
+  </data>
+  <data name="OMRProductName" xml:space="preserve">
+    <value>OMR</value>
+  </data>
+  <data name="OMRProductFullName" xml:space="preserve">
+    <value>Aspose.OMR</value>
+  </data>
+  <data name="OMRCreateAppName" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="OMRCreateAnswerSheetAppNameRef" xml:space="preserve">
+    <value>Create-Answer-Sheet</value>
+  </data>
+  <data name="OMRCreateAnswerSheetAppName" xml:space="preserve">
+    <value>Create Answer Sheet</value>
+  </data>
+  <data name="OmrGradeCalculatorOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Grade Calculator&lt;/strong&gt; is a free online app to easily calculate quiz, test and assignments scores from any device and platform. 
+    Enter the total number of questions and the number of wrong answers to get the detailed score information. 
+    This grading tool supports two grading systems: standard 5 points and 12 points extended with +/- marks.
+    Use grading chart for a quick reference of grades distribution.</value>
+  </data>
+  <data name="OmrCreateOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Create&lt;/strong&gt; is a free online app that allows creating customized OMR images from any device and platform. 
+    You can choose to make answer sheets, survey forms or test forms. You can save OMR images in PDF or PNG format.
+    Use &lt;a href="scan" target="_self"&gt; Aspose.OMR Scan &lt;/a&gt;to get results from photos and scans of filled forms.</value>
+  </data>
+  <data name="OmrCreateAnswerSheetOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Create Answer Sheet&lt;/strong&gt; is a free online app that allows creating customized answer sheet forms from any device and platform. 
+    Answer sheets can be used in a test, examination, quiz or assignments for quick and easy marking students' answers.
+    You can save Answer Sheet in PDF or PNG format. Use &lt;a href="scan-answer-sheet" target="_self"&gt; Aspose.OMR Scan Answer Sheet &lt;/a&gt;to get results from photos and scans of filled forms.</value>
+  </data>
+  <data name="OmrCreateAnswerSheetOverview2" xml:space="preserve">
+    <value>This free application is intended to build any kind of OMR sheets like admission forms, feedbacks, assessments, multiple choice question examinations.
+    Students mark their answers, or other personal information, by darkening circles marked on a pre-printed sheet.
+    Due to its extremely low error rate, low cost and ease-of-use, OMR is a popular method of tallying votes.
+    All OMR forms created by our software are printable, so you can use them offline for data filling by your clients.
+    It is extremely important to print sheets as they were designed, so PDF format is the best choice for this purpose.</value>
+  </data>
+  <data name="OmrCreateAnswerSheetOverview3" xml:space="preserve">
+    <value>Aspose.OMR Create Answer Sheet allows flexibility in building your own customized answer sheets.
+    We offer a variety of sample forms that are available for you to create in our application.
+    These sample forms can give you a great foundation for creating your own forms.
+    It's absolutely free application though it has some restrictions related to questions count and overall volume of printable information.
+    See video below to get quick insight about an answer sheet creation with our app.</value>
+  </data>
+  <data name="OmrCreateSurveyOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Create Survey&lt;/strong&gt; is a free online app that allows creating survey forms from any device and platform. 
+    Frequently used customer satisfaction survey is designed for companies and advertising agencies to learn more about your customer and your product.
+    Created survey can be saved in PDF and PNG formats. Use &lt;a href="scan-survey" target="_self"&gt; Aspose.OMR Scan Survey&lt;/a&gt; to get results from photos and scans of filled survey forms.</value>
+  </data>
+  <data name="OmrCreateTestOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Create Test&lt;/strong&gt; is a free online app that allows creating test forms from any device and platform. 
+    Test form contains various elements, including Grid ID, text questions and Answer sheet section.
+    Created test can be saved in PDF and PNG formats. Use &lt;a href="scan-test" target="_self"&gt; Aspose.OMR Scan Test&lt;/a&gt; to get results from photos and scans of filled testing forms.</value>
+  </data>
+  <data name="OmrScanOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Scan&lt;/strong&gt; is a free online app that allows scanning omr images that were created using &lt;a href="create" target="_self"&gt;Create&lt;/a&gt; app.
+    Upload photo or scan of your OMR sheet, select the type of omr template and it will be recognized with high precision. 
+    Recognition results can be copied or saved in popular formats: CSV, JSON. 
+    Scan Answer Sheet works on any device and platform and has no extra requirements.</value>
+  </data>
+  <data name="OmrScanAnswerSheetOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Scan Answer Sheet&lt;/strong&gt; is a free online app that allows scanning answer sheet forms that were created using &lt;a href="create-answer-sheet" target="_self"&gt;Create Answer Sheet&lt;/a&gt; app.
+    Upload photo or scan of your OMR sheet, select the amount of questions on page and it will be recognized with high precision. 
+    Recognition results can be copied or saved in popular formats: CSV, JSON. 
+    Scan Answer Sheet works on any device and platform and has no extra requirements.</value>
+  </data>
+  <data name="OmrScanAnswerSheetOverview2" xml:space="preserve">
+    <value>On this step you are already have printed and filled answer sheets created on the previous &lt;a href="create-answer-sheet" target="_self"&gt;step&lt;/a&gt; in our free Aspose.OMR Create Answer Sheet application.
+    Now it is time to process the forms with this free app. Aspose.OMR Scan Answer Sheet accommodates for human error in filling in bubbles imprecisely — 
+    as long as they do not stray into the other bubbles and the bubble is almost filled, the scanner will detect it as filled in.
+    Optical mark recognition is a time saving process and allows collecting data accurately.
+  </value>
+  </data>
+  <data name="OmrScanSurveyOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Scan Survey&lt;/strong&gt; is a free online app that allows scanning survey forms that were created using &lt;a href="create-survey" target="_self"&gt;Create Survey&lt;/a&gt; app.
+    Upload photo or scan of your OMR survey and it will be recognized with high precision. 
+    Recognition results can be copied or saved in popular formats: CSV, JSON. 
+    Scan Survey works on any device and platform and has no extra requirements.</value>
+  </data>
+  <data name="OmrScanTestOverview" xml:space="preserve">
+    <value>Aspose.OMR &lt;strong&gt;Scan Test&lt;/strong&gt; is a free online app that allows scanning test forms that were created using &lt;a href="create-test" target="_self"&gt;Create Test&lt;/a&gt; app.
+    Upload photo or scan of your OMR test and it will be recognized with high precision. 
+    Recognition results can be copied or saved in popular formats: CSV, JSON. 
+    Scan Test works on any device and platform and has no extra requirements.</value>
+  </data>
+  <data name="OMRCreatePageTitle" xml:space="preserve">
+    <value>OMR Software - Create answer sheet free</value>
+  </data>
+  <data name="OMRCreateAppTitleSub" xml:space="preserve">
+    <value>Instantly create ready to print OMR images from a set of predefined templates: answer sheet, survey and others</value>
+  </data>
+  <data name="OMRCreateButtonContent" xml:space="preserve">
+    <value>Create OMR image</value>
+  </data>
+  <data name="OMRCreateHowToTitle" xml:space="preserve">
+    <value>How to create OMR image</value>
+  </data>
+  <data name="OMRCreateHowToDescription" xml:space="preserve">
+    <value>Create omr image online.</value>
+  </data>
+  <data name="OMRCreateHowToSupplyName" xml:space="preserve">
+    <value>OMR image generator</value>
+  </data>
+  <data name="OMRCreateHowToContent" xml:space="preserve">
+    <value>Choose the template type of OMR image you want to create.
+    For Answer Sheet you can select the number of questions.
+    Choose the file format: PNG or PDF.
+    Click the "Create OMR image" button to start creation process.
+    Click the "Download" button to download the created OMR image.
+    You can now print OMR forms and pass them to the respondents. After that use OMR Scan app to read the filled forms.</value>
+  </data>
+  <data name="OMRCreateHowToNames" xml:space="preserve">
+    <value>Choose template type
+    Select the number of questions
+    Choose output format
+    Create
+    Download
+    Note</value>
+  </data>
+  <data name="OMRScanProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Scan</value>
+  </data>
+  <data name="OMRCreateProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Create</value>
+  </data>
+  <data name="OMRCreateProductSectionFeature1" xml:space="preserve">
+    <value>Create ready to print OMR template</value>
+  </data>
+  <data name="OMRCreateProductSectionFeature2" xml:space="preserve">
+    <value>Create predefined OMR templates for popular tasks (answer sheets, surveys, tests, bubble sheets)</value>
+  </data>
+  <data name="OMRCreateProductSectionFeature3" xml:space="preserve">
+    <value>Supported OMR templates: OMR Answer Sheet, OMR Survey, OMR Test</value>
+  </data>
+  <data name="OMRCreateProductSectionFeature4" xml:space="preserve">
+    <value>Save your OMR images as PNG or PDF</value>
+  </data>
+  <data name="OMRScanProductSectionFeature1" xml:space="preserve">
+    <value>Scan OMR images online and get the recognition results for various OMR templates</value>
+  </data>
+  <data name="OMRScanProductSectionFeature2" xml:space="preserve">
+    <value>Scan OMR images that were created using OMR Create free app</value>
+  </data>
+  <data name="OMRScanProductSectionFeature3" xml:space="preserve">
+    <value>Select the right template type and upload your image</value>
+  </data>
+  <data name="OMRScanProductSectionFeature4" xml:space="preserve">
+    <value>Results can be copied to clipboard or downloaded in chosen format</value>
+  </data>
+  <data name="OMRScanPageTitle" xml:space="preserve">
+    <value>OMR Software - Scan answer sheet free</value>
+  </data>
+  <data name="OMRScanAppTitle" xml:space="preserve">
+    <value>OMR Software free - scan answer sheets, surveys, multiple choice answer sheet</value>
+  </data>
+  <data name="OMRScanAppTitleSub" xml:space="preserve">
+    <value>Scan OMR images by uploading photos or scans of filled OMR forms. Select the corresponding template type that was used in Create application.</value>
+  </data>
+  <data name="OMRScanButton" xml:space="preserve">
+    <value>Scan OMR Image</value>
+  </data>
+  <data name="OMRScanHowToTitle" xml:space="preserve">
+    <value>How to scan OMR image</value>
+  </data>
+  <data name="OMRScanHowToDescription" xml:space="preserve">
+    <value>Scan omr image online.</value>
+  </data>
+  <data name="OMRScanHowToSupplyName" xml:space="preserve">
+    <value>OMR image scanner</value>
+  </data>
+  <data name="OMRScanHowToContent" xml:space="preserve">
+    <value>Click inside the file drop area or use drag&amp;drop to upload photo or scan of filled OMR image.
+    Select the type of template that was used to create your OMR image in OMR Create app.
+    For Answer Sheet, choose the number of questions on page.
+    Select the output format of the recognition results.
+    Click the "Scan OMR image" button to start recognition process.
+    Click the "Download" button to download the recognition results or simply copy them to the clipboard.</value>
+  </data>
+  <data name="OMRScanHowToNames" xml:space="preserve">
+    <value>Upload image
+    Select template type
+    Select questions number
+    Choose output format
+    Scan
+    Download</value>
+  </data>
+  <data name="OMRCreateAnswerSheetShortName" xml:space="preserve">
+    <value>Create Sheet</value>
+  </data>
+  <data name="OMRCreateShortName" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="OMRCreateSurveyAppNameRef" xml:space="preserve">
+    <value>Create-Survey</value>
+  </data>
+  <data name="OMRCreateSurveyAppName" xml:space="preserve">
+    <value>Create Survey</value>
+  </data>
+  <data name="OMRCreateTestAppNameRef" xml:space="preserve">
+    <value>Create-Test</value>
+  </data>
+  <data name="OMRCreateTestAppName" xml:space="preserve">
+    <value>Create Test</value>
+  </data>
+  <data name="OMRCreateAppPageTitle" xml:space="preserve">
+    <value>Create answer sheet free</value>
+  </data>
+  <data name="OMRCreateSurveyAppPageTitle" xml:space="preserve">
+    <value>Create survey free</value>
+  </data>
+  <data name="OMRCreateTestAppPageTitle" xml:space="preserve">
+    <value>Create test free</value>
+  </data>
+  <data name="OMRCreateTestAppPageTitleSub" xml:space="preserve">
+    <value>Instantly create ready to print OMR test form</value>
+  </data>
+  <data name="OMRCreateSurveyAppPageTitleSub" xml:space="preserve">
+    <value>Instantly create ready to print survey</value>
+  </data>
+  <data name="OMRGradeCalculatorAppName" xml:space="preserve">
+    <value>Grade Calculator</value>
+  </data>
+  <data name="OMRGradeCalculatorPanelAppName" xml:space="preserve">
+    <value>Easy Grader</value>
+  </data>
+  <data name="OMRGradeCalculatorShortAppName" xml:space="preserve">
+    <value>Grader</value>
+  </data>
+  <data name="OMRGradeCalculatorAppNameRef" xml:space="preserve">
+    <value>Grade-Calculator</value>
+  </data>
+  <data name="OMRScanAppName" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="OMRScanAnswerSheetAppName" xml:space="preserve">
+    <value>Scan Answer Sheet</value>
+  </data>
+  <data name="OMRScanAnswerSheetShortName" xml:space="preserve">
+    <value>Scan Sheet</value>
+  </data>
+  <data name="OMRScanSurveyAppName" xml:space="preserve">
+    <value>Scan Survey</value>
+  </data>
+  <data name="OMRScanSurveyAppNameRef" xml:space="preserve">
+    <value>Scan-Survey</value>
+  </data>
+  <data name="OMRScanTestAppNameRef" xml:space="preserve">
+    <value>Scan-Test</value>
+  </data>
+  <data name="OMRScanTestAppName" xml:space="preserve">
+    <value>Scan Test</value>
+  </data>
+  <data name="OMRScanAnswerSheetAppNameRef" xml:space="preserve">
+    <value>Scan-Answer-Sheet</value>
+  </data>
+  <data name="OMRCreateMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Create is a free online app that allows creating customized answer sheet, survey and test forms from any device and platform</value>
+  </data>
+  <data name="OMRCreateAnswerSheetMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Create Answer Sheet is a free online app that allows creating customized answer sheet forms from any device and platform.</value>
+  </data>
+  <data name="OMRCreateSurveyMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Create Survey is a free online app that allows creating survey forms from any device and platform.</value>
+  </data>
+  <data name="OMRCreateTestMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Create Test is a free online app that allows creating test forms from any device and platform.</value>
+  </data>
+  <data name="OMRCreateMetaKeywords" xml:space="preserve">
+    <value>Create answer sheet online, omr image generator, omr sheet, survey, test</value>
+  </data>
+  <data name="OMRGradeCalculatorMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Grade Calculator is a free online grading app to easily calculate quiz, test and assignments grades from any device and platform.</value>
+  </data>
+  <data name="OMRSheetDescription1" xml:space="preserve">
+    <value>OMR Software is designed to create answer sheet, multiple choice answer sheet free</value>
+  </data>
+  <data name="OMRSheetDescription2" xml:space="preserve">
+    <value>Create customizable omr sheet, specifying the number of questions from the list: 60, 100, 150 or 200 questions</value>
+  </data>
+  <data name="OMRSheetDescription3" xml:space="preserve">
+    <value>Answer sheet contains only Multiple Choice Question (MCQ) elements, also referred to as ChoiceBoxes</value>
+  </data>
+  <data name="OMRSheetDescription4" xml:space="preserve">
+    <value>Used by educational institutions, such as schools and universities for answering sheet, tests, exams, assessments</value>
+  </data>
+  <data name="OmrSurveyVideoRawHtml" xml:space="preserve">
+    <value>&lt;iframe width="910" height="512" src="https://www.youtube.com/embed/d8_bnGnxPMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="OmrTestVideoRawHtml" xml:space="preserve">
+    <value>&lt;iframe width="910" height="512" src="https://www.youtube.com/embed/MzMHkcE5lFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="OmrCreateAnswerSheetVideoRawHtml" xml:space="preserve">
+    <value>&lt;iframe width="910" height="512" src="https://www.youtube.com/embed/Uv7R7lzkXak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="OmrScanAnswerSheetVideoRawHtml" xml:space="preserve">
+    <value>&lt;iframe width="910" height="512" src="https://www.youtube.com/embed/f_EnXBVf-X0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="OMRSurveyDescription1" xml:space="preserve">
+    <value>Customer satisfaction survey template is designed for conducting surveys to learn more about your customers</value>
+  </data>
+  <data name="OMRSurveyDescription2" xml:space="preserve">
+    <value>Can be used in marketing research by business companies, data collection agencies and advertising agencies</value>
+  </data>
+  <data name="OMRSurveyDescription3" xml:space="preserve">
+    <value>Contains several Text questions and ChoiceBoxes with various amount of answer options</value>
+  </data>
+  <data name="OMRTestDescription1" xml:space="preserve">
+    <value>General purpose test paper that can be customised for any needs</value>
+  </data>
+  <data name="OMRTestDescription2" xml:space="preserve">
+    <value>Can be used by educational institutions, such as schools and universities for tests, exams, assessments or other works</value>
+  </data>
+  <data name="OMRTestDescription3" xml:space="preserve">
+    <value>Showcases the flexibility of generation engine: combine Grid ID, custom Text questions and Answer Sheet</value>
+  </data>
+  <data name="OMRScanMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Scan is a free online app that allows scanning answer sheet, survey and test forms from any device and platform.</value>
+  </data>
+  <data name="OMRScanSurveyMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Scan Survey is a free online app that allows scanning survey forms from any device and platform.</value>
+  </data>
+  <data name="OMRScanTestMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Scan Test is a free online app that allows scanning test forms from any device and platform.</value>
+  </data>
+  <data name="OMRScanAnswerSheetMetaDescription" xml:space="preserve">
+    <value>Aspose OMR Scan Answer Sheet is a free online app designed to scan customized answer sheet forms from any device and platform.</value>
+  </data>
+  <data name="OMRScanMetaKeywords" xml:space="preserve">
+    <value>Scan answer sheet, scan omr image, recognize omr sheet</value>
+  </data>
+  <data name="OMRCreateAnswerSheetPageTitle" xml:space="preserve">
+    <value>OMR Software - Create answer sheet free</value>
+  </data>
+  <data name="OMRCreateSurveyPageTitle" xml:space="preserve">
+    <value>OMR Software - Create survey free</value>
+  </data>
+  <data name="OMRCreateTestPageTitle" xml:space="preserve">
+    <value>OMR Software - Create test free</value>
+  </data>
+  <data name="OMRGradeCalculatorPageTitle" xml:space="preserve">
+    <value>Grade Calculator</value>
+  </data>
+  <data name="OMRGradeCalculatorTitleSub" xml:space="preserve">
+    <value>Easy to use grade calculator to calculate test, quiz and assignment score. This free tool is designed for teachers and students to easily calculate grades.</value>
+  </data>
+  <data name="OMRScanSurveyPageTitle" xml:space="preserve">
+    <value>OMR Software - Scan survey free</value>
+  </data>
+  <data name="OMRScanTestPageTitle" xml:space="preserve">
+    <value>OMR Software - Scan test free</value>
+  </data>
+  <data name="OMRScanAnswerSheetPageTitle" xml:space="preserve">
+    <value>OMR Software - Scan answer sheet free</value>
+  </data>
+  <data name="OMRCreateAnswerSheetAppTitleSub" xml:space="preserve">
+    <value>Instantly create ready to print OMR answer sheet</value>
+  </data>
+  <data name="OMRCreateTestButtonContent" xml:space="preserve">
+    <value>Create OMR Test</value>
+  </data>
+  <data name="OMRCreateSurveyButtonContent" xml:space="preserve">
+    <value>Create OMR Survey</value>
+  </data>
+  <data name="OMRCreateAnswerSheetButtonContent" xml:space="preserve">
+    <value>Create OMR sheet</value>
+  </data>
+  <data name="OMRCreateTestProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Create Test</value>
+  </data>
+  <data name="OMRCreateAnswerSheetProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Create Answer Sheet</value>
+  </data>
+  <data name="OMRCreateSurveyProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Create Survey</value>
+  </data>
+  <data name="OMRScanAnswerSheetProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Scan Answer Sheet</value>
+  </data>
+  <data name="OMRScanSurveyProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Scan Survey</value>
+  </data>
+  <data name="OMRScanTestProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Scan Test</value>
+  </data>
+  <data name="OMRGradeCalculatorProductSectionTitle" xml:space="preserve">
+    <value>Aspose.OMR Grade Calculator</value>
+  </data>
+  <data name="OMRGradeCalculatorProductSectionFeature1" xml:space="preserve">
+    <value>Easily grade test, quiz, exam or assignment</value>
+  </data>
+  <data name="OMRGradeCalculatorProductSectionFeature2" xml:space="preserve">
+    <value>Grade chart with full scores list</value>
+  </data>
+  <data name="OMRGradeCalculatorProductSectionFeature3" xml:space="preserve">
+    <value>Quick chart with short grades distribution table</value>
+  </data>
+  <data name="OMRGradeCalculatorProductSectionFeature4" xml:space="preserve">
+    <value>Supports various grading systems</value>
+  </data>
+  <data name="OMRCreateAnswerSheetFeature1" xml:space="preserve">
+    <value>Create ready to print OMR answer sheet</value>
+  </data>
+  <data name="OMRCreateAnswerSheetFeature2" xml:space="preserve">
+    <value>Choose the number of questions that works best for your task</value>
+  </data>
+  <data name="OMRCreateAnswerSheetFeature3" xml:space="preserve">
+    <value>Save OMR sheet in PDF and PNG formats</value>
+  </data>
+  <data name="OMRCreateSurveyProductSectionFeature1" xml:space="preserve">
+    <value>Create ready to print OMR survey</value>
+  </data>
+  <data name="OMRCreateSurveyProductSectionFeature2" xml:space="preserve">
+    <value>Save OMR sheet in PDF and PNG formats</value>
+  </data>
+  <data name="OMRCreateTestProductSectionFeature1" xml:space="preserve">
+    <value>Create ready to print OMR testing form</value>
+  </data>
+  <data name="OMRCreateTestProductSectionFeature2" xml:space="preserve">
+    <value>Save your OMR images as PNG or PDF</value>
+  </data>
+  <data name="OMRScanAnswerSheetProductSectionFeature1" xml:space="preserve">
+    <value>Scan OMR answer sheet online and get the recognition results in convinient format</value>
+  </data>
+  <data name="OMRScanAnswerSheetProductSectionFeature2" xml:space="preserve">
+    <value>Scan answer sheets that were created using OMR Create Answer Sheet free app</value>
+  </data>
+  <data name="OMRScanAnswerSheetProductSectionFeature3" xml:space="preserve">
+    <value>Results can be copied to clipboard or downloaded in chosen format</value>
+  </data>
+  <data name="OMRScanSurveyProductSectionFeature1" xml:space="preserve">
+    <value>Scan OMR survey online and get the recognition results in convinient format</value>
+  </data>
+  <data name="OMRScanSurveyProductSectionFeature2" xml:space="preserve">
+    <value>Scan surveys that were created using OMR Create Survey free app</value>
+  </data>
+  <data name="OMRScanSurveyProductSectionFeature3" xml:space="preserve">
+    <value>Results can be copied to clipboard or downloaded in chosen format</value>
+  </data>
+  <data name="OMRScanTestProductSectionFeature1" xml:space="preserve">
+    <value>Scan OMR Test online and get the recognition results in convinient format</value>
+  </data>
+  <data name="OMRScanTestProductSectionFeature2" xml:space="preserve">
+    <value>Scan tests that were created using OMR Create Test free app</value>
+  </data>
+  <data name="OMRScanTestProductSectionFeature3" xml:space="preserve">
+    <value>Results can be copied to clipboard or downloaded in chosen format</value>
+  </data>
+  <data name="OMRCreateFeaturesSectionFeature1" xml:space="preserve">
+    <value>Fast and Easy Create OMR image</value>
+  </data>
+  <data name="OMRGradeCalculatorFeaturesSectionFeature1" xml:space="preserve">
+    <value>Fast and Easy Grade Calculator</value>
+  </data>
+  <data name="OMRGradeCalculatorFeaturesSectionFeature1Description" xml:space="preserve">
+    <value>Input your data and get your grade calculated. Refer to the grade chart for more detailed information.</value>
+  </data>
+  <data name="OMRCreateFeaturesSectionFeature1Description" xml:space="preserve">
+    <value>Customize the OMR template and click “Create” button. You will get the OMR image as soon as the generation is completed.</value>
+  </data>
+  <data name="OMRCreateFeaturesSectionFeature2" xml:space="preserve">
+    <value>Create from Anywhere</value>
+  </data>
+  <data name="OMRGradeCalculatorFeaturesSectionFeature2" xml:space="preserve">
+    <value>Calculate grade from Anywhere</value>
+  </data>
+  <data name="OMRCreateFeaturesSectionFeature2Description" xml:space="preserve">
+    <value>It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</value>
+  </data>
+  <data name="OMRGradeCalculatorFeaturesSectionFeature2Description" xml:space="preserve">
+    <value>It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</value>
+  </data>
+  <data name="OMRCreateFeaturesSectionFeature3" xml:space="preserve">
+    <value>Create Quality</value>
+  </data>
+  <data name="OMRGradeCalculatorFeaturesSectionFeature3" xml:space="preserve">
+    <value>Grade Calculator Quality</value>
+  </data>
+  <data name="OMRCreateFeaturesSectionFeature3Description" xml:space="preserve">
+    <value>All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries.</value>
+  </data>
+  <data name="OMRScanFeaturesSectionFeature1" xml:space="preserve">
+    <value>Fast and Easy Scan</value>
+  </data>
+  <data name="OMRScanFeaturesSectionFeature1Description" xml:space="preserve">
+    <value>Upload your image, choose proper settings and click on “Scan” button. You will get the recognition results in selected format as soon as the OMR image is recogized.</value>
+  </data>
+  <data name="OMRScanFeaturesSectionFeature2" xml:space="preserve">
+    <value>Scan from Anywhere</value>
+  </data>
+  <data name="OMRScanFeaturesSectionFeature2Description" xml:space="preserve">
+    <value>It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</value>
+  </data>
+  <data name="OMRScanFeaturesSectionFeature3" xml:space="preserve">
+    <value>Recognize Quality</value>
+  </data>
+  <data name="OMRScanFeaturesSectionFeature3Description" xml:space="preserve">
+    <value>All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries.</value>
+  </data>
+  <data name="OMRScanTestAppTitle" xml:space="preserve">
+    <value>OMR Software free - scan test, assessment</value>
+  </data>
+  <data name="OMRScanTestAppTitleSub" xml:space="preserve">
+    <value>Scan OMR tests by uploading photos or scans of filled OMR forms. Scan tests that were created in </value>
+  </data>
+  <data name="OMRScanSurveyAppTitle" xml:space="preserve">
+    <value>OMR Software free - scan survey</value>
+  </data>
+  <data name="OMRScanSurveyAppTitleSub" xml:space="preserve">
+    <value>Scan OMR surveys by uploading photos or scans of filled OMR forms. Scan surveys that were created in </value>
+  </data>
+  <data name="OMRApplicationString" xml:space="preserve">
+    <value>application.</value>
+  </data>
+  <data name="OMRScanAnswerSheetAppTitle" xml:space="preserve">
+    <value>OMR Software free - scan answer sheet, multiple choice answer sheet</value>
+  </data>
+  <data name="OMRScanAnswerSheetAppTitleSub" xml:space="preserve">
+    <value>Scan OMR sheets by uploading photos or scans of filled OMR forms. Select the number of questions that was used in </value>
+  </data>
+  <data name="OMRScanAnswerSheetButton" xml:space="preserve">
+    <value>Scan Answer Sheet</value>
+  </data>
+  <data name="OMRScanSurveyButton" xml:space="preserve">
+    <value>Scan OMR Survey</value>
+  </data>
+  <data name="OMRScanTestButton" xml:space="preserve">
+    <value>Scan OMR Test</value>
+  </data>
+  <data name="OMRChooseTemplateType" xml:space="preserve">
+    <value>Choose the Template Type</value>
+  </data>
+  <data name="OMRGradeCalculatorQuestionsNumber" xml:space="preserve">
+    <value>Number of questions</value>
+  </data>
+  <data name="OMRGradeCalculatorPercentageGrade" xml:space="preserve">
+    <value>Percentage grade</value>
+  </data>
+  <data name="OMRGradeCalculatorGradeChart" xml:space="preserve">
+    <value>Grade Chart</value>
+  </data>
+  <data name="OMRGradeCalculatorQuickChart" xml:space="preserve">
+    <value>Quick Chart</value>
+  </data>
+  <data name="OMRGradeCalculatorLetterGrade" xml:space="preserve">
+    <value>Letter grade</value>
+  </data>
+  <data name="OMRGradeCalculatorFractionGrade" xml:space="preserve">
+    <value>Fraction grade</value>
+  </data>
+  <data name="OMRGradeCalculatorWrongAnswers" xml:space="preserve">
+    <value>Number of wrong answers</value>
+  </data>
+  <data name="OMRGradeCalculatorShowDecimals" xml:space="preserve">
+    <value>Show Decimals</value>
+  </data>
+  <data name="OMRGradeCalculatorShowGradeChart" xml:space="preserve">
+    <value>Grade Chart</value>
+  </data>
+  <data name="OMRGradeCalculatorShowQuickChart" xml:space="preserve">
+    <value>Quick Chart</value>
+  </data>
+  <data name="OMRChooseOutputFormat" xml:space="preserve">
+    <value>Choose the Output Format</value>
+  </data>
+  <data name="OMRChooseGradingScale" xml:space="preserve">
+    <value>Grading Scale</value>
+  </data>
+  <data name="OMRScaleToolip" xml:space="preserve">
+    <value>Standard grading scale uses A(90+)/B(80+)/C(70+)/D(60+)/F system.</value>
+  </data>
+  <data name="OMRDownloadButton" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="OMRCopyButton" xml:space="preserve">
+    <value>Copy To Clibpoard</value>
+  </data>
+  <data name="OMRQuestionsString" xml:space="preserve">
+    <value>Questions</value>
+  </data>
+  <data name="OMRGradeCalculatorHowToTitle" xml:space="preserve">
+    <value>How to calculate Test Grades</value>
+  </data>
+  <data name="OMRGradeCalculatorHowToDescription" xml:space="preserve">
+    <value>Calculate grade online.</value>
+  </data>
+  <data name="OMRGradeCalculatorHowToSupplyName" xml:space="preserve">
+    <value>Grade calculator</value>
+  </data>
+  <data name="OMRGradeCalculatorContent" xml:space="preserve">
+    <value>Enter the total number of questions in your test, exam or quiz.
+    Type in the number of wrong answers.
+    The result, including percentage, fraction and letter score will be calculated and displayed.
+    Use Quick Chart checkbox to display grade distribution chart.
+    Use Grade Chart checkbox to display full grade chart for the reference.</value>
+  </data>
+  <data name="OMRGradeCalculatorHowToNames" xml:space="preserve">
+    <value>Enter total questions
+    Enter wrong answers
+    View result
+    Display Quick Chart
+    Display Grade Chart</value>
+  </data>
+  <data name="OMRCreateAnswerSheetHowToTitle" xml:space="preserve">
+    <value>How to make OMR Sheet</value>
+  </data>
+  <data name="OMRCreateAnswerSheetHowToDescription" xml:space="preserve">
+    <value>Make omr answer sheet online.</value>
+  </data>
+  <data name="OMRCreateAnswerSheetHowToSupplyName" xml:space="preserve">
+    <value>Answer sheet generator</value>
+  </data>
+  <data name="OMRCreateAnswerSheetHowToContent" xml:space="preserve">
+    <value>Select the number of questions for the answer sheet.
+    Choose the file format: PNG or PDF.
+    Click the "Create OMR sheet" button to start generation process.
+    Click the "Download" button to download the answer sheet.
+    You can now print OMR sheets and pass them to the respondents. After that use OMR Scan Answer Sheet app to read the filled forms.</value>
+  </data>
+  <data name="OMRCreateAnswerSheetHowToNames" xml:space="preserve">
+    <value>Select questions
+    Choose output format
+    Create
+    Download
+    Note</value>
+  </data>
+  <data name="OMRCreateTestHowToTitle" xml:space="preserve">
+    <value>How to create OMR test</value>
+  </data>
+  <data name="OMRCreateTestHowToDescription" xml:space="preserve">
+    <value>Make omr test online.</value>
+  </data>
+  <data name="OMRCreateTestHowToSupplyName" xml:space="preserve">
+    <value>Test generator</value>
+  </data>
+  <data name="OMRCreateTestHowToContent" xml:space="preserve">
+    <value>Choose the file format: PNG or PDF.
+    Click the "Create OMR test" button to start creation process.
+    Click the "Download" button to download the created OMR image.
+    You can now print OMR test forms and pass them to the respondents. After that use OMR Scan Test app to read the filled forms.</value>
+  </data>
+  <data name="OMRCreateTestHowToNames" xml:space="preserve">
+    <value>Choose output format
+    Create
+    Download
+    Note</value>
+  </data>
+  <data name="OMRCreateSurveyHowToTitle" xml:space="preserve">
+    <value>How to create survey</value>
+  </data>
+  <data name="OMRCreateSurveyHowToDescription" xml:space="preserve">
+    <value>Make omr survey online.</value>
+  </data>
+  <data name="OMRCreateSurveyHowToSupplyName" xml:space="preserve">
+    <value>Survey generator</value>
+  </data>
+  <data name="OMRCreateSurveyHowToContent" xml:space="preserve">
+    <value>Choose the file format: PNG or PDF.
+    Click the "Create OMR survey" button to start creation process.
+    Click the "Download" button to download the created OMR image.
+    You can now print survey forms and pass them to the respondents. After that use OMR Scan Survey app to read the filled forms.</value>
+  </data>
+  <data name="OMRCreateSurveyHowToNames" xml:space="preserve">
+    <value>Choose output format
+    Create
+    Download
+    Note</value>
+  </data>
+  <data name="OMRScanAnswerSheetHowToTitle" xml:space="preserve">
+    <value>How to scan Answer Sheet</value>
+  </data>
+  <data name="OMRScanAnswerSheetHowToDescription" xml:space="preserve">
+    <value>Scan omr answer sheet online.</value>
+  </data>
+  <data name="OMRScanAnswerSheetHowToSupplyName" xml:space="preserve">
+    <value>OMR sheet scanner</value>
+  </data>
+  <data name="OMRScanAnswerSheetHowToContent" xml:space="preserve">
+    <value>Click inside the file drop area or use drag&amp;drop to upload photo or scan of filled answer sheet.
+    Select the number of questions on page.
+    Choose the output format of the recognition results.
+    Click the "Scan Answer Sheet" button to start recognition process.
+    Click the "Download" button to download the recognition results or simply copy them to the clipboard.</value>
+  </data>
+  <data name="OMRScanAnswerSheetHowToNames" xml:space="preserve">
+    <value>Upload image
+    Select questions
+    Choose output format
+    Scan
+    Download</value>
+  </data>
+  <data name="OMRScanSurveyHowToTitle" xml:space="preserve">
+    <value>How to scan Survey</value>
+  </data>
+  <data name="OMRScanSurveyHowToDescription" xml:space="preserve">
+    <value>Scan omr survey online.</value>
+  </data>
+  <data name="OMRScanSurveyHowToSupplyName" xml:space="preserve">
+    <value>Survey scanner</value>
+  </data>
+  <data name="OMRScanSurveyHowToContent" xml:space="preserve">
+    <value>Click inside the file drop area or use drag&amp;drop to upload photo or scan of filled OMR survey.
+    Choose the output format of the recognition results.
+    Click the "Scan OMR Survey" button to start recognition process.
+    Click the "Download" button to download the recognition results or simply copy them to the clipboard.</value>
+  </data>
+  <data name="OMRScanSurveyHowToNames" xml:space="preserve">
+    <value>Upload image
+    Choose output format
+    Scan
+    Download</value>
+  </data>
+  <data name="OMRScanTestHowToTitle" xml:space="preserve">
+    <value>How to scan Test</value>
+  </data>
+  <data name="OMRScanTestHowToDescription" xml:space="preserve">
+    <value>Scan omr test online.</value>
+  </data>
+  <data name="OMRScanTestHowToSupplyName" xml:space="preserve">
+    <value>Test scanner</value>
+  </data>
+  <data name="OMRScanTestHowToContent" xml:space="preserve">
+    <value>Click inside the file drop area or use drag&amp;drop to upload photo or scan of filled OMR test.
+    Choose the output format of the recognition results.
+    Click the "Scan OMR Test" button to start recognition process.
+    Click the "Download" button to download the recognition results or simply copy them to the clipboard.</value>
+  </data>
+  <data name="OMRScanTestHowToNames" xml:space="preserve">
+    <value>Upload image
+    Choose output format
+    Scan
+    Download</value>
+  </data>
+  <data name="BarcodeCodetextPlaceholder" xml:space="preserve">
+    <value>Enter codetext</value>
+  </data>
+  <data name="BarcodeGenerate" xml:space="preserve">
+    <value>Generate Barcode</value>
+  </data>
+  <data name="BarcodeGenerateAppName" xml:space="preserve">
+    <value>Generate</value>
+  </data>
+  <data name="BarcodeGenerateAppTitle" xml:space="preserve">
+    <value>Generate Barcode Online</value>
+  </data>
+  <data name="BarcodeGenerateAppTitleSub" xml:space="preserve">
+    <value>Free Online Barcode Generator. Enter codetext, choose symbology, size and output format and click on “Generate Barcode” button.</value>
+  </data>
+  <data name="BarcodeGenerateFeaturesSectionFeature1" xml:space="preserve">
+    <value>Generate Barcode Fast and Easy</value>
+  </data>
+  <data name="BarcodeGenerateFeaturesSectionFeature1Description" xml:space="preserve">
+    <value>Enter codetext, choose the barcode type and click on “Generate Barcode” button. </value>
+  </data>
+  <data name="BarcodeGenerateFeaturesSectionFeature2" xml:space="preserve">
+    <value>Generate from Anywhere</value>
+  </data>
+  <data name="BarcodeGenerateFeaturesSectionFeature2Description" xml:space="preserve">
+    <value>It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</value>
+  </data>
+  <data name="BarcodeGenerateFeaturesSectionFeature3" xml:space="preserve">
+    <value>Barcode Generation Quality</value>
+  </data>
+  <data name="BarcodeGenerateFeaturesSectionFeature3Description" xml:space="preserve">
+    <value>All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries.</value>
+  </data>
+  <data name="BarcodeGenerateMetaDescription" xml:space="preserve">
+    <value>Free online barcode generator supports many different symbologies and output formats (PNG, JPEG, TIFF, BMP, GIF, SVG, EMF).</value>
+  </data>
+  <data name="BarcodeGenerateMetaKeywords" xml:space="preserve">
+    <value>generate barcode online free generator printer</value>
+  </data>
+  <data name="BarcodeGeneratePageTitle" xml:space="preserve">
+    <value>Generate Barcode Online</value>
+  </data>
+  <data name="BarcodeGenerateProductSectionFeature1" xml:space="preserve">
+    <value>With this free online tool you can generate barcode in various supported raster and vector formats: PNG, JPEG, TIFF, BMP, GIF, SVG, EMF.</value>
+  </data>
+  <data name="BarcodeGenerateProductSectionFeature2" xml:space="preserve">
+    <value>We support the following barcode symbologies: 1D Point of sale: UPC-A, UPC-E, EAN-8, EAN-13, GS1 DataBar (a.k.a. RSS) 1D Industrial Symbols: Code 39, Code 93, Code 128, GS1-128, Codabar, ITF-14 2D Symbols: QR Code, Data Matrix, Aztec, PDF 417</value>
+  </data>
+  <data name="BarcodeGenerateProductSectionTitle" xml:space="preserve">
+    <value>Aspose.BarCode Generate</value>
+  </data>
+  <data name="BarcodeProductFullName" xml:space="preserve">
+    <value>Aspose.BarCode</value>
+  </data>
+  <data name="BarcodeProductName" xml:space="preserve">
+    <value>BarCode</value>
+  </data>
+  <data name="BarcodeRecognize" xml:space="preserve">
+    <value>Read Barcode</value>
+  </data>
+  <data name="BarcodeRecognizeAppName" xml:space="preserve">
+    <value>Recognize</value>
+  </data>
+  <data name="BarcodeRecognizeAppTitle" xml:space="preserve">
+    <value>Barcode Reader Online</value>
+  </data>
+  <data name="BarcodeRecognizeAppTitleSub" xml:space="preserve">
+    <value>Upload your image, choose the barcode type or leave “All types” and click on “Read Barcode” button.</value>
+  </data>
+  <data name="BarcodeRecognizeFeaturesSectionFeature1" xml:space="preserve">
+    <value>Read Barcode Fast and Easy</value>
+  </data>
+  <data name="BarcodeRecognizeFeaturesSectionFeature1Description" xml:space="preserve">
+    <value>Upload your image, choose the encode type and click on “Read Barcode” button.</value>
+  </data>
+  <data name="BarcodeRecognizeFeaturesSectionFeature2" xml:space="preserve">
+    <value>Read Barcode from Anywhere</value>
+  </data>
+  <data name="BarcodeRecognizeFeaturesSectionFeature2Description" xml:space="preserve">
+    <value>It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</value>
+  </data>
+  <data name="BarcodeRecognizeFeaturesSectionFeature3" xml:space="preserve">
+    <value>Barcode Reader Quality</value>
+  </data>
+  <data name="BarcodeRecognizeFeaturesSectionFeature3Description" xml:space="preserve">
+    <value>All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries.</value>
+  </data>
+  <data name="BarcodeRecognizeMetaDescription" xml:space="preserve">
+    <value>Free online barcode reader recognizes many different symbologies and supports different input formats (PNG, JPEG, TIFF, BMP, GIF, SVG, EMF).</value>
+  </data>
+  <data name="BarcodeRecognizeMetaKeywords" xml:space="preserve">
+    <value>read barcode online free reader scanner scan image</value>
+  </data>
+  <data name="BarcodeRecognizePageTitle" xml:space="preserve">
+    <value>Read Barcode Online</value>
+  </data>
+  <data name="BarcodeRecognizeProductSectionFeature1" xml:space="preserve">
+    <value>Read Barcode from an image</value>
+  </data>
+  <data name="BarcodeRecognizeProductSectionFeature2" xml:space="preserve">
+    <value>Barcode Reader supports the following barcode symbologies: 1D Point of sale: UPC-A, UPC-E, EAN-8, EAN-13, GS1 DataBar (a.k.a. RSS) 1D Industrial Symbols: Code 39, Code 93, Code 128, GS1-128, Codabar, ITF-14 2D Symbols: QR Code, Data Matrix, Aztec, PDF 417</value>
+  </data>
+  <data name="BarcodeRecognizeProductSectionTitle" xml:space="preserve">
+    <value>Aspose.BarCode Reader</value>
+  </data>
+  <data name="BookmarkApp" xml:space="preserve">
+    <value>Bookmark this app</value>
+  </data>
+  <data name="BookmarkText" xml:space="preserve">
+    <value>Press Ctrl + D to add this page to your favorites or Esc to cancel the action.</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Excelent" xml:space="preserve">
+    <value>Excelent</value>
+  </data>
+  <data name="Fast" xml:space="preserve">
+    <value>Fast</value>
+  </data>
+  <data name="FeedbackHeader" xml:space="preserve">
+    <value>Send us your feedback</value>
+  </data>
+  <data name="FeedbackMaximumSize" xml:space="preserve">
+    <value>1000 characters maximum</value>
+  </data>
+  <data name="FeedbackPlaceholder" xml:space="preserve">
+    <value>Write here your opinion, suggestions, etc.</value>
+  </data>
+  <data name="Large" xml:space="preserve">
+    <value>Large</value>
+  </data>
+  <data name="LeaveFeedback" xml:space="preserve">
+    <value>Leave a feedback</value>
+  </data>
+  <data name="Medium" xml:space="preserve">
+    <value>Medium</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="OcrProductFullName" xml:space="preserve">
+    <value>Aspose.OCR</value>
+  </data>
+  <data name="OcrProductName" xml:space="preserve">
+    <value>OCR</value>
+  </data>
+  <data name="OcrRecognizeAppPageUrl" xml:space="preserve">
+    <value>ocr/scan-image</value>
+  </data>
+  <data name="OcrRecognizeAppImageUrl" xml:space="preserve">
+    <value>https://www.aspose.cloud/templates/asposeapp/images/products/logo/aspose_image-app.png</value>
+  </data>
+  <data name="OcrRecognizeAppEndpointUrl" xml:space="preserve">
+    <value>ocr/recognizeimage</value>
+  </data>
+  <data name="OcrRecognizeAppName" xml:space="preserve">
+    <value>Image to Text</value>
+  </data>
+  <data name="OcrRecognizeAppTitle" xml:space="preserve">
+    <value>Convert image to text with our free OCR software</value>
+  </data>
+  <data name="OcrRecognizeAppTitleSub" xml:space="preserve">
+    <value>Just upload your images to convert image to text for JPG, BMP, TIFF, GIF, PNG, EMF, SVG formats</value>
+  </data>
+  <data name="OcrRecognizeAppFullDescription" xml:space="preserve">
+    <value>Aspose.OCR is a free online application to perform optical character recognition on commonly used image types. It allows easily extract text on various languages from images with any format, any fonts, styles and layout, whole pictures or it's parts, with automated document layout detection,  skew correction, and noise reduction before text recognition.</value>
+  </data>
+  <data name="OcrRecognizeAppIconUrl" xml:space="preserve">
+    <value>/img/ocr/ocr-recognize-192.png</value>
+  </data>
+  <data name="OcrRecognizeVideoRawHtml" xml:space="preserve">
+    <value>&lt;iframe width="910" height="512" src="https://www.youtube.com/embed/rmZMjW8m9iE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</value>
+  </data>
+  <data name="OcrButton" xml:space="preserve">
+    <value>Scan Image</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature1" xml:space="preserve">
+    <value>Fast and Easy Perform OCR</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature1Description" xml:space="preserve">
+    <value>Upload your image and click on “Perform OCR” button to convert image to text. You will get the text as soon as the OCR is performed.</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature2" xml:space="preserve">
+    <value>Perform OCR from Anywhere</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature2Description" xml:space="preserve">
+    <value>It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin, software installation or hardware resources required for you.</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature3" xml:space="preserve">
+    <value>High recognition quality</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature3Description" xml:space="preserve">
+    <value>Powered by Aspose.OCR. All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries.</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature4" xml:space="preserve">
+    <value>Automated document layout detection</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature4Description" xml:space="preserve">
+    <value>You don’t need to worry about manually setting the location of text regions. Our automated document layout detection algorithm works automatically.</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature5" xml:space="preserve">
+    <value>Advanced skew correction and image improvement</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature5Description" xml:space="preserve">
+    <value>Aspose.OCR can successfully read poor quality scans and make auto image pre-processing to correct low resolution, low contrast, noise and skew.</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature6" xml:space="preserve">
+    <value>High speed with no resources</value>
+  </data>
+  <data name="OcrRecognizeFeaturesSectionFeature6Description" xml:space="preserve">
+    <value>Don’t worry about hardware, all the computational operations are done at our side. We use high-reliable and high-performance GPU-based servers to host our core, built on cutting edge fast neural networks.</value>
+  </data>
+  <data name="OcrRecognizeMetaDescription" xml:space="preserve">
+    <value>Aspose.OCR is a free online OCR service that allows converting scanned images of popular formats like JPG, BMP, TIFF, GIF, PNG to plain editable text</value>
+  </data>
+  <data name="OcrRecognizeMetaDescriptionShort" xml:space="preserve">
+    <value>Aspose.OCR is a free online OCR service that allows converting scanned images of popular formats like {0} to plain editable text</value>
+  </data>
+  <data name="OcrRecognizeMetaKeywords" xml:space="preserve">
+    <value>Convert image to text. Extract text from image. Turn picture into text. Identify text from image. Copy text from image. Text capture software. Text Recognition OCR Technology. Get Text from Image.</value>
+  </data>
+  <data name="OcrRecognizePageTitle" xml:space="preserve">
+    <value>Convert image to text with our free OCR software</value>
+  </data>
+  <data name="OcrRecognizeProductSectionFeature1" xml:space="preserve">
+    <value>Our OCR software supports image formats: JPG, BMP, TIFF, GIF, PNG, EMF, SVG or EPS</value>
+  </data>
+  <data name="OcrRecognizeProductSectionFeature2" xml:space="preserve">
+    <value>Get document layout from simple OCR</value>
+  </data>
+  <data name="OcrRecognizeProductSectionFeature3" xml:space="preserve">
+    <value>User OCR service to perform simple ocr for documents</value>
+  </data>
+  <data name="OcrRecognizeProductSectionTitle" xml:space="preserve">
+    <value>Convert image to text with Aspose OCR software</value>
+  </data>
+  <data name="OcrAcceptExtensions" xml:space="preserve">
+    <value>.JPG,.BMP,.TIFF,.GIF,.PNG,.EMF,.SVG,.EPS</value>
+  </data>
+  <data name="OcrAcceptMaxFileSizeMb" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="OcrRecognizeHowToContent" xml:space="preserve">
+    <value>Click inside the file drop area to upload image file or drag &amp; drop an image file.
+Click the "Scan Image" button to start OCR process.
+Wait until the recognition result displayed.</value>
+  </data>
+  <data name="OcrRecognizeHowToTitle" xml:space="preserve">
+    <value>How to recognize document</value>
+  </data>
+  <data name="OcrOtherFeaturesTitle" xml:space="preserve">
+    <value>Other Supported Image Formats</value>
+  </data>
+  <data name="OcrOtherFeaturesSubTitle" xml:space="preserve">
+    <value>You can also convert many other image formats to text. Please see the list below.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_jpg" xml:space="preserve">
+    <value>Joint Photographic Expert Group Image File</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_jpg" xml:space="preserve">
+    <value>A JPEG is a type of image format that is saved using the method of lossy compression. The output image, as result of compression, is a trade-off between storage size and image quality. Users can adjust the compression level to achieve the desired quality level while at the same time reduce the storage size. Image quality is negligibly affected if 10:1 compression is applied to the image. The higher the compression value, the higher the degradation in image quality.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_jpg" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/jpeg/</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_png" xml:space="preserve">
+    <value>Portable Network Graphic</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_png" xml:space="preserve">
+    <value>PNG, Portable Network Graphics, refers to a type of raster image file format that use lossless compression. This file format was created as a replacement of Graphics Interchange Format (GIF) and has no copyright limitations. However, PNG file format does not support animations. PNG file format supports loseless image compression that makes it popular among its users. With the passage of time, PNG has evolved as one of the mostly used image file format.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_png" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/png/</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_bmp" xml:space="preserve">
+    <value>Bitmap File Format</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_bmp" xml:space="preserve">
+    <value>Files having extension .BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format. This independency serves the purpose of opening the file on multiple platforms such as Microsoft Windows and Mac. The BMP file format can store data as two-dimensional digital images in both monochrome as well as color format with various colour depths.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_bmp" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/bmp/</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_tiff" xml:space="preserve">
+    <value>Tagged Image File Format</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_tiff" xml:space="preserve">
+    <value>TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. It is capable of describing bilevel, grayscale, palette-color and full-color image data in several color spaces. It supports lossy as well as lossless compression schemes to choose between space and time for applications using the format.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_tiff" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/tiff/</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_gif" xml:space="preserve">
+    <value>Graphical Interchange Format File</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_gif" xml:space="preserve">
+    <value>A GIF or Graphical Interchange Format is a type of highly compressed image. Owned by Unisys, GIF uses the LZW compression algorithm that does not degrade the image quality. For each image GIF typically allow up to 8 bits per pixel and up to 256 colours are allowed across the image. In contrast to a JPEG image, which can display up to 16 million colours and fairly touches the limits of the human eye.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_gif" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/gif/</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_emf" xml:space="preserve">
+    <value>Enhanced Metafile Format</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_emf" xml:space="preserve">
+    <value>Enhanced metafile format (EMF) stores graphical images device-independently. Metafiles of EMF comprises of variable-length records in chronological order that can render the stored image after parsing on any output device. These variable-length records can be definitions of enclosed objects, commands for drawing, and graphics properties critical to render the image accurately.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_emf" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/emf/</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_svg" xml:space="preserve">
+    <value>Scalable Vector Graphics File</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_svg" xml:space="preserve">
+    <value>SVG files are Scalable Vector Graphics Files that use XML based text format for describing the appearance of image. The word Scalable refers to the fact that the SVG can be scaled to different sizes without losing any quality. Text based description of such files make them independent of resolution. It is one of the mostly used format for building website and print graphics in order to achieve scalability.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_svg" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/svg/</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockTitle_eps" xml:space="preserve">
+    <value>Encapsulated PostScript File</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockContent_eps" xml:space="preserve">
+    <value>Files with EPS extension essentially describe an Encapsulated PostScript language program that describes the appearance of a single page. The name "Encapsulated" because it can be included or encapsulated in another PostScript language page description. This script based file format may contain any combination of text, graphics and images.</value>
+  </data>
+  <data name="OcrExtensionRelatedBlockLink_eps" xml:space="preserve">
+    <value>https://wiki.fileformat.com/image/eps/</value>
+  </data>
+  <data name="OcrToPdfAppPageUrl" xml:space="preserve">
+    <value>ocr/ocr-to-pdf</value>
+  </data>
+  <data name="OcrToPdfAppEndpointUrl" xml:space="preserve">
+    <value>ocr/ocr-to-pdf-action</value>
+  </data>
+  <data name="OcrToPdfAppImageUrl" xml:space="preserve">
+    <value>https://www.aspose.cloud/templates/asposeapp/images/products/logo/aspose_image-app.png</value>
+  </data>
+  <data name="OcrToPdfAppName" xml:space="preserve">
+    <value>Image to PDF</value>
+  </data>
+  <data name="OcrToPdfAppTitle" xml:space="preserve">
+    <value>Convert image to Searchable PDF with our free OCR software</value>
+  </data>
+  <data name="OcrToPdfAppTitleSub" xml:space="preserve">
+    <value>Just upload your images to convert image to Searchable PDF for JPG, BMP, TIFF, GIF, PNG, EMF, SVG formats</value>
+  </data>
+  <data name="OcrToPdfAppFullDescription" xml:space="preserve">
+    <value>Aspose.OCR to Searchable PDF is a free online application to perform optical character recognition on commonly used image types. It allows easily extract text on various languages from images with any format, any fonts, styles and layout, whole pictures or it's parts, with automated document layout detection, skew correction, and noise reduction before text recognition.</value>
+  </data>
+  <data name="OcrToPdfMetaDescription" xml:space="preserve">
+    <value>Aspose.OCR is a free online OCR service that allows converting scanned images of popular formats like JPG, BMP, TIFF, GIF, PNG to Searchable PDF</value>
+  </data>
+  <data name="PoweredBy" xml:space="preserve">
+    <value>Powered by</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ShareFacebook" xml:space="preserve">
+    <value>Share on Facebook</value>
+  </data>
+  <data name="ShareLinkedIn" xml:space="preserve">
+    <value>Share on LinkedIn</value>
+  </data>
+  <data name="GitHub" xml:space="preserve">
+    <value>See source code</value>
+  </data>
+  <data name="ShareTwitter" xml:space="preserve">
+    <value>Share on Twitter</value>
+  </data>
+  <data name="Small" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="DropOrUploadFiles" xml:space="preserve">
+    <value>Drop or upload your file</value>
+  </data>
+  <data name="AsposeProductFamilyIncludes" xml:space="preserve">
+    <value>{0} Product Family Includes</value>
+  </data>
+  <data name="BarcodeFamilyPageSubTitle" xml:space="preserve">
+    <value>Read and Generate many types of barcodes online. Barcode Applications support QR, 1D, 2D, Postal barcodes and many other types. </value>
+  </data>
+  <data name="BarcodeFamilyPageTitle" xml:space="preserve">
+    <value>Read and Generate Barcode online</value>
+  </data>
+  <data name="BarcodeGenerateHowToContent" xml:space="preserve">
+    <value>Enter your codetext
+Choose barcode type and size
+Click on the “Generate Barcode” button</value>
+  </data>
+  <data name="BarcodeGenerateHowToTitle" xml:space="preserve">
+    <value>How to generate barcode</value>
+  </data>
+  <data name="BarcodeRecognizeHowToContent" xml:space="preserve">
+    <value>Upload your image
+Choose recognition quality and barcode type (optionally)
+Click on the “Read Barcode” button</value>
+  </data>
+  <data name="BarcodeRecognizeHowToTitle" xml:space="preserve">
+    <value>How to read barcode</value>
+  </data>
+  <data name="BarcodeFamilyPageGenerateAppTitle" xml:space="preserve">
+    <value>Generate Barcode</value>
+  </data>
+  <data name="BarcodeFamilyPageGenerateAppTitleSub" xml:space="preserve">
+    <value>Generate QR Barcode, generate 1D, 2D, Postal barcodes and many other barcode types</value>
+  </data>
+  <data name="BarcodeFamilyPageRecognizeAppTitle" xml:space="preserve">
+    <value>Read Barcode</value>
+  </data>
+  <data name="BarcodeFamilyPageRecognizeAppTitleSub" xml:space="preserve">
+    <value>Barcode Reader supports the following barcode symbologies: 1D Point of sale: UPC-A, UPC-E, EAN-8, EAN-13, GS1 DataBar (a.k.a. RSS) 1D Industrial Symbols: Code 39, Code 93, Code 128, GS1-128, Codabar, ITF-14 2D Symbols: QR Code, Data Matrix, Aztec, PDF 417</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="BarcodeTypedGenerateAppTitle" xml:space="preserve">
+    <value>Generate {0} Barcode Online</value>
+  </data>
+  <data name="BarcodeTypedGenerateAppTitleSub" xml:space="preserve">
+    <value>Free Online {0} Barcode Generator. Enter codetext, choose size and output format and click on “Generate Barcode” button.</value>
+  </data>
+  <data name="BarcodeTypedRecognizeAppTitle" xml:space="preserve">
+    <value>{0} Barcode Reader Online</value>
+  </data>
+  <data name="BarcodeTypedRecognizeAppTitleSub" xml:space="preserve">
+    <value>Upload your {0} image and click on “Read Barcode” button.</value>
+  </data>
+  <data name="BarcodeTypedGenerateMetaDescription" xml:space="preserve">
+    <value>Free online {0} barcode generator supports many different output formats (PNG, JPEG, TIFF, BMP, GIF, SVG, EMF).</value>
+  </data>
+  <data name="BarcodeTypedGenerateMetaKeywords" xml:space="preserve">
+    <value>generate {0} barcode online free generator printer</value>
+  </data>
+  <data name="BarcodeTypedGeneratePageTitle" xml:space="preserve">
+    <value>Generate {0} Barcode Online</value>
+  </data>
+  <data name="BarcodeTypedRecognizeMetaDescription" xml:space="preserve">
+    <value>Free online {0} barcode reader supports different input formats (PNG, JPEG, TIFF, BMP, GIF, SVG, EMF).</value>
+  </data>
+  <data name="BarcodeTypedRecognizeMetaKeywords" xml:space="preserve">
+    <value>read {0} barcode online free reader scanner scan image</value>
+  </data>
+  <data name="BarcodeTypedRecognizePageTitle" xml:space="preserve">
+    <value>Read {0} Barcode Online</value>
+  </data>
+  <data name="Camera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="NoFileSelected" xml:space="preserve">
+    <value>No file selected</value>
+  </data>
+  <data name="UploadFile" xml:space="preserve">
+    <value>Upload file</value>
+  </data>
+  <data name="BarcodeGenerateOtherFeaturesSubTitle" xml:space="preserve">
+    <value>You can also generate many other barcode symbologies. Please see the list below.</value>
+  </data>
+  <data name="BarcodeOtherFeaturesTitle" xml:space="preserve">
+    <value>Popular Barcode's Symbologies</value>
+  </data>
+  <data name="BarcodeRecognizeOtherFeaturesSubTitle" xml:space="preserve">
+    <value>You can also recognize many other barcode symbologies. Please see the list below.</value>
+  </data>
+  <data name="BarcodeTypedGenerateAppTitleSub2" xml:space="preserve">
+    <value>Free Online {0} Barcode Generator. Create {1} barcode in various supported formats.</value>
+  </data>
+  <data name="BarcodeTypedRecognizeAppTitleSub2" xml:space="preserve">
+    <value>Read {0} barcode from your camera or from image in various supported formats.</value>
+  </data>
+  <data name="BarcodeGenerateAppFullDescription" xml:space="preserve">
+    <value>Aspose.Barcode Generator is a free online application to generate barcodes of 60+ supported barcode symbologies, both 1D barcode types and 2D barcode types. It fast an easy way of adding machine reading tags to your documents and products. It supports both raster and vector output image formats.</value>
+  </data>
+  <data name="BarcodeRecognizeAppFullDescription" xml:space="preserve">
+    <value>Aspose.Barcode Reader is a free online application to read barcodes from image or your mobile phone's camera. It supports 60+ barcode symbologies including all the popular ones. It is able to locate and read multiple barcodes on image. Our sophisticated algorithm allows you to read even damaged barcodes.</value>
+  </data>
+  <data name="BarcodeGenerateHowToNames" xml:space="preserve">
+    <value>Enter text
+Set options
+Generate</value>
+  </data>
+  <data name="BarcodeRecognizeHowToNames" xml:space="preserve">
+    <value>Select image
+Set options
+Read</value>
+  </data>
+</root>

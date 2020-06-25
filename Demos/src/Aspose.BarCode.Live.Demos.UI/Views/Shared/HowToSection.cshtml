@@ -1,0 +1,22 @@
+﻿@model Aspose.Barcode.Live.Demos.UI.Models.Common.HowToSectionModel
+
+@* HowTo Section *@
+<div class="col-md-12 tl bg-darkgray howtolist" visible="false" runat="server">
+    <a class="anchor" name=@Model.Anchor></a>
+    <div class="container tl dflex">
+        <div class="col-md-4 howtosectiongfx">
+            <img src="https://products.aspose.app/img/howto.png" alt="How To">
+        </div>
+        <div class="howtosection col-md-8">
+            <div>
+                <h2>@Model.Title</h2>
+                <ul>
+                    @foreach (var line in Model.HowToLines)
+                    {
+                        <li>@line</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<res name="ApplicationTitle">Aspose.BarCode Live Demos</res>
+	<res name="ApplicationTitle2">Free App Solutions for BarCode files nanipulation </res>
+
+	<res name="HomePageTitle">Home</res>
+	<res name="DownloadFileLinkTitle">Download your file</res>
+	<res name="NoSearchResultsMessage">No search results</res>
+	<res name="FileConvertedSuccessMessage">Your file has been converted successfully, please check your email to download converted file</res>
+	<res name="InvalidFileExtension">Invalid file, please upload a file with extension</res>
+	<res name="InvalidFile">Invalid file, please ensure that uploading correct file</res>
+	<res name="FileAmountMessageOne">Please select only one file</res>
+	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
+	<res name="btnConvertNow">CONVERT NOW</res>
+	<res name="AsposeProductFor"></res>
+	<res name="AsposeBarCode">Aspose.BarCode</res>
+	<res name="PageNotFound">404 Page not found</res>
+	<res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
+	<res name="btnBackHome">Back to Home</res>
+	<res name="FileSelectMessage">Please select a file to convert</res>
+	<res name="SaveAs">Save as</res>
+	
+	<res name="DropOrUploadFile">Drop or upload your file</res>
+	<res name="DropOrUploadFiles">Drop or upload your files</res>
+	
+	<res name="FileConvertedSuccessMessage1">Your file has been converted successfully</res>
+	<res name="DownLoadNow">DOWNLOAD NOW</res>
+	<res name="FileWrongTypeMessage">You are trying to upload document(s) of unsupported type: </res>
+
+
+
+
+</resources>

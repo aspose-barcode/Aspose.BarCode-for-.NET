@@ -1,0 +1,27 @@
+﻿@model UploadFileModel
+
+<div class="UploadPlaceHolder" id="@Model.UploadId">
+    <div class="uploadfile">
+        <div class="filedropdown">
+            <form id="@string.Format("{0}-{1}", Model.UploadId, "frm")" class="uploadForm activeForm" method="POST" enctype="multipart/form-data">
+                <div id="@string.Format("{0}-{1}", Model.UploadId, "parent")" class="filedrop">
+                    <label class="dz-message needsclick">@Model.Resources[Model.FileDropKey]</label>                  
+                    <input type="hidden" name="idUpload" value="@Model.UploadId" />
+                    @if (Model.AcceptMultipleFiles)
+                    {
+                        <input id="@string.Format("{0}-{1}", Model.UploadId, "input")" type="file" class="uploadfileinput" name="UploadFileInput" accept="@Model.AcceptedExtentions" multiple />
+                    }
+                    else
+                    {
+                        <input id="@string.Format("{0}-{1}", Model.UploadId, "input")" type="file" class="uploadfileinput" name="UploadFileInput" accept="@Model.AcceptedExtentions" />
+                    }                    
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section scripts {
+
+}

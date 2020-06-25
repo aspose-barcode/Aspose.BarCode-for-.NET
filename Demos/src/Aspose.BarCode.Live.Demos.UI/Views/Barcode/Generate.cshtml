@@ -1,0 +1,233 @@
+﻿@using Aspose.Barcode.Live.Demos.UI.Helpers
+@using  Aspose.Barcode.Live.Demos.UI.Models
+@using Aspose.Barcode.Live.Demos.UI.Models.Common
+@using Aspose.Barcode.Live.Demos.UI.Resources
+@model  Aspose.Barcode.Live.Demos.UI.Models.BarcodeGenerateViewModel
+@{
+	ViewBag.Title = Model.BarcodeGeneratePageTitle;
+	ViewBag.MetaDescription = Model.BarcodeGenerateMetaDescription;
+	ViewBag.MetaKeywords = Model.BarcodeGenerateMetaKeywords;
+	ViewBag.JsonLdBreadcrumbLists = Model.JsonLdBreadcrumbLists;
+	ViewBag.JsonLdFaq = JsonLdModels.PrepareJsonLdProduct(
+		Model.BarcodeGeneratePageTitle,
+		"https://products.aspose.app/img/barcode/aspose_generate-app-48.png",
+		Model.BarcodeGenerateMetaDescription);
+	ViewBag.JsonLdHowTo = JsonLdModels.PrepareJsonLdHowTo(
+		HowToSectionModel.BarcodeGenerate,
+		"https://products.aspose.app/img/barcode/aspose_generate-app-48.png",
+		Model.BarcodeGeneratePageTitle,
+		Model.BarcodeGenerateMetaDescription,
+		"HowToGenerate");
+	Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+@section scripts {
+	@Scripts.Render("~/scripts/Shared/Alert.min.js")
+
+
+	<script>
+        var BarcodeTypes = @Html.ToEscapeHtmlJson(Model.BarcodeTypes);
+        var BarcodeTypeSelected = BarcodeTypes[0];
+
+        function selectBarcodeType(index) {
+            BarcodeTypeSelected = BarcodeTypes[index];
+
+            $('#barcodeTypeDdl').val(BarcodeTypeSelected.TypeName);
+            $('#barcodeTypeDdl>span').html(BarcodeTypeSelected.TypeTitle);
+            $('#barcodeTypeDescription').html(BarcodeTypeSelected.TypeDescription);
+            $('#barcodePreviewSm').attr('src', BarcodeTypeSelected.BarcodeTypeImgBase64);
+            $('#ProductTitle').html('@AppStrings.BarcodeGenerateAppTitle');
+            $('#ProductTitleSub').html('@AppStrings.BarcodeGenerateAppTitleSub');
+            $('#barcodeCodetext').attr('placeholder', '@AppStrings.BarcodeCodetextPlaceholder: e.g. ' + BarcodeTypeSelected.DefaultCodetext);
+        }
+
+        function selectImageFormat(imageFormat) {
+            $('#imageFormatsDdl').val(imageFormat);
+            $('#imageFormatsDdl').html(imageFormat);
+        }
+
+        function selectBarcodeSize(size) {
+            $('#barcodeSizesContainer>button').removeClass("selected");
+            $('#barcodeSizesContainer button:nth-child(' + size + ')').addClass("selected");
+        }
+
+        function generateBarcode() {
+
+            if ('ga' in window) {
+                try {
+                    var tracker = window.ga.getAll()[0];
+                    if (tracker !== undefined) {
+                        tracker.send('event', {
+                            'eventCategory': 'Barcode',
+                            'eventAction': 'Generate'
+                        });
+                    }
+                } catch (err) { }
+            }
+
+            var codetext = $('#barcodeCodetext').val();
+
+            if (!codetext || codetext == '') {
+                codetext = BarcodeTypeSelected.DefaultCodetext;
+            }
+
+            var barcodetype = $('#barcodeTypeDdl').val();
+            var imageformat = $('#imageFormatsDdl').val();
+            var barcodesize = $('#barcodeSizesContainer>button.selected').val();
+            if (typeof barcodesize === 'undefined') {
+                barcodesize = 2;
+            }
+
+            $("#barcodeimg").hide();
+            $("#downloadBtn").hide();
+            $("#barcodeLoader").show();
+            $.ajax({
+                type: 'POST',
+                data: {
+                    barcodetype: barcodetype,
+                    content: codetext,
+                    filetype: imageformat,
+                    filesize: barcodesize
+                },
+                url: "../../barcode/generatebarcode"
+            }).done(function (res) {
+                if (res.success) {
+                    $('#barcodeimg').attr('src', 'data:image/png;base64,' + res.imgBase64);
+                    $('#downloadBtn').attr('href', res.url);
+                    $("#barcodeimg").show();
+                    $("#downloadBtn").show();
+                    location.hash = "#result";
+                } else {
+                    showToast(res.errorMsg);
+                }
+            }).always(function() {
+                $("#barcodeLoader").hide();
+            });
+
+        }
+
+        $(document).ready(function () {
+            for (var i = 0; i < BarcodeTypes.length; i++) {
+                $('#previewImage' + i).attr('src', BarcodeTypes[i].BarcodeTypeImgBase64);
+                $('#previewImage' + i).attr('alt', BarcodeTypes[i].TypeTitle);
+            }
+        });
+	</script>
+
+}
+@section styles {
+	
+	<link href="/css/barcode.min.css" rel="stylesheet" type="text/css" />
+}
+<div class="container-fluid asposetools pb5">
+	<div class="container">
+
+		<div class="row">
+			
+			<div class="barcodeAppRow">
+				<a href="/default" class="btn btn-success btn-lg">Home</a> <br />
+				<div class="col-md-12">
+					<h1 id="ProductTitle">@Model.BarcodeGenerateAppTitle</h1>
+					<h2 id="ProductTitleSub">@Model.BarcodeGenerateAppTitleSub</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="barcodeAppRowSlim">
+				<div class="col-md-12">
+					<div class="input-group">
+						<textarea id="barcodeCodetext" placeholder="@AppStrings.BarcodeCodetextPlaceholder: e.g. @Model.BarcodeTypes[0].DefaultCodetext" class="form-control"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="barcodeAppRowSlim">
+				<div class="col-md-12">
+					<div class="btn-group">
+						<button id="barcodeTypeDdl" value="@Model.BarcodeTypes[0].TypeName" aria-expanded="true" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle" role="button">
+							<img id="barcodePreviewSm" class="img-thumbnail" src="@Model.BarcodeTypes[0].BarcodeTypeImgBase64"><span>@Model.BarcodeTypes[0].TypeTitle</span>
+						</button>
+						<ul class="barcode-menu wideDdl dropdown-menu">
+							@for (var i = 0; i < Model.BarcodeTypes.Count; i++)
+							{
+								var id = "previewImage" + i;
+								<li onclick="selectBarcodeType(@i)">
+									<div class="container">
+										<div class="row">
+											<div class="col d-sm-none d-md-block">
+												<img id="@id" class="barcodePreview img-thumbnail" alt="" src="">
+											</div>
+											<div class="col">
+												@Model.BarcodeTypes[i].TypeTitle
+											</div>
+										</div>
+									</div>
+								</li>
+							}
+						</ul>
+					</div>
+					<div id="barcodeTypeDescription">
+						@Html.Raw(Model.BarcodeTypes[0].TypeDescription)
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="barcodeAppRowSlim">
+				<div class="col-md-12">
+					<div id="barcodeSizesContainer" class="barcodeSizes btn-group btn-group-lg " role="group">
+						<button type="button" value="1" onclick="selectBarcodeSize(1)" class="btn btn-secondary">@AppStrings.Small</button>
+						<button type="button" value="2" onclick="selectBarcodeSize(2)" class="btn btn-secondary selected">@AppStrings.Medium</button>
+						<button type="button" value="3" onclick="selectBarcodeSize(3)" class="btn btn-secondary">@AppStrings.Large</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="barcodeAppRowSlim">
+				<div class="col-md-12">
+					<div class="btn-group">
+						<button id="imageFormatsDdl" value="@Model.ImageFormats[0]" aria-expanded="true" data-toggle="dropdown" class="btn btn-primary btn-lg dropdown-toggle" role="button">@Model.ImageFormats[0]</button>
+						<ul class="barcode-menu dropdown-menu">
+							@foreach (var imageFormat in Model.ImageFormats)
+							{
+								<li onclick="selectImageFormat('@imageFormat')">
+									@imageFormat
+								</li>
+							}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="anchor" name="result"></a>
+		<div class="row">
+			<div class="barcodeAppRowSlim">
+				<div class="col-md-12">
+					<button type="button" onclick="generateBarcode()" class="btn btn-success btn-lg">@AppStrings.BarcodeGenerate</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="barcodeAppRow">
+				<div class="col-md-12">
+					<img id="barcodeimg" />
+					<div>
+						<a id="downloadBtn" class="text-white" href="" target="_blank" style="display: none">@AppStrings.Download</a>
+					</div>
+					<div id="barcodeLoader" class="spinner-border text-success" role="status" style="display: none">
+						<span class="sr-only">@AppStrings.Loading</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@{
+
+	
+	Html.RenderPartial("AppProductSection", AppProductSectionModel.BarcodeGenerate);
+	Html.RenderPartial("HowToSection", HowToSectionModel.BarcodeGenerate);
+	Html.RenderPartial("AppFeaturesSection", AppFeaturesSectionModel.BarcodeGenerate);
+
+}
