@@ -1,4 +1,4 @@
-## Aspose.BarCode for .NET
+# Aspose.BarCode for .NET
 
 [Aspose.BarCode for .NET](https://products.aspose.com/barcode/net) is a set of Barcode APIs to generate, read and recognize 1D and 2D barcodes from any image at any angle. It is written in managed C# thus allowing developers to quickly and easily add barcode generation and recognition functionality to their Microsoft .NET applications (WinForms, ASP.NET, WPF and .NET Compact Framework).
 
@@ -31,7 +31,7 @@ Directory | Description
 - Specify image area to scan barcode.
 - Create device resolution dependent images.
 
-## Barcode Symbologies
+## Supported Barcode Symbologies
 
 **Numeric Only:** EAN13,  EAN8, UPCA, UPCE, ISBN, ISMN, ISSN, Interleaved2of5,  Standard2of5, MSI, Code11, Codabar, Postnet, Planet, EAN14(SCC14), SSCC18, ITF14, IATA2of5, DatabarOmniDirectional, DatabarStackedOmniDirectional, DatabarExpandedStacked,   DatabarStacked, DatabarLimited, DatabarTruncated\
 **Alpha-Numeric:** GS1Code128, Code128, Code39 Extended, Code39 Standard, Code93 Extended, Code93 Standard, Australia Post, Italian Post 25, Matrix2of5, DatabarExpanded. PatchCode\
