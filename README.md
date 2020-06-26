@@ -49,5 +49,34 @@ Directory | Description
 
 Aspose.BarCode for .NET can easily be used in any .NET 32-bit or 64-bit application, including, WinForms, WPF, ASP.NET, and .NET core. In short, you can develop apps using Aspose.BarCode for .NET where the .NET framework is available.
 
+## Getting Started with Aspose.BarCode for .NET
+
+Are you ready to give Aspose.BarCode for .NET a try? Simply execute `Install-Package Aspose.BarCode` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.BarCode for .NET and want to upgrade the version, please execute `Update-Package Aspose.BarCode` to get the latest version.
+
+## Generate a Barcode Label with Code128
+
+Try the following snippet to see how Aspose.BarCode API performs in your environment or check the [GitHub Repository](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET) for other common usage scenarios.
+```csharp
+// instantiate object and set different barcode properties
+BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "1234567");
+generator.Parameters.Barcode.XDimension.Millimeters = 1f;
+
+// save the image to your system and set its image format to Jpeg
+generator.Save(dir + "output.jpg", BarCodeImageFormat.Jpeg);
+```
+
+## Hide Barcode Text from the PNG Label via C# Code
+
+Aspose.BarCode for .NET allows you to customize various properties of barcodes, such as, borders, color, type, bar height as well as barcode text. Following example shows, how simple it is to hide the barcode text using C#.
+
+```csharp
+string codeText = "This text is hidden.\n" + "This text is hidden.\n"; ;
+
+// instantiate barcode object and set CodeText, Symbology , and  CodeLocation
+BarcodeGenerator  generator = new BarcodeGenerator(EncodeTypes.DataMatrix, codeText);
+generator.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
+generator.Save(dir + "output.png", BarCodeImageFormat.Png);
+```
+
 [Product Page](https://products.aspose.com/barcode/net) | [Docs](https://docs.aspose.com/display/barcodenet/Home) | [Demos](https://products.aspose.app/barcode/family) | [API Reference](https://apireference.aspose.com/barcode/net) | [Examples](https://github.com/aspose-barcode/Aspose.BarCode-for-.NET) | [Blog](https://blog.aspose.com/category/barcode/) | [Free Support](https://forum.aspose.com/c/barcode) | [Temporary License](https://purchase.aspose.com/temporary-license)
 
