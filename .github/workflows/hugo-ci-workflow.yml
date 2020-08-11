@@ -1,0 +1,15 @@
+name: Hugo-CI
+on:
+  push:
+    branches: [ develop ]
+    paths:
+      - 'Docs/**'
+
+jobs:
+  job-one:
+    name: Deploy
+    runs-on: [self-hosted, linux, x64, dev4-barcode]
+    steps:
+      - name: hugo build
+        run: |
+          cd aspose-barcode-docs
