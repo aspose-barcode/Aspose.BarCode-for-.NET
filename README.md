@@ -8,8 +8,6 @@
   </a>
 </p>
 
-This repository contains [Demos](Demos), [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.BarCode for .NET](https://products.aspose.com/barcode/net) to help you learn and write your own applications.
-
 Directory | Description
 --------- | -----------
 [Demos](Demos)  | Source code for live demos hosted at https://products.aspose.app/barcode/family.
