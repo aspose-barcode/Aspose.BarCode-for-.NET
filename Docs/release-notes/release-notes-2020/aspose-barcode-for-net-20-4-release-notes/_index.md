@@ -1,7 +1,7 @@
 ---
 title: Aspose.BarCode for .NET 20.4 Release Notes
 type: docs
-weight: 10
+weight: 60
 url: /net/aspose-barcode-for-net-20-4-release-notes/
 ---
 
