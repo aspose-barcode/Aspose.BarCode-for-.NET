@@ -21,7 +21,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             // Set the symbology and code text and X dimension reduction property of barcode and save barcode Image
             BarcodeGenerator  generator = new BarcodeGenerator (EncodeTypes.Code128, "blackReduction");
             generator.Parameters.Barcode.XDimension.Millimeters = 1.2f;
-            //BarWidthReduction = 0.2f
+            generator.Parameters.Barcode.BarWidthReduction.Millimeters = 0.2f;
 
             generator.Save(dataDir + "SetWideNarrowRatio_out.png");
             // ExEnd:SetWideNarrowRatio
