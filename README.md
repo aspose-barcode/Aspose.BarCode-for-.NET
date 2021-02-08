@@ -1,3 +1,5 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.Barcode) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Barcode) ![GitHub](https://img.shields.io/github/license/aspose-barcode/Aspose.Barcode-for-.NET)
+
 # Barcode Library for .NET
 
 [Aspose.BarCode for .NET](https://products.aspose.com/barcode/net) doesn't just create or recognize barcodes but it provides a complete framework to control almost everything about barcodes. Developers can customization the barcode's appearance including bar height, color, margins, borders and so on. While scanning for barcode, developers can specify area where a barcode can be found as well as direct the engine to look for rotated barcodes.
