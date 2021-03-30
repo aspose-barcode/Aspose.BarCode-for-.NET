@@ -27,8 +27,11 @@ namespace Aspose.BarCode.Examples.CSharp.TechnicalArticles
 				{
 					var converter = new PdfConverter();
 					converter.BindPdf(dataDir + @"document.pdf");
+					//Set page
 					converter.StartPage = i;
 					converter.EndPage = i;
+					//Set resolution of the page, 300 dpi is standard resolution
+					converter.Resolution = new Aspose.Pdf.Devices.Resolution(300);
 					converter.DoConvert();
 					MemoryStream stream = new MemoryStream();
 					converter.GetNextImage(stream, ImageFormat.Png);

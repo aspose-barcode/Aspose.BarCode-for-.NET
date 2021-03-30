@@ -1,9 +1,7 @@
-﻿using Aspose.BarCode.ComplexBarcode;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
+using Aspose.BarCode.Generation;
+using Aspose.BarCode.ComplexBarcode;
 
 namespace Aspose.BarCode.Examples.CSharp.ManageComplexBarcodes
 {
@@ -11,7 +9,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageComplexBarcodes
     {
         public static void Run()
         {
-            // ExStart:GenerateComplexBarcodes
+            //ExStart:GenerateComplexBarcodes
+            // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageComplexBarcodes();
 

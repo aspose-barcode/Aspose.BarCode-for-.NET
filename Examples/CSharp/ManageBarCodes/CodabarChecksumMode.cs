@@ -16,7 +16,8 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
     {
         public static void Run()
         {
-            // ExStart:CodabarChecksumMode 
+            //ExStart:CodabarChecksumMode 
+            // For complete examples and data files, please go to https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageBarCodes();
@@ -32,7 +33,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
             generator.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
 
             //Set the CodabarChecksumMode
-            generator.Parameters.Barcode.Codabar.CodabarChecksumMode = BarCode.CodabarChecksumMode.Mod10;
+            generator.Parameters.Barcode.Codabar.CodabarChecksumMode = Aspose.BarCode.Generation.CodabarChecksumMode.Mod10;
 
             //Save the image on the system
             generator.Save("Codabar_Mod10.png");
