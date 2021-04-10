@@ -1,238 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{241E5DF9-163C-4E21-9751-F709472B01F5}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharp</RootNamespace>
-    <AssemblyName>CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Aspose.BarCode, Version=21.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.BarCode.21.3.0\lib\net40\Aspose.BarCode.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Cells, Version=21.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.21.3.0\lib\net40\Aspose.Cells.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.PDF, Version=21.3.0.0, Culture=neutral, PublicKeyToken=f0262d67fe233d63, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.PDF.21.3.0\lib\net4.0\Aspose.PDF.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Words, Version=21.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Words.21.3.0\lib\net40\Aspose.Words.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateBarCodeWithImageInsteadOfCodeText.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateEDIFACTDatamatrixBarCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateX12DatamatrixBarCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateTextDatamatrixBarCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateC40DatamatrixBarCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\ErrorCorrectionLevel.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\ImportExportBarcodeToXML.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\SettingQRVersion.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\GenerateCustomBarcodes.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\BarcodeReaderSetBarcodeImage.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\BarCodeRecognitionFilters.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\MarkingBarCodeRegionsInImage.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\SingleWipedBarsInPattern.cs" />
-    <Compile Include="ManageBarcodeImages\EnableImageBorder.cs" />
-    <Compile Include="ManageBarcodeImages\SetFrameOut.cs" />
-    <Compile Include="ManageBarCodes\BarcodeWithSegments.cs" />
-    <Compile Include="ManageBarCodes\BorderWidth.cs" />
-    <Compile Include="ManageBarCodes\CreatePostalBarcodeWithHeight.cs" />
-    <Compile Include="ManageBarCodes\GenerateAPatchCode.cs" />
-    <Compile Include="ManageBarCodes\ReadPostalTypesBarcode.cs" />
-    <Compile Include="ManageBarCodes\ReadMostCommonTypeBarcode.cs" />
-    <Compile Include="ManageBarCodes\ReadType1DBarcode.cs" />
-    <Compile Include="ManageBarCodes\GetMinimumBarCodeSize.cs" />
-    <Compile Include="ManageBarCodes\IdentifyTypeOfCode128.cs" />
-    <Compile Include="ManageBarCodes\BarcodeWithChecksumValue.cs" />
-    <Compile Include="ManageBarCodes\CodabarChecksumMode.cs" />
-    <Compile Include="ManageBarCodes\ReadAndSortBarcodesInSpecificOrder.cs" />
-    <Compile Include="ManageBarCodes\RecognizeBarcodeWithChineseCharacters.cs" />
-    <Compile Include="ManageBarCodes\RecognizeBarcodeWithTurkishCharacters.cs" />
-    <Compile Include="ManageBarCodes\SetAztecSymbolMode.cs" />
-    <Compile Include="ManageBarCodes\SetBorderStyle.cs" />
-    <Compile Include="ManageBarCodes\SwissPostParcelBarcodeWithAdditionalServiceType.cs" />
-    <Compile Include="ManageBarCodes\CreateAndSetSizeForImageWithBarcode.cs" />
-    <Compile Include="ManageBarCodes\CreateImageWithExactBarcodeOnly.cs" />
-    <Compile Include="ManageBarCodes\OptionalExceptionMessageWith1DBarCode.cs" />
-    <Compile Include="ManageBarCodes\SwissPostParcelBarcodeWithInternationalMailType.cs" />
-    <Compile Include="ManageBarCodes\SwissPostParcelSymbology.cs" />
-    <Compile Include="ManageBarCodes\CreatePdf417BarcodeWithChineseCharacters.cs" />
-    <Compile Include="ManageBarCodes\CreatePdf417BarcodeWithTurkishCharacters.cs" />
-    <Compile Include="ManageBarCodes\GetDLLVersionInformation.cs" />
-    <Compile Include="ManageBarCodes\GenerateAndRecognizeUTF8Characters.cs" />
-    <Compile Include="ManageBarCodes\ReadBarcodeFromTIFFImages.cs" />
-    <Compile Include="ManageBarCodes\GeneratingGS1_128AI8012Barcode.cs" />
-    <Compile Include="ManageBarCodes\GeneratingGS1ForCodablock.cs" />
-    <Compile Include="ManageBarCodes\GeneratingCodablockF.cs" />
-    <Compile Include="ManageBarCodes\SetWideNarrowRatio.cs" />
-    <Compile Include="ManageBarCodes\CreateUpcaGs1DatabarCoupon.cs" />
-    <Compile Include="ManageBarCodes\CreateCouponExtendedBarcode.cs" />
-    <Compile Include="ManageBarCodes\DisplayChecksumCharacter.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\EncodeMicroQRCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\EncodeQRCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\EncodeQRCodEInECIMode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\FNC1FirstPositionInExtendedMode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\FNC1SecondPositionInExtendedMode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\MultiECIModeInExtendedMode.cs" />
-    <Compile Include="ManageBarCodes\ExportPropertiesToXML.cs" />
-    <Compile Include="ManageBarCodes\SetSupplementData.cs" />
-    <Compile Include="ManageBarcodeImages\BarcodeImageBorders.cs" />
-    <Compile Include="ManageBarcodeImages\BarcodeImagePadding.cs" />
-    <Compile Include="ManageBarcodeImages\ColorizeAnyPartoftheBarcodeImage.cs" />
-    <Compile Include="ManageBarcodeImages\ControlBarsFillingofOneDBarcodes.cs" />
-    <Compile Include="ManageBarcodeImages\RotateBarcodeImage.cs" />
-    <Compile Include="ManageBarCodes\SetHeightOfBarsInDataBarStackedOmniDirectional.cs" />
-    <Compile Include="ManageBarcodeImages\AddSpaceInBarCodeAndText.cs" />
-    <Compile Include="ManageBarcodeImages\BarcodeCustomSize.cs" />
-    <Compile Include="ManageBarcodeImages\BarcodeImageResolution.cs" />
-    <Compile Include="ManageBarCodes\ManageCaption.cs" />
-    <Compile Include="ManageBarcodeImages\SaveBarcodeImageToStreams.cs" />
-    <Compile Include="ManageBarcodeImages\SetCodeAlignment.cs" />
-    <Compile Include="ManageBarcodeImages\SetCodeTextFontFamilyNameAndSize.cs" />
-    <Compile Include="ManageBarcodeImages\SetCodetextLocation.cs" />
-    <Compile Include="ManageBarcodeImages\SaveBarcodeImagesToDifferentFormats.cs" />
-    <Compile Include="ManageBarcodeImages\SetFontandColorSetting.cs" />
-    <Compile Include="ManageBarcodeImages\SetForeColorText.cs" />
-    <Compile Include="ManageBarcodeImages\SetITF14SpecifyBorderType.cs" />
-    <Compile Include="ManageBarcodeImages\SetSizeUnitForBarcodeImage.cs" />
-    <Compile Include="ManageBarcodeImages\SpecifyITF14BorderThickness.cs" />
-    <Compile Include="ManageBarCodes\SpecifySymbologies.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\DetectUnreadableBarcode.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\GetAllPossible1DBarcodesfromImage.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\GetBarCodeRecognitionQualityInPercent.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\GetBarCodeRegionInformationfromImage.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ImageProcessingBarcodeRecognition.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ManualHints.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\OptimizingBarCodeRecognitionProcess.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ReadMultipleBarcodeRegions.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ReadMultipleMacropdf417BarcodeImages.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ReadMultipleMacroPdf417Barcodes.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\SetBarcodeOrientation.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\DetectOrientationOfBarCode.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\SwitchBarcodeRecognitionModes.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\DetectDecoratedDatamatrix.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\DetectDotPeenDatamatrix.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ECCTypeToEnCodeBarcode.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ReadBarcodeSpecificRegionOfImage.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\RecognizeMultipleSymbologies.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\RecognizeSpecificBarcodeSymbology.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\ScanBarCodePicture.cs" />
-    <Compile Include="ManageAndOptimizeBarcodeRecognition\SupportImageFormat.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateMultipleMacroPdf417.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\HideBarcodeCodeText.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\ReduceCodeTextFontSize.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\SetAspectRatio.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateAztecbarcode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateSimpleDatamatrixBarCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CreateEnCodeDatamatrixBarCode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\CustomEncodingModeInDataMatrix.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\DetectUnicodeEncoding.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\ManagePDF417Barcode.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\UseAztecErrorCorrection.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\UseEncodeModeDatamatrixbarcode.cs" />
-    <Compile Include="ManageBarCodes\BarcodeCaption.cs" />
-    <Compile Include="ManageBarCodes\ChecksumSupplementData.cs" />
-    <Compile Include="ManageBarCodes\CodabarStartStopSymbols.cs" />
-    <Compile Include="ManageBarCodes\CodetextAppearance.cs" />
-    <Compile Include="CreateAndManageTwoDBarcodes\Create2DBarcodes.cs" />
-    <Compile Include="ManageBarCodes\CreateCode128Barcode.cs" />
-    <Compile Include="ManageBarCodes\CreateDatamatrixBarcode.cs" />
-    <Compile Include="ManageBarCodes\CreatePDF417Barcode.cs" />
-    <Compile Include="ManageBarCodes\CreateQRbarcode.cs" />
-    <Compile Include="ManageBarCodes\GenerateAustraliaPostBarcode.cs" />
-    <Compile Include="ManageBarCodes\ManageXYDimension.cs" />
-    <Compile Include="ManageBarcodeImages\RotateBarcode.cs" />
-    <Compile Include="ManageBarCodes\SetQREncodeMode.cs" />
-    <Compile Include="ManageBarCodes\SetCodeText.cs" />
-    <Compile Include="ManageBarCodes\SetHeightBarcodeBars.cs" />
-    <Compile Include="ManageBarCodes\SetQRErrorCorrection.cs" />
-    <Compile Include="ManageBarCodes\SpecifySymbology.cs" />
-    <Compile Include="ManageBarCodes\WideNarrowRatio.cs" />
-    <Compile Include="ManageComplexBarcodes\GenerateComplexBarcodes.cs" />
-    <Compile Include="ManageComplexBarcodes\ReadComplexBarcodes.cs" />
-    <Compile Include="RunExamples.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TechnicalArticles\AddBarcodeImageToPDFDocument.cs" />
-    <Compile Include="TechnicalArticles\AddingBarcodeImageToExcelWorksheet.cs" />
-    <Compile Include="TechnicalArticles\BarcodeWithDatabase.cs" />
-    <Compile Include="TechnicalArticles\CreatingWordDocumentWithBarcodeImage.cs" />
-    <Compile Include="TechnicalArticles\ExportPDFPagesToImagesAndRecognizeBarCode.cs" />
-    <Compile Include="TechnicalArticles\GenerateMultipleBarcodesOnSingleImage.cs" />
-    <Compile Include="TechnicalArticles\RecognizeBarcodeFromPDFDocuments.cs" />
-    <Compile Include="TechnicalArticles\RecognizeBarcodeFromWordDocument.cs" />
-    <Compile Include="TechnicalArticles\SaveBarCodeToMemoryStream.cs" />
-    <Compile Include="TechnicalArticles\CreatingBarCode.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<Configurations>NETFrameworkDebug;NETCoreDebug;NETFrameworkRelease;NETCoreRelease</Configurations>	
+		<OutputType>Exe</OutputType>
+		<RootNamespace>CSharp</RootNamespace>
+		<AssemblyName>CSharp</AssemblyName>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<StartupObject>Aspose.BarCode.Examples.CSharp.RunExamples</StartupObject>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+		<OutputPath>..\build\$(Configuration)\</OutputPath>
+	</PropertyGroup>
+	
+	<!--Build type section-->
+	<PropertyGroup Condition="$(Configuration.Contains('Debug'))">
+		<Optimize>False</Optimize>
+		<DebugSymbols>True</DebugSymbols>
+		<DebugType>full</DebugType>
+	</PropertyGroup>
+	<PropertyGroup Condition="$(Configuration.Contains('Release'))">
+		<Optimize>True</Optimize>
+		<DebugSymbols>False</DebugSymbols>
+		<DebugType>none</DebugType>	
+	</PropertyGroup>
+	
+	<!--Framework section-->
+	<PropertyGroup Condition="$(Configuration.Contains('NETFramework'))">
+		<TargetFramework>net48</TargetFramework>
+	</PropertyGroup>
+	<PropertyGroup Condition="$(Configuration.Contains('NETCore'))">
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+	
+	<!--Reference to Aspose libraries, required for examples-->
+	<ItemGroup>
+		<PackageReference Include="Aspose.BarCode" Version="21.3.0.0" />
+		<PackageReference Include="Aspose.Cells" Version="21.3.0.0" />
+		<PackageReference Include="Aspose.PDF" Version="21.3.0.0" />
+		<PackageReference Include="Aspose.Words" Version="21.3.0.0" />
+	</ItemGroup>	
+	
+	<!--Reference to .Net Core libraries, required for examples-->
+	<ItemGroup Condition="$(DefineConstants.Contains(NETCOREAPP))">
+		<PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.80.0" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+	</ItemGroup>	
 </Project>

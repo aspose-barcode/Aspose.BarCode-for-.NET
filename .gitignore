@@ -32,3 +32,5 @@ Plugins/Aspose_Words_NET_for_PHP/composer.lock
 *.ide-shm
 *.ide
 *.ide-wal
+.vs
+build

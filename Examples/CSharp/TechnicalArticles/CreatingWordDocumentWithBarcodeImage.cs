@@ -5,6 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+#if !NETFRAMEWORK 
+using SkiaSharp.Views.Desktop;
+#endif
 
 namespace Aspose.BarCode.Examples.CSharp.TechnicalArticles
 {
@@ -26,7 +29,11 @@ namespace Aspose.BarCode.Examples.CSharp.TechnicalArticles
 
             // Create builder for document object, Insert the barCode image into document and Save the word document.
             DocumentBuilder builder = new DocumentBuilder(doc);
+#if NETFRAMEWORK
             builder.InsertImage(generator.GenerateBarCodeImage());
+#else
+            builder.InsertImage(Extensions.ToSKBitmap(generator.GenerateBarCodeImage()));
+#endif
             doc.Save(dataDir + "Myfile_out.doc");
             // ExEnd:CreatingWordDocumentWithBarcodeImage
             Console.WriteLine(Environment.NewLine + "Creating Word Document With BarCode Image Finished.");

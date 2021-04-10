@@ -43,7 +43,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //WideNarrowRatio.Run();
             //GenerateAustraliaPostBarcode.Run();
             //CodabarStartStopSymbols.Run();
-            SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
+            //SetHeightOfBarsInDataBarStackedOmniDirectional.Run();
             //ExportPropertiesToXML.Run();
             //DisplayChecksumCharacter.Run();
             //SetQREncodeMode.Run();
@@ -56,7 +56,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //GeneratingCodablockF.Run();
             //GeneratingGS1ForCodablock.Run();
             //GeneratingGS1_128AI8012Barcode.Run();
-            GenerateAPatchCode.Run();
+            //GenerateAPatchCode.Run();
             //ReadType1DBarcode.Run();
             //ReadPostalTypesBarcode.Run();
             //ReadMostCommonTypeBarcode.Run();
@@ -101,6 +101,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //RecognizeBarcodeWithChineseCharacters.Run();
             //ReadAndSortBarcodesInSpecificOrder.Run();
             //SpecifyITF14BorderThickness.Run();
+            PrintBarcodeImage.Run();
 
             //// =====================================================
             //// =====================================================

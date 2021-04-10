@@ -16,16 +16,17 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodeImages
         public static void Run()
         {
             // ExStart:PrintBarcodeImage       
-            // Get the default Printer Name
-            PrinterSettings settings = new PrinterSettings();
-            string printerName = settings.PrinterName;
 
-            // Instantiate barcode object and set CodeText & Barcode Symbology
-            BarCodeBuilder barCodeBuilder = new BarCodeBuilder("1234567890", EncodeTypes.Code128);
+            //draw image
+            PrintDocument doc = new PrintDocument();
+            doc.PrintPage += (printSender, printEvent) =>
+            {
+                using (BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.Code128, "1234567890"))
+                    printEvent.Graphics.DrawImage(generator.GenerateBarCodeImage(), 0, 0);
+            };
 
-            // Set printer name
-            barCodeBuilder.PrinterName = printerName;
-            barCodeBuilder.Print();
+            //print
+            doc.Print();
             // ExEnd:PrintBarcodeImage       
         }
     }

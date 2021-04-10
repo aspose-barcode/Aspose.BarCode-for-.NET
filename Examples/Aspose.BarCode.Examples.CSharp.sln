@@ -1,22 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{241E5DF9-163C-4E21-9751-F709472B01F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp", "CSharp\CSharp.csproj", "{241E5DF9-163C-4E21-9751-F709472B01F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		NETFrameworkDebug|Any CPU = NETFrameworkDebug|Any CPU
+		NETCoreDebug|Any CPU = NETCoreDebug|Any CPU
+		NETFrameworkRelease|Any CPU = NETFrameworkRelease|Any CPU
+		NETCoreRelease|Any CPU = NETCoreRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{241E5DF9-163C-4E21-9751-F709472B01F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{241E5DF9-163C-4E21-9751-F709472B01F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{241E5DF9-163C-4E21-9751-F709472B01F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{241E5DF9-163C-4E21-9751-F709472B01F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETFrameworkDebug|Any CPU.ActiveCfg = NETFrameworkDebug|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETFrameworkDebug|Any CPU.Build.0 = NETFrameworkDebug|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETCoreDebug|Any CPU.ActiveCfg = NETCoreDebug|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETCoreDebug|Any CPU.Build.0 = NETCoreDebug|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETFrameworkRelease|Any CPU.ActiveCfg = NETFrameworkRelease|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETFrameworkRelease|Any CPU.Build.0 = NETFrameworkRelease|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETCoreRelease|Any CPU.ActiveCfg = NETCoreRelease|Any CPU
+		{241E5DF9-163C-4E21-9751-F709472B01F5}.NETCoreRelease|Any CPU.Build.0 = NETCoreRelease|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBC0690D-D4F7-4799-9A48-CD1E2E4D01E2}
 	EndGlobalSection
 EndGlobal

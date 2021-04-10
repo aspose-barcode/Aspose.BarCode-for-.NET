@@ -28,7 +28,7 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void GenerateBarcode()
         {
             //ExStart: GenerateBarcode
-            using (var generator = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var generator = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 generator.Save(dataDir + "GenerateBarcode_out.png");
             }
@@ -38,7 +38,7 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void GenerateBarcodeWithCodeText()
         {
             //ExStart: GenerateBarcodeWithCodeText
-            using (var generator = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14, "1234567890"))
+            using (var generator = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14, "1234567890"))
             {
                 generator.Save(dataDir + "GenerateBarcodeWithCodeText_out.png");
             }
@@ -48,7 +48,7 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void GettingDefaultTextForGeneratedBarcode()
         {
             //ExStart: GettingDefaultTextForGeneratedBarcode
-            using (var generator = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var generator = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 string codetext = generator.CodeText;
                 Console.WriteLine(codetext);
@@ -59,7 +59,7 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void SettingBarcodeHeight()
         {
             //ExStart: SettingBarcodeHeight
-            using (var generator = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var generator = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 generator.CodeText = "123456789";
                 generator.Parameters.Barcode.BarHeight.Pixels = 500;
@@ -71,10 +71,10 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void SettingBarcodeProperties()
         {
             //ExStart: SettingBarcodeProperties
-            using (var gen = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var gen = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 gen.CodeText = "123456789";
-                gen.Parameters.Barcode.ForeColor = Color.DarkBlue;
+                gen.Parameters.BackColor = Color.DarkBlue;
                 gen.Parameters.Barcode.XDimension.Pixels = 5;
                 gen.Parameters.Barcode.BarHeight.Pixels = 200;
                 gen.Parameters.Barcode.Padding.Top.Pixels = 70;
@@ -89,13 +89,13 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void SettingBarcodeBorder()
         {
             //ExStart: SettingBarcodeBorder
-            using (var gen = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var gen = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 gen.CodeText = "123456789";
                 gen.Parameters.Border.Width.Pixels = 50;
                 gen.Parameters.Border.Color = Color.Red;
                 gen.Parameters.Border.Visible = true;
-                gen.Parameters.Border.DashStyle = Aspose.BarCode.BorderDashStyle.Solid;
+                gen.Parameters.Border.DashStyle = BorderDashStyle.Solid;
                 gen.Save(dataDir + "SettingBarcodeBorder_out.png");
             }
             //ExEnd: SettingBarcodeBorder
@@ -104,12 +104,12 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void GenerateBarcodeWithAutoSizeInterpolation()
         {
             //ExStart: GenerateBarcodeWithAutoSizeInterpolation
-            using (var gen = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var gen = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 gen.CodeText = "123456789";
-                gen.Parameters.Barcode.AutoSizeMode = Aspose.BarCode.Generation.V3.AutoSizeMode.Interpolation;
-                gen.Parameters.Barcode.BarCodeWidth.Pixels = 500;
-                gen.Parameters.Barcode.BarCodeHeight.Pixels = 200;
+                gen.Parameters.AutoSizeMode = AutoSizeMode.Interpolation;
+                gen.Parameters.ImageWidth.Pixels = 500;
+                gen.Parameters.ImageHeight.Pixels = 200;
                 gen.Save(dataDir + "GenerateBarcodeWithAutoSizeInterpolation_out.png");
             }
             //ExEnd: GenerateBarcodeWithAutoSizeInterpolation
@@ -118,7 +118,7 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void GenerateBarcodeWithCaptionAbove()
         {
             //ExStart: GenerateBarcodeWithCaptionAbove
-            using (var gen = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var gen = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 gen.CodeText = "123456789";
                 gen.Parameters.CaptionAbove.Padding.Top.Pixels = 70;
@@ -129,7 +129,7 @@ namespace CSharp.ManageV3BarcodeGenerator
                 gen.Parameters.CaptionAbove.TextColor = Color.Red;
                 gen.Parameters.CaptionAbove.Font.Size.Pixels = 28;
                 gen.Parameters.CaptionAbove.Visible = true;
-                gen.Parameters.CaptionAbove.Alignment = Aspose.BarCode.Generation.V3.StringAlignment.Center;
+                gen.Parameters.CaptionAbove.Alignment = TextAlignment.Center;
                 gen.Save(dataDir + "GenerateBarcodeWithCaptionAbove_out.png");
             }
             //ExEnd: GenerateBarcodeWithCaptionAbove
@@ -138,7 +138,7 @@ namespace CSharp.ManageV3BarcodeGenerator
         public static void GenerateBarcodeWithCaptionBelow()
         {
             //ExStart: GenerateBarcodeWithCaptionBelow
-            using (var gen = new Aspose.BarCode.Generation.V3.BarcodeGenerator(EncodeTypes.ITF14))
+            using (var gen = new Aspose.BarCode.Generation.BarcodeGenerator(EncodeTypes.ITF14))
             {
                 gen.CodeText = "123456789";
                 gen.Parameters.CaptionBelow.Padding.Top.Pixels = 70;
@@ -149,7 +149,7 @@ namespace CSharp.ManageV3BarcodeGenerator
                 gen.Parameters.CaptionBelow.TextColor = Color.Red;
                 gen.Parameters.CaptionBelow.Font.Size.Pixels = 28;
                 gen.Parameters.CaptionBelow.Visible = true;
-                gen.Parameters.CaptionBelow.Alignment = Aspose.BarCode.Generation.V3.StringAlignment.Center;
+                gen.Parameters.CaptionBelow.Alignment = TextAlignment.Center;
                 gen.Save(dataDir + "GenerateBarcodeWithCaptionBelow_out.png");
             }
             //ExEnd: GenerateBarcodeWithCaptionBelow
