@@ -22,7 +22,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
          
                 // Create array for storing multiple bar codes file names
-                string[] files = new string[] { "Barcodefrom.png", "Barcode2.png" };
+                string[] files = new string[] { "MacroPdf417_0.png", "MacroPdf417_1.png" };
 
                 // Iiterate through the bar code image files
                 for (int i = 0; i < files.Length; ++i)
@@ -34,9 +34,14 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                         {
                             // Get code text, file id, segment id and segment count
                             Console.WriteLine("File Name: " + files[i] + " Code Text: " + result.CodeText);
-                            Console.WriteLine("FileID: " + result.Extended.Pdf417.MacroPdf417FileID);
-                            Console.WriteLine("SegmentID: " + result.Extended.Pdf417.MacroPdf417SegmentID);
+                            Console.WriteLine("File ID: " + result.Extended.Pdf417.MacroPdf417FileID);
+                            Console.WriteLine("Segment ID: " + result.Extended.Pdf417.MacroPdf417SegmentID);
                             Console.WriteLine("Segment Count: " + result.Extended.Pdf417.MacroPdf417SegmentsCount);
+                            Console.WriteLine("File Size: " + result.Extended.Pdf417.MacroPdf417FileSize);
+                            Console.WriteLine("Sender: " + result.Extended.Pdf417.MacroPdf417Sender);
+                            Console.WriteLine("Addressee: " + result.Extended.Pdf417.MacroPdf417Addressee);
+                            Console.WriteLine("Date: " + result.Extended.Pdf417.MacroPdf417TimeStamp.ToString());
+                            Console.WriteLine("Checksum: " + result.Extended.Pdf417.MacroPdf417Checksum);
                         }
                         Console.WriteLine();
                     }

@@ -17,31 +17,68 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void Run()
         {
             // ExStart:GetBarCodeRegionInformationfromImage
+            
+            ReadBarcodeRegionPoints();
+            ReadBarcodeRegionQuadrangle();
+            ReadBarcodeRegionRectangle();
+
+            // ExEnd:GetBarCodeRegionInformationfromImage
+
+        }
+
+        public static void ReadBarcodeRegionPoints()
+        {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
             // Create an instance of BarCodeReader class and read barcode file
             using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard))
-            {
-                // Try to recognize all possible barcodes in the image
                 foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
                 {
-                    // Get the region information
-                    var region = result.Region;
-                    if (region != null)
-                    {
-                        // Display x and y coordinates of barcode detected
-                        Point[] point = region.Points;
-                        Console.WriteLine("Top left coordinates: X = " + point[0].X + ", Y = " + point[0].Y);
-                        Console.WriteLine("Top right coordinates: X = " + point[1].X + ", Y = " + point[1].Y);
-                        Console.WriteLine("Bottom right coordinates: X = " + point[2].X + ", Y = " + point[2].Y);
-                        Console.WriteLine("Bottom left coordinates: X = " + point[3].X + ", Y = " + point[3].Y);
-                    }
+                    // Display x and y coordinates of barcode detected
+                    Console.WriteLine("Top left coordinates: X = " + result.Region.Points[0].X + ", Y = " + result.Region.Points[0].Y);
+                    Console.WriteLine("Top right coordinates: X = " + result.Region.Points[1].X + ", Y = " + result.Region.Points[1].Y);
+                    Console.WriteLine("Bottom right coordinates: X = " + result.Region.Points[2].X + ", Y = " + result.Region.Points[2].Y);
+                    Console.WriteLine("Bottom left coordinates: X = " + result.Region.Points[3].X + ", Y = " + result.Region.Points[3].Y);
+                    //codetext
                     Console.WriteLine("Codetext: " + result.CodeText);
                 }
-            }
-            // ExEnd:GetBarCodeRegionInformationfromImage
-
         }
+        
+        public static void ReadBarcodeRegionQuadrangle()
+        {
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
+
+            // Create an instance of BarCodeReader class and read barcode file
+            using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard))
+                foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
+                {
+                    // Display x and y coordinates of barcode detected
+                    Console.WriteLine("Top left coordinates: X = " + result.Region.Quadrangle.LeftTop.X + ", Y = " + result.Region.Quadrangle.LeftTop.Y);
+                    Console.WriteLine("Top right coordinates: X = " + result.Region.Quadrangle.RightTop.X + ", Y = " + result.Region.Quadrangle.RightTop.Y);
+                    Console.WriteLine("Bottom right coordinates: X = " + result.Region.Quadrangle.RightBottom.X + ", Y = " + result.Region.Quadrangle.RightBottom.Y);
+                    Console.WriteLine("Bottom left coordinates: X = " + result.Region.Quadrangle.LeftBottom.X + ", Y = " + result.Region.Quadrangle.LeftBottom.Y);
+                    //codetext
+                    Console.WriteLine("Codetext: " + result.CodeText);
+                }
+        }
+
+        public static void ReadBarcodeRegionRectangle()
+        {
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
+
+            // Create an instance of BarCodeReader class and read barcode file
+            using (BarCodeReader barCodeReader = new BarCodeReader(dataDir + "Region.png", DecodeType.Code39Standard))
+                foreach (BarCodeResult result in barCodeReader.ReadBarCodes())
+                {
+                    // Display region rectangle
+                    Console.WriteLine("Barcode Rectangle: " + result.Region.Rectangle.ToString());
+                    //codetext
+                    Console.WriteLine("Codetext: " + result.CodeText);
+                }
+        }
+
     }
 }

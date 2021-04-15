@@ -11,33 +11,31 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 {
-    class GetBarCodeRecognitionQualityInPercent
+    class ReadDatabarBarcodes
     {
         public static void Run()
         {
+            // ExStart:ReadDatabarBarcodes
             try
             {
-                // ExStart:GetBarCodeRecognitionQualityInPercent
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
-                // Initialize the BarCodeReader object and Call read method
-                using (BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes))
-                {
+                // Instantiate BarCodeReader object
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "Databar.png", DecodeType.DatabarExpanded, DecodeType.DatabarExpandedStacked))
+                    // Read Code128 bar code and Detect bar code orientation
                     foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        Console.WriteLine(result.CodeText + " Type: " + result.CodeType);
-                        double percent = result.ReadingQuality;
+                        Console.WriteLine("Type: " + result.CodeTypeName);
+                        Console.WriteLine("CodeText: " + result.CodeText);
+                        Console.WriteLine("Is DataBar has 2D component: " + result.Extended.DataBar.Is2DCompositeComponent.ToString());
                     }
-                }
-                // ExEnd:GetBarCodeRecognitionQualityInPercent
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message + "\nThis example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http://wwww.aspose.com/purchase/default.aspx.");
             }
+            // ExEnd:ReadDatabarBarcodes
         }
     }
 }
-
-

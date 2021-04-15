@@ -26,6 +26,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 {
                     //set high performance mode
                     reader.QualitySettings = QualitySettings.HighPerformance;
+					reader.QualitySettings.AllowDatamatrixIndustrialBarcodes = true;
                     foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
                         Console.WriteLine(result.CodeType + ": " + result.CodeText);

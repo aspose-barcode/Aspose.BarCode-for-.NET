@@ -16,27 +16,21 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         public static void Run()
         {
             // ExStart:DetectOrientationOfBarCode
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
-
-            
             try
             {
+                // The path to the documents directory.
+                string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
+
                 // Instantiate BarCodeReader object
                 using (BarCodeReader reader = new BarCodeReader(dataDir + "rotatedbarcode.jpg", DecodeType.Code128))
-                {
                     // Read Code128 bar code and Detect bar code orientation
                     foreach (BarCodeResult result in reader.ReadBarCodes())
-                    {
-                        Console.Write(Environment.NewLine + "Rotaion Angle: " + result.Region.Angle);
-                    }
-                }
+                        Console.WriteLine("Rotaion Angle: " + result.Region.Angle);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message + "\nThis example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http://wwww.aspose.com/purchase/default.aspx.");
             }
-            Console.WriteLine(Environment.NewLine + "Barcode recognized from " + dataDir + "rotatedbarcode.jpg");
             // ExEnd:DetectOrientationOfBarCode
         }
     }

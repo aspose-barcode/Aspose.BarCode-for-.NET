@@ -20,10 +20,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
             {                 
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
-                BaseDecodeType[] objArray = new BaseDecodeType[] { DecodeType.Code39Standard, DecodeType.Pdf417 };
 
-                // Initialize the BarCodeReader, Call Read() method in a loop and  Display the codetext and symbology type
-                using (BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png", objArray))
+                // Initialize the BarCodeReader
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "RecognizingMultipleSymbologies.png", DecodeType.Code39Standard, DecodeType.Pdf417))
                 {
                     foreach (BarCodeResult result in reader.ReadBarCodes())
                     {

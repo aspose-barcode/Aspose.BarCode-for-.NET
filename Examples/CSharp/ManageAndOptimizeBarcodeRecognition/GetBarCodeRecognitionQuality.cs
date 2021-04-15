@@ -11,28 +11,28 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 {
-    class DetectDotPeenDatamatrix
+    class GetBarCodeRecognitionQuality
     {
         public static void Run()
         {
             try
             {
-                // ExStart:DetectDotPeenDatamatrix               
+                // ExStart:GetBarCodeRecognitionQuality
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
-                // Initialize the BarCodeReader class by passing barcode file name and barcode type as parameters
-                using (BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-DotPeen.png", DecodeType.DataMatrix))
+                // Initialize the BarCodeReader object and Call read method
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "Barcode2.png", DecodeType.AllSupportedTypes))
                 {
-                    //set high performance mode
-                    reader.QualitySettings = QualitySettings.HighPerformance;
-                    reader.QualitySettings.AllowDatamatrixIndustrialBarcodes = true;
                     foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        Console.WriteLine(result.CodeType + ": " + result.CodeText);
+                        Console.WriteLine("Type: " + result.CodeType);
+                        Console.WriteLine("Codetext: " + result.CodeText);
+                        Console.WriteLine("Confidence: " + result.Confidence.ToString());
+                        Console.WriteLine("Reading Quality: " + result.ReadingQuality.ToString("F0"));
                     }
                 }
-                // ExEnd:DetectDotPeenDatamatrix
+                // ExEnd:GetBarCodeRecognitionQuality
             }
             catch (Exception ex)
             {
@@ -41,3 +41,5 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
         }
     }
 }
+
+

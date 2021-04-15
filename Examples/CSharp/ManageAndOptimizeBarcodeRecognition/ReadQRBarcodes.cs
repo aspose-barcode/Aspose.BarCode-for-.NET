@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using Aspose.BarCode.BarCodeRecognition;
 
 /*
@@ -12,37 +11,33 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 {
-    class ReadMultipleMacropdf417BarcodeImages
+    class ReadQRBarcodes
     {
         public static void Run()
         {
-            // ExStart:ReadMultipleMacropdf417BarcodeImages
+            // ExStart:ReadQRBarcodes
             try
             {
-                // The path to the documents directory.             
+                // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
-                string strFileID = "1";
-                string[] strFileslist = Directory.GetFiles(dataDir + strFileID + "_*.png");
-                foreach (string strFile in strFileslist)
-                {
-                    // We got list of all the files, now read barcodes
-                    using (BarCodeReader reader = new BarCodeReader(strFile, DecodeType.MacroPdf417))
+
+                // Instantiate BarCodeReader object
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "QRStructuredAppend.png", DecodeType.QR))
+                    // Read Code128 bar code and Detect bar code orientation
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        foreach (BarCodeResult result in reader.ReadBarCodes())
-                        {
-                            Console.WriteLine("File: " + strFile 
-                                + " == FileID: " + result.Extended.Pdf417.MacroPdf417FileID 
-                                + " == SegmentID: " + result.Extended.Pdf417.MacroPdf417SegmentID 
-                                + "  == CodeText: " + result.CodeText);
-                        }
+                        Console.WriteLine("Type: " + result.CodeTypeName);
+                        Console.WriteLine("CodeText: " + result.CodeText);
+                        Console.WriteLine("BarCodes Quantity: " + result.Extended.QR.QRStructuredAppendModeBarCodesQuantity);
+                        Console.WriteLine("BarCode Index: " + result.Extended.QR.QRStructuredAppendModeBarCodeIndex);
+                        Console.WriteLine("Parity Data: " + result.Extended.QR.QRStructuredAppendModeParityData);
                     }
-                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message + "\nThis example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http://wwww.aspose.com/purchase/default.aspx.");
             }
-            // ExEnd:ReadMultipleMacropdf417BarcodeImages
+            // ExEnd:ReadQRBarcodes
         }
     }
 }

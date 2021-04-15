@@ -28,6 +28,7 @@ namespace Aspose.BarCode.Examples.CSharp.ManageBarCodes
                     {
                         var t = result.CodeBytes;
                         var encodingValue = Encoding.GetEncoding(1254).GetString(t);
+                        Console.WriteLine("CodeText: " + encodingValue);
                     }
                 }
                 // ExEnd:RecognizeBarcodeWithChineseCharacters

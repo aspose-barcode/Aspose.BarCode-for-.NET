@@ -11,33 +11,33 @@ please feel free to contact us using http://www.aspose.com/community/forums/defa
 
 namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
 {
-    class DetectDotPeenDatamatrix
+    class ReadCode128Barcodes
     {
         public static void Run()
         {
+            // ExStart:ReadCode128Barcodes
             try
             {
-                // ExStart:DetectDotPeenDatamatrix               
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir_ManageAndOptimizeBarcodeRecognition();
 
-                // Initialize the BarCodeReader class by passing barcode file name and barcode type as parameters
-                using (BarCodeReader reader = new BarCodeReader(dataDir + "datamatrix-DotPeen.png", DecodeType.DataMatrix))
-                {
-                    //set high performance mode
-                    reader.QualitySettings = QualitySettings.HighPerformance;
-                    reader.QualitySettings.AllowDatamatrixIndustrialBarcodes = true;
+                // Instantiate BarCodeReader object
+                using (BarCodeReader reader = new BarCodeReader(dataDir + "rotatedbarcode.jpg", DecodeType.Code128))
+                    // Read Code128 bar code and Detect bar code orientation
                     foreach (BarCodeResult result in reader.ReadBarCodes())
                     {
-                        Console.WriteLine(result.CodeType + ": " + result.CodeText);
+                        Console.WriteLine("Type: " + result.CodeTypeName);
+                        Console.WriteLine("CodeText: " + result.CodeText);
+                        Console.WriteLine("Portions: ");
+                        foreach (Code128DataPortion portion in result.Extended.Code128.Code128DataPortions)
+                            Console.WriteLine("Subtype:" + portion.Code128SubType.ToString() + "Data:" + portion.Data);
                     }
-                }
-                // ExEnd:DetectDotPeenDatamatrix
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message + "\nThis example will only work if you apply a valid Aspose BarCode License. You can purchase full license or get 30 day temporary license from http://wwww.aspose.com/purchase/default.aspx.");
             }
+            // ExEnd:ReadCode128Barcodes
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Drawing;
 using System.IO;
+using System.Drawing;
 using Aspose.BarCode.BarCodeRecognition;
 
 /*
@@ -33,8 +33,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 //ExStart: ReadBarCodeFromStream
                 using (FileStream lStream = new FileStream(dataDir + "Scan.jpg", FileMode.Open, FileAccess.Read, FileShare.Read))
                 {
-                    using (BarCodeReader reader = new BarCodeReader())
+                    using (BarCodeReader reader = new BarCodeReader(lStream))
                     {
+                        //other way to set
                         reader.SetBarCodeImage(lStream);
                         foreach (BarCodeResult result in reader.ReadBarCodes())
                             Console.WriteLine("BarCode CodeText: " + result.CodeText);
@@ -55,8 +56,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 //ExStart: ReadBarCodeFromSpecificRegion
                 using (Bitmap lBitmap = new Bitmap(dataDir + "Scan.jpg"))
                 {
-                    using (BarCodeReader reader = new BarCodeReader())
+                    using (BarCodeReader reader = new BarCodeReader(lBitmap, new Rectangle(0, 0, lBitmap.Width, lBitmap.Height)))
                     {
+                        //other way to set
                         reader.SetBarCodeImage(lBitmap, new Rectangle(0, 0, lBitmap.Width, lBitmap.Height));
                         foreach (BarCodeResult result in reader.ReadBarCodes())
                             Console.WriteLine("BarCode CodeText: " + result.CodeText);
@@ -77,8 +79,9 @@ namespace Aspose.BarCode.Examples.CSharp.ManageAndOptimizeBarCodeRecognition
                 //ExStart: ReadBarCodeFromMultipleRegions
                 using (Bitmap lBitmap = new Bitmap(dataDir + "Scan.jpg"))
                 {
-                    using (BarCodeReader reader = new BarCodeReader())
+                    using (BarCodeReader reader = new BarCodeReader(lBitmap, new Rectangle[] { new Rectangle(0, 0, lBitmap.Width, lBitmap.Height) }))
                     {
+                        //other way to set
                         reader.SetBarCodeImage(lBitmap, new Rectangle[] { new Rectangle(0, 0, lBitmap.Width, lBitmap.Height) });
                         foreach (BarCodeResult result in reader.ReadBarCodes())
                             Console.WriteLine("BarCode CodeText: " + result.CodeText);

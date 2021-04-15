@@ -101,7 +101,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //RecognizeBarcodeWithChineseCharacters.Run();
             //ReadAndSortBarcodesInSpecificOrder.Run();
             //SpecifyITF14BorderThickness.Run();
-            PrintBarcodeImage.Run();
+            //PrintBarcodeImage.Run();
 
             //// =====================================================
             //// =====================================================
@@ -149,6 +149,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //RecognizeSpecificBarcodeSymbology.Run();
             //RecognizeMultipleSymbologies.Run();
             //DetectDotPeenDatamatrix.Run();
+            //DetectDecoratedDatamatrix.Run();
             //DetectOrientationOfBarCode.Run();
             //DetectUnreadableBarcode.Run();
             //SetBarcodeOrientation.Run();
@@ -159,16 +160,20 @@ namespace Aspose.BarCode.Examples.CSharp
             //ReadMultipleMacroPdf417Barcodes.Run();
             //GetBarCodeRegionInformationfromImage.Run();
             //GetAllPossible1DBarcodesfromImage.Run();
-            //GetBarCodeRecognitionQualityInPercent.Run();
+            //GetBarCodeRecognitionQuality.Run();
             //SwitchBarcodeRecognitionModes.Run();
             //OptimizingBarCodeRecognitionProcess.Run();
             //ManualHints.Run();
             //ReadMultipleBarcodeRegions.Run();
             //ECCTypeToEnCodeBarcode.Run();
-            //DetectDecoratedDatamatrix.Run();
             //BarCodeRecognitionFilters.Run();
             //BarcodeReaderSetBarcodeImage.Run();
             //SingleWipedBarsInPattern.Run();
+            //ReadBarcodeInWPF.Run();
+            //ReadOneDBarcodes.Run();
+            //ReadCode128Barcodes.Run();
+            //ReadDatabarBarcodes.Run();
+            //ReadQRBarcodes.Run();
 
             //// =====================================================
             //// =====================================================
@@ -194,7 +199,7 @@ namespace Aspose.BarCode.Examples.CSharp
             //RecognizeBarcodeFromPDFDocuments.Run();
             //RecognizeBarcodeFromWordDocument.Run();
             //SaveBarCodeToMemoryStream.Run();
-            BarcodeWithDatabase.Run();
+            //BarcodeWithDatabase.Run();
 
 
             // Stop before exiting
@@ -239,21 +244,10 @@ namespace Aspose.BarCode.Examples.CSharp
 
         private static string GetDataDir_Data()
         {
-            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
-            string startDirectory = null;
-            if (parent != null)
-            {
-                var directoryInfo = parent.Parent;
-                if (directoryInfo != null)
-                {
-                    startDirectory = directoryInfo.FullName;
-                }
-            }
-            else
-            {
-                startDirectory = parent.FullName;
-            }
-            return startDirectory != null ? Path.Combine(startDirectory, "Data\\") : null;
+            string exePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            //depends from exe path, currently in "build\$(Configuration)"
+            string dataPath = Path.GetFullPath(Path.Combine(exePath, "../../Data/"));
+            return dataPath;
         }
     }
 }
