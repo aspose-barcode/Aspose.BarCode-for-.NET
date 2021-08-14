@@ -7,9 +7,10 @@
 
 Directory | Description
 -|-
-[Demos](Demos)  | Source code for live demos hosted at https://products.aspose.app/barcode/family.
-[Examples](Examples)  | A collection of .NET examples that help you learn the product features
-[Plugins](Plugins)  | Visual Studio Plugins related to Aspose.BarCode for .NET.
+[Demos](Demos) | Source code for live demos hosted at https://products.aspose.app/barcode/family.
+[Examples](Examples) | A collection of .NET examples that help you learn the product features
+[Plugins](Plugins) | Visual Studio Plugins related to Aspose.BarCode for .NET.
+[ReportingServices](ReportingServices) | Source code of examples and utilities for Aspose.BarCode for Reporting Services
 
 ## Demo applications
 
