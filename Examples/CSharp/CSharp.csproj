@@ -34,15 +34,16 @@
 	
 	<!--Reference to Aspose libraries, required for examples-->
 	<ItemGroup>
-		<PackageReference Include="Aspose.BarCode" Version="21.3.0.0" />
-		<PackageReference Include="Aspose.Cells" Version="21.3.0.0" />
-		<PackageReference Include="Aspose.PDF" Version="21.3.0.0" />
-		<PackageReference Include="Aspose.Words" Version="21.3.0.0" />
+		<PackageReference Include="Aspose.BarCode" Version="22.5.0.0" />
+		<PackageReference Include="Aspose.Cells" Version="22.5.0.0" />
+		<PackageReference Include="Aspose.PDF" Version="22.5.0.0" />
+		<PackageReference Include="Aspose.Words" Version="22.5.0.0" />
+		<PackageReference Include="Aspose.Imaging" Version="22.5.0.0" />
 	</ItemGroup>	
 	
 	<!--Reference to .Net Core libraries, required for examples-->
 	<ItemGroup Condition="$(DefineConstants.Contains(NETCOREAPP))">
-		<PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+		<PackageReference Include="System.Drawing.Common" Version="5.0.2" />
 		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.80.0" />
 		<PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
 	</ItemGroup>	
