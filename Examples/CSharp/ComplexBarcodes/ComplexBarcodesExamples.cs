@@ -30,6 +30,42 @@ namespace Aspose.BarCode.Examples.CSharp.ComplexBarcodes
             //// =====================================================
             Mailmark2DGenRec.Run();
             Mailmark2DRec.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////  ComplexBarcodes: MaxiCode
+            //// =====================================================
+            //// =====================================================
+            MaxiCodeMode2StructuredSecondMessageGenRec.Run();
+            MaxiCodeMode2StructuredSecondMessageRec.Run();
+            MaxiCodeMode2StandardSecondMessageGenRec.Run();
+            MaxiCodeMode2StandardSecondMessageRec.Run();
+            MaxiCodeMode3StructuredSecondMessageGenRec.Run();
+            MaxiCodeMode3StructuredSecondMessageRec.Run();
+            MaxiCodeMode3StandardSecondMessageGenRec.Run();
+            MaxiCodeMode3StandardSecondMessageRec.Run();
+            MaxiCodeStandardCodetextGenRec.Run();
+            MaxiCodeStandardCodetextRec.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////  ComplexBarcodes: HIBC LIC Code
+            //// =====================================================
+            //// =====================================================
+            HIBCLICCombinedGenRec.Run();
+            HIBCLICCombinedRec.Run();
+            HIBCLICPrimaryGenRec.Run();
+            HIBCLICPrimaryRec.Run();
+            HIBCLICSecondaryGenRec.Run();
+            HIBCLICSecondaryRec.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////  ComplexBarcodes: HIBC LIC Code
+            //// =====================================================
+            //// =====================================================
+            HIBCPASGenRec.Run();
+            HIBCPASRec.Run();
         }
     }
 }
