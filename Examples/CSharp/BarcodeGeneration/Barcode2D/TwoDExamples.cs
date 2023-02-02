@@ -79,9 +79,26 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             ////  Barcode Generation: Maxicode
             //// =====================================================
             //// =====================================================
-            MaxiCodeEncodeMode2.Run();
-            MaxiCodeEncodeMode4.Run();
             MaxiCodeAspectRatio.Run();
+            MaxiCodeEncodeModeAuto.Run();
+            MaxiCodeEncodeModeBytes.Run();
+            MaxiCodeEncodeModeExtendedCodetext.Run();
+            MaxiCodeMode2.Run();
+            MaxiCodeMode4.Run();
+            MaxiCodeStructuredAppendMode.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////  Barcode Generation: DotCode
+            //// =====================================================
+            //// =====================================================
+            DotCodeRowsColumns.Run();
+            DotCodeAspectRatio.Run();
+            DotCodeStructuredAppendMode.Run();
+            DotCodeEncodeModeAuto.Run();
+            DotCodeEncodeModeBytes.Run();
+            DotCodeReaderInitialization.Run();
+            DotCodeExtendedCodetext.Run();
         }
     }
 }
