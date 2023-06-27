@@ -63,16 +63,18 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             ////  Barcode Generation: DataMatrix
             //// =====================================================
             //// =====================================================
-            DatamatrixEcc000140.Run();
-            DatamatrixEcc200.Run();
-            DatamatrixEncodeModeAuto.Run();
-            DatamatrixEncodeModeFullBytes.Run();
-            DatamatrixEncodeModeCustom.Run();
-            DatamatrixEncodeModeC40.Run();
-            DatamatrixExtendedCodetext.Run();
-            DatamatrixRowsColumnsEcc200.Run();
-            DatamatrixMacro.Run();
-            DatamatrixAspectRatio.Run();
+            DataMatrixAspectRatio.Run();
+            DataMatrixEcc000140.Run();
+            DataMatrixEcc200.Run();
+            DataMatrixEncodeModeASCII.Run();
+            DataMatrixEncodeModeAuto.Run();
+            DataMatrixEncodeModeBytes.Run();
+            DataMatrixEncodeModeC40.Run();
+            DataMatrixExtendedCodetext.Run();
+            DataMatrixMacro.Run();
+            DataMatrixReaderProgramming.Run();
+            DataMatrixStructuredAppend.Run();
+            DataMatrixVersions.Run();
 
             //// =====================================================
             //// =====================================================
