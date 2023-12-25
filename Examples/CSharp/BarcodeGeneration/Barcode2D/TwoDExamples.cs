@@ -52,10 +52,14 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             ////  Barcode Generation: Aztec
             //// =====================================================
             //// =====================================================
-            AztecSymbolModeExample.Run();
-            AztecBytesEncoding.Run();
-            AztecCodeTextEncoding.Run();
+            AztecEncodeModeAuto.Run();
+            AztecEncodeModeBytes.Run();
+            AztecEncodeModeExtendedCodetext.Run();
             AztecErrorLevelExample.Run();
+            AztecLayersCount.Run();
+            AztecReaderInitialization.Run();
+            AztecStructuredAppendMode.Run();
+            AztecSymbolModeExample.Run();
             AztecAspectRatio.Run();
 
             //// =====================================================
