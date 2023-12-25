@@ -1,0 +1,27 @@
+﻿//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
+//https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
+using Aspose.BarCode.Generation;
+
+namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
+{
+    internal class AztecLayersCount : TwoDBase
+    {
+		public static void Run()
+        {
+            string path = GetFolder();
+            System.Console.WriteLine("AztecLayersCount:");
+
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©"))
+            {
+                gen.Parameters.Barcode.XDimension.Pixels = 4;
+             
+                //auto (by default)
+                gen.Save($"{path}AztecLayersCountAuto.png", BarCodeImageFormat.Png);
+
+                //set layers count to 10
+                gen.Parameters.Barcode.Aztec.LayersCount = 10;
+                gen.Save($"{path}AztecLayersCount10.png", BarCodeImageFormat.Png);
+            }
+        }
+    }
+}
