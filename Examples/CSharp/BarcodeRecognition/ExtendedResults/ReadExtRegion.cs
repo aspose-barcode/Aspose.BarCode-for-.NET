@@ -1,8 +1,12 @@
-//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
-using System.Drawing;
 using Aspose.BarCode.BarCodeRecognition;
+#if NETSTANDARD2_0_OR_GREATER || NETCOREAPP2_1_OR_GREATER
+using Aspose.Drawing;
+#else
+using System.Drawing;
+#endif
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
 {

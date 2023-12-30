@@ -1,8 +1,13 @@
-//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using Aspose.BarCode.Generation;
 using Aspose.BarCode.BarCodeRecognition;
+#if NETSTANDARD2_0_OR_GREATER || NETCOREAPP2_1_OR_GREATER
+using Aspose.Drawing;
+#else
+using System.Drawing;
+#endif
 
 namespace Aspose.BarCode.Examples.CSharp.KnowledgeBase
 {
@@ -35,7 +40,7 @@ namespace Aspose.BarCode.Examples.CSharp.KnowledgeBase
             gen.Parameters.CaptionAbove.Alignment = TextAlignment.Left;
             gen.Parameters.CaptionAbove.Text = "AR";
             gen.Parameters.CaptionAbove.Font.Size.Pixels = 24;
-            gen.Parameters.CaptionAbove.Font.Style = System.Drawing.FontStyle.Bold;
+            gen.Parameters.CaptionAbove.Font.Style = FontStyle.Bold;
             gen.Save($"{path}SwissPostAdditionalServiceAsIs.png", BarCodeImageFormat.Png);
             //read the current barcode value
             foreach (BarCodeResult result in new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.SwissPostParcel).ReadBarCodes())
@@ -50,7 +55,7 @@ namespace Aspose.BarCode.Examples.CSharp.KnowledgeBase
             gen.Parameters.CaptionAbove.Alignment = TextAlignment.Left;
             gen.Parameters.CaptionAbove.Text = "AR";
             gen.Parameters.CaptionAbove.Font.Size.Pixels = 24;
-            gen.Parameters.CaptionAbove.Font.Style = System.Drawing.FontStyle.Bold;
+            gen.Parameters.CaptionAbove.Font.Style = FontStyle.Bold;
             gen.Save($"{path}SwissPostAdditionalServiceAsCode128.png", BarCodeImageFormat.Png);
             //read the current barcode value
             foreach (BarCodeResult result in new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.SwissPostParcel).ReadBarCodes())

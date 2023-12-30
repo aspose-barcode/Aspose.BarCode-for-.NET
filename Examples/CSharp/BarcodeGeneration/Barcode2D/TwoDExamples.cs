@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
@@ -44,7 +44,6 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             MacroPdf417Optional.Run();
             MacroPdf417ECIEncoding.Run();
             Pdf417ReaderInitialization.Run();
-            Pdf417Code128Emulation.Run();
             Pdf417BytesEncoding.Run();
 
             //// =====================================================
@@ -105,6 +104,15 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             DotCodeEncodeModeBytes.Run();
             DotCodeReaderInitialization.Run();
             DotCodeExtendedCodetext.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////  Barcode Generation: GS1CompositeBar
+            //// =====================================================
+            //// =====================================================
+            GS1CompositeLinearComponent.Run();
+            GS1CompositeTwoDComponent.Run();
+            GS1CompositeNotGS1TwoDSupplement.Run();
         }
     }
 }
