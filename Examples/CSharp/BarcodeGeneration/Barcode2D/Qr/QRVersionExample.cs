@@ -4,21 +4,24 @@ using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
-    internal class QRVersionExample : TwoDBase
+    internal class QrVersionExample : TwoDBase
     {
 		public static void Run()
         {
             string path = GetFolder();
             System.Console.WriteLine("QRVersionExample:");
 
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "ASPOSE");
-            gen.Parameters.Barcode.XDimension.Pixels = 4;
-            //set MicroQR 4 version
-            gen.Parameters.Barcode.QR.QrVersion = QRVersion.VersionM4;
-            gen.Save($"{path}QRVersionM4.png", BarCodeImageFormat.Png);
-            //set QR 5 version
-            gen.Parameters.Barcode.QR.QrVersion = QRVersion.Version05;
-            gen.Save($"{path}QRVersion05.png", BarCodeImageFormat.Png);
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "ASPOSE"))
+            {
+                gen.Parameters.Barcode.XDimension.Pixels = 4;
+                
+                //auto (by default)
+                gen.Save($"{path}QRVersionAuto.png", BarCodeImageFormat.Png);
+
+                //set QR version 05
+                gen.Parameters.Barcode.QR.QrVersion = QRVersion.Version05;
+                gen.Save($"{path}QRVersion05.png", BarCodeImageFormat.Png);
+            }
         }
     }
 }

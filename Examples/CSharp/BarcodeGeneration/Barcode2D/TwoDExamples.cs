@@ -12,8 +12,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             ////  Barcode Generation: QR code
             //// =====================================================
             //// =====================================================
-            QREncodeTypeExample.Run();
-            QRVersionExample.Run();
+            QrVersionExample.Run();
+            QrMicroQRVersion.Run();
+            QrRectMIcroQRVersion.Run();
 
             QrEncodeModeAuto.Run();
             QrEncodeModeBytes.Run();
@@ -24,7 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             QrErrorLevel.Run();
             QrStructuredAppend.Run();
             QrAspectRatio.Run();
-
+            
             //// =====================================================
             //// =====================================================
             ////  Barcode Generation: PDF417
