@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -13,10 +13,11 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
         {
             string path = GetFolder();
             System.Console.WriteLine("Pdf417ECIEncoding:");
-
             Console.OutputEncoding = Encoding.Unicode;
+
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose常に先を行く");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
+            gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
             gen.Parameters.Barcode.Pdf417.Columns = 3;
             //set UTF8 ECI encoding
             gen.Parameters.Barcode.Pdf417.Pdf417ECIEncoding = ECIEncodings.UTF8;

@@ -6,25 +6,25 @@ using Aspose.BarCode.BarCodeRecognition;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
-    internal class Pdf417ReaderInitialization : TwoDBase
+    internal class Pdf417IsLinked : TwoDBase
     {
 		public static void Run()
         {
             string path = GetFolder();
-            System.Console.WriteLine("Pdf417ReaderInitialization:");
+            System.Console.WriteLine("Pdf417IsLinked:");
 
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Aspose");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             gen.Parameters.Barcode.Pdf417.Columns = 3;
-            //set flag that indicates that data is encoded for reader initialization
-            gen.Parameters.Barcode.Pdf417.IsReaderInitialization = true;
-            gen.Save($"{path}Pdf417ReaderInitialization.png", BarCodeImageFormat.Png);
+            //set flag that indicates that data is encoded with NON EAN.UCC Linked mode 918
+            gen.Parameters.Barcode.Pdf417.IsLinked = true;
+            gen.Save($"{path}Pdf417IsLinked.png", BarCodeImageFormat.Png);
             //try to recognize it
             using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417))
                 foreach (BarCodeResult result in read.ReadBarCodes())
                 {
                     Console.WriteLine("CodeText:" + result.CodeText);
-                    Console.WriteLine("IsReaderInitialization:" + result.Extended.Pdf417.IsReaderInitialization);
+                    Console.WriteLine("IsLinked:" + result.Extended.Pdf417.IsLinked);
                 }
         }
     }

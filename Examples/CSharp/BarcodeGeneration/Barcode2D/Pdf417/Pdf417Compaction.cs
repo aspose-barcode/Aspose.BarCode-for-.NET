@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -13,6 +13,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 
             BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
+            gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
             gen.Parameters.Barcode.Pdf417.Columns = 3;
             //Set compaction mode to Auto
             gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Auto;

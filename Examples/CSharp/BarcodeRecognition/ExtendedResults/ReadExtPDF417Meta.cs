@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -31,6 +31,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
                 gen.Parameters.Barcode.Pdf417.Pdf417MacroTimeStamp = new DateTime(2019, 11, 1);
                 gen.Parameters.Barcode.Pdf417.Pdf417MacroAddressee = "street";
                 gen.Parameters.Barcode.Pdf417.Pdf417MacroSender = "aspose";
+                gen.Parameters.Barcode.Pdf417.Pdf417MacroTerminator = Pdf417MacroTerminator.Set;
                 gen.Save($"{path}ExtPDF417Meta.png", BarCodeImageFormat.Png);
             }
 
@@ -51,6 +52,68 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
                     Console.WriteLine($"Pdf417MacroTimeStamp:{result.Extended.Pdf417.MacroPdf417TimeStamp.ToString()}");
                     Console.WriteLine($"Pdf417MacroAddressee:{result.Extended.Pdf417.MacroPdf417Addressee}");
                     Console.WriteLine($"Pdf417MacroSender:{result.Extended.Pdf417.MacroPdf417Sender}");
+                    Console.WriteLine($"MacroPdf417Terminator:{result.Extended.Pdf417.MacroPdf417Terminator}");
+                }
+            }
+
+            //generate MacroPdf417 with Reader Initialization
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©"))
+            {
+                gen.Parameters.Barcode.XDimension.Pixels = 2;
+                gen.Parameters.Barcode.Pdf417.Columns = 5;
+                gen.Parameters.Barcode.Pdf417.IsReaderInitialization = true;
+                gen.Save($"{path}ExtPDF417MetaReaderInitialization.png", BarCodeImageFormat.Png);
+            }
+
+            //try to recognize Pdf417 Reader Initialization
+            Console.WriteLine("ReadExtPDF417Meta: Reader Initialization");
+            using (BarCodeReader read = new BarCodeReader($"{path}ExtPDF417MetaReaderInitialization.png", DecodeType.Pdf417))
+            {
+                foreach (BarCodeResult result in read.ReadBarCodes())
+                {
+                    Console.WriteLine($"CodeType:{result.CodeTypeName}");
+                    Console.WriteLine($"CodeText:{result.CodeText}");
+                    Console.WriteLine($"IsReaderInitialization:{result.Extended.Pdf417.IsReaderInitialization}");
+                }
+            }
+
+            //generate MacroPdf417 with Linked state
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroPdf417, "Åspóse.Barcóde©"))
+            {
+                gen.Parameters.Barcode.XDimension.Pixels = 2;
+                gen.Parameters.Barcode.Pdf417.IsLinked = true;
+                gen.Save($"{path}ExtPDF417MetaLinked.png", BarCodeImageFormat.Png);
+            }
+
+            //try to recognize Pdf417 Linked state
+            Console.WriteLine("ReadExtPDF417Meta: Linked state");
+            using (BarCodeReader read = new BarCodeReader($"{path}ExtPDF417MetaLinked.png", DecodeType.MicroPdf417))
+            {
+                foreach (BarCodeResult result in read.ReadBarCodes())
+                {
+                    Console.WriteLine($"CodeType:{result.CodeTypeName}");
+                    Console.WriteLine($"CodeText:{result.CodeText}");
+                    Console.WriteLine($"IsLinked:{result.Extended.Pdf417.IsLinked}");
+                }
+            }
+
+            //generate MacroPdf417 with Code128 Emulation state
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroPdf417, "Aspose.Barcode"))
+            {
+                gen.Parameters.Barcode.XDimension.Pixels = 2;
+                gen.Parameters.Barcode.Pdf417.IsCode128Emulation = true;
+                gen.Save($"{path}ExtPDF417MetaCode128Emulation.png", BarCodeImageFormat.Png);
+            }
+
+            //try to recognize Pdf417 Linked state
+            Console.WriteLine("ReadExtPDF417Meta: Code128 Emulation");
+            using (BarCodeReader read = new BarCodeReader($"{path}ExtPDF417MetaCode128Emulation.png", DecodeType.MicroPdf417))
+            {
+                foreach (BarCodeResult result in read.ReadBarCodes())
+                {
+                    Console.WriteLine($"CodeType:{result.CodeTypeName}");
+                    Console.WriteLine($"CodeText:{result.CodeText}");
+                    Console.WriteLine($"IsCode128Emulation:{result.Extended.Pdf417.IsCode128Emulation}");
                 }
             }
         }

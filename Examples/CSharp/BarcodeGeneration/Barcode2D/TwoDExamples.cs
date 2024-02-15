@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
@@ -32,20 +32,28 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             //// =====================================================
             //// =====================================================
             Pdf417Basic.Run();
-            MicroPdf417Basic.Run();
             CompactPdf417Basic.Run();
-            Pdf417ECIEncoding.Run();
-            Pdf417Compaction.Run();
-            Pdf417CodeTextEncoding.Run();
+            MicroPdf417Basic.Run();
             Pdf417RowColumns.Run();
             MicroPdf417RowColumns.Run();
             Pdf417AspectRatio.Run();
+            MicroPdf417AspectRatio.Run();
+            Pdf417ECIEncoding.Run();
+            Pdf417Compaction.Run();
+            Pdf417CodeTextEncoding.Run();
+            Pdf417BytesEncoding.Run();
             Pdf417ErrorLevelExample.Run();
-            MacroPdf417Permanent.Run();
+            MacroPdf417Main.Run();
             MacroPdf417Optional.Run();
             MacroPdf417ECIEncoding.Run();
+            GS1MicroPdf417Mode903To905.Run();
+            GS1MicroPdf417Mode906And907.Run();
+            GS1MicroPdf417Mode912.Run();
+            GS1MicroPdf417Mode914And915.Run();
             Pdf417ReaderInitialization.Run();
-            Pdf417BytesEncoding.Run();
+            Pdf417IsLinked.Run();
+            MicroPdf417IsCode128Emulation.Run();
+            MicroPdf417MacroCharacters.Run();
 
             //// =====================================================
             //// =====================================================
@@ -114,6 +122,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             GS1CompositeLinearComponent.Run();
             GS1CompositeTwoDComponent.Run();
             GS1CompositeNotGS1TwoDSupplement.Run();
+            GS1CompositeEncodationModes.Run();
         }
     }
 }

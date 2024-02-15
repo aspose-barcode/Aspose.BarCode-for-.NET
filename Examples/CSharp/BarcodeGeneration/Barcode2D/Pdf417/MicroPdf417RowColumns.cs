@@ -10,12 +10,20 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
         {
             string path = GetFolder();
             System.Console.WriteLine("MicroPdf417RowColumns:");
-
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "Åspóse.Barcóde©");
+            
+            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MicroPdf417, "ASPOSE");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
-            //set 4 columns
+            //set 2 columns
+            gen.Parameters.Barcode.Pdf417.Columns = 2;
+            gen.Save($"{path}MicroPdf417Columns2.png", BarCodeImageFormat.Png);
+            //set 3 rows
+            gen.Parameters.Barcode.Pdf417.Columns = 0;
+            gen.Parameters.Barcode.Pdf417.Rows = 6;
+            gen.Save($"{path}MicroPdf417Row6.png", BarCodeImageFormat.Png);
+            //set 4 columns 9 rows
             gen.Parameters.Barcode.Pdf417.Columns = 4;
-            gen.Save($"{path}MicroPdf417Columns4.png", BarCodeImageFormat.Png);
+            gen.Parameters.Barcode.Pdf417.Rows = 8;
+            gen.Save($"{path}MicroPdf417Row8Columns4.png", BarCodeImageFormat.Png);
         }
 	}
 }

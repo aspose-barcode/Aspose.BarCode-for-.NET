@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
 namespace Aspose.BarCode.Examples.CSharp

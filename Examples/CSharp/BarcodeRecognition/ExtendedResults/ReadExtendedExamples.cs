@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
@@ -17,11 +17,16 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             ReadExtUnicodeCodeText.Run();
             ReadExtQuality.Run();
             ReadExtRegion.Run();
-            ReadExtPDF417Meta.Run();
             ReadExtQRMeta.Run();
             ReadExtDataBarMeta.Run();
             ReadExtOneD.Run();
             ReadExtCode128Meta.Run();
+            ReadExtPDF417Meta.Run();
+            ReadExtAztecMeta.Run();
+            ReadExtDataMatrixMeta.Run();
+            ReadExtDotCodeMeta.Run();
+            ReadExtGS1CompositeBarMeta.Run();
+            ReadExtMaxiCodeMeta.Run();
         }
     }
 }
