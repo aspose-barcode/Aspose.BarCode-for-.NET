@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.BarCodeRecognition;
 using Aspose.BarCode.Generation;
@@ -6,19 +6,19 @@ using System;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
-    internal class MaxiCodeEncodeModeAuto : TwoDBase
+    internal class MaxiCodeEncodeModeECI : TwoDBase
     {
 		public static void Run()
         {
             string path = GetFolder();
-            System.Console.WriteLine("MaxiCodeEncodeModeAuto:");
+            System.Console.WriteLine("MaxiCodeEncodeModeECI:");
 
-            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "犬Right狗"))
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "ΑΒΓΔΕ"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 15;
-
-                //set MaxiCode ECI encoding to UTF8
-                gen.Save($"{path}MaxiCodeEncodeModeAuto.png", BarCodeImageFormat.Png);
+                gen.Parameters.Barcode.MaxiCode.MaxiCodeEncodeMode = MaxiCodeEncodeMode.ECI;
+                gen.Parameters.Barcode.MaxiCode.ECIEncoding = ECIEncodings.ISO_8859_7;
+                gen.Save($"{path}MaxiCodeEncodeModeECI.png", BarCodeImageFormat.Png);
 
                 using (BarCodeReader reader = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.MaxiCode))
                 {

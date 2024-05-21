@@ -8,21 +8,21 @@ using System.Drawing;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
-    internal class DotCodeEncodeModeAuto : TwoDBase
+    internal class Pdf417EncodeModeAuto : TwoDBase
     {
         public static void Run()
         {
             string path = GetFolder();
-            System.Console.WriteLine("DotCodeEncodeModeAuto:");
+            System.Console.WriteLine("Pdf417EncodeModeAuto:");
 
-            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "犬Right狗"))
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, "犬Right狗"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 10;
 
-                //set DotCode ECI encoding to UTF8
-                gen.Save($"{path}DotCodeEncodeModeAuto.png", BarCodeImageFormat.Png);
+                //set Pdf417 ECI encoding to UTF8
+                gen.Save($"{path}Pdf417EncodeModeAuto.png", BarCodeImageFormat.Png);
 
-                using (BarCodeReader reader = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.DotCode))
+                using (BarCodeReader reader = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.Pdf417))
                 {
                     foreach (BarCodeResult result in reader.ReadBarCodes())
                     {

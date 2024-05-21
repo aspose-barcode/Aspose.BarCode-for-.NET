@@ -4,12 +4,12 @@ using Aspose.BarCode.Generation;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
-    internal class DotCodeExtendedCodetext : TwoDBase
+    internal class DotCodeEncodeModeExtended : TwoDBase
     {
         public static void Run()
         {
             string path = GetFolder();
-            System.Console.WriteLine("DotCodeExtendedCodetext:");
+            System.Console.WriteLine("DotCodeEncodeModeExtended:");
 
             //create codetext
             DotCodeExtCodetextBuilder textBuilder = new DotCodeExtCodetextBuilder();
@@ -28,8 +28,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 10;
 
-                gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.ExtendedCodetext;
-                gen.Save($"{path}DotCodeExtendedCodetext.png", BarCodeImageFormat.Png);
+                gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.Extended;
+                gen.Save($"{path}DotCodeEncodeModeExtended.png", BarCodeImageFormat.Png);
             }
         }
     }

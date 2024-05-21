@@ -14,11 +14,13 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             string path = GetWriteFolder();
             Console.OutputEncoding = Encoding.Unicode;
 
+            string codetext = "Aspose常に先を行く";
+
             //create encoded Unicode codetext
-            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行く"))
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix))
             {
+                gen.SetCodeText(codetext, Encoding.UTF8);
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
-                gen.Parameters.Barcode.DataMatrix.CodeTextEncoding = Encoding.UTF8;
                 gen.Save($"{path}ExtUnicodeCodeText.png", BarCodeImageFormat.Png);
             }
 

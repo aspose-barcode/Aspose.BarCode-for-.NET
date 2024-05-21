@@ -1,26 +1,24 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.BarCodeRecognition;
 using Aspose.BarCode.Generation;
-using System.Runtime.Remoting.Messaging;
 using System;
-using System.Drawing;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
-    internal class DotCodeEncodeModeAuto : TwoDBase
+    internal class DotCodeEncodeModeECI : TwoDBase
     {
-        public static void Run()
+		public static void Run()
         {
             string path = GetFolder();
-            System.Console.WriteLine("DotCodeEncodeModeAuto:");
+            System.Console.WriteLine("DotCodeEncodeModeECI:");
 
-            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "犬Right狗"))
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DotCode, "ΑΒΓΔΕ"))
             {
-                gen.Parameters.Barcode.XDimension.Pixels = 10;
-
-                //set DotCode ECI encoding to UTF8
-                gen.Save($"{path}DotCodeEncodeModeAuto.png", BarCodeImageFormat.Png);
+                gen.Parameters.Barcode.XDimension.Pixels = 15;
+                gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.ECI;
+                gen.Parameters.Barcode.DotCode.ECIEncoding = ECIEncodings.ISO_8859_7;
+                gen.Save($"{path}DotCodeEncodeModeECI.png", BarCodeImageFormat.Png);
 
                 using (BarCodeReader reader = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.DotCode))
                 {
@@ -32,5 +30,5 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 }
             }
         }
-    }
+	}
 }
