@@ -14,10 +14,12 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             string path = GetFolder();
             Console.OutputEncoding = Encoding.Unicode;
 
-            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "بالقمة Aspose"))
+            string codetext = "بالقمة Aspose";
+
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR))
             {
+                gen.SetCodeText(codetext, Encoding.UTF8);
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
-                gen.Parameters.Barcode.QR.CodeTextEncoding = Encoding.UTF8;
                 gen.Save($"{path}QRDetectEncoding.png", BarCodeImageFormat.Png);
             }
 

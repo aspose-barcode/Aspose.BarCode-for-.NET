@@ -9,24 +9,25 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
     internal class QrEncodeModeAuto : TwoDBase
     {
-		public static void Run()
+        public static void Run()
         {
             string path = GetFolder();
-            System.Console.WriteLine("QrEncodeModeAuto:");
+            System.Console.WriteLine("QREncodeModeAuto:");
 
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く");
-            gen.Parameters.Barcode.XDimension.Pixels = 4;
-            Console.OutputEncoding = Encoding.Unicode;
-            //set encode mode to Auto
-            gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Auto;
-            //set CodeText encoding to UTF8
-            gen.Parameters.Barcode.QR.CodeTextEncoding = Encoding.UTF8;
-            gen.Save($"{path}QrEncodeModeAuto.png", BarCodeImageFormat.Png);
-            //try to recognize it
-            BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR);
-            read.BarcodeSettings.DetectEncoding = true;
-            foreach (BarCodeResult result in read.ReadBarCodes())
-                Console.WriteLine("QrEncodeModeAuto:" + result.CodeText);
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "犬Right狗"))
+            {
+                gen.Parameters.Barcode.XDimension.Pixels = 10;
+                gen.Save($"{path}QREncodeModeAuto.png", BarCodeImageFormat.Png);
+
+                using (BarCodeReader reader = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR))
+                {
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+                        Console.WriteLine($"CodeText:{result.CodeText}");
+                    }
+                }
+            }
         }
-	}
+    }
 }

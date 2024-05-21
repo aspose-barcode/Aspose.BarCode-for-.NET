@@ -17,10 +17,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             QrRectMIcroQRVersion.Run();
 
             QrEncodeModeAuto.Run();
-            QrEncodeModeBytes.Run();
-            QrEncodeModeUtfBOM.Run();
-            QrEncodeModeECIEncoding.Run();
-            QrEncodeModeExtendedCodetext.Run();
+            QrEncodeModeBinary.Run();
+            QrEncodeModeECI.Run();
+            QrEncodeModeExtended.Run();
 
             QrErrorLevel.Run();
             QrStructuredAppend.Run();
@@ -32,16 +31,15 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             //// =====================================================
             //// =====================================================
             Pdf417Basic.Run();
+            Pdf417EncodeModeAuto.Run();
+            Pdf417EncodeModeBinary.Run();   
+            Pdf417EncodeModeECI.Run();
             CompactPdf417Basic.Run();
             MicroPdf417Basic.Run();
             Pdf417RowColumns.Run();
             MicroPdf417RowColumns.Run();
             Pdf417AspectRatio.Run();
             MicroPdf417AspectRatio.Run();
-            Pdf417ECIEncoding.Run();
-            Pdf417Compaction.Run();
-            Pdf417CodeTextEncoding.Run();
-            Pdf417BytesEncoding.Run();
             Pdf417ErrorLevelExample.Run();
             MacroPdf417Main.Run();
             MacroPdf417Optional.Run();
@@ -61,8 +59,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             //// =====================================================
             //// =====================================================
             AztecEncodeModeAuto.Run();
-            AztecEncodeModeBytes.Run();
-            AztecEncodeModeExtendedCodetext.Run();
+            AztecEncodeModeBinary.Run();
+            AztecEncodeModeECI.Run();
+            AztecEncodeModeExtended.Run();
             AztecErrorLevelExample.Run();
             AztecLayersCount.Run();
             AztecReaderInitialization.Run();
@@ -80,9 +79,10 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             DataMatrixEcc200.Run();
             DataMatrixEncodeModeASCII.Run();
             DataMatrixEncodeModeAuto.Run();
-            DataMatrixEncodeModeBytes.Run();
+            DataMatrixEncodeModeBinary.Run();
             DataMatrixEncodeModeC40.Run();
-            DataMatrixExtendedCodetext.Run();
+            DataMatrixEncodeModeECI.Run();
+            DatamatrixEncodeModeExtended.Run();
             DataMatrixMacro.Run();
             DataMatrixReaderProgramming.Run();
             DataMatrixStructuredAppend.Run();
@@ -95,8 +95,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             //// =====================================================
             MaxiCodeAspectRatio.Run();
             MaxiCodeEncodeModeAuto.Run();
-            MaxiCodeEncodeModeBytes.Run();
-            MaxiCodeEncodeModeExtendedCodetext.Run();
+            MaxiCodeEncodeModeBinary.Run();
+            MaxiCodeEncodeModeECI.Run();
+            MaxiCodeEncodeModeExtended.Run();
             MaxiCodeMode2.Run();
             MaxiCodeMode4.Run();
             MaxiCodeStructuredAppendMode.Run();
@@ -110,9 +111,10 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             DotCodeAspectRatio.Run();
             DotCodeStructuredAppendMode.Run();
             DotCodeEncodeModeAuto.Run();
-            DotCodeEncodeModeBytes.Run();
+            DotCodeEncodeModeBinary.Run();
             DotCodeReaderInitialization.Run();
-            DotCodeExtendedCodetext.Run();
+            DotCodeEncodeModeECI.Run();
+            DotCodeEncodeModeExtended.Run();
 
             //// =====================================================
             //// =====================================================

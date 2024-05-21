@@ -24,12 +24,15 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 generator.Parameters.Barcode.XDimension.Pixels = 4;
                 //set encode mode to Auto
                 generator.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Auto;
-                generator.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.UTF8;
-                Bitmap bitmap = generator.GenerateBarCodeImage();
-                using (BarCodeReader reader = new BarCodeReader(bitmap, DecodeType.DataMatrix))
+                generator.Save($"{path}DataMatrixEncodeModeAuto.png", BarCodeImageFormat.Png);
+
+                using (BarCodeReader reader = new BarCodeReader(generator.GenerateBarCodeImage(), DecodeType.DataMatrix))
                 {
-                    reader.ReadBarCodes();
-                    Console.WriteLine(reader.FoundBarCodes[0].CodeText);
+                    foreach (BarCodeResult result in reader.ReadBarCodes())
+                    {
+                        Console.WriteLine($"CodeType:{result.CodeTypeName}");
+                        Console.WriteLine($"CodeText:{result.CodeText}");
+                    }
                 }
             }
         }
