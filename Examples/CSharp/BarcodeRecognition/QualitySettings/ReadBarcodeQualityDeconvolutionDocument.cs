@@ -16,7 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             Console.WriteLine("ReadBarcodeQualityDeconvolutionDocument:");
             //recognize image with BarcodeQualityMode High, DeconvolutionMode Fast
             Console.WriteLine("BarcodeQualityMode: High, DeconvolutionMode: Fast");
-            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
+            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39FullASCII, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
             {
                 read.QualitySettings.BarcodeQuality = BarcodeQualityMode.High;
                 read.QualitySettings.Deconvolution = DeconvolutionMode.Fast;
@@ -27,7 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
 
             //recognize image with BarcodeQualityMode Normal, DeconvolutionMode Normal
             Console.WriteLine("BarcodeQualityMode: Normal, DeconvolutionMode: Normal");
-            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
+            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39FullASCII, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
             {
                 read.QualitySettings.BarcodeQuality = BarcodeQualityMode.Normal;
                 read.QualitySettings.Deconvolution = DeconvolutionMode.Normal;
@@ -38,7 +38,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
 
             //recognize image with BarcodeQualityMode Low, DeconvolutionMode Normal
             Console.WriteLine("BarcodeQualityMode: Low, DeconvolutionMode: Normal");
-            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
+            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39FullASCII, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
             {
                 read.QualitySettings.BarcodeQuality = BarcodeQualityMode.Low;
                 read.QualitySettings.Deconvolution = DeconvolutionMode.Normal;
@@ -49,7 +49,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
 
             //recognize image with BarcodeQualityMode Normal, DeconvolutionMode Slow
             Console.WriteLine("BarcodeQualityMode: Normal, DeconvolutionMode: Slow");
-            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
+            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39FullASCII, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
             {
                 read.QualitySettings.BarcodeQuality = BarcodeQualityMode.Normal;
                 read.QualitySettings.Deconvolution = DeconvolutionMode.Slow;
@@ -60,7 +60,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
 
             //recognize image with BarcodeQualityMode Low, DeconvolutionMode Slow
             Console.WriteLine("BarcodeQualityMode: Low, DeconvolutionMode: Slow");
-            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39Extended, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
+            using (BarCodeReader read = new BarCodeReader($"{path}manybarcodes_quality_deconvolution.png", DecodeType.Code128, DecodeType.Code39FullASCII, DecodeType.Planet, DecodeType.QR, DecodeType.MicroQR, DecodeType.DataMatrix))
             {
                 read.QualitySettings.BarcodeQuality = BarcodeQualityMode.Low;
                 read.QualitySettings.Deconvolution = DeconvolutionMode.Slow;

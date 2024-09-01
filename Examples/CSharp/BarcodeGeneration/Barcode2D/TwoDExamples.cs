@@ -9,6 +9,24 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
         {
             //// =====================================================
             //// =====================================================
+            ////  Barcode Generation: Data encoding for 2D barcodes
+            //// =====================================================
+            //// =====================================================            
+            Encoding2DAlphanumeric.Run();
+            Encoding2DBinary.Run();
+            Encoding2DBinaryStream.Run();
+
+            Encoding2DUnicodeAuto.Run();
+            Encoding2DUnicodeECI.Run();
+            Encoding2DUnicodeUTF8.Run();
+            Encoding2DUnicodeCustom.Run();
+
+            Encoding2DExtended.Run();
+            Encoding2DGS1.Run();
+            Encoding2DSpecial.Run();
+
+			//// =====================================================
+            //// =====================================================
             ////  Barcode Generation: QR code
             //// =====================================================
             //// =====================================================

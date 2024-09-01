@@ -11,8 +11,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             string path = GetFolder();
             System.Console.WriteLine("GenerateBarcodeTypeCode39:");
 
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "$&This Code#*");
-            gen.Save($"{path}Code39Extended.png", BarCodeImageFormat.Png);
+            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39FullASCII, "$&This Code#*");
+            gen.Save($"{path}Code39FullASCII.png", BarCodeImageFormat.Png);
         }
 	}
 }

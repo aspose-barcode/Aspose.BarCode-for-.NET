@@ -21,7 +21,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             Rectangle rect2D = new Rectangle(0, 0, 430, 440);
             using (Bitmap bmp = new Bitmap($"{path}multiple_codes.png"))
             using (BarCodeReader reader = new BarCodeReader(bmp, rect2D, DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR,
-                DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC))
+                DecodeType.Code39FullASCII, DecodeType.Code128, DecodeType.RM4SCC))
             {
                 Console.WriteLine("ReadRegion:");
                 foreach (BarCodeResult result in reader.ReadBarCodes())

@@ -1,10 +1,8 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.BarCodeRecognition;
 using Aspose.BarCode.Generation;
-using System.Runtime.Remoting.Messaging;
 using System;
-using System.Drawing;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {

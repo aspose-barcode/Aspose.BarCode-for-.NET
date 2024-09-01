@@ -13,7 +13,7 @@ namespace Aspose.BarCode.Examples.CSharp.Symbologies
         {
             string path = GetFolder();
             //generate Code39 Barcode
-            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "Aspose"))
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39FullASCII, "Aspose"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 2;
                 gen.Save($"{path}Code39.png", BarCodeImageFormat.Png);
@@ -21,7 +21,7 @@ namespace Aspose.BarCode.Examples.CSharp.Symbologies
 
             Console.WriteLine("Code39_Type:");
             //recognize Code39 Barcode
-            using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Standard, DecodeType.Code39Extended))
+            using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39, DecodeType.Code39FullASCII))
                 foreach (BarCodeResult result in read.ReadBarCodes())
                 {
                     Console.WriteLine($"CodeType:{result.CodeTypeName}");

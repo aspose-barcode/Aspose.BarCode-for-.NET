@@ -14,7 +14,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             string path = GetFolder();
 
             //create barcode
-            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "123456"))
+            using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39FullASCII, "123456"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 2;
                 gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
@@ -24,7 +24,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             //recognize image with ChecksumValidation.Default
             Console.WriteLine("ReadChecksumCode39:");
             Console.WriteLine("ChecksumValidation: Default");
-            using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Extended))
+            using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39FullASCII))
             {
                 read.BarcodeSettings.ChecksumValidation = ChecksumValidation.Default;
                 foreach (BarCodeResult result in read.ReadBarCodes())
@@ -38,7 +38,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
 
             //recognize image with ChecksumValidation.On
             Console.WriteLine("ChecksumValidation: On");
-            using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39Extended))
+            using (BarCodeReader read = new BarCodeReader($"{path}Code39.png", DecodeType.Code39FullASCII))
             {
                 read.BarcodeSettings.ChecksumValidation = ChecksumValidation.On;
                 foreach (BarCodeResult result in read.ReadBarCodes())

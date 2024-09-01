@@ -11,7 +11,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             string path = GetFolder();
             System.Console.WriteLine("OneCSCode39:");
 
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "CODE");
+            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39FullASCII, "CODE");
             //default value no checksum
             gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.No;
             gen.Save($"{path}OneCSCode39WithoutChecksum.png", BarCodeImageFormat.Png);

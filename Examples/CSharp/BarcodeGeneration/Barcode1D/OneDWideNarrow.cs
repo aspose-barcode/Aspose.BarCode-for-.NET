@@ -11,7 +11,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             string path = GetFolder();
             System.Console.WriteLine("OneDWideNarrow:");
 
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39Extended, "ASPOSE");
+            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code39FullASCII, "ASPOSE");
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             //set Wide/Narrow Ratio to 2
             gen.Parameters.Barcode.WideNarrowRatio = 2;

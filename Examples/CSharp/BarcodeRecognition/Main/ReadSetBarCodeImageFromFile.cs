@@ -16,7 +16,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             {
                 //set path to image
                 reader.SetBarCodeImage($"{path}multiple_codes.png");
-                reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
+                reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39FullASCII, DecodeType.Code128, DecodeType.RM4SCC);
                 Console.WriteLine("ReadSetBarCodeImageFromFile:");
                 foreach (BarCodeResult result in reader.ReadBarCodes())
                     Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");

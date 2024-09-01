@@ -12,7 +12,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             string path = GetFolder();
             System.Console.WriteLine("OneCSCode93:");
 
-            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code93Extended, "CODE");
+            BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Code93, "CODE");
             //default value with checksum
             gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
             gen.Save($"{path}OneCSCode93WithChecksum.png", BarCodeImageFormat.Png);

@@ -25,7 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
                 //rectangle of Code128 barcode on our image
                 Rectangle rectCode128 = new Rectangle(460, 111, 360, 150);
                 reader.SetBarCodeImage(bmp, new Rectangle[] { rect2D, rectCode128 });
-                reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39Extended, DecodeType.Code128, DecodeType.RM4SCC);
+                reader.SetBarCodeReadType(DecodeType.Pdf417, DecodeType.DataMatrix, DecodeType.QR, DecodeType.Code39FullASCII, DecodeType.Code128, DecodeType.RM4SCC);
                 Console.WriteLine("ReadMultipleRegions:");
                 foreach (BarCodeResult result in reader.ReadBarCodes())
                     Console.WriteLine($"{result.CodeTypeName}:{result.CodeText}");
