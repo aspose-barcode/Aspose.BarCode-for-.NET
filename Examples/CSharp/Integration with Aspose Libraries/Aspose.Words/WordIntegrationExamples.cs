@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
 namespace Aspose.BarCode.Examples.CSharp.Integration
@@ -17,6 +17,7 @@ namespace Aspose.BarCode.Examples.CSharp.Integration
             AddBarcodeToWordDocumentFloatingEMF.Run();
             RecognizeBarcodesFromWordDocumentWithRendering.Run();
             RecognizeBarcodesFromWordDocumentFromExtractedImages.Run();
+            WordToPdfWithCustomBarcodeGenerator.Run();
         }
     }
 }

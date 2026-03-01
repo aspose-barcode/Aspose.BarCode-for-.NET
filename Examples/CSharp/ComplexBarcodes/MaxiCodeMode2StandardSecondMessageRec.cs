@@ -1,7 +1,6 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
-using System.Text;
 using Aspose.BarCode.ComplexBarcode;
 using Aspose.BarCode.BarCodeRecognition;
 
@@ -19,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.ComplexBarcodes
             {
                 foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    MaxiCodeCodetext complexCodetext = ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.MaxiCodeMode, result.CodeText);
+                    MaxiCodeCodetext complexCodetext = ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.Mode, result.CodeText);
                     MaxiCodeCodetextMode2 maxiCodeStructuredCodetext = complexCodetext as MaxiCodeCodetextMode2;
                     if (maxiCodeStructuredCodetext == null)
                         continue;
@@ -28,7 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.ComplexBarcodes
                     Console.WriteLine("CountryCode: " + maxiCodeStructuredCodetext.CountryCode);
                     Console.WriteLine("ServiceCategory: " + maxiCodeStructuredCodetext.ServiceCategory);
 
-                    MaxiCodeStandartSecondMessage secondMessage = maxiCodeStructuredCodetext.SecondMessage as MaxiCodeStandartSecondMessage;
+                    MaxiCodeStandardSecondMessage secondMessage = maxiCodeStructuredCodetext.SecondMessage as MaxiCodeStandardSecondMessage;
                     if (secondMessage == null)
                         continue;
 

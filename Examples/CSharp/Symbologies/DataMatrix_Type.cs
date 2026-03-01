@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -18,10 +18,9 @@ namespace Aspose.BarCode.Examples.CSharp.Symbologies
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 //set DataMatrix Ecc to 200
-                gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc200;
+                gen.Parameters.Barcode.DataMatrix.EccType = DataMatrixEccType.Ecc200;
                 //set rows 22 columns 22
-                gen.Parameters.Barcode.DataMatrix.Columns = 22;
-                gen.Parameters.Barcode.DataMatrix.Rows = 22;
+                gen.Parameters.Barcode.DataMatrix.Version = DataMatrixVersion.ECC200_22x22;
                 gen.Save($"{path}DataMatrix.png", BarCodeImageFormat.Png);
             }
 

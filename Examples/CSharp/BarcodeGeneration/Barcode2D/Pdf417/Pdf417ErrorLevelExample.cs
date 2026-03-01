@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -15,10 +15,10 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             gen.Parameters.Barcode.Pdf417.Columns = 3;
             //set error level 2
-            gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level2;
+            gen.Parameters.Barcode.Pdf417.ErrorLevel = Pdf417ErrorLevel.Level2;
             gen.Save($"{path}Pdf417ErrorLevel2.png", BarCodeImageFormat.Png);
             //set error level 5
-            gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level5;
+            gen.Parameters.Barcode.Pdf417.ErrorLevel = Pdf417ErrorLevel.Level5;
             gen.Save($"{path}Pdf417ErrorLevel5.png", BarCodeImageFormat.Png);
         }
     }

@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -17,9 +17,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             //generate MaxiCode with metadata
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.MaxiCode, "Åspóse.Barcóde©"))
             {
-                gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = MaxiCodeMode.Mode5;
-                gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodesCount = 4;
-                gen.Parameters.Barcode.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId = 2;
+                gen.Parameters.Barcode.MaxiCode.Mode = MaxiCodeMode.Mode5;
+                gen.Parameters.Barcode.MaxiCode.StructuredAppendModeBarcodesCount = 4;
+                gen.Parameters.Barcode.MaxiCode.StructuredAppendModeBarcodeId = 2;
 
                 gen.Save($"{path}ExtMaxiCodeMeta.png", BarCodeImageFormat.Png);
             }
@@ -32,9 +32,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
                 {
                     Console.WriteLine($"CodeType:{result.CodeTypeName}");
                     Console.WriteLine($"CodeText:{result.CodeText}");
-                    Console.WriteLine($"MaxiCodeMode:{result.Extended.MaxiCode.MaxiCodeMode.ToString()}");
-                    Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodesCount:{result.Extended.MaxiCode.MaxiCodeStructuredAppendModeBarcodesCount}");
-                    Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodeId:{result.Extended.MaxiCode.MaxiCodeStructuredAppendModeBarcodeId}");
+                    Console.WriteLine($"MaxiCodeMode:{result.Extended.MaxiCode.Mode.ToString()}");
+                    Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodesCount:{result.Extended.MaxiCode.StructuredAppendModeBarcodesCount}");
+                    Console.WriteLine($"MaxiCodeStructuredAppendModeBarcodeId:{result.Extended.MaxiCode.StructuredAppendModeBarcodeId}");
                 }
             }
         }

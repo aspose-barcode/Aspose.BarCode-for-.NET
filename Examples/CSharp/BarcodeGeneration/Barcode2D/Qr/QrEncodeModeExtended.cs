@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -27,7 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 Console.OutputEncoding = Encoding.Unicode;
                 //set encode mode to Extended
-                gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.Extended;
+                gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.Extended;
                 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Extended mode";
                 gen.Save($"{path}QrEncodeModeExtended.png", BarCodeImageFormat.Png);
 

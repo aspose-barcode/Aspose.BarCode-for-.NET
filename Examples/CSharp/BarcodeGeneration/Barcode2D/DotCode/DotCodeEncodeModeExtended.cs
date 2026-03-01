@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -28,7 +28,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 10;
 
-                gen.Parameters.Barcode.DotCode.DotCodeEncodeMode = DotCodeEncodeMode.Extended;
+                gen.Parameters.Barcode.DotCode.EncodeMode = DotCodeEncodeMode.Extended;
                 gen.Save($"{path}DotCodeEncodeModeExtended.png", BarCodeImageFormat.Png);
             }
         }

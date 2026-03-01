@@ -7,7 +7,7 @@ namespace Aspose.BarCode.Examples.CSharp
     {
         //path to the license file
         private static string licensePath = @"{path}Aspose.Total.NET.lic";
-        //private static string licensePath = @"c:\work\remote\Barcodes\newrec\Net\testdata\License\Aspose.Total.NET.lic";
+        //private static string licensePath = @"c:\work\remote\Barcodes\stable\Net\testdata\License\Aspose.Total.NET.lic";
         
         //set license for appropriate products
         internal static void SetLicense()

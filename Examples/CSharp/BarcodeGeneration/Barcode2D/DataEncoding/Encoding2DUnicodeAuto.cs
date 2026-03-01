@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using Aspose.BarCode.Generation;
@@ -17,7 +17,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DataMatrix, "Aspose常に先を行"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 8;
-                gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Auto;
+                gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Auto;
                 gen.Parameters.Barcode.DataMatrix.ECIEncoding = ECIEncodings.UTF8;
                 gen.Save($"{path}Encoding2DUnicodeAuto.png", BarCodeImageFormat.Png);
 

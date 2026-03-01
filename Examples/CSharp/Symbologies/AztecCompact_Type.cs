@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -18,9 +18,9 @@ namespace Aspose.BarCode.Examples.CSharp.Symbologies
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 //set symbol mode Compact
-                gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Compact;
+                gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.Compact;
                 //set error correction capacity to 10% (can be from 5% to 95%)
-                gen.Parameters.Barcode.Aztec.AztecErrorLevel = 10;
+                gen.Parameters.Barcode.Aztec.ErrorLevel = 10;
                 gen.Save($"{path}AztecCompact.png", BarCodeImageFormat.Png);
             }
 

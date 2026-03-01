@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using Aspose.BarCode.Generation;
@@ -15,7 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.Symbologies
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.DatabarExpandedStacked, "(01)12345678901231(21)SERIAL1234"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 2;
-                gen.Parameters.Barcode.DataBar.IsAllowOnlyGS1Encoding = true;
+                gen.Parameters.Barcode.DataBar.AllowOnlyGS1Encoding = true;
                 //set 3 rows
                 gen.Parameters.Barcode.DataBar.Rows = 3;
                 gen.Save($"{path}DataBarExpandedStacked.png", BarCodeImageFormat.Png);

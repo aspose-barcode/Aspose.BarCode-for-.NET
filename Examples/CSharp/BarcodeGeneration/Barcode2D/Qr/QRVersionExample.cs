@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -19,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Save($"{path}QRVersionAuto.png", BarCodeImageFormat.Png);
 
                 //set QR version 05
-                gen.Parameters.Barcode.QR.QrVersion = QRVersion.Version05;
+                gen.Parameters.Barcode.QR.Version = QRVersion.Version05;
                 gen.Save($"{path}QRVersion05.png", BarCodeImageFormat.Png);
             }
         }

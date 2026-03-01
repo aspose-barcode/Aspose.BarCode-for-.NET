@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -15,6 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             gen.Parameters.Barcode.Pdf417.Rows = 12;
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             //replace visible codetext for 2D barcodes: Aztec, Pdf417, DataMatrix, QR, MaxiCode, DotCode
+            gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.Below;
             gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Replace Codetext";
             gen.Save($"{path}CodetextTwoDDisplayText.png", BarCodeImageFormat.Png);
         }

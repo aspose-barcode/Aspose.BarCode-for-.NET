@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 using System;
 using Aspose.BarCode.Examples.CSharp.Integration;
 using Aspose.BarCode.Examples.CSharp.Symbologies;

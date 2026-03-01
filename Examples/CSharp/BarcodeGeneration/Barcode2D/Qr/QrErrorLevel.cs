@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -15,16 +15,16 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 //set error level L
-                gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
+                gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelL;
                 gen.Save($"{path}QrErrorLevelL.png", BarCodeImageFormat.Png);
                 //set error level M
-                gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelM;
+                gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelM;
                 gen.Save($"{path}QrErrorLevelM.png", BarCodeImageFormat.Png);
                 //set error level Q
-                gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelQ;
+                gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelQ;
                 gen.Save($"{path}QrErrorLevelQ.png", BarCodeImageFormat.Png);
                 //set error level H
-                gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelH;
+                gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelH;
                 gen.Save($"{path}QrErrorLevelH.png", BarCodeImageFormat.Png);
             }
         }

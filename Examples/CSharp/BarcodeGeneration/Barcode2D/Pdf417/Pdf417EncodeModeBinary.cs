@@ -1,7 +1,6 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
-using System.Text;
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 {
@@ -19,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.XDimension.Pixels = 10;
                 //set Pdf417 encode mode to Binary
                 gen.SetCodeText(encodedArr);
-                gen.Parameters.Barcode.Pdf417.Pdf417EncodeMode = Pdf417EncodeMode.Binary;
+                gen.Parameters.Barcode.Pdf417.EncodeMode = Pdf417EncodeMode.Binary;
                 gen.Save($"{path}Pdf417EncodeModeBinary.png", BarCodeImageFormat.Png);
             }
         }

@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -29,8 +29,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, firstMessage))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
-                gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-                gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+                gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.ECI;
+                gen.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.UTF8;
                 gen.Parameters.Barcode.QR.StructuredAppend.ParityByte = parity;
                 gen.Parameters.Barcode.QR.StructuredAppend.TotalCount = 2;
                 gen.Parameters.Barcode.QR.StructuredAppend.SequenceIndicator = 0;
@@ -39,8 +39,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR))
                 {
                     foreach (BarCodeResult result in read.ReadBarCodes())
-                        Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity} " +
-                            $"Index: {result.Extended.QR.QRStructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.QRStructuredAppendModeParityData.ToString()} " +
+                        Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.StructuredAppendModeBarCodesQuantity} " +
+                            $"Index: {result.Extended.QR.StructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.StructuredAppendModeParityData.ToString()} " +
                             $"Codetext: {result.CodeText}");
                 }
             }
@@ -48,8 +48,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             //generate second barcode
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, secondMessage)) { 
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
-                gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-                gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+                gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.ECI;
+                gen.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.UTF8;
                 gen.Parameters.Barcode.QR.StructuredAppend.ParityByte = parity;
                 gen.Parameters.Barcode.QR.StructuredAppend.TotalCount = 2;
                 gen.Parameters.Barcode.QR.StructuredAppend.SequenceIndicator = 1;
@@ -58,8 +58,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 using (BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.QR))
                 {
                     foreach (BarCodeResult result in read.ReadBarCodes())
-                        Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity} " +
-                            $"Index: {result.Extended.QR.QRStructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.QRStructuredAppendModeParityData.ToString()} " +
+                        Console.WriteLine($"QrStructuredAppend: Count:{result.Extended.QR.StructuredAppendModeBarCodesQuantity} " +
+                            $"Index: {result.Extended.QR.StructuredAppendModeBarCodeIndex} Parity:{result.Extended.QR.StructuredAppendModeParityData.ToString()} " +
                             $"Codetext: {result.CodeText}");
                 }
             }

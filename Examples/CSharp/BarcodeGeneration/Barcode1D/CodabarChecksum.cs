@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -18,11 +18,11 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             gen.Save($"{path}CodabarChecksumNone.png", BarCodeImageFormat.Png);
             //set Mod10 checksum
             gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
-            gen.Parameters.Barcode.Codabar.CodabarChecksumMode = CodabarChecksumMode.Mod10;
+            gen.Parameters.Barcode.Codabar.ChecksumMode = CodabarChecksumMode.Mod10;
             gen.Save($"{path}CodabarChecksumMod10.png", BarCodeImageFormat.Png);
             //set Mod16 checksum
             gen.Parameters.Barcode.IsChecksumEnabled = EnableChecksum.Yes;
-            gen.Parameters.Barcode.Codabar.CodabarChecksumMode = CodabarChecksumMode.Mod16;
+            gen.Parameters.Barcode.Codabar.ChecksumMode = CodabarChecksumMode.Mod16;
             gen.Save($"{path}CodabarChecksumMod16.png", BarCodeImageFormat.Png);
         }
     }

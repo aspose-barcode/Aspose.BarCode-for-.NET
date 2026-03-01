@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -19,8 +19,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             gen.Parameters.Barcode.Pdf417.Columns = 4;
             //set metadata
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroFileID = 12345678;
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentID = 12;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417FileID = 12345678;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentID = 12;
             gen.Save($"{path}MacroPdf417Main.png", BarCodeImageFormat.Png);
             //try to recognize it
             BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.MacroPdf417);

@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 
 namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
@@ -133,6 +133,21 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             DotCodeReaderInitialization.Run();
             DotCodeEncodeModeECI.Run();
             DotCodeEncodeModeExtended.Run();
+
+            //// =====================================================
+            //// =====================================================
+            ////  Barcode Generation: HanXin code
+            //// =====================================================
+            //// =====================================================
+            HanXinCodeDefault.Run();
+            HanXinCodeVersion.Run();
+            HanXinCodeErrorLevel.Run();
+            HanXinCodeEncodeModeAuto.Run();
+            HanXinCodeEncodeModeBinary.Run();
+            HanXinCodeEncodeModeECI.Run();
+            HanXinCodeEncodeModeUnicode.Run();
+            HanXinCodeEncodeModeURI.Run();
+            HanXinCodeEncodeModeExtended.Run();
 
             //// =====================================================
             //// =====================================================

@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -18,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Aztec, "Åspóse.Barcóde©"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
-                gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.FullRange;
+                gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.FullRange;
                 gen.Parameters.Barcode.Aztec.IsReaderInitialization = true;
                 gen.Parameters.Barcode.Aztec.StructuredAppendBarcodeId = 2;
                 gen.Parameters.Barcode.Aztec.StructuredAppendBarcodesCount = 4;

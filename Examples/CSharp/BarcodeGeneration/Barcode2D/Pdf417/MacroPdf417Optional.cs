@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -19,19 +19,19 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             gen.Parameters.Barcode.XDimension.Pixels = 2;
             gen.Parameters.Barcode.Pdf417.Columns = 4;
             //set metadata
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroFileID = 12345678;
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentID = 12;
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroSegmentsCount = 20;
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroFileName = "file01";
+            gen.Parameters.Barcode.Pdf417.MacroPdf417FileID = 12345678;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentID = 12;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417SegmentsCount = 20;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417FileName = "file01";
             //checksumm must be calculated in CCITT-16 / CRC-16-CCITT encoding
             //https://en.wikipedia.org/wiki/Cyclic_redundancy_check#Polynomial_representations_of_cyclic_redundancy_checks
             //for the example we use random number
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroChecksum = 1234;
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroFileSize = 400000;
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroTimeStamp = new DateTime(2019, 11, 1);
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroAddressee = "street";
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroSender = "aspose";
-            gen.Parameters.Barcode.Pdf417.Pdf417MacroTerminator = Pdf417MacroTerminator.Set;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417Checksum = 1234;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417FileSize = 400000;
+            gen.Parameters.Barcode.Pdf417.MacroPdf417TimeStamp = new DateTime(2019, 11, 1);
+            gen.Parameters.Barcode.Pdf417.MacroPdf417Addressee = "street";
+            gen.Parameters.Barcode.Pdf417.MacroPdf417Sender = "aspose";
+            gen.Parameters.Barcode.Pdf417.MacroPdf417Terminator = Pdf417MacroTerminator.Set;
             gen.Save($"{path}MacroPdf417Optional.png", BarCodeImageFormat.Png);
             //try to recognize it
             BarCodeReader read = new BarCodeReader(gen.GenerateBarCodeImage(), DecodeType.MacroPdf417);

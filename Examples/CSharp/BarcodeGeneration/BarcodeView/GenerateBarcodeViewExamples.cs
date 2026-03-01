@@ -27,6 +27,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             GenerateBarcodeViewBorder.Run();
             GenerateBarcodeViewPadding.Run();
             GenerateBarcodeViewBarWidthReduction.Run();
+            GenerateBarcodeViewAntiAlias.Run();
 
             //// =====================================================
             //// =====================================================

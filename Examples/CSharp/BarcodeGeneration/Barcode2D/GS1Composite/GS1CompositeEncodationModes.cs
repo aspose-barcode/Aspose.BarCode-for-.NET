@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -18,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
                 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
                 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-                gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+                gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
                 gen.Save($"{path}GS1CompositeMode_0_Digits.png", BarCodeImageFormat.Png);
             }
@@ -30,7 +30,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
                 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
                 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-                gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+                gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
                 gen.Save($"{path}GS1CompositeMode_0_CapitalLetters.png", BarCodeImageFormat.Png);
             }
@@ -42,7 +42,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
                 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
                 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-                gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+                gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
                 gen.Save($"{path}GS1CompositeMode_0_Letters.png", BarCodeImageFormat.Png);
             }
@@ -54,7 +54,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.CodeTextParameters.Location = CodeLocation.None;
                 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_B;
                 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-                gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+                gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
                 gen.Save($"{path}GS1CompositeMode_0_Punctuation.png", BarCodeImageFormat.Png);
             }

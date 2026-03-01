@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -15,7 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 //set DataMatrix Ecc to 140
-                gen.Parameters.Barcode.DataMatrix.DataMatrixEcc = DataMatrixEccType.Ecc140;
+                gen.Parameters.Barcode.DataMatrix.EccType = DataMatrixEccType.Ecc140;
                 gen.Save($"{path}DataMatrixEcc000140.png", BarCodeImageFormat.Png);
             }
         }

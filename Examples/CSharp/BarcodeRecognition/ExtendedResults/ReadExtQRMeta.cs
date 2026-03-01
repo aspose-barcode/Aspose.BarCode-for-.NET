@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -32,9 +32,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
                 {
                     Console.WriteLine($"CodeType:{result.CodeTypeName}");
                     Console.WriteLine($"CodeText:{result.CodeText}");
-                    Console.WriteLine($"BarCodesQuantity:{result.Extended.QR.QRStructuredAppendModeBarCodesQuantity}");
-                    Console.WriteLine($"BarCodeIndex:{result.Extended.QR.QRStructuredAppendModeBarCodeIndex}");
-                    Console.WriteLine($"ParityData:{result.Extended.QR.QRStructuredAppendModeParityData}");
+                    Console.WriteLine($"BarCodesQuantity:{result.Extended.QR.StructuredAppendModeBarCodesQuantity}");
+                    Console.WriteLine($"BarCodeIndex:{result.Extended.QR.StructuredAppendModeBarCodeIndex}");
+                    Console.WriteLine($"ParityData:{result.Extended.QR.StructuredAppendModeParityData}");
                 }
             }
         }

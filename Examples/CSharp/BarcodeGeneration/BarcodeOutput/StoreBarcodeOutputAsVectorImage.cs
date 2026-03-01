@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -16,6 +16,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             gen.Save($"{path}VectorImageEmf.emf", BarCodeImageFormat.Emf);
             //save as Svg
             gen.Save($"{path}VectorImageSvg.svg", BarCodeImageFormat.Svg);
+            //save as Pdf
+            gen.Save($"{path}VectorImagePdf.pdf", BarCodeImageFormat.Pdf);
         }
     }
 }

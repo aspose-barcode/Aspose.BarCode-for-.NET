@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -17,15 +17,13 @@ namespace Aspose.BarCode.Examples.CSharp.Symbologies
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.QR, "Aspose常に先を行く"))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
-                //encode data as QR
-                gen.Parameters.Barcode.QR.QrEncodeType = QREncodeType.ForceQR;
                 //set error correction level 7%
-                gen.Parameters.Barcode.QR.QrErrorLevel = QRErrorLevel.LevelL;
+                gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelL;
                 //set ECI encoding UTF8
-                gen.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-                gen.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+                gen.Parameters.Barcode.QR.EncodeMode = QREncodeMode.ECI;
+                gen.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.UTF8;
                 //set version 5 can be Auto
-                gen.Parameters.Barcode.QR.QrVersion = QRVersion.Version05;
+                gen.Parameters.Barcode.QR.Version = QRVersion.Version05;
                 gen.Save($"{path}QR.png", BarCodeImageFormat.Png);
             }
 

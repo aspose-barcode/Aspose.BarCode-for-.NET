@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.IO;
@@ -25,7 +25,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.XDimension.Pixels = 8;
                 //set encode mode to binary
                 gen.SetCodeText(encodedArr);
-                gen.Parameters.Barcode.DataMatrix.DataMatrixEncodeMode = DataMatrixEncodeMode.Binary;
+                gen.Parameters.Barcode.DataMatrix.EncodeMode = DataMatrixEncodeMode.Binary;
                 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Binary mode";
                 gen.Save($"{path}Encoding2DBinaryStream.png", BarCodeImageFormat.Png);
 

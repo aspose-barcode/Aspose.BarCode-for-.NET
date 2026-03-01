@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -19,8 +19,8 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 gen.Parameters.Barcode.DotCode.IsReaderInitialization = true;
-                gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodesCount = 4;
-                gen.Parameters.Barcode.DotCode.DotCodeStructuredAppendModeBarcodeId = 2;
+                gen.Parameters.Barcode.DotCode.StructuredAppendModeBarcodesCount = 4;
+                gen.Parameters.Barcode.DotCode.StructuredAppendModeBarcodeId = 2;
 
                 gen.Save($"{path}ExtDotCodeMeta.png", BarCodeImageFormat.Png);
             }
@@ -33,9 +33,9 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
                 {
                     Console.WriteLine($"CodeType:{result.CodeTypeName}");
                     Console.WriteLine($"CodeText:{result.CodeText}");
-                    Console.WriteLine($"DotCodeIsReaderInitialization:{result.Extended.DotCode.DotCodeIsReaderInitialization}");
-                    Console.WriteLine($"DotCodeStructuredAppendModeBarcodesCount:{result.Extended.DotCode.DotCodeStructuredAppendModeBarcodesCount}");
-                    Console.WriteLine($"DotCodeStructuredAppendModeBarcodeId:{result.Extended.DotCode.DotCodeStructuredAppendModeBarcodeId}");
+                    Console.WriteLine($"DotCodeIsReaderInitialization:{result.Extended.DotCode.IsReaderInitialization}");
+                    Console.WriteLine($"DotCodeStructuredAppendModeBarcodesCount:{result.Extended.DotCode.StructuredAppendModeBarcodesCount}");
+                    Console.WriteLine($"DotCodeStructuredAppendModeBarcodeId:{result.Extended.DotCode.StructuredAppendModeBarcodeId}");
                 }
             }
         }

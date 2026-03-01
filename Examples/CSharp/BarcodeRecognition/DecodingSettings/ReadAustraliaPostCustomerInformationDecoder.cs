@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -43,7 +43,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 gen.Parameters.Barcode.BarHeight.Pixels = 50;
-                gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
+                gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.NTable;
                 gen.Save($"{path}AustraliaPostCustomerInformationDecoder.png", BarCodeImageFormat.Png);
             }
 

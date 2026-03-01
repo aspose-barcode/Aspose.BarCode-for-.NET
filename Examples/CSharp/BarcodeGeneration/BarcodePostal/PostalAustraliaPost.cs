@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -21,25 +21,25 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "590123456701234");
             gen.Parameters.Barcode.XDimension.Pixels = 4;
             gen.Parameters.Barcode.BarHeight.Pixels = 50;
-            gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
+            gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.NTable;
             gen.Save($"{path}PostalAustraliaPostFCC59NTable.png", BarCodeImageFormat.Png);
             //create AustraliaPost FCC 62 NTable
             gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "620123456701234");
             gen.Parameters.Barcode.XDimension.Pixels = 4;
             gen.Parameters.Barcode.BarHeight.Pixels = 50;
-            gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.NTable;
+            gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.NTable;
             gen.Save($"{path}PostalAustraliaPostFCC62NTable.png", BarCodeImageFormat.Png);
             //create AustraliaPost FCC 62 CTable
             gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567ASPOSE");
             gen.Parameters.Barcode.XDimension.Pixels = 4;
             gen.Parameters.Barcode.BarHeight.Pixels = 50;
-            gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.CTable;
+            gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.CTable;
             gen.Save($"{path}PostalAustraliaPostFCC62CTable.png", BarCodeImageFormat.Png);
             //create AustraliaPost FCC 62
             gen = new BarcodeGenerator(EncodeTypes.AustraliaPost, "6201234567321032103210");
             gen.Parameters.Barcode.XDimension.Pixels = 4;
             gen.Parameters.Barcode.BarHeight.Pixels = 50;
-            gen.Parameters.Barcode.AustralianPost.AustralianPostEncodingTable = CustomerInformationInterpretingType.Other;
+            gen.Parameters.Barcode.AustralianPost.EncodingTable = CustomerInformationInterpretingType.Other;
             gen.Save($"{path}PostalAustraliaPostFCC62OtherTable.png", BarCodeImageFormat.Png);
         }
     }

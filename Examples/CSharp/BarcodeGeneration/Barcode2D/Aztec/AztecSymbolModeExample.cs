@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -16,19 +16,19 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 //set symbol mode Auto
                 gen.CodeText = "Åspóse.Barcóde©";
-                gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Auto;
+                gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.Auto;
                 gen.Save($"{path}AztecSymbolModeAuto.png", BarCodeImageFormat.Png);
                 //set symbol mode FullRange
                 gen.CodeText = "Åspóse.Barcóde©";
-                gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.FullRange;
+                gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.FullRange;
                 gen.Save($"{path}AztecSymbolModeFullRange.png", BarCodeImageFormat.Png);
                 //set symbol mode Compact
                 gen.CodeText = "Åspóse.Barcóde©";
-                gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Compact;
+                gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.Compact;
                 gen.Save($"{path}AztecSymbolModeCompact.png", BarCodeImageFormat.Png);
                 //set symbol mode Auto
                 gen.CodeText = "123";
-                gen.Parameters.Barcode.Aztec.AztecSymbolMode = AztecSymbolMode.Rune;
+                gen.Parameters.Barcode.Aztec.SymbolMode = AztecSymbolMode.Rune;
                 gen.Save($"{path}AztecSymbolModeRune.png", BarCodeImageFormat.Png);
             }
         }

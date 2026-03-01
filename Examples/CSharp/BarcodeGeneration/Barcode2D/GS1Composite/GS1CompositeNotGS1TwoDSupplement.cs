@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2023 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -19,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
 
                 gen.Parameters.Barcode.GS1CompositeBar.TwoDComponentType = TwoDComponentType.CC_C;
                 gen.Parameters.Barcode.GS1CompositeBar.LinearComponentType = EncodeTypes.GS1Code128;
-                gen.Parameters.Barcode.GS1CompositeBar.IsAllowOnlyGS1Encoding = false;
+                gen.Parameters.Barcode.GS1CompositeBar.AllowOnlyGS1Encoding = false;
 
                 gen.Save($"{path}GS1Composite2D_NotGS1TwoDSupplement.png", BarCodeImageFormat.Png);
             }

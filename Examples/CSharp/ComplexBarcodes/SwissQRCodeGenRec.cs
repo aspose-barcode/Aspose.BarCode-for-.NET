@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -46,8 +46,8 @@ namespace Aspose.BarCode.Examples.CSharp.ComplexBarcodes
             //encode it
             ComplexBarcodeGenerator generator = new ComplexBarcodeGenerator(swissQRCode);
             generator.Parameters.Barcode.XDimension.Pixels = 4;
-            generator.Parameters.Barcode.QR.QrEncodeMode = QREncodeMode.ECIEncoding;
-            generator.Parameters.Barcode.QR.QrECIEncoding = ECIEncodings.UTF8;
+            generator.Parameters.Barcode.QR.EncodeMode = QREncodeMode.ECI;
+            generator.Parameters.Barcode.QR.ECIEncoding = ECIEncodings.UTF8;
             generator.Save($"{path}SwissQRBill.png");
 
             //recognize Swiss QR Code

@@ -29,16 +29,18 @@
 		<TargetFramework>net48</TargetFramework>
 	</PropertyGroup>
 	<PropertyGroup Condition="$(Configuration.Contains('NETCore'))">
-		<TargetFramework>net6.0</TargetFramework>
+		<!--System.Drawing.Common-->
+		<NoWarn>CA1416</NoWarn>
+		<TargetFramework>net8.0</TargetFramework>
 	</PropertyGroup>
 	
 	<!--Reference to Aspose libraries, required for examples-->
 	<ItemGroup>
-		<PackageReference Include="Aspose.BarCode" Version="24.8.0" />
-		<PackageReference Include="Aspose.Cells" Version="24.8.0" />
-		<PackageReference Include="Aspose.PDF" Version="24.8.0" />
-		<PackageReference Include="Aspose.Words" Version="24.8.0" />
-		<PackageReference Include="Aspose.Imaging" Version="24.8.0" />
+		<PackageReference Include="Aspose.BarCode" Version="26.2.0" />
+		<PackageReference Include="Aspose.Cells" Version="26.2.0" />
+		<PackageReference Include="Aspose.PDF" Version="26.2.0" />
+		<PackageReference Include="Aspose.Words" Version="26.2.0" />
+		<PackageReference Include="Aspose.Imaging" Version="26.2.0" />
 	</ItemGroup>	
 	
 	<!--Reference to .Net Core libraries, required for examples-->

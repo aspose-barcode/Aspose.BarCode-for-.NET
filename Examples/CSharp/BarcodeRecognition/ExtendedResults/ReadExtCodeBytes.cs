@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -24,7 +24,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeRecognition
             using (BarcodeGenerator gen = new BarcodeGenerator(EncodeTypes.Pdf417, strBld.ToString()))
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 2;
-                gen.Parameters.Barcode.Pdf417.Pdf417CompactionMode = Pdf417CompactionMode.Binary;
+                gen.Parameters.Barcode.Pdf417.EncodeMode = Pdf417EncodeMode.Binary;
                 gen.Parameters.Barcode.Pdf417.Columns = 2;
                 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Bytes mode";
                 gen.Save($"{path}ExtCodeBytes.png", BarCodeImageFormat.Png);

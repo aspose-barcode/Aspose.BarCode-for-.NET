@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2022 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using System.Text;
@@ -20,7 +20,7 @@ namespace Aspose.BarCode.Examples.CSharp.Symbologies
                 //set 3 columns
                 gen.Parameters.Barcode.Pdf417.Columns = 3;
                 //set error level 2
-                gen.Parameters.Barcode.Pdf417.Pdf417ErrorLevel = Pdf417ErrorLevel.Level2;
+                gen.Parameters.Barcode.Pdf417.ErrorLevel = Pdf417ErrorLevel.Level2;
                 gen.Save($"{path}PDF417Basic.png", BarCodeImageFormat.Png);
             }
 

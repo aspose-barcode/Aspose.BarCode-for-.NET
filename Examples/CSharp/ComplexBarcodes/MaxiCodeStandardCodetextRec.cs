@@ -1,4 +1,4 @@
-//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
 using Aspose.BarCode.ComplexBarcode;
@@ -18,7 +18,7 @@ namespace Aspose.BarCode.Examples.CSharp.ComplexBarcodes
             {
                 foreach (BarCodeResult result in reader.ReadBarCodes())
                 {
-                    MaxiCodeCodetext complexCodetext = ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.MaxiCodeMode, result.CodeText);
+                    MaxiCodeCodetext complexCodetext = ComplexCodetextReader.TryDecodeMaxiCode(result.Extended.MaxiCode.Mode, result.CodeText);
                     MaxiCodeStandardCodetext maxiCodeStandardCodetext = complexCodetext as MaxiCodeStandardCodetext;
                     if (maxiCodeStandardCodetext == null)
                         continue;

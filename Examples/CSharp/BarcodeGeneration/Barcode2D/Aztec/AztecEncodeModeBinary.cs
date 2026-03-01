@@ -1,7 +1,6 @@
-//Copyright(c) 2001-2024 Aspose Pty Ltd.All rights reserved.
+//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using System;
-using System.Text;
 using Aspose.BarCode.Generation;
 using Aspose.BarCode.BarCodeRecognition;
 
@@ -20,7 +19,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
                 gen.Parameters.Barcode.XDimension.Pixels = 4;
                 //set encode mode Binary
                 gen.SetCodeText(encodedArr);
-                gen.Parameters.Barcode.Aztec.AztecEncodeMode = AztecEncodeMode.Binary;
+                gen.Parameters.Barcode.Aztec.EncodeMode = AztecEncodeMode.Binary;
                 gen.Parameters.Barcode.CodeTextParameters.TwoDDisplayText = "Binary mode";
                 gen.Save($"{path}AztecEncodeModeBinary.png", BarCodeImageFormat.Png);
 

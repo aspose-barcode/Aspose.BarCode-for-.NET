@@ -1,4 +1,4 @@
-﻿//Copyright(c) 2001-2021 Aspose Pty Ltd.All rights reserved.
+﻿//Copyright(c) 2001-2026 Aspose Pty Ltd.All rights reserved.
 //https://github.com/aspose-barcode/Aspose.BarCode-for-.NET
 using Aspose.BarCode.Generation;
 
@@ -15,7 +15,7 @@ namespace Aspose.BarCode.Examples.CSharp.BarcodeGeneration
             {
                 gen.Parameters.Barcode.XDimension.Pixels = 15;
                 //set MaxiCode mode to 4
-                gen.Parameters.Barcode.MaxiCode.MaxiCodeMode = MaxiCodeMode.Mode4;
+                gen.Parameters.Barcode.MaxiCode.Mode = MaxiCodeMode.Mode4;
                 gen.Save($"{path}MaxiCodeMode4.png", BarCodeImageFormat.Png);
             }
         }
