@@ -195,7 +195,7 @@ namespace Aspose.BarCode.Utils
                 //QR Code error correction level
                 gen.Parameters.Barcode.QR.ErrorLevel = QRErrorLevel.LevelH;
                 if (!string.IsNullOrEmpty(parameters.ErrorCorrectionLevel))
-                    gen.Parameters.Barcode.QR.ErrorLevel = CustomBarcodeGeneratorUtils.GetQRCorrectionLevel(parameters.ErrorCorrectionLevel, gen.Parameters.Barcode.QR.QrErrorLevel);
+                    gen.Parameters.Barcode.QR.ErrorLevel = CustomBarcodeGeneratorUtils.GetQRCorrectionLevel(parameters.ErrorCorrectionLevel, gen.Parameters.Barcode.QR.ErrorLevel);
 
                 //rotation angle
                 if (!string.IsNullOrEmpty(parameters.SymbolRotation))

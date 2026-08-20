@@ -123,9 +123,9 @@ The barcode library supports any 32-bit or 64-bit operating system with the inst
 |Framework|Supported Versions|Additional Requirements|
 |---|---|---|
 |.NET Framework|2.0 / 3.5 / 4.0 / 4.6 / 4.7 / 4.8| |
-|.NET Standard|2.0 | [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.11.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
-|.NET Core| 3.1 / .Net 6.0 / .Net 8.0| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.11.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
-|.NET Core| .Net 9.0. / .Net 10.0.| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 25.11.0+|
+|.NET Standard|2.0 | [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 26.8.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
+|.NET Core| 3.1 / .Net 6.0 / .Net 8.0| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 26.8.0+ / [System.Text.Encoding.CodePages](https://www.nuget.org/packages/System.Text.Encoding.CodePages/) 9.0.2+|
+|.NET Core| .Net 9.0. / .Net 10.0.| [Aspose.Drawing.Common](https://www.nuget.org/packages/Aspose.Drawing.Common/) 26.8.0+|
 
 **Note on 32-bit (x86) Environments**
 

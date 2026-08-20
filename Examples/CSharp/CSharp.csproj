@@ -36,11 +36,11 @@
 	
 	<!--Reference to Aspose libraries, required for examples-->
 	<ItemGroup>
-		<PackageReference Include="Aspose.BarCode" Version="26.2.0" />
-		<PackageReference Include="Aspose.Cells" Version="26.2.0" />
-		<PackageReference Include="Aspose.PDF" Version="26.2.0" />
-		<PackageReference Include="Aspose.Words" Version="26.2.0" />
-		<PackageReference Include="Aspose.Imaging" Version="26.2.0" />
+		<PackageReference Include="Aspose.BarCode" Version="26.7.0" />
+		<PackageReference Include="Aspose.Cells" Version="26.7.0" />
+		<PackageReference Include="Aspose.PDF" Version="26.7.0" />
+		<PackageReference Include="Aspose.Words" Version="26.7.0" />
+		<PackageReference Include="Aspose.Imaging" Version="26.7.0" />
 	</ItemGroup>	
 	
 	<!--Reference to .Net Core libraries, required for examples-->
